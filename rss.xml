@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="https://doubleshift.github.io/"/>
-  <updated>2015-11-17T22:03:48.000Z</updated>
+  <updated>2016-01-17T18:25:23.000Z</updated>
   <id>https://doubleshift.github.io/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Diary 2016/01/18]]></title>
+    <link href="https://doubleshift.github.io/2015/11/18/ar-drone/"/>
+    <id>https://doubleshift.github.io/2015/11/18/ar-drone/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-01-17T18:25:23.000Z</updated>
+    <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187ee80aa.jpg-body?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p>[试飞]<iframe height="498" width="510" src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0380.mp4" frameborder="0" allowfullscreen></iframe></p>
+<p>[第一视角]<iframe height="498" width="510" src="http://7xnueu.com1.z0.glb.clouddn.com/video_20151203_181100%2000_00_35-00_00_40.avi" frameborder="0" allowfullscreen></iframe></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187e]]>
+    </summary>
+    
+      <category term="diary" scheme="https://doubleshift.github.io/tags/diary/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Diary 2015/11/18]]></title>
@@ -59,9 +77,10 @@
     <link href="https://doubleshift.github.io/2015/11/10/junction-slush/"/>
     <id>https://doubleshift.github.io/2015/11/10/junction-slush/</id>
     <published>2015-11-09T22:00:00.000Z</published>
-    <updated>2015-11-17T22:30:55.000Z</updated>
+    <updated>2016-01-17T18:26:53.000Z</updated>
     <content type="html"><![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
 <p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-812dec44bc984231.jpg-body" alt=""></p>
+<a id="more"></a>
 <p>Junction 整个活动是费用全包的，24小时的食物，无限量的”红牛”,临时休息的公寓，来回的大巴，甚至包括海外的往返机票。路上看到这座，额。。。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-a28238f44e19b3aa.jpg-body" alt=""></p>
 <p>这里就是Junction的地点了，门口还停有一辆sauna bus，让人联想到擎天柱 cool.<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-6c9683f66161787b.jpg-body" alt=""></p>
 <p>在门口领取掉牌，蹭吃蹭喝全靠这个了。背面是地图。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-49eb9642893840a0.JPG-body" alt=""></p>
@@ -87,7 +106,9 @@
 <p>活动详情:<br><a href="https://www.facebook.com/groups/hackjunction2015" target="_blank" rel="external">FaceBook Group</a><br><a href="https://www.facebook.com/events/1460852820890313" target="_blank" rel="external">FaceBook Page</a><br>大赛主页：<br><a href="http://hackjunction.com" target="_blank" rel="external">Junction</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executiv]]>
+    <![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
+<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-812dec44bc984231.jpg-body" alt=""></p>]]>
+    
     </summary>
     
       <category term="hackthon" scheme="https://doubleshift.github.io/tags/hackthon/"/>
