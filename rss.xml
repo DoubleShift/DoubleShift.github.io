@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="https://doubleshift.github.io/"/>
-  <updated>2016-01-24T18:34:41.000Z</updated>
+  <updated>2016-01-24T18:36:43.000Z</updated>
   <id>https://doubleshift.github.io/</id>
   
   <author>
@@ -19,9 +19,10 @@
     <link href="https://doubleshift.github.io/2016/01/24/opencv/"/>
     <id>https://doubleshift.github.io/2016/01/24/opencv/</id>
     <published>2016-01-23T22:00:00.000Z</published>
-    <updated>2016-01-24T18:34:41.000Z</updated>
+    <updated>2016-01-24T18:36:43.000Z</updated>
     <content type="html"><![CDATA[<h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
 <p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
+<a id="more"></a>
 <h2 id="Environment">Environment</h2><ul>
 <li>IntelliJ IDEA 14.1.5</li>
 <li>JDK 1.8</li>
@@ -45,7 +46,9 @@
 </ol>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除]]>
+    <![CDATA[<h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
+<p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>]]>
+    
     </summary>
     
       <category term="OpenCV" scheme="https://doubleshift.github.io/tags/OpenCV/"/>
@@ -57,10 +60,10 @@
     <link href="https://doubleshift.github.io/2015/11/18/ar-drone/"/>
     <id>https://doubleshift.github.io/2015/11/18/ar-drone/</id>
     <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-01-17T18:30:33.000Z</updated>
+    <updated>2016-01-24T19:02:31.000Z</updated>
     <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187ee80aa.jpg-body?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>[试飞]</p>
-<video src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0380.mp4" width="480" height="480" controls="controls"><br>     Your browser does not support the video tag.<br></video>
+<script type="text/javascript" src="http://v.ku6vms.com/phpvms/player/js/vid/_EJJA7f_-i_I0_gG/style/sK7cQG5IjkT6iMse/"></script>
 
 <p>[第一视角]</p>
 <video src="http://7xnueu.com1.z0.glb.clouddn.com/video_20151203_181100%2000_00_35-00_00_40.avi" width="480" height="480" controls="controls"><br>     Your browser does not support the video tag.<br></video>
@@ -91,28 +94,6 @@
     </summary>
     
       <category term="diary" scheme="https://doubleshift.github.io/tags/diary/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="https://doubleshift.github.io/2015/11/17/hello-world/"/>
-    <id>https://doubleshift.github.io/2015/11/17/hello-world/</id>
-    <published>2015-11-17T19:51:32.000Z</published>
-    <updated>2015-11-17T19:23:05.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
-    </summary>
     
   </entry>
   
