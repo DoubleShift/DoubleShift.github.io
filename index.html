@@ -105,7 +105,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a>
+						<a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a>
 					</div>
 				</section>
 				
@@ -170,6 +170,85 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-opencv" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/24/opencv/" class="article-date">
+  	<time datetime="2016-01-23T22:00:00.000Z" itemprop="datePublished">2016-01-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/24/opencv/">OpenCV3.0 + IntelliJ IDEA</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
+<p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
+<h2 id="Environment">Environment</h2><ul>
+<li>IntelliJ IDEA 14.1.5</li>
+<li>JDK 1.8</li>
+<li>OpenCV 3.0</li>
+<li>Windows 10 Pro</li>
+</ul>
+<h2 id="Instruction">Instruction</h2><ol>
+<li><p>下载OpenCV3.0 for Windows<br>运行 <em>opencv-3.0.0.exe</em> ，解压到磁盘任意位置。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/clipboard.png" alt=""></p>
+</li>
+<li><p>用IntelliJ IDEA创建一个空项目，然后打开 “File-&gt;Project Structure-&gt;Libraries”<br>添加一个库， “opencb/build/java/opencv300.jar”<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/a81ebcb1-4d84-47e0-a700-01166355b29c.png" alt=""></p>
+</li>
+<li><p>还需要设置运行路径，”Run-&gt;Edit Configurations” 找到”VM options” 设置为 “-Djava.library.path=-Djava.library.path=G:\RTSD\opencv\build\java\x64”<br>当然，需要选择x86 或 x64。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2c58f57d-eb65-4d03-a82b-7f260b5f2f73.png" alt=""></p>
+</li>
+<li><p>测试<br>import org.opencv.core.Core;<br>import org.opencv.core.CvType;<br>import org.opencv.core.Mat;</p>
+</li>
+</ol>
+<p>public class Main<br>{<br>    public static void main( String[] args )<br>    {<br>        System.loadLibrary( Core.NATIVE_LIBRARY_NAME );<br>        Mat mat = Mat.eye( 3, 3, CvType.CV_8UC1 );<br>        System.out.println( “mat = “ + mat.dump() );<br>    }<br>}<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/8e198c39-c730-4193-9d0c-2e3abda38bd9.png" alt=""></p>
+<h2 id="References">References</h2><ol>
+<li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse" target="_blank" rel="external">http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse</a></li>
+<li><a href="http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html" target="_blank" rel="external">http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html</a></li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenCV/">OpenCV</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-ar-drone" class="article article-type-post" itemscope itemprop="blogPost">
   

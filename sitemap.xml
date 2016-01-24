@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://doubleshift.github.io/2016/01/24/opencv/</loc>
+    <lastmod>2016-01-24T18:34:41.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>https://doubleshift.github.io/2015/11/18/ar-drone/</loc>
     <lastmod>2016-01-17T18:30:33.000Z</lastmod>
   </url>
