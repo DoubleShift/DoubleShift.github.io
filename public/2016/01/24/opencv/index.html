@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>OpenCV3.0 + IntelliJ IDEA | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="OpenCV3.0 + IntelliJ IDEA装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。
+官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenCV3.0 + IntelliJ IDEA">
+<meta property="og:url" content="https://doubleshift.github.io/2016/01/24/opencv/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="OpenCV3.0 + IntelliJ IDEA装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。
+官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/clipboard.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/a81ebcb1-4d84-47e0-a700-01166355b29c.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2c58f57d-eb65-4d03-a82b-7f260b5f2f73.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/8e198c39-c730-4193-9d0c-2e3abda38bd9.png">
+<meta property="og:updated_time" content="2016-01-24T18:36:43.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OpenCV3.0 + IntelliJ IDEA">
+<meta name="twitter:description" content="OpenCV3.0 + IntelliJ IDEA装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。
+官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						<li>Links</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/diary/" style="font-size: 20px;">diary</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">谁的博客</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-opencv" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/24/opencv/" class="article-date">
+  	<time datetime="2016-01-23T22:00:00.000Z" itemprop="datePublished">2016-01-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      OpenCV3.0 + IntelliJ IDEA
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenCV/">OpenCV</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
+<p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
+<a id="more"></a>
+<h2 id="Environment">Environment</h2><ul>
+<li>IntelliJ IDEA 14.1.5</li>
+<li>JDK 1.8</li>
+<li>OpenCV 3.0</li>
+<li>Windows 10 Pro</li>
+</ul>
+<h2 id="Instruction">Instruction</h2><ol>
+<li><p>下载OpenCV3.0 for Windows<br>运行 <em>opencv-3.0.0.exe</em> ，解压到磁盘任意位置。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/clipboard.png" alt=""></p>
+</li>
+<li><p>用IntelliJ IDEA创建一个空项目，然后打开 “File-&gt;Project Structure-&gt;Libraries”<br>添加一个库， “opencb/build/java/opencv300.jar”<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/a81ebcb1-4d84-47e0-a700-01166355b29c.png" alt=""></p>
+</li>
+<li><p>还需要设置运行路径，”Run-&gt;Edit Configurations” 找到”VM options” 设置为 “-Djava.library.path=-Djava.library.path=G:\RTSD\opencv\build\java\x64”<br>当然，需要选择x86 或 x64。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2c58f57d-eb65-4d03-a82b-7f260b5f2f73.png" alt=""></p>
+</li>
+<li><p>测试<br>import org.opencv.core.Core;<br>import org.opencv.core.CvType;<br>import org.opencv.core.Mat;</p>
+</li>
+</ol>
+<p>public class Main<br>{<br>    public static void main( String[] args )<br>    {<br>        System.loadLibrary( Core.NATIVE_LIBRARY_NAME );<br>        Mat mat = Mat.eye( 3, 3, CvType.CV_8UC1 );<br>        System.out.println( “mat = “ + mat.dump() );<br>    }<br>}<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/8e198c39-c730-4193-9d0c-2e3abda38bd9.png" alt=""></p>
+<h2 id="References">References</h2><ol>
+<li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse" target="_blank" rel="external">http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse</a></li>
+<li><a href="http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html" target="_blank" rel="external">http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html</a></li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/11/18/ar-drone/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Diary 2016/01/18</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="opencv" data-title="OpenCV3.0 + IntelliJ IDEA" data-url="https://doubleshift.github.io/2016/01/24/opencv/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

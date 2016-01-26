@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[双人份 Blog]]></title>
+  
+  <link href="/rss.xml" rel="self"/>
+  <link href="https://doubleshift.github.io/"/>
+  <updated>2016-01-24T18:36:43.000Z</updated>
+  <id>https://doubleshift.github.io/</id>
+  
+  <author>
+    <name><![CDATA[双人份]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[OpenCV3.0 + IntelliJ IDEA]]></title>
+    <link href="https://doubleshift.github.io/2016/01/24/opencv/"/>
+    <id>https://doubleshift.github.io/2016/01/24/opencv/</id>
+    <published>2016-01-23T22:00:00.000Z</published>
+    <updated>2016-01-24T18:36:43.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
+<p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
+<a id="more"></a>
+<h2 id="Environment">Environment</h2><ul>
+<li>IntelliJ IDEA 14.1.5</li>
+<li>JDK 1.8</li>
+<li>OpenCV 3.0</li>
+<li>Windows 10 Pro</li>
+</ul>
+<h2 id="Instruction">Instruction</h2><ol>
+<li><p>下载OpenCV3.0 for Windows<br>运行 <em>opencv-3.0.0.exe</em> ，解压到磁盘任意位置。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/clipboard.png" alt=""></p>
+</li>
+<li><p>用IntelliJ IDEA创建一个空项目，然后打开 “File-&gt;Project Structure-&gt;Libraries”<br>添加一个库， “opencb/build/java/opencv300.jar”<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/a81ebcb1-4d84-47e0-a700-01166355b29c.png" alt=""></p>
+</li>
+<li><p>还需要设置运行路径，”Run-&gt;Edit Configurations” 找到”VM options” 设置为 “-Djava.library.path=-Djava.library.path=G:\RTSD\opencv\build\java\x64”<br>当然，需要选择x86 或 x64。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2c58f57d-eb65-4d03-a82b-7f260b5f2f73.png" alt=""></p>
+</li>
+<li><p>测试<br>import org.opencv.core.Core;<br>import org.opencv.core.CvType;<br>import org.opencv.core.Mat;</p>
+</li>
+</ol>
+<p>public class Main<br>{<br>    public static void main( String[] args )<br>    {<br>        System.loadLibrary( Core.NATIVE_LIBRARY_NAME );<br>        Mat mat = Mat.eye( 3, 3, CvType.CV_8UC1 );<br>        System.out.println( “mat = “ + mat.dump() );<br>    }<br>}<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/8e198c39-c730-4193-9d0c-2e3abda38bd9.png" alt=""></p>
+<h2 id="References">References</h2><ol>
+<li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse" target="_blank" rel="external">http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse</a></li>
+<li><a href="http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html" target="_blank" rel="external">http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html</a></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
+<p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>]]>
+    
+    </summary>
+    
+      <category term="OpenCV" scheme="https://doubleshift.github.io/tags/OpenCV/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Diary 2016/01/18]]></title>
+    <link href="https://doubleshift.github.io/2015/11/18/ar-drone/"/>
+    <id>https://doubleshift.github.io/2015/11/18/ar-drone/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-01-24T19:18:49.000Z</updated>
+    <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187ee80aa.jpg-body?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<a id="more"></a>
+<p>[试飞]</p>
+<embed src="http://player.youku.com/player.php/sid/XMTQ1NTgyMjEyMA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br>[第一视角]<br><embed src="http://player.youku.com/player.php/sid/XMTQ1NTgxODgyOA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187ee80aa.jpg-body?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="https://doubleshift.github.io/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Diary 2015/11/18]]></title>
+    <link href="https://doubleshift.github.io/2015/11/18/dairy20151118/"/>
+    <id>https://doubleshift.github.io/2015/11/18/dairy20151118/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-01-24T19:07:25.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0378.JPG-body" alt="raspi berry"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0376.JPG-body" alt="switch"><br>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="https://doubleshift.github.io/tags/diary/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Slush 的前奏-Junction: 北欧最大Hackton]]></title>
+    <link href="https://doubleshift.github.io/2015/11/10/junction-slush/"/>
+    <id>https://doubleshift.github.io/2015/11/10/junction-slush/</id>
+    <published>2015-11-09T22:00:00.000Z</published>
+    <updated>2016-01-17T18:26:53.000Z</updated>
+    <content type="html"><![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
+<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-812dec44bc984231.jpg-body" alt=""></p>
+<a id="more"></a>
+<p>Junction 整个活动是费用全包的，24小时的食物，无限量的”红牛”,临时休息的公寓，来回的大巴，甚至包括海外的往返机票。路上看到这座，额。。。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-a28238f44e19b3aa.jpg-body" alt=""></p>
+<p>这里就是Junction的地点了，门口还停有一辆sauna bus，让人联想到擎天柱 cool.<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-6c9683f66161787b.jpg-body" alt=""></p>
+<p>在门口领取掉牌，蹭吃蹭喝全靠这个了。背面是地图。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-49eb9642893840a0.JPG-body" alt=""></p>
+<p>看到这个”红牛”会不会感觉好亲切，2天我起码喝了10罐。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-8fc6a5a25097c57f.jpg-body" alt=""></p>
+<p>当然，无数的红牛也比不上芬兰妹子的一杯卡布奇诺。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-c5b2d566d1f9db81.jpg-body" alt=""></p>
+<p>下面是正题，<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-5afbaa7866aa792e.jpg-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-97a86014ddf1ea81.jpg-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-7080e1e0441b7bca.jpg-body" alt=""></p>
+<p>这边就是各种设备的摆摊了，3D 打印机，XBOX，Flic Button, 等<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-aa06c3cdfcf60b4b.jpg-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-652fe055cc1ce7d2.jpg-body" alt=""></p>
+<p>这组人一个月前就开始准备了，他们的作品是通过蓝牙控制轮椅。虽然这些设备在北欧已经很常见了，但是还是应该向他们致敬。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-fe383a0cbca20a5e.jpg-body" alt=""></p>
+<p>我拿到了一个 <a href="https://flic.io/" target="_blank" rel="external">Flic button</a>.<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-eb1521b6e453cb68.png-body" alt="flic-with-outline.png"><br>我的主意是做一个Login Button, 相应PassLess的Idea. 以后电脑上凡是需要登入的网站，我直接敲下这个按钮，chrome插件就会完成整个登入过程。Flic button 完全离线，所以无需担心密码泄露，保存好这个button就行了。 然而，我没法说服别人采用这个点子，别人也没法说服我不做这个。所以，一个人根本写不完。</p>
+<p>另外一组用Flic 的是这样的，<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-db1c3e7d4a8a1f04.jpg-body" alt=""><br>按下flic，火箭就飞走了，然后上面有一个智能手机，你就可以通过上面的位置分享，把它给捡回来。</p>
+<p>最后我撸了一堆东西回来，很多东西我都不好意思再拿了，也不好带，就没要。<br>可惜各种试用点券，基本都是100欧起送，我发觉的太晚了，各种没听过的服务，很多人都给丢掉了。<br>然后捡来了几张100欧的AWS。IBM和微软的比较坑，简直就是来刷存在感的，一张电影片,一个GoPro还得抽奖。</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-8f45847a626fd927.JPG-body" alt=""><br>所有T-shirt 里比较好看的<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-a815c961361ad8e7.JPG-body" alt=""></p>
+<p>不过还是想吐曹一下住宿，虽然知道hackthon能有床就不错，这次还给了房间。但是为了不和印度小哥睡一张床打地铺了，怎么还是会有非洲大叔来一起睡。</p>
+<p>总结一下:</p>
+<ol>
+<li>活动最后评奖的时候发现，并不是每个人都有所谓的成品，很多人只不过有一个PPT，当然也有提早准备几个月的。但他们无论什么样的，对于自己的东西说的都是一身劲。我们没有成品的话，太心虚，连最终项目提交都放弃了。无论结果怎么样，都要自信。</li>
+<li>他们如果有想法的话组队很苛刻，我说我3年开发经验，如果算全职的话是1年半，他们还担心我跟不上。因为不是公司里全职的工作，实习,兼职并不算。我就随意找了个说会ios和web的组队了。原来会Hello World 的也算会代码。所以活动开始后，这几个人只能去一日游了。我变成光杆司令了。提前准备很重要，最起码要有一个靠铺的团队，除非准备solu。当然现场也是可以找的，但是保不准哪个成员就放弃了。 也保不准哪个成员的水平就靠那张嘴。</li>
+<li>不要和那些没有技术背景却又想着创业的点子浪费时间，真的。商业模式给你说完了，点子详情还舍不得给你说。好不容易掏出计划书，还是all in one的 paper prototype？如果不纠结的话应该叫做流程图。</li>
+</ol>
+<p>活动详情:<br><a href="https://www.facebook.com/groups/hackjunction2015" target="_blank" rel="external">FaceBook Group</a><br><a href="https://www.facebook.com/events/1460852820890313" target="_blank" rel="external">FaceBook Page</a><br>大赛主页：<br><a href="http://hackjunction.com" target="_blank" rel="external">Junction</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
+<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-812dec44bc984231.jpg-body" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="hackthon" scheme="https://doubleshift.github.io/tags/hackthon/"/>
+    
+  </entry>
+  
+</feed>
