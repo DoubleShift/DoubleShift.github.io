@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[双人份 Blog]]></title>
-  
+  <subtitle><![CDATA[邮件我]]></subtitle>
   <link href="/rss.xml" rel="self"/>
   <link href="https://doubleshift.github.io/"/>
   <updated>2016-01-24T18:36:43.000Z</updated>
