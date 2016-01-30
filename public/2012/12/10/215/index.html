@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>轻松搭建私有云 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;nbsp;
+昨天的迷你云xss可以说是没什么用处，今天发现迷你云确实很不错，至少不用担心数据会别人窃取。
+今天就做了一个搭建迷你云的教程。
+可以在家中的电脑上搭建迷你云，只要使用他的windows或者linux一键环境。不过我还是喜欢用php空间搭建。
+因为这样不用担心家中电脑关机，也可以保证传输速度。这里空间使用的是openshift，以前有过教程，翻墙一直用的他。
+openshift申请一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="轻松搭建私有云">
+<meta property="og:url" content="https://doubleshift.github.io/2012/12/10/215/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="&amp;nbsp;
+昨天的迷你云xss可以说是没什么用处，今天发现迷你云确实很不错，至少不用担心数据会别人窃取。
+今天就做了一个搭建迷你云的教程。
+可以在家中的电脑上搭建迷你云，只要使用他的windows或者linux一键环境。不过我还是喜欢用php空间搭建。
+因为这样不用担心家中电脑关机，也可以保证传输速度。这里空间使用的是openshift，以前有过教程，翻墙一直用的他。
+openshift申请一个">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173145-300x57.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173708-266x300.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173916-300x267.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208174043-300x150.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175145-300x146.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175627-300x198.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ201212081755441-300x159.png">
+<meta property="og:updated_time" content="2016-01-30T01:48:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="轻松搭建私有云">
+<meta name="twitter:description" content="&amp;nbsp;
+昨天的迷你云xss可以说是没什么用处，今天发现迷你云确实很不错，至少不用担心数据会别人窃取。
+今天就做了一个搭建迷你云的教程。
+可以在家中的电脑上搭建迷你云，只要使用他的windows或者linux一键环境。不过我还是喜欢用php空间搭建。
+因为这样不用担心家中电脑关机，也可以保证传输速度。这里空间使用的是openshift，以前有过教程，翻墙一直用的他。
+openshift申请一个">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/BackTrack/" style="font-size: 15.71px;">BackTrack</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/android/" style="font-size: 14.29px;">android</a> <a href="/tags/cocos2d/" style="font-size: 12.86px;">cocos2d</a> <a href="/tags/diary/" style="font-size: 11.43px;">diary</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/fml/" style="font-size: 10px;">fml</a> <a href="/tags/hack/" style="font-size: 20px;">hack</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/linux/" style="font-size: 11.43px;">linux</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/sae/" style="font-size: 14.29px;">sae</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/内涵/" style="font-size: 11.43px;">内涵</a> <a href="/tags/吐槽/" style="font-size: 11.43px;">吐槽</a> <a href="/tags/开发/" style="font-size: 18.57px;">开发</a> <a href="/tags/微信公众平台/" style="font-size: 14.29px;">微信公众平台</a> <a href="/tags/杂碎/" style="font-size: 12.86px;">杂碎</a> <a href="/tags/淘宝/" style="font-size: 10px;">淘宝</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a> <a href="/tags/网站/" style="font-size: 17.14px;">网站</a> <a href="/tags/翻墙/" style="font-size: 14.29px;">翻墙</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/自动登入/" style="font-size: 11.43px;">自动登入</a> <a href="/tags/采集/" style="font-size: 11.43px;">采集</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-215" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/12/10/215/" class="article-date">
+  	<time datetime="2012-12-10T05:07:01.000Z" itemprop="datePublished">2012-12-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      轻松搭建私有云
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;</p>
+<p>昨天的迷你云xss可以说是没什么用处，今天发现迷你云确实很不错，至少不用担心数据会别人窃取。</p>
+<p>今天就做了一个搭建迷你云的教程。</p>
+<p>可以在家中的电脑上搭建迷你云，只要使用他的windows或者linux一键环境。不过我还是喜欢用php空间搭建。</p>
+<p>因为这样不用担心家中电脑关机，也可以保证传输速度。这里空间使用的是openshift，以前有过教程，翻墙一直用的他。</p>
+<p>openshift申请一个数据库后，</p>
+<p>ssh连上 cd app-root\repo\php</p>
+<p>然后wget <a href="http://www.miniyun.cn/app/download/type/server/mime/zip" target="_blank" rel="external">http://www.miniyun.cn/app/download/type/server/mime/zip</a></p>
+<p>之后unzip zip。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173145.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173145-300x57.png" alt="" title="QQ20121208173145"></a></p>
+<p>接下来进入数据库配置，很简单的，http进入你解压的目录我这里是<a href="https://tools.chenxing.org.cn/yun/[" target="_blank" rel="external">https://tools.chenxing.org.cn/yun/[</a><br>](<a href="http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173708.png)[" target="_blank" rel="external">http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173708.png)[</a><br>](<a href="http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173639.png)[![](http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639-210x300.png" target="_blank" rel="external">http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173639.png)[![](http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639-210x300.png</a> “QQ20121208173639”)](<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639.png" target="_blank" rel="external">http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639.png</a>)</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173708.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173708-266x300.png" alt="" title="QQ20121208173708"></a></p>
+<p>选择mysl数据库，接下来配置信息。这些申请的时候都有的，openshift的不能填localhost，要进phpmyadmin看里面的地址才行。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173916.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173916-300x267.png" alt="" title="QQ20121208173916"></a></p>
+<p>之后创建一个admin就好了。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208174043.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208174043-300x150.png" alt="" title="QQ20121208174043"></a></p>
+<p>注意看，他提供web，windows，android3种登入方式，ios的好像也可以了。登入后就可以在web上使用了，这个和金山快盘类似，因为他就是仿照快盘的，不对，借鉴借鉴。以前猪八戒看到过这个任务。嘿嘿。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175145.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175145-300x146.png" alt="" title="QQ20121208175145"></a></p>
+<p>由于这个是外国的空间，所以上传速度大概只有40k，下载在150k左右。不过没关系，大文件都用百度网盘之类的，私有云只是存储一些不方便放其他地方的文件，小文件，速度不担心。你又其他的就别担心了。</p>
+<p>点击右上角有管理功能哦，管理员才有，然后看看windows的界面吧。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175627.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175627-300x198.png" alt="" title="QQ20121208175627"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ201212081755441.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ201212081755441-300x159.png" alt="" title="QQ201212081755441"></a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2012/12/10/227/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          脱裤门制作字典
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2012/12/09/209/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">迷你云xss一枚</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

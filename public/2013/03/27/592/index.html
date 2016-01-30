@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>FaceJoking数据抓取分析 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="做一个应用，打算加上高校的一些美女作为数据。人人的api真心不好懂。来回跳的，还有限制。 索性就到这里来拉数据了。http://www.facejoking.com
+当初这个网站应该很出名的吧。 先用清华大学来看看。看看清华的美女吧。
+选中后跳转到  http://www.facejoking.com/1001/0这个地址，前面翻看一下源码，没有任何数据，好吧，打开burp 抓个包看看。
+看到没，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FaceJoking数据抓取分析">
+<meta property="og:url" content="https://doubleshift.github.io/2013/03/27/592/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="做一个应用，打算加上高校的一些美女作为数据。人人的api真心不好懂。来回跳的，还有限制。 索性就到这里来拉数据了。http://www.facejoking.com
+当初这个网站应该很出名的吧。 先用清华大学来看看。看看清华的美女吧。
+选中后跳转到  http://www.facejoking.com/1001/0这个地址，前面翻看一下源码，没有任何数据，好吧，打开burp 抓个包看看。
+看到没，">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316011950.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012225.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012815.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012859.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316013111.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316020427.png">
+<meta property="og:updated_time" content="2016-01-30T01:48:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FaceJoking数据抓取分析">
+<meta name="twitter:description" content="做一个应用，打算加上高校的一些美女作为数据。人人的api真心不好懂。来回跳的，还有限制。 索性就到这里来拉数据了。http://www.facejoking.com
+当初这个网站应该很出名的吧。 先用清华大学来看看。看看清华的美女吧。
+选中后跳转到  http://www.facejoking.com/1001/0这个地址，前面翻看一下源码，没有任何数据，好吧，打开burp 抓个包看看。
+看到没，">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/BackTrack/" style="font-size: 15.71px;">BackTrack</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/android/" style="font-size: 14.29px;">android</a> <a href="/tags/cocos2d/" style="font-size: 12.86px;">cocos2d</a> <a href="/tags/diary/" style="font-size: 11.43px;">diary</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/fml/" style="font-size: 10px;">fml</a> <a href="/tags/hack/" style="font-size: 20px;">hack</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/linux/" style="font-size: 11.43px;">linux</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/sae/" style="font-size: 14.29px;">sae</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/内涵/" style="font-size: 11.43px;">内涵</a> <a href="/tags/吐槽/" style="font-size: 11.43px;">吐槽</a> <a href="/tags/开发/" style="font-size: 18.57px;">开发</a> <a href="/tags/微信公众平台/" style="font-size: 14.29px;">微信公众平台</a> <a href="/tags/杂碎/" style="font-size: 12.86px;">杂碎</a> <a href="/tags/淘宝/" style="font-size: 10px;">淘宝</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a> <a href="/tags/网站/" style="font-size: 17.14px;">网站</a> <a href="/tags/翻墙/" style="font-size: 14.29px;">翻墙</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/自动登入/" style="font-size: 11.43px;">自动登入</a> <a href="/tags/采集/" style="font-size: 11.43px;">采集</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-592" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/03/27/592/" class="article-date">
+  	<time datetime="2013-03-27T13:25:04.000Z" itemprop="datePublished">2013-03-27</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      FaceJoking数据抓取分析
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/采集/">采集</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>做一个应用，打算加上高校的一些美女作为数据。人人的api真心不好懂。来回跳的，还有限制。 索性就到这里来拉数据了。<a href="http://www.facejoking.com" target="_blank" rel="external">http://www.facejoking.com</a></p>
+<p>当初这个网站应该很出名的吧。 先用清华大学来看看。看看清华的美女吧。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316011950.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316011950.png" alt="QQ20130316011950"></a></p>
+<p>选中后跳转到  <a href="http://www.facejoking.com/1001/0这个地址，前面翻看一下源码，没有任何数据，好吧，打开burp" target="_blank" rel="external">http://www.facejoking.com/1001/0这个地址，前面翻看一下源码，没有任何数据，好吧，打开burp</a> 抓个包看看。</p>
+<p>看到没，<a href="http://www.facejoking.com//api/main/1001/0/44/1，明显是调用api，我们访问看看。" target="_blank" rel="external">http://www.facejoking.com//api/main/1001/0/44/1，明显是调用api，我们访问看看。</a></p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012225.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012225.png" alt="QQ20130316012225"></a></p>
+<p>看到数据了。json格式的，一看就知道了，这是他会加载的首页数据。后面medium就是头像了。但是这个地址。。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012815.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012815.png" alt="QQ20130316012815"></a></p>
+<p>现格式化看一下，名字和首页一模一样，我们可以确定了。这个地址呢通过首页页面元素分析得到2个地址。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012859.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316012859.png" alt="QQ20130316012859"></a></p>
+<p>一个是<a href="http://www.facejoking.com/pic/992660.jpg" target="_blank" rel="external">http://www.facejoking.com/pic/992660.jpg</a>     这个地址通过pid可以访问头像，（这是大图）</p>
+<p>另一个是<a href="http://www.facejoking.com/uploads/m/gDnfqfeCKgHhuIg2qnbLjjW7MGxqnUzU" target="_blank" rel="external">http://www.facejoking.com/uploads/m/gDnfqfeCKgHhuIg2qnbLjjW7MGxqnUzU</a>，不过这个是小图，后面的height就是他的高度</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316013111.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316013111.png" alt="QQ20130316013111"></a></p>
+<p>然后点开其他的学校，继续分析。最后我确定了他url的规则。</p>
+<p><a href="http://www.facejoking.com//api/main/22001/0/35/1" target="_blank" rel="external">http://www.facejoking.com/api/main/1001/0/44/1</a></p>
+<p><a href="http://www.facejoking.com/api/main/学校编码/0(女" target="_blank" rel="external">http://www.facejoking.com/api/main/学校编码/0(女</a>) &amp;1(男)/44(随机的一个值，字母都行，无论位数都不影响)/1（第一页）</p>
+<p>第3个段的值我们可以验证一下，我分别测试了99，999，9999，0，g这几个数字，根据返回值中的pid，访问这样的页面，就可以看到这个人是哪个学校的。<a href="http://www.facejoking.com/people/992660" target="_blank" rel="external">http://www.facejoking.com/people/992660，似乎真的没影响。</a></p>
+<p>其实可以通过遍历这个id，来抓取所有同学的学校，然后数据库里通过学校。。。。（pid从1开始，测试没到150w）</p>
+<p>这个就简单，火车头都行，不用我写代码了。但是为了以后通用，还是写个php采集吧。</p>
+<p>然后我们可以通过学校编码来遍历了。再来弄弄学校编码的规则。分析源代码，没有找到，数据包也没看到有，所以应该是写js里面，排除几个js后，我们锁定这一个js。</p>
+<p><a href="http://www.facejoking.com/resources/js/main.js?v=73e1913b3cfc1dbaf1885969bc365850" target="_blank" rel="external">http://www.facejoking.com/resources/js/main.js?v=73e1913b3cfc1dbaf1885969bc365850</a></p>
+<p>翻看了一会，发现这个学校json数据了。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316020427.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316020427.png" alt="QQ20130316020427"></a></p>
+<p>一共34个id，刚好34个省份，似乎不能这么说。然后就到写代码的部分了。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/03/28/611/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          去掉Evernote左下角广告
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/03/27/608/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">修改Ubuntu更新源为网易源</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

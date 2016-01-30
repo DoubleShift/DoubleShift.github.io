@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>迁移wordpress/网站搬家同时更改URL更改域名 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。步骤1：备份数据库登陆到phpMyAdmin，到mysql后台，选择wordpress数据所在的数据库，点击“导出”或是英文的”Export”把数据库数据备份到你本地。建议选择导出格式为SQL。如果数据量较大，建议在导出页面下方选择.zip或.gzip压缩格式，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="迁移wordpress/网站搬家同时更改URL更改域名">
+<meta property="og:url" content="https://doubleshift.github.io/2013/02/09/378/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。步骤1：备份数据库登陆到phpMyAdmin，到mysql后台，选择wordpress数据所在的数据库，点击“导出”或是英文的”Export”把数据库数据备份到你本地。建议选择导出格式为SQL。如果数据量较大，建议在导出页面下方选择.zip或.gzip压缩格式，">
+<meta property="og:updated_time" content="2016-01-30T01:48:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="迁移wordpress/网站搬家同时更改URL更改域名">
+<meta name="twitter:description" content="无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。步骤1：备份数据库登陆到phpMyAdmin，到mysql后台，选择wordpress数据所在的数据库，点击“导出”或是英文的”Export”把数据库数据备份到你本地。建议选择导出格式为SQL。如果数据量较大，建议在导出页面下方选择.zip或.gzip压缩格式，">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/BackTrack/" style="font-size: 15.71px;">BackTrack</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/android/" style="font-size: 14.29px;">android</a> <a href="/tags/cocos2d/" style="font-size: 12.86px;">cocos2d</a> <a href="/tags/diary/" style="font-size: 11.43px;">diary</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/fml/" style="font-size: 10px;">fml</a> <a href="/tags/hack/" style="font-size: 20px;">hack</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/linux/" style="font-size: 11.43px;">linux</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/sae/" style="font-size: 14.29px;">sae</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/内涵/" style="font-size: 11.43px;">内涵</a> <a href="/tags/吐槽/" style="font-size: 11.43px;">吐槽</a> <a href="/tags/开发/" style="font-size: 18.57px;">开发</a> <a href="/tags/微信公众平台/" style="font-size: 14.29px;">微信公众平台</a> <a href="/tags/杂碎/" style="font-size: 12.86px;">杂碎</a> <a href="/tags/淘宝/" style="font-size: 10px;">淘宝</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a> <a href="/tags/网站/" style="font-size: 17.14px;">网站</a> <a href="/tags/翻墙/" style="font-size: 14.29px;">翻墙</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/自动登入/" style="font-size: 11.43px;">自动登入</a> <a href="/tags/采集/" style="font-size: 11.43px;">采集</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-378" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/02/09/378/" class="article-date">
+  	<time datetime="2013-02-09T19:55:58.000Z" itemprop="datePublished">2013-02-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      迁移wordpress/网站搬家同时更改URL更改域名
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Web/">Web</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。">无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。</h3><h3 id="步骤1：备份数据库"><strong>步骤1：备份数据库</strong></h3><div><br><br>登陆到phpMyAdmin，到mysql后台，选择wordpress数据所在的数据库，点击“导出”或是英文的”Export”把数据库数据备份到你本地。建议选择导出格式为SQL。如果数据量较大，建议在导出页面下方选择.zip或.gzip压缩格式，这样文件会小一些。<br><br><strong>步骤2：备份wordpress网站所有文件</strong><br>用FTP或你的空间商提供的方式吧所有wordpress的文件备份到你本地。建议压缩后再FTP到本地，这样速度快，也不会出现文件传输过程中发生的某些传输错误造成文件不完整。<br><br><strong>步骤3：恢复数据库到你的新空间</strong><br>登陆到你的新空间的phpMyAdmin，到mysql后台，点击“导入”或是英文的“Import”把数据库恢复到你的新空间，即导入步骤1备份的文件。<br><br><strong>步骤4：恢复网站文件到你的新空间</strong><br>用FTP或你的空间商提供的方式把所有的网站文件上传的你的新空间。即导入步骤2备份的文件。<br><br><strong>步骤5：更改配置文件wp-config.php</strong><br>wp-config.php位于根目录，你至少需要修改如下项目：（这些项目买空间是，空间商会给你）<br><br><em>   <a href="http://totem.co/tag/wordpress-2" title="查看 WordPress 中的全部文章" target="_blank" rel="external">WordPress</a> 数据库的名称
+</em>   MySQL 数据库用户名<br><em>   MySQL 数据库密码
+</em>   MySQL 主机 — 这项通常是 ‘localhost’<br><span style="color: #ff0000;">如果白屏的话，删除config这个文件，然后再来安装一遍，让它自动生成。主题插件也移除掉。</span><br><strong>步骤6：注意检查文件.htaccess</strong><br>（如果你的网站路径与迁移前的一模一样，这一步可以省略）这一步一定要注意，RewriteBase及RewriteRule这两项一定要设置正确。我的网站根路径于原先的不同，这里又没设置正确才发生500错误。<br><br><strong>步骤7：后台数据库修改siteurl及home项</strong><br>（如果你的网站路径及URL与迁移前的一模一样，这一步可以省略），登陆到你的新空间的phpMyAdmin，在后台数据库里修改你的siteurl，找到表wp_options，作如下修改：<br><br><em>   找到option_id字段值为1，option_name字段值为siteurl的记录，修改option_value字段值，比如原先你的值为<a href="http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。" target="_blank" rel="external">http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。</a>
+</em>   找到option_id字段值为37，option_name字段值为home的记录，修改option_value字段值，跟上面的是一样的，比如原先你的值为<a href="http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。" target="_blank" rel="external">http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。</a><br><strong>步骤8：到你的<a href="http://totem.co/tag/%e5%9f%9f%e5%90%8d" title="查看 域名 中的全部文章" target="_blank" rel="external">域名</a>注册商网站修改A记录</strong><br>新的IP地址在买空间时，空间商会告诉你，别忘了把新的IP地址更新上去，国内的通常1到2小时就会生效。<br><br>### 步骤8：修改数据库<br><br>数据库中可能会有一些文件地址，或者其他什么的需要更改，这时就要用到这个了。<br><br>这个将文中所有的图片地址改掉，当然也可以改其他的。<br><br>UPDATE wp_posts SET post_content = REPLACE( post_content, ‘<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/01/" target="_blank" rel="external">http://7xnueu.com1.z0.glb.clouddn.com/2012/01/</a>‘, ‘<a href="http://127.0.0.1/" target="_blank" rel="external">http://127.0.0.1/</a>‘ );<br><br></div>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/02/16/386/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          二哥XSS教学宝典学习
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/02/08/376/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">常见的一些编辑器漏洞</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

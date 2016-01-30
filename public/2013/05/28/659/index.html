@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>快盘自动签到 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="抓包过程不讲了，直接贴代码。github上有个类似代码，直接借鉴一下
+mycurl就是curl，自己实现一下get和post就行。这个做完了会把代码分享出来。
+下一步是做贴吧自动签到
+`&amp;lt;?php/**
+
+快盘签到
+@author 双人份 &amp;lt;fjjwlzd@163.com&amp;gt;*/require_once “MyCurl.php”;`
+
+class KuaiPan{
+protecte">
+<meta property="og:type" content="article">
+<meta property="og:title" content="快盘自动签到">
+<meta property="og:url" content="https://doubleshift.github.io/2013/05/28/659/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="抓包过程不讲了，直接贴代码。github上有个类似代码，直接借鉴一下
+mycurl就是curl，自己实现一下get和post就行。这个做完了会把代码分享出来。
+下一步是做贴吧自动签到
+`&amp;lt;?php/**
+
+快盘签到
+@author 双人份 &amp;lt;fjjwlzd@163.com&amp;gt;*/require_once “MyCurl.php”;`
+
+class KuaiPan{
+protecte">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/05/QQ20130529004631.png">
+<meta property="og:updated_time" content="2016-01-30T01:48:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="快盘自动签到">
+<meta name="twitter:description" content="抓包过程不讲了，直接贴代码。github上有个类似代码，直接借鉴一下
+mycurl就是curl，自己实现一下get和post就行。这个做完了会把代码分享出来。
+下一步是做贴吧自动签到
+`&amp;lt;?php/**
+
+快盘签到
+@author 双人份 &amp;lt;fjjwlzd@163.com&amp;gt;*/require_once “MyCurl.php”;`
+
+class KuaiPan{
+protecte">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/BackTrack/" style="font-size: 15.71px;">BackTrack</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/android/" style="font-size: 14.29px;">android</a> <a href="/tags/cocos2d/" style="font-size: 12.86px;">cocos2d</a> <a href="/tags/diary/" style="font-size: 11.43px;">diary</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/fml/" style="font-size: 10px;">fml</a> <a href="/tags/hack/" style="font-size: 20px;">hack</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/linux/" style="font-size: 11.43px;">linux</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/sae/" style="font-size: 14.29px;">sae</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/内涵/" style="font-size: 11.43px;">内涵</a> <a href="/tags/吐槽/" style="font-size: 11.43px;">吐槽</a> <a href="/tags/开发/" style="font-size: 18.57px;">开发</a> <a href="/tags/微信公众平台/" style="font-size: 14.29px;">微信公众平台</a> <a href="/tags/杂碎/" style="font-size: 12.86px;">杂碎</a> <a href="/tags/淘宝/" style="font-size: 10px;">淘宝</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a> <a href="/tags/网站/" style="font-size: 17.14px;">网站</a> <a href="/tags/翻墙/" style="font-size: 14.29px;">翻墙</a> <a href="/tags/翻译/" style="font-size: 10px;">翻译</a> <a href="/tags/自动登入/" style="font-size: 11.43px;">自动登入</a> <a href="/tags/采集/" style="font-size: 11.43px;">采集</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-659" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/05/28/659/" class="article-date">
+  	<time datetime="2013-05-28T13:46:09.000Z" itemprop="datePublished">2013-05-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      快盘自动签到
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自动登入/">自动登入</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Web/">Web</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>抓包过程不讲了，直接贴代码。github上有个类似代码，直接借鉴一下</p>
+<p>mycurl就是curl，自己实现一下get和post就行。这个做完了会把代码分享出来。</p>
+<p>下一步是做贴吧自动签到</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/05/QQ20130529004631.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/05/QQ20130529004631.png" alt="QQ20130529004631"></a><br>`<br>&lt;?php<br>/**</p>
+<ul>
+<li>快盘签到</li>
+<li>@author 双人份 &lt;fjjwlzd@163.com&gt;<br>*/<br>require_once “MyCurl.php”;`</li>
+</ul>
+<p>class KuaiPan<br>{</p>
+<p>protected $curl;<br>//用户名和密码<br>protected $username;<br>protected $password;<br>//登录 URL<br>private $loginUrl = ‘<a href="http://www.kuaipan.cn/home.htm" target="_blank" rel="external">http://www.kuaipan.cn/home.htm</a>‘;<br>private $postUrl = ‘<a href="https://www.kuaipan.cn/index.php?ac=account&amp;op=login" target="_blank" rel="external">https://www.kuaipan.cn/index.php?ac=account&amp;op=login</a>‘;</p>
+<p>//签到 URL<br>private $signUrl = ‘<a href="http://www.kuaipan.cn/index.php?ac=common&amp;op=usersign" target="_blank" rel="external">http://www.kuaipan.cn/index.php?ac=common&amp;op=usersign</a>‘;</p>
+<p>//空间信息<br>private $spaceUrl = ‘<a href="http://www.kuaipan.cn/index.php?ac=home&amp;op=space" target="_blank" rel="external">http://www.kuaipan.cn/index.php?ac=home&amp;op=space</a>‘;</p>
+<p>//用户信息<br>private $userInfoUrl = ‘<a href="http://www.kuaipan.cn/index.php?ac=home&amp;op=userinfo" target="_blank" rel="external">http://www.kuaipan.cn/index.php?ac=home&amp;op=userinfo</a>‘;</p>
+<p>/**</p>
+<ul>
+<li>初始化配置信息</li>
+<li>@param string $username</li>
+<li>@param string $password</li>
+<li>@return void<br>*/<br>public function init($username, $password)<br>{<br>$this-&gt;username = $username;<br>$this-&gt;password = $password;<br>$this-&gt;curl = new MyCurl();<br>}</li>
+</ul>
+<p>/**</p>
+<ul>
+<li>登入<br>*/<br>public function login()<br>{<br>$this-&gt;curl-&gt;get($this-&gt;loginUrl);//获取 cookie<br>$data = array(<br>‘username’=&gt;$this-&gt;username,<br>‘userpwd’=&gt;$this-&gt;password,<br>‘isajax’=&gt;’yes’,<br>‘rememberme’=&gt;1<br>);</li>
+</ul>
+<p>$loginResp = $this-&gt;curl-&gt;post($this-&gt;postUrl, $data);<br>$loginResp = json_decode($loginResp);</p>
+<p>echo “&lt;pre&gt;”;<br>var_dump(json_decode($this-&gt;curl-&gt;get($this-&gt;userInfoUrl)));<br>var_dump(json_decode($this-&gt;curl-&gt;get($this-&gt;spaceUrl)));</p>
+<p>var_dump($loginResp);<br>echo “&lt;/pre&gt;”;<br>}<br>/**</p>
+<ul>
+<li>签到方法<br>*/<br>public function sign()<br>{<br>$signResp = $this-&gt;curl-&gt;get($this-&gt;signUrl);<br>$signResp = json_decode($signResp);<br>$state = null;<br>if(isset($signResp-&gt;state))<br>$state = $signResp-&gt;state;<br>switch ($state)<br>{<br>case ‘-102’:<br>echo ‘已经签过了！’;<br>break;<br>case ‘1’:<br>echo ‘签到成功！ 获得空间：’.$signResp-&gt;rewardsize.’M’;<br>break;<br>default:<br>break;<br>}<br>}<br>}<br>?&gt;</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/05/29/664/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          做百度贴吧签到遇到malformed的问题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/05/24/650/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">思路太好了，一张图片让所有浏览器未响应</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
