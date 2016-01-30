@@ -4,7 +4,7 @@
   <subtitle><![CDATA[有事邮件我 fjjwlzd(at)163]]></subtitle>
   <link href="/rss.xml" rel="self"/>
   <link href="https://doubleshift.github.io/"/>
-  <updated>2016-01-24T18:36:43.000Z</updated>
+  <updated>2016-01-30T02:00:14.000Z</updated>
   <id>https://doubleshift.github.io/</id>
   
   <author>
@@ -15,9 +15,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[WordPress迁移到Hexo]]></title>
+    <link href="https://doubleshift.github.io/2016/01/30/160130/"/>
+    <id>https://doubleshift.github.io/2016/01/30/160130/</id>
+    <published>2016-01-30T01:57:29.000Z</published>
+    <updated>2016-01-30T02:00:14.000Z</updated>
+    <content type="html"><![CDATA[<p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress" target="_blank" rel="external">hexo-migrator-wordpress</a></p>
+<p>Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.<br>Execute the following command after installed. source is the file path or URL of WordPress export file.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-migrator-wordpress <span class="comment">--save</span></span><br><span class="line">$ hexo migrate wordpress &lt;<span class="keyword">source</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>现有问题是不能处理文章标题中的中文和特殊符号。</p>
+<p>从Wordpress迁移过来时，生成的文件名会出现如下例子<br><code>e8-bd-af-e8-bf-9e-e6-8e-a5-e5-92-8c-e7-a1-ac-e8-bf-9e-e6-8e-a5.md</code><br>因为URL中，中文是UTF-8编码。解决办法是写了一个Python脚本，然后从文件内容的id部分提取出文件名，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os,sys,re</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getTitle</span><span class="params">(firstLine)</span>:</span></span><br><span class="line">    strs = <span class="string">':'</span>.join(firstLine.split(<span class="string">':'</span>)[<span class="number">1</span>:])</span><br><span class="line">    strs = strs.replace(<span class="string">"'"</span>, <span class="string">''</span>) </span><br><span class="line">    strs = strs.strip()</span><br><span class="line">    title = <span class="string">'-'</span>.join(strs.split(<span class="string">' '</span>))</span><br><span class="line">    <span class="keyword">return</span> title</span><br><span class="line">    </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    dirName = sys.argv[<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">for</span> root,dirs,fileNames <span class="keyword">in</span> os.walk(dirName):</span><br><span class="line">        <span class="keyword">for</span> fileName <span class="keyword">in</span> fileNames:</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"Old file:"</span>+fileName </span><br><span class="line">            <span class="comment"># print root</span></span><br><span class="line">            fileName = os.path.join(root, fileName)</span><br><span class="line">            f = open(fileName)</span><br><span class="line">            </span><br><span class="line">            <span class="comment"># Get id </span></span><br><span class="line">            <span class="keyword">for</span> line <span class="keyword">in</span> f: </span><br><span class="line">                match=re.findall(<span class="string">'^id:'</span>,line)</span><br><span class="line">                <span class="keyword">if</span> match != []: </span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            </span><br><span class="line">            title = getTitle(line)</span><br><span class="line">            f.close()</span><br><span class="line">            </span><br><span class="line">            newname = title + <span class="string">'.md'</span></span><br><span class="line">            <span class="keyword">print</span> <span class="string">"New file:"</span>+newname</span><br><span class="line">            os.rename(fileName, os.path.join(root,newname))</span><br></pre></td></tr></table></figure>
+<p>如果脚本出错的花，就是标题中出现了特殊的符号，劲量保证id中没有其他的符号。<br>也可以使用title，但是那个就比较麻烦需要是全英文的。</p>
+<p>使用方法:</p>
+<blockquote>
+<p>python convert.py source/_posts/</p>
+</blockquote>
+<p>然后需要替换所有文本中的图片地址，这个需要看个人情况的。<br>我只需要修改域名就行，所以本地用notepad++来批量替换了。</p>
+<p>然后使用七牛的CDN<br>使用了一个python的客户端脚本，用来上传图片。<br><a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress" target="_blank" rel="external">hexo-migrator-wordpress</a></p>
+<p>Export]]>
+    </summary>
+    
+      <category term="Life" scheme="https://doubleshift.github.io/categories/Life/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[OpenCV3.0 + IntelliJ IDEA]]></title>
-    <link href="https://doubleshift.github.io/2016/01/24/opencv/"/>
-    <id>https://doubleshift.github.io/2016/01/24/opencv/</id>
+    <link href="https://doubleshift.github.io/2016/01/24/160124/"/>
+    <id>https://doubleshift.github.io/2016/01/24/160124/</id>
     <published>2016-01-23T22:00:00.000Z</published>
     <updated>2016-01-24T18:36:43.000Z</updated>
     <content type="html"><![CDATA[<h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
@@ -57,8 +86,8 @@
   
   <entry>
     <title><![CDATA[Diary 2015/11/18]]></title>
-    <link href="https://doubleshift.github.io/2015/11/18/dairy20151118/"/>
-    <id>https://doubleshift.github.io/2015/11/18/dairy20151118/</id>
+    <link href="https://doubleshift.github.io/2015/11/18/151118/"/>
+    <id>https://doubleshift.github.io/2015/11/18/151118/</id>
     <published>2015-11-17T22:00:00.000Z</published>
     <updated>2016-01-24T19:07:25.000Z</updated>
     <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
@@ -77,8 +106,8 @@
   
   <entry>
     <title><![CDATA[Diary 2016/01/18]]></title>
-    <link href="https://doubleshift.github.io/2015/11/18/ar-drone/"/>
-    <id>https://doubleshift.github.io/2015/11/18/ar-drone/</id>
+    <link href="https://doubleshift.github.io/2015/11/18/160118/"/>
+    <id>https://doubleshift.github.io/2015/11/18/160118/</id>
     <published>2015-11-17T22:00:00.000Z</published>
     <updated>2016-01-24T19:18:49.000Z</updated>
     <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187ee80aa.jpg-body?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
@@ -98,8 +127,8 @@
   
   <entry>
     <title><![CDATA[Slush 的前奏-Junction: 北欧最大Hackton]]></title>
-    <link href="https://doubleshift.github.io/2015/11/10/junction-slush/"/>
-    <id>https://doubleshift.github.io/2015/11/10/junction-slush/</id>
+    <link href="https://doubleshift.github.io/2015/11/10/151110/"/>
+    <id>https://doubleshift.github.io/2015/11/10/151110/</id>
     <published>2015-11-09T22:00:00.000Z</published>
     <updated>2016-01-17T18:26:53.000Z</updated>
     <content type="html"><![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>

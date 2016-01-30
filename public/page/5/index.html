@@ -168,6 +168,68 @@
 
       <div class="body-wrap">
   
+    <article id="post-642" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/05/11/642/" class="article-date">
+  	<time datetime="2013-05-11T13:35:25.000Z" itemprop="datePublished">2013-05-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/05/11/642/">Android应用编程之Override错误</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>i一、java @override 报错处理</strong></p>
+<p>有时候在自己电脑上编译通过的java代码，在别人那里却编译不通过，总是@override报错，把@override去掉就好了，但不能从根本上解决问题。</p>
+<div>据说这是jdk的问题，@Override是JDK5就已经有了，但有个小小的Bug，就是不支持对接口的实现，认为这不是Override 而JDK6修正了这个Bug，无论是对父类的方法覆盖还是对接口的实现都可以加上@Override。</div><br><div>首先要确保安装了jdk 1.6，</div><br><div></div><br><div>然后，在eclipse中修改配置，在 Windows-&gt;Preferences–&gt;java-&gt;Compiler–&gt;compiler compliance level 中选择 1.6，刷新工程，重新编译下；</div><br><div>如果还是不行，就在报错的工程上，鼠标右键选择 Properties–&gt;Java Compiler–&gt;compiler compliance level 中选择 1.6,刷新工程，重新编译下。</div><br><div></div><br><div><strong>二、Android之@Override详解</strong></div><br><div><br><br>Android的开发者对@Override肯定是非常熟悉，不管是自己的代码中还是书上都会出现，但是他是什么意思呢？如下：<br>@Override是伪代码,表示重写(当然不写也可以),不过写上有如下好处:<br>1、可以当注释用,方便阅读<br>2、编译器可以给你验证@Override下面的方法名是否是你父类中所有的,如果没有则报错比如你如果没写@Override而你下面的方法名又写错了,这时你的编译器是可以通过的(它以为这个方法是你的子类中自己增加的方法)<br>example:<br><br>在重写父类的onCreate时，在方法前面加上@Override系统可以帮你检查方法的正确性。例如：<br><br>publicvoidonCreate(BundlesavedInstanceState){…….}<br>这种写法是正确的，如果你写成<br>publicvoidoncreate(BundlesavedInstanceState){…….}<br>这样编译器会报如下错误——<br>Themethodoncreate(Bundle)oftypeHelloWorldmustoverrideorimplementasupertypemethod，<br>以确保你正确重写onCreate方法。（因为oncreate应该为onCreate）<br>而如果你不加@Override，则编译器将不会检测出错误，而是会认为你新定义了一个方法oncreate。<br><br></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-641" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -769,70 +831,6 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Code/">Code</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-608" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/03/27/608/" class="article-date">
-  	<time datetime="2013-03-27T12:21:36.000Z" itemprop="datePublished">2013-03-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/03/27/608/">修改Ubuntu更新源为网易源</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>cd /etc/apt/<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.lucid" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.lucid</a>             #Ubuntu 10.04<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.maverick" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.maverick</a>      #Ubuntu 10.10<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.natty" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.natty</a>             #Ubuntu 11.04<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.oneiric" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.oneiric</a>          #Ubuntu 11.10<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.precise" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.precise</a>         #Ubuntu 12.04<br>sudo rm -rf sources.list<br>sudo mv sources.list.xxxxx sources.list</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>完成后输入sudo apt-get upgrade就能更更新了。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
 	</div>
 
 
