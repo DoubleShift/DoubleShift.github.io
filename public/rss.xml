@@ -94,15 +94,15 @@
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
     <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-01-24T19:18:49.000Z</updated>
-    <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187ee80aa.jpg-body?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+    <updated>2016-02-17T16:12:22.000Z</updated>
+    <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-829261f187ee80aa.jpg-body" alt=""></p>
 <a id="more"></a>
 <p>[试飞]</p>
 <embed src="http://player.youku.com/player.php/sid/XMTQ1NTgyMjEyMA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br>[第一视角]<br><embed src="http://player.youku.com/player.php/sid/XMTQ1NTgxODgyOA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://upload-images.jianshu.io/upload_images/22964-829261f187ee80aa.jpg-body?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>]]>
+    <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
     
     </summary>
     
@@ -311,32 +311,6 @@
     </summary>
     
       <category term="LinuX" scheme="http://doubles.me/categories/LinuX/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[CSDN翻译]]></title>
-    <link href="http://doubles.me/2014/11/20/1033/"/>
-    <id>http://doubles.me/2014/11/20/1033/</id>
-    <published>2014-11-20T01:42:37.000Z</published>
-    <updated>2016-01-30T01:48:20.000Z</updated>
-    <content type="html"><![CDATA[<p>长期更新，打算长期在CSDN上翻译外文新闻了，这里开始写记录。</p>
-<p><strong>Why JavaScript Is and Continue to Be the First Choise of Programmer？</strong><br>2014/11/16 翻译<br>2014/11/18 发表<br><a href="http://www.dzone.com/articles/why-javascript-and-will" target="_blank" rel="external">原文</a>，<a href="http://code.csdn.net/news/2822698" target="_blank" rel="external">翻译</a></p>
-<p>&nbsp;</p>
-<p><strong>5 Best Open Source Web Browser Security Apps</strong><br>2014/11/20 翻译<br>2014/11/21 发表<br><a href="http://www.smallbusinesscomputing.com/biztools/5-best-open-source-web-browser-security-apps.html" target="_blank" rel="external">原文</a>，<a href="http://code.csdn.net/news/2822757" target="_blank" rel="external">翻译</a></p>
-<p>&nbsp;</p>
-<p><strong>5 Awesome Open Source Backup Software For Linux and Unix-like Systems</strong><br>2014/11/26 翻译<br>2014/11/29 发表<br><a href="http://www.cyberciti.biz/open-source/awesome-backup-software-for-linux-unix-osx-windows-systems/" target="_blank" rel="external">原文</a>，<a href="http://code.csdn.net/news/2822844" target="_blank" rel="external">翻译</a></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>长期更新，打算长期在CSDN上翻译外文新闻了，这里开始写记录。</p>
-<p><strong>Why JavaScript Is and Continue to Be the First Choise of Programmer？</strong><br>2014/11/1]]>
-    </summary>
-    
-      <category term="翻译" scheme="http://doubles.me/tags/%E7%BF%BB%E8%AF%91/"/>
-    
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
     
   </entry>
   
