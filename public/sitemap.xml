@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://doubles.me/2016/02/29/160229/</loc>
+    <lastmod>2016-02-29T21:17:17.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://doubles.me/translate/index.html</loc>
     <lastmod>2016-02-17T16:28:27.000Z</lastmod>
   </url>
@@ -44,11 +49,6 @@
   <url>
     <loc>http://doubles.me/2015/05/06/1075/</loc>
     <lastmod>2016-01-30T01:48:20.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/10/02/891/</loc>
-    <lastmod>2016-01-30T01:48:19.000Z</lastmod>
   </url>
   
   <url>
@@ -117,17 +117,22 @@
   </url>
   
   <url>
+    <loc>http://doubles.me/2013/10/02/891/</loc>
+    <lastmod>2016-01-30T01:48:19.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://doubles.me/2014/01/26/980/</loc>
     <lastmod>2016-01-30T01:48:19.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/05/30/665/</loc>
+    <loc>http://doubles.me/2013/05/29/688/</loc>
     <lastmod>2016-01-30T01:48:18.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/07/07/749/</loc>
+    <loc>http://doubles.me/2013/06/06/725/</loc>
     <lastmod>2016-01-30T01:48:18.000Z</lastmod>
   </url>
   
@@ -162,32 +167,12 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/05/29/664/</loc>
+    <loc>http://doubles.me/2013/05/30/665/</loc>
     <lastmod>2016-01-30T01:48:18.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/08/02/775/</loc>
-    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/08/02/773/</loc>
-    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/07/17/765/</loc>
-    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/07/16/763/</loc>
-    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/06/06/725/</loc>
+    <loc>http://doubles.me/2013/07/07/749/</loc>
     <lastmod>2016-01-30T01:48:18.000Z</lastmod>
   </url>
   
@@ -197,22 +182,37 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/05/29/688/</loc>
+    <loc>http://doubles.me/2013/07/16/763/</loc>
     <lastmod>2016-01-30T01:48:18.000Z</lastmod>
   </url>
   
   <url>
+    <loc>http://doubles.me/2013/07/17/765/</loc>
+    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/08/02/773/</loc>
+    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/08/02/775/</loc>
+    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/05/29/664/</loc>
+    <lastmod>2016-01-30T01:48:18.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/03/02/529/</loc>
+    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://doubles.me/2013/03/27/608/</loc>
-    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/03/26/605/</loc>
-    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/03/19/600/</loc>
     <lastmod>2016-01-30T01:48:17.000Z</lastmod>
   </url>
   
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/05/11/630/</loc>
+    <loc>http://doubles.me/2013/03/28/611/</loc>
     <lastmod>2016-01-30T01:48:17.000Z</lastmod>
   </url>
   
@@ -247,27 +247,7 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/03/02/529/</loc>
-    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/05/11/628/</loc>
-    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/04/25/623/</loc>
-    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/04/22/621/</loc>
-    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2013/04/21/619/</loc>
+    <loc>http://doubles.me/2013/03/19/600/</loc>
     <lastmod>2016-01-30T01:48:17.000Z</lastmod>
   </url>
   
@@ -277,13 +257,33 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/03/28/611/</loc>
+    <loc>http://doubles.me/2013/04/21/619/</loc>
     <lastmod>2016-01-30T01:48:17.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/01/09/315/</loc>
-    <lastmod>2016-01-30T01:48:16.000Z</lastmod>
+    <loc>http://doubles.me/2013/04/22/621/</loc>
+    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/04/25/623/</loc>
+    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/05/11/628/</loc>
+    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/05/11/630/</loc>
+    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2013/03/26/605/</loc>
+    <lastmod>2016-01-30T01:48:17.000Z</lastmod>
   </url>
   
   <url>
@@ -342,12 +342,12 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/02/24/390/</loc>
+    <loc>http://doubles.me/2013/01/09/315/</loc>
     <lastmod>2016-01-30T01:48:16.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://doubles.me/2013/01/06/311/</loc>
+    <loc>http://doubles.me/2013/02/24/390/</loc>
     <lastmod>2016-01-30T01:48:16.000Z</lastmod>
   </url>
   
@@ -362,8 +362,8 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2012/11/26/190/</loc>
-    <lastmod>2016-01-30T01:48:15.000Z</lastmod>
+    <loc>http://doubles.me/2013/01/06/311/</loc>
+    <lastmod>2016-01-30T01:48:16.000Z</lastmod>
   </url>
   
   <url>
@@ -372,7 +372,17 @@
   </url>
   
   <url>
+    <loc>http://doubles.me/2012/12/11/234/</loc>
+    <lastmod>2016-01-30T01:48:15.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://doubles.me/2012/12/10/227/</loc>
+    <lastmod>2016-01-30T01:48:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2012/11/20/147/</loc>
     <lastmod>2016-01-30T01:48:15.000Z</lastmod>
   </url>
   
@@ -402,7 +412,7 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2012/12/11/234/</loc>
+    <loc>http://doubles.me/2012/11/26/190/</loc>
     <lastmod>2016-01-30T01:48:15.000Z</lastmod>
   </url>
   
@@ -427,18 +437,18 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2012/11/23/160/</loc>
-    <lastmod>2016-01-30T01:48:15.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://doubles.me/2012/12/11/242/</loc>
     <lastmod>2016-01-30T01:48:15.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://doubles.me/2012/11/20/147/</loc>
+    <loc>http://doubles.me/2012/11/23/160/</loc>
     <lastmod>2016-01-30T01:48:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2012/11/05/48/</loc>
+    <lastmod>2016-01-30T01:48:14.000Z</lastmod>
   </url>
   
   <url>
@@ -447,22 +457,12 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2012/11/12/69/</loc>
+    <loc>http://doubles.me/2012/11/13/97/</loc>
     <lastmod>2016-01-30T01:48:14.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://doubles.me/2012/11/13/84/</loc>
-    <lastmod>2016-01-30T01:48:14.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2012/11/12/57/</loc>
-    <lastmod>2016-01-30T01:48:14.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2012/11/13/97/</loc>
     <lastmod>2016-01-30T01:48:14.000Z</lastmod>
   </url>
   
@@ -497,12 +497,17 @@
   </url>
   
   <url>
+    <loc>http://doubles.me/2012/11/12/69/</loc>
+    <lastmod>2016-01-30T01:48:14.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://doubles.me/2012/11/03/41/</loc>
     <lastmod>2016-01-30T01:48:14.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://doubles.me/2012/11/05/48/</loc>
+    <loc>http://doubles.me/2012/11/12/57/</loc>
     <lastmod>2016-01-30T01:48:14.000Z</lastmod>
   </url>
   
