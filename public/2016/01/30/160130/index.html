@@ -14,7 +14,7 @@ Export your WordPress in “Tools” → “Export” → “WordPress” in you
 <meta property="og:site_name" content="双人份 Blog">
 <meta property="og:description" content="迁移WordPress使用插件 hexo-migrator-wordpress
 Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.Execute the following command after installed. source is the file path or URL of Wor">
-<meta property="og:updated_time" content="2016-02-01T03:42:07.000Z">
+<meta property="og:updated_time" content="2016-03-01T20:59:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WordPress迁移到Hexo">
 <meta name="twitter:description" content="迁移WordPress使用插件 hexo-migrator-wordpress
@@ -224,7 +224,7 @@ Export your WordPress in “Tools” → “Export” → “WordPress” in you
 <p>python convert.py source/_posts/</p>
 </blockquote>
 <h2 id="替换附件地址+使用CDN">替换附件地址+使用CDN</h2><p>然后需要替换所有文本中的图片地址，这个需要看个人情况的。<br>我只需要修改域名就行，所以本地用notepad++来批量替换了。</p>
-<p>然后使用七牛的CDN<br>使用了一个python的客户端脚本，用来上传图片。<br><a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external"></a></p>
+<p>然后使用七牛的CDN<br>使用了一个python的客户端脚本，用来上传图片。<br><a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a><br>新建一个目录保存图片，然后运行 <code>python qiniu_sync</code> 就可以自动同步。</p>
 <h2 id="绑定域名">绑定域名</h2><p>Github的域名绑定比较简单，只需要新建CNAME文件就行。<br>首先 <code>ping</code> 你的 Github域名，<code>ping doubleshift.github.com</code>。<br>然后得到一个IP地址，将域名解析A记录到这个IP。<br>然后创建一个文件名为<code>CNAME</code>的空文件，放到<code>source</code>就是你放博客<code>_posts</code>的父目录。<br>然后里面内容是你的域名，我的就是<code>doubles.me</code>。<br>之后<code>Hexo g -d</code>，然后就等解析生效。</p>
 <h2 id="添加统计">添加统计</h2><p>使用了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a>的统计, 只需要在模版里加入2行代码就行。<br>具体教程可以参考这里 <a href="http://wangcaiyong.com/2015/06/26/busuanzi/" target="_blank" rel="external">Hexo静态博客使用不蒜子添加计数功能</a>。</p>
 
