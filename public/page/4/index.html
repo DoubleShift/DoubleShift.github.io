@@ -106,7 +106,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/BackTrack/" style="font-size: 15.71px;">BackTrack</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/android/" style="font-size: 14.29px;">android</a> <a href="/tags/cocos2d/" style="font-size: 12.86px;">cocos2d</a> <a href="/tags/diary/" style="font-size: 12.86px;">diary</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/fml/" style="font-size: 10px;">fml</a> <a href="/tags/hack/" style="font-size: 20px;">hack</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/linux/" style="font-size: 11.43px;">linux</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/sae/" style="font-size: 14.29px;">sae</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/内涵/" style="font-size: 11.43px;">内涵</a> <a href="/tags/吐槽/" style="font-size: 11.43px;">吐槽</a> <a href="/tags/开发/" style="font-size: 18.57px;">开发</a> <a href="/tags/微信公众平台/" style="font-size: 14.29px;">微信公众平台</a> <a href="/tags/杂碎/" style="font-size: 12.86px;">杂碎</a> <a href="/tags/淘宝/" style="font-size: 10px;">淘宝</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a> <a href="/tags/网站/" style="font-size: 17.14px;">网站</a> <a href="/tags/翻墙/" style="font-size: 14.29px;">翻墙</a> <a href="/tags/自动登入/" style="font-size: 11.43px;">自动登入</a> <a href="/tags/采集/" style="font-size: 11.43px;">采集</a>
+						<a href="/tags/BackTrack/" style="font-size: 15.71px;">BackTrack</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/VPS/" style="font-size: 10px;">VPS</a> <a href="/tags/android/" style="font-size: 14.29px;">android</a> <a href="/tags/cocos2d/" style="font-size: 12.86px;">cocos2d</a> <a href="/tags/diary/" style="font-size: 12.86px;">diary</a> <a href="/tags/error/" style="font-size: 10px;">error</a> <a href="/tags/fml/" style="font-size: 10px;">fml</a> <a href="/tags/hack/" style="font-size: 20px;">hack</a> <a href="/tags/hackthon/" style="font-size: 10px;">hackthon</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/linux/" style="font-size: 11.43px;">linux</a> <a href="/tags/php/" style="font-size: 10px;">php</a> <a href="/tags/sae/" style="font-size: 14.29px;">sae</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/云/" style="font-size: 14.29px;">云</a> <a href="/tags/内涵/" style="font-size: 11.43px;">内涵</a> <a href="/tags/吐槽/" style="font-size: 11.43px;">吐槽</a> <a href="/tags/开发/" style="font-size: 18.57px;">开发</a> <a href="/tags/微信公众平台/" style="font-size: 14.29px;">微信公众平台</a> <a href="/tags/杂碎/" style="font-size: 12.86px;">杂碎</a> <a href="/tags/淘宝/" style="font-size: 10px;">淘宝</a> <a href="/tags/硬件/" style="font-size: 10px;">硬件</a> <a href="/tags/网站/" style="font-size: 17.14px;">网站</a> <a href="/tags/翻墙/" style="font-size: 14.29px;">翻墙</a> <a href="/tags/自动登入/" style="font-size: 11.43px;">自动登入</a> <a href="/tags/采集/" style="font-size: 11.43px;">采集</a>
 					</div>
 				</section>
 				
@@ -171,6 +171,153 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-763" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/07/16/763/" class="article-date">
+  	<time datetime="2013-07-16T16:21:15.000Z" itemprop="datePublished">2013-07-16</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/07/16/763/">WordPress搭建一个微信公众平台网站</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>需要使用微信制作一个旅游网站导航，所以这里介绍一下使用wordpress搭建整个网站的过程。</p>
+<h1 id="需求：">需求：</h1><p>1.网页中要加入预定功能</p>
+<p>2.评论，预定最好和微信信息绑定</p>
+<p>3.需要加入一个地图插件，在说明里可以展示地图</p>
+<p>4.首页需要有一个图片轮播，</p>
+<p>5.微信当然有后台管理咯</p>
+<h1 id="方案：">方案：</h1><p>1.使用带有预定功能的主题，或者metro 风格的主题（自带地图）</p>
+<p>比如wordpress hotel press ，但是修改的内容则比较多，所以废弃了。</p>
+<p>2.使用一个手机主题，然后制作一个页面作为首页。</p>
+<p>使用 form manageer 制作预定表单，</p>
+<p>然后使用google map的插件 来制作地图展示。</p>
+<p>但是google map不靠谱啊，最后觉定使用wp-ueditor，就是百度的开源编辑器。内部集成了百度地图插入，可惜是图片。</p>
+<p>不过在移动平台上显示图片似乎更好哈！</p>
+<p>微信决定使用 <a href="http://www.we7.cc/" target="_blank" rel="external">微擎  </a>    ，很适合我哈。小九后台上不去，乐享又收费，还是很乐意把所有数据都控制在自己手上的。</p>
+<p>然后就差不多都解决了。后面只需要修改wordpress的验证过程，让他能够识别微信的登入方式。</p>
+<h1 id="制作过程：">制作过程：</h1><h2 id="WordPress修改过程:">WordPress修改过程:</h2><ol>
+<li><h3 id="新建一个静态首页"><span style="line-height: 13px;">新建一个静态首页</span></h3>开始没有注意，导致在手机上显示的还是放大的页面，没有缩放，</li>
+</ol>
+<p>在网页的&lt;head&gt;中增加如下这段代码，可以让网页的宽度自动适应手机屏幕的宽度。</p>
+<p>[html]&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;&quot;&gt;[/html]</p>
+<h3 id="2-集成ueditor">2.集成ueditor</h3><p>WordPress那个自带的编辑器就不说了，早就想换了，针对英文用户，难用的很。目前百度已经给出了将Ueditor集成到Wordpress的方法和压缩包，免插件替换，自我感觉不会对稳定性造成影响又能体验强大的中文编辑功能。</p>
+<p>WordPress中集成UEditor(适用WP3.2.1或以上版)</p>
+<p>集成步骤：</p>
+<ol>
+<li>下载<a href="http://ueditor.baidu.com/download/wp-ueditor.zip" target="_blank" rel="external">wp-ueditor.zip</a>.解压后将ueditor文件夹复制到wp-content/plugins下 。</li>
+<li>将general-template.php 覆盖到wp-includes下 （最好先备份之前的文件，不喜欢可以换回来） 。</li>
+<li>修改ueditor/editor_config.js里的URL为网站的绝对路径 。<br>最近没事了可以试试，用了演示界面真心觉得太好用了。确实，我们国人开发的编辑器对中文支持肯定更好的。而且比较好的是Ueditor连代码高亮都有，省的插件了。</li>
+</ol>
+<h3 id="3-安装form_manager插件">3.安装form manager插件</h3><p>这个就不用怎么说了，搜索一下，在线安装，使用方法是设置完表单后里面会生成一段代码，比如这个</p>
+<p>[contact-form-7 id=”117” title=”form”]</p>
+<p>黏贴到文章里面就行了。</p>
+<h3 id="4-修改评论">4.修改评论</h3><h3 id="WordPress主题去除广告">WordPress主题去除广告</h3><p>我修改的这个主题里面还加了判断，电脑上不出广告，手机中再出广告。</p>
+<p>一直没有发现，既然发现了就来去掉去。</p>
+<p>get_template_part(‘ad’); 是这一句添加了广告。</p>
+<p>看一下他的介绍</p>
+<p><strong>描述:</strong><br>加载一个制定的模板到另一个模板里面(不同于包含header,sidebar,footer).<br>使得一个主题使用子模板来实现代码段重用变得简单</p>
+<p>用于在模板中包含指定的模板文件,只需用指定参数slug和name就可以包含文件{slug}-{name}.php,最重要的功能是如果没有这个文件就包含没有{name}的.php文件文件</p>
+<p>简单点就是这个调用，插入了主题目录下的ad.php文件。</p>
+<p>把里面的内容给去掉就ok了。</p>
+<h3 id="WordPress修改footer">WordPress修改footer</h3><p>这个主题很搓，有广告不说，还给footer加密，而且footer.php.php取错名字了。</p>
+<p>我们给改成footer.php,然后解密一下。</p>
+<p><a href="http://tool.lu/php" target="_blank" rel="external">http://tool.lu/php</a>   解密地址 phpjm.net这个东东加密的。</p>
+<p><strong>WordPress中自定义sql语句</strong></p>
+<p><code>``global</code> <code>$wpdb``;</code></p>
+<p><code>$wpdb-&amp;gt;query(``&#39;query&#39;``); //查询</code></p>
+<p><code>$result``= ``$wpdb``-&amp;gt;get_results(``&quot;SELECT * FROM $wpdb-&amp;gt;posts WHERE post_type = &#39;question&#39;&quot;``);   //返回的是一个对象array，取值方式  $result[0]-&amp;gt;id;</code></p>
+<p>用这几句就够了，具体的可以看这里 <a href="http://www.favortt.com/wordpress-sql-analysis-query.html" target="_blank" rel="external">http://www.favortt.com/wordpress-sql-analysis-query.html</a></p>
+<p><strong>WordPress中如何设置Cookies</strong></p>
+<p>1.在主题文件functions.php中添加以下代码，以设置cookie</p>
+<p>[php]</p>
+<p>/**</p>
+<ul>
+<li><p>函数名称，setcookie,自定义cookie，为了保存微信的openid<br>*/<br>function set_openid_cookie() {<br>if (!isset($_COOKIE[‘openid’])) {<br>global $wpdb;<br>$openid = $_GET[‘openid’];</p>
+<p>$result = $wpdb-&gt;get_results(&quot;select * from wx_user where openid = $openid&quot;);<br>//var_dump($result);<br>$name = $result[0]-&gt;nickname;<br>$email = $result[0]-&gt;email;<br>$grav_url = $result[0]-&gt;gravatar;</p>
+<p>setcookie(‘openid’, $openid, time()+1209600, COOKIEPATH, COOKIE_DOMAIN, false);<br>setcookie(‘name’, $name, time()+1209600, COOKIEPATH, COOKIE_DOMAIN, false);<br>setcookie(‘email’, $email, time()+1209600, COOKIEPATH, COOKIE_DOMAIN, false);<br>setcookie(‘grav_url’, $grav_url, time()+1209600, COOKIEPATH, COOKIE_DOMAIN, false);<br>}<br>}<br>add_action( ‘init’, ‘set_openid_cookie’);</p>
+</li>
+</ul>
+<p>[/]</p>
+<p>init 就是初始化中执行了的，不需要再次调用。</p>
+<p>2、然后在需要调用cookie值的地方读取cookie</p>
+<p>[php]</p>
+<p>if (&lt;a href=&quot;<a href="http://www.php.net/isset&quot;&gt;isset&lt;/a&gt;($_COOKIE[&#39;sitename_newvisitor" target="_blank" rel="external">http://www.php.net/isset&quot;&gt;isset&lt;/a&gt;($_COOKIE[&#39;sitename_newvisitor</a>‘])) {<br> echo ‘Welcome back!’;<br> }<br> else {<br> echo ‘Hello new visitor!’;<br> }</p>
+<p>[/]</p>
+<p>&lt;strong&gt;Wordpress中修改评论头像和作者信息&lt;/strong&gt;</p>
+<p>首先打开 comments.php，在头部加入</p>
+<p>[php]</p>
+<p>$openid = $_COOKIE[‘openid’];<br> $name = $_COOKIE[‘name’];<br> $email = $_COOKIE[‘email’];</p>
+<p>[/php]</p>
+<p>这3据代码，读取的是我们前面保存的信息</p>
+<p>然后找到comment-form-author 这一段，把里面的value修改成$name 和$email，$url去掉了,微信不需要</p>
+<p>[php]</p>
+<p>&lt;p class=&quot;comment-form-author&quot;&gt;<br> &lt;input id=&quot;author&quot; name=&quot;author&quot; type=&quot;text&quot; value=&quot;&lt;?php echo $name; ?&gt;&quot; size=&quot;30&quot; placeholder=&quot;&lt;?php _e(‘Name’, ‘zipe’); ?&gt;(*)&quot; required&gt;</p>
+<p> &lt;/p&gt;<br> &lt;p class=&quot;comment-form-email&quot;&gt;<br> &lt;input id=&quot;email&quot; name=&quot;email&quot; type=&quot;email&quot; value=&quot;&lt;?php echo $email; ?&gt;&quot; size=&quot;30&quot; placeholder=&quot;&lt;?php _e(‘Email’, ‘zipe’); ?&gt;(*)&quot; required&gt;</p>
+<p> &lt;/p&gt;</p>
+<p>[php]</p>
+<p>由于我们头像是要微信的，所以也要修改掉</p>
+<p>打开主题目录下的functions.php</p>
+<p>搜索get_avatar</p>
+<p>然后替换这个函数为</p>
+<p>[php]</p>
+<p>&lt;?php</p>
+<p> //echo get_avatar( $comment, 36 );<br> $grav_url = $_COOKIE[‘grav_url’];<br> echo &quot;&lt;img src=’$grav_url’/&gt;&quot;;<br> ?&gt;</p>
+<p>[/php]</p>
+<p>OK,现在我们的用户访问后，如果评论的话，会自动显示他的个人微信信息和头像。</p>
+<p>不过要注意，我们微信生成的访问网址需要在首页带一个？openid的参数</p>
+<p>例如<a href="http://127.0.0.1/?openid=xxxxxxx" target="_blank" rel="external">http://127.0.0.1/?openid=xxxxxxx</a>  ,这个样子，同时这个xxxxxxx需要已经进行绑定了才行。</p>
+<p>不过我们会要求用户优先进行绑定的。</p>
+<h3 id="5-集成微信">5.集成微信</h3>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信公众平台/">微信公众平台</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Web/">Web</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-759" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -1286,99 +1433,6 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Code/">Code</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-643" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/05/12/643/" class="article-date">
-  	<time datetime="2013-05-12T18:41:37.000Z" itemprop="datePublished">2013-05-12</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/05/12/643/">openshift部署python环境及端口问题</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://github.com/openshift/openshift-diy-py27-django" target="_blank" rel="external">https://github.com/openshift/openshift-diy-py27-django</a></p>
-<p>按照这个方式可以部署python2.7</p>
-<p>Create a new OpenShift app:</p>
-<ul>
-<li><p><code>rhc app create -a &amp;lt;app_name&amp;gt; -t diy-0.1</code><br>Login to the application host using the credentials from the above command. It will look like<code>ssh://c8812345:123214@&amp;lt;app_name&amp;gt;-namespace.rhcloud.com</code>:</p>
-</li>
-<li><p><code>ssh c8812345:123214@&amp;lt;app_name&amp;gt;-namespace.rhcloud.com</code><br>Change into the application tmp directory:</p>
-</li>
-<li><p><code>cd $OPENSHIFT_TMP_DIR</code><br>Download Python2.7 and extract:</p>
-</li>
-<li><p><code>wget http://python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2</code></p>
-</li>
-<li><p><code>tar jxf Python-2.7.3.tar.bz2</code><br>Build and install Python</p>
-</li>
-<li><p><code>./configure --prefix=$OPENSHIFT_DATA_DIR</code></p>
-</li>
-<li><p><code>make ; make install</code><br>Export new Python path for later configuration (you will need to run this if you logout, etc.):</p>
-</li>
-<li><p><code>export PATH=$OPENSHIFT_DATA_DIR/bin:$PATH</code><br>Check that new Python is used (should be <code>Python 2.7.3</code>):</p>
-</li>
-<li><p><code>python -V</code><br>Install setuptools and pip</p>
-</li>
-<li><p><code>cd $OPENSHIFT_TMP_DIR</code></p>
-</li>
-<li><code>wget http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz</code></li>
-<li><code>tar zxf setuptools-0.6c11.tar.gz</code></li>
-<li><code>cd setuptools-0.6c11</code></li>
-<li><code>python setup.py install</code></li>
-<li><code>cd $OPENSHIFT_TMP_DIR</code></li>
-<li><code>wget http://pypi.python.org/packages/source/p/pip/pip-1.1.tar.gz</code></li>
-<li><code>tar zxf pip-1.1.tar.gz</code></li>
-<li><code>cd pip-1.1</code></li>
-<li><code>python setup.py install</code><br>端口绑定的问题</li>
-</ul>
-<p>openshift 不是每个端口都可以对外的。大部分你熟悉的端口都已经<a href="https://openshift.redhat.com/community/kb/kb-e1038-i-cant-bind-to-a-port" target="_blank" rel="external">在内外两边都为官方应用保留了</a>，内部你只可以用 15000 – 35530，对外只可以 bind 到 ${OPENSHIFT_INTERNAL_PORT} 也就是 8080，会通过 80 端口转发给外部。</p>
-<p>&nbsp;</p>
-<p>使用 $ rhc port-forward -a applicationName 则可以将端口转发到本地</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
 	</div>
 
 

@@ -4,7 +4,7 @@
   <subtitle><![CDATA[有事邮件我 fjjwlzd(at)163]]></subtitle>
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-02-29T21:17:17.000Z</updated>
+  <updated>2016-03-10T04:18:50.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -15,13 +15,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[VPS Bench]]></title>
+    <link href="http://doubles.me/2016/03/10/160310/"/>
+    <id>http://doubles.me/2016/03/10/160310/</id>
+    <published>2016-03-09T22:00:00.000Z</published>
+    <updated>2016-03-10T04:18:50.000Z</updated>
+    <content type="html"><![CDATA[<p>总是会买各种各样的VPS，买完就要测速，然后就是闲着。真的是浪费生命浪费钱啊。<br>这里总结一下买来VPS后如何了解VPS的情况。<br>推荐在你常用的时候跑测试，毕竟服务器的负载不一样跑出来的结果也不一样。<br>我用AWS的机器来测试一下。</p>
+<a id="more"></a>
+<h2 id="1-_网络性能测试">1. 网络性能测试</h2><p>首先执行<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- bench.sh <span class="string">| bash</span></span><br></pre></td></tr></table></figure></p>
+<p>其中的那个 <code>bench.sh</code> 就是域名， 也是脚本名字了。我真的很崇拜能想到这个的人。<br>再来看下<code>bench.sh</code>能干什么:</p>
+<ol>
+<li>显示当前测试的各种系统信息；</li>
+<li>取自世界多处的知名数据中心的测试点，下载测试比较全面；</li>
+<li>支持 IPv6 下载测速；</li>
+<li>IO 测试三次，并显示平均值。</li>
+</ol>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603101.png-body" alt=""></p>
+<p>另一个选择就是使用<code>Speedtest-cli</code>,这个还能看到上传速度。<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -O speedtest-<span class="keyword">cli</span> https://raw.githubusercontent.com/sivel/speedtest-<span class="keyword">cli</span>/master/speedtest_cli.py</span><br><span class="line">chmod +<span class="built_in">x</span> speedtest-<span class="keyword">cli</span></span><br><span class="line">./speedtest_cli</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603102.png-body" alt=""></p>
+<h2 id="2-_IO性能测试">2. IO性能测试</h2><p>测试硬盘IO性能，对硬盘的损害很大，不建议多次或长时间尝试，命令如下：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dd <span class="keyword">if</span>=/dev/zero of=<span class="keyword">test</span> <span class="keyword">bs</span>=64k <span class="keyword">count</span>=4k oflag=dsync</span><br></pre></td></tr></table></figure></p>
+<p>一般来说，如果测试结果超过10M，对正常建站就无影响。超过50M，就是非常给力状态。<br>不过现在一般都是SSD了，所以上百也正常。<br>（注：本测试对硬盘损伤较大，请酌情使用,请勿长时间使用，会被封的）<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603103.png-body" alt=""></p>
+<h2 id="3-_综合性能测试">3. 综合性能测试</h2><p>这里用的是<code>UnixBench</code>，一款国外提供的linux性能专用软件，可以跑出分数来让你做对比：<br>总分情况，低于400的就算性能低下；600-800是属于正常VPS水准；超过1000分性能就算给力。<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wget http:<span class="comment">//7xnueu.com1.z0.glb.clouddn.com/2016/03/UnixBench5.1.3.tgz</span></span><br><span class="line">tar xvf UnixBench5<span class="number">.1</span><span class="number">.3</span>.tar.gz </span><br><span class="line">cd UnixBench5<span class="number">.1</span><span class="number">.3</span> </span><br><span class="line">./Run</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603104.png-body" alt=""><br>说实话，这个成绩也是吓到我了。一般都是买廉价的VPS用来翻墙的，所以跑分多为200-400的样子，AWS将近2000着实给力。</p>
+<p>Referrence:</p>
+<ol>
+<li><a href="https://teddysun.com/444.html" target="_blank" rel="external">一键测试脚本bench.sh</a></li>
+<li><a href="https://github.com/sivel/speedtest-cli" target="_blank" rel="external">speedtest-cli</a></li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>总是会买各种各样的VPS，买完就要测速，然后就是闲着。真的是浪费生命浪费钱啊。<br>这里总结一下买来VPS后如何了解VPS的情况。<br>推荐在你常用的时候跑测试，毕竟服务器的负载不一样跑出来的结果也不一样。<br>我用AWS的机器来测试一下。</p>]]>
+    
+    </summary>
+    
+      <category term="VPS" scheme="http://doubles.me/tags/VPS/"/>
+    
+      <category term="Code" scheme="http://doubles.me/categories/Code/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[4年一遇的闰年，晒晒我这1年用过的科技产品]]></title>
     <link href="http://doubles.me/2016/02/29/160229/"/>
     <id>http://doubles.me/2016/02/29/160229/</id>
     <published>2016-02-28T22:00:00.000Z</published>
-    <updated>2016-02-29T21:17:17.000Z</updated>
+    <updated>2016-03-10T04:08:41.000Z</updated>
     <content type="html"><![CDATA[<h2 id="1-_AR-Drone">1. AR.Drone</h2><p>学校一门 Real Time Software Development 课程做的就是AR.Drone的自动搜救。</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-829261f187ee80aa.jpg-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>
 <a id="more"></a>
 <h2 id="2-_RaspiBerry">2. RaspiBerry</h2><p>DHR 项目中接触到的，不过在新办公室也有。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/216f687a1f0c44de72d516d850ccad7a.jpg-body" alt=""></p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_144808.jpg-body" alt=""></p>
@@ -31,16 +71,18 @@
 <h2 id="4-_ChromeCast">4. ChromeCast</h2><p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_150338.jpg-body" alt=""><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_150311.jpg-body" alt=""></p>
 <h2 id="5-_3D_Connextion">5. 3D Connextion</h2><p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_151236.jpg-body" alt=""></p>
 <h2 id="6-_Apple_TV">6. Apple TV</h2><h2 id="7-_VR_眼镜">7. VR 眼镜</h2><p>新工作室的小宅墨镜。居然是国产的。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/da5a301c-4da0-4f08-8030-34487f5a3eb3.jpg-body" alt=""></p>
-<h2 id="8-_iwon智能手环">8. iwon智能手环</h2><p>自己买的，并没有什么用处。处于吃灰状态。</p>
+<h2 id="8-_iwon智能手环">8. iwon智能手环</h2><p>自己买的，并没有什么用处。处于吃灰状态。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160303_165445.jpg-body" alt=""></p>
 <h2 id="9-_Dell_E6630">9. Dell E6630</h2><p>发的笔记本<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/dsc_0098.jpg-body" alt=""></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="1-_AR-Drone">1. AR.Drone</h2><p>学校一门 Real Time Software Development 课程做的就是AR.Drone的自动搜救。</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
     
     </summary>
     
       <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
     
   </entry>
   
@@ -49,7 +91,7 @@
     <link href="http://doubles.me/2016/01/30/160130/"/>
     <id>http://doubles.me/2016/01/30/160130/</id>
     <published>2016-01-30T01:57:29.000Z</published>
-    <updated>2016-03-01T20:59:42.000Z</updated>
+    <updated>2016-03-10T04:08:33.000Z</updated>
     <content type="html"><![CDATA[<h2 id="迁移WordPress">迁移WordPress</h2><p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress" target="_blank" rel="external">hexo-migrator-wordpress</a></p>
 <p>Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.<br>Execute the following command after installed. source is the file path or URL of WordPress export file.</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-migrator-wordpress <span class="comment">--save</span></span><br><span class="line">$ hexo migrate wordpress &lt;<span class="keyword">source</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -74,7 +116,7 @@
     
     </summary>
     
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+      <category term="Code" scheme="http://doubles.me/categories/Code/"/>
     
   </entry>
   
@@ -83,7 +125,7 @@
     <link href="http://doubles.me/2016/01/24/160124/"/>
     <id>http://doubles.me/2016/01/24/160124/</id>
     <published>2016-01-23T22:00:00.000Z</published>
-    <updated>2016-01-24T18:36:43.000Z</updated>
+    <updated>2016-03-10T04:08:25.000Z</updated>
     <content type="html"><![CDATA[<h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
 <p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
 <a id="more"></a>
@@ -94,16 +136,16 @@
 <li>Windows 10 Pro</li>
 </ul>
 <h2 id="Instruction">Instruction</h2><ol>
-<li><p>下载OpenCV3.0 for Windows<br>运行 <em>opencv-3.0.0.exe</em> ，解压到磁盘任意位置。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/clipboard.png" alt=""></p>
+<li><p>下载OpenCV3.0 for Windows<br>运行 <em>opencv-3.0.0.exe</em> ，解压到磁盘任意位置。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/clipboard.png" alt=""></p>
 </li>
-<li><p>用IntelliJ IDEA创建一个空项目，然后打开 “File-&gt;Project Structure-&gt;Libraries”<br>添加一个库， “opencb/build/java/opencv300.jar”<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/a81ebcb1-4d84-47e0-a700-01166355b29c.png" alt=""></p>
+<li><p>用IntelliJ IDEA创建一个空项目，然后打开 “File-&gt;Project Structure-&gt;Libraries”<br>添加一个库， “opencb/build/java/opencv300.jar”<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/a81ebcb1-4d84-47e0-a700-01166355b29c.png" alt=""></p>
 </li>
-<li><p>还需要设置运行路径，”Run-&gt;Edit Configurations” 找到”VM options” 设置为 “-Djava.library.path=-Djava.library.path=G:\RTSD\opencv\build\java\x64”<br>当然，需要选择x86 或 x64。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2c58f57d-eb65-4d03-a82b-7f260b5f2f73.png" alt=""></p>
+<li><p>还需要设置运行路径，”Run-&gt;Edit Configurations” 找到”VM options” 设置为 “-Djava.library.path=-Djava.library.path=G:\RTSD\opencv\build\java\x64”<br>当然，需要选择x86 或 x64。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/2c58f57d-eb65-4d03-a82b-7f260b5f2f73.png" alt=""></p>
 </li>
 <li><p>测试<br>import org.opencv.core.Core;<br>import org.opencv.core.CvType;<br>import org.opencv.core.Mat;</p>
 </li>
 </ol>
-<p>public class Main<br>{<br>    public static void main( String[] args )<br>    {<br>        System.loadLibrary( Core.NATIVE_LIBRARY_NAME );<br>        Mat mat = Mat.eye( 3, 3, CvType.CV_8UC1 );<br>        System.out.println( “mat = “ + mat.dump() );<br>    }<br>}<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/8e198c39-c730-4193-9d0c-2e3abda38bd9.png" alt=""></p>
+<p>public class Main<br>{<br>    public static void main( String[] args )<br>    {<br>        System.loadLibrary( Core.NATIVE_LIBRARY_NAME );<br>        Mat mat = Mat.eye( 3, 3, CvType.CV_8UC1 );<br>        System.out.println( “mat = “ + mat.dump() );<br>    }<br>}<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/8e198c39-c730-4193-9d0c-2e3abda38bd9.png" alt=""></p>
 <h2 id="References">References</h2><ol>
 <li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse" target="_blank" rel="external">http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse</a></li>
 <li><a href="http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html" target="_blank" rel="external">http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html</a></li>
@@ -117,6 +159,8 @@
     
       <category term="OpenCV" scheme="http://doubles.me/tags/OpenCV/"/>
     
+      <category term="Code" scheme="http://doubles.me/categories/Code/"/>
+    
   </entry>
   
   <entry>
@@ -124,18 +168,20 @@
     <link href="http://doubles.me/2015/11/18/151118/"/>
     <id>http://doubles.me/2015/11/18/151118/</id>
     <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-01-24T19:07:25.000Z</updated>
+    <updated>2016-03-10T04:08:11.000Z</updated>
     <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0378.JPG-body" alt="raspi berry"></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_0376.JPG-body" alt="switch"><br>]]>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
     
     </summary>
     
       <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
     
   </entry>
   
@@ -144,19 +190,21 @@
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
     <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-02-17T16:12:22.000Z</updated>
-    <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-829261f187ee80aa.jpg-body" alt=""></p>
+    <updated>2016-03-10T04:08:18.000Z</updated>
+    <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>
 <a id="more"></a>
 <p>[试飞]</p>
 <embed src="http://player.youku.com/player.php/sid/XMTQ1NTgyMjEyMA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br>[第一视角]<br><embed src="http://player.youku.com/player.php/sid/XMTQ1NTgxODgyOA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
+    <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
     
     </summary>
     
       <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
     
   </entry>
   
@@ -165,25 +213,25 @@
     <link href="http://doubles.me/2015/11/10/151110/"/>
     <id>http://doubles.me/2015/11/10/151110/</id>
     <published>2015-11-09T22:00:00.000Z</published>
-    <updated>2016-01-17T18:26:53.000Z</updated>
+    <updated>2016-03-10T04:08:01.000Z</updated>
     <content type="html"><![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
-<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-812dec44bc984231.jpg-body" alt=""></p>
+<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-812dec44bc984231.jpg-body" alt=""></p>
 <a id="more"></a>
-<p>Junction 整个活动是费用全包的，24小时的食物，无限量的”红牛”,临时休息的公寓，来回的大巴，甚至包括海外的往返机票。路上看到这座，额。。。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-a28238f44e19b3aa.jpg-body" alt=""></p>
-<p>这里就是Junction的地点了，门口还停有一辆sauna bus，让人联想到擎天柱 cool.<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-6c9683f66161787b.jpg-body" alt=""></p>
-<p>在门口领取掉牌，蹭吃蹭喝全靠这个了。背面是地图。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-49eb9642893840a0.JPG-body" alt=""></p>
-<p>看到这个”红牛”会不会感觉好亲切，2天我起码喝了10罐。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-8fc6a5a25097c57f.jpg-body" alt=""></p>
-<p>当然，无数的红牛也比不上芬兰妹子的一杯卡布奇诺。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-c5b2d566d1f9db81.jpg-body" alt=""></p>
-<p>下面是正题，<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-5afbaa7866aa792e.jpg-body" alt=""></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-97a86014ddf1ea81.jpg-body" alt=""></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-7080e1e0441b7bca.jpg-body" alt=""></p>
-<p>这边就是各种设备的摆摊了，3D 打印机，XBOX，Flic Button, 等<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-aa06c3cdfcf60b4b.jpg-body" alt=""></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-652fe055cc1ce7d2.jpg-body" alt=""></p>
-<p>这组人一个月前就开始准备了，他们的作品是通过蓝牙控制轮椅。虽然这些设备在北欧已经很常见了，但是还是应该向他们致敬。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-fe383a0cbca20a5e.jpg-body" alt=""></p>
-<p>我拿到了一个 <a href="https://flic.io/" target="_blank" rel="external">Flic button</a>.<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-eb1521b6e453cb68.png-body" alt="flic-with-outline.png"><br>我的主意是做一个Login Button, 相应PassLess的Idea. 以后电脑上凡是需要登入的网站，我直接敲下这个按钮，chrome插件就会完成整个登入过程。Flic button 完全离线，所以无需担心密码泄露，保存好这个button就行了。 然而，我没法说服别人采用这个点子，别人也没法说服我不做这个。所以，一个人根本写不完。</p>
-<p>另外一组用Flic 的是这样的，<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-db1c3e7d4a8a1f04.jpg-body" alt=""><br>按下flic，火箭就飞走了，然后上面有一个智能手机，你就可以通过上面的位置分享，把它给捡回来。</p>
+<p>Junction 整个活动是费用全包的，24小时的食物，无限量的”红牛”,临时休息的公寓，来回的大巴，甚至包括海外的往返机票。路上看到这座，额。。。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-a28238f44e19b3aa.jpg-body" alt=""></p>
+<p>这里就是Junction的地点了，门口还停有一辆sauna bus，让人联想到擎天柱 cool.<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-6c9683f66161787b.jpg-body" alt=""></p>
+<p>在门口领取掉牌，蹭吃蹭喝全靠这个了。背面是地图。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-49eb9642893840a0.JPG-body" alt=""></p>
+<p>看到这个”红牛”会不会感觉好亲切，2天我起码喝了10罐。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-8fc6a5a25097c57f.jpg-body" alt=""></p>
+<p>当然，无数的红牛也比不上芬兰妹子的一杯卡布奇诺。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-c5b2d566d1f9db81.jpg-body" alt=""></p>
+<p>下面是正题，<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-5afbaa7866aa792e.jpg-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-97a86014ddf1ea81.jpg-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-7080e1e0441b7bca.jpg-body" alt=""></p>
+<p>这边就是各种设备的摆摊了，3D 打印机，XBOX，Flic Button, 等<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-aa06c3cdfcf60b4b.jpg-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-652fe055cc1ce7d2.jpg-body" alt=""></p>
+<p>这组人一个月前就开始准备了，他们的作品是通过蓝牙控制轮椅。虽然这些设备在北欧已经很常见了，但是还是应该向他们致敬。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-fe383a0cbca20a5e.jpg-body" alt=""></p>
+<p>我拿到了一个 <a href="https://flic.io/" target="_blank" rel="external">Flic button</a>.<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-eb1521b6e453cb68.png-body" alt="flic-with-outline.png"><br>我的主意是做一个Login Button, 相应PassLess的Idea. 以后电脑上凡是需要登入的网站，我直接敲下这个按钮，chrome插件就会完成整个登入过程。Flic button 完全离线，所以无需担心密码泄露，保存好这个button就行了。 然而，我没法说服别人采用这个点子，别人也没法说服我不做这个。所以，一个人根本写不完。</p>
+<p>另外一组用Flic 的是这样的，<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-db1c3e7d4a8a1f04.jpg-body" alt=""><br>按下flic，火箭就飞走了，然后上面有一个智能手机，你就可以通过上面的位置分享，把它给捡回来。</p>
 <p>最后我撸了一堆东西回来，很多东西我都不好意思再拿了，也不好带，就没要。<br>可惜各种试用点券，基本都是100欧起送，我发觉的太晚了，各种没听过的服务，很多人都给丢掉了。<br>然后捡来了几张100欧的AWS。IBM和微软的比较坑，简直就是来刷存在感的，一张电影片,一个GoPro还得抽奖。</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-8f45847a626fd927.JPG-body" alt=""><br>所有T-shirt 里比较好看的<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-a815c961361ad8e7.JPG-body" alt=""></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-8f45847a626fd927.JPG-body" alt=""><br>所有T-shirt 里比较好看的<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-a815c961361ad8e7.JPG-body" alt=""></p>
 <p>不过还是想吐曹一下住宿，虽然知道hackthon能有床就不错，这次还给了房间。但是为了不和印度小哥睡一张床打地铺了，怎么还是会有非洲大叔来一起睡。</p>
 <p>总结一下:</p>
 <ol>
@@ -195,11 +243,13 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
-<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/22964-812dec44bc984231.jpg-body" alt=""></p>]]>
+<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-812dec44bc984231.jpg-body" alt=""></p>]]>
     
     </summary>
     
       <category term="hackthon" scheme="http://doubles.me/tags/hackthon/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
     
   </entry>
   
@@ -208,10 +258,11 @@
     <link href="http://doubles.me/2015/05/06/1075/"/>
     <id>http://doubles.me/2015/05/06/1075/</id>
     <published>2015-05-06T17:17:47.000Z</published>
-    <updated>2016-01-30T01:48:20.000Z</updated>
+    <updated>2016-03-10T04:07:02.000Z</updated>
     <content type="html"><![CDATA[<p>主要有这几部，持续更新。</p>
 <h1 id="我是谁，没有安全的系统">我是谁，没有安全的系统</h1><p>这部电影很值得一看，最后多重反转，而且黑客案例让人热血沸腾。虽然这些案例是俺们都yy过的。</p>
 <p>社会工程才是最牛逼的。</p>
+<a id="more"></a>
 <h1 id="骇客交锋">骇客交锋</h1><p>主演：汤唯，王力宏</p>
 <p>内容大概就是：第二天汤唯从男人床上起来。。。。</p>
 <p>汤唯从男人床上起来。。。。</p>
@@ -225,8 +276,8 @@
     <summary type="html">
     <![CDATA[<p>主要有这几部，持续更新。</p>
 <h1 id="我是谁，没有安全的系统">我是谁，没有安全的系统</h1><p>这部电影很值得一看，最后多重反转，而且黑客案例让人热血沸腾。虽然这些案例是俺们都yy过的。</p>
-<p>社会工程才是最牛逼的。</p>
-<h1 id="骇客交]]>
+<p>社会工程才是最牛逼的。</p>]]>
+    
     </summary>
     
       <category term="Life" scheme="http://doubles.me/categories/Life/"/>
@@ -238,13 +289,13 @@
     <link href="http://doubles.me/2015/01/06/1063/"/>
     <id>http://doubles.me/2015/01/06/1063/</id>
     <published>2015-01-06T01:46:00.000Z</published>
-    <updated>2016-01-30T01:48:20.000Z</updated>
+    <updated>2016-03-10T04:09:48.000Z</updated>
     <content type="html"><![CDATA[<p>一直感觉Google的翻译不如Bing,但是google的译者工具包是唯一提供文档翻译的。</p>
-<p>然后看到了这个，累觉不爱。Google翻译再见。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/QQ20150106054342.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/QQ20150106054342.png" alt="QQ20150106054342"></a></p>
+<p>然后看到了这个，累觉不爱。Google翻译再见。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/QQ20150106054342.png" alt=""></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>一直感觉Google的翻译不如Bing,但是google的译者工具包是唯一提供文档翻译的。</p>
-<p>然后看到了这个，累觉不爱。Google翻译再见。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/QQ201]]>
+<p>然后看到了这个，累觉不爱。Google翻译再见。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/]]>
     </summary>
     
       <category term="Life" scheme="http://doubles.me/categories/Life/"/>
@@ -256,10 +307,11 @@
     <link href="http://doubles.me/2014/12/30/1053/"/>
     <id>http://doubles.me/2014/12/30/1053/</id>
     <published>2014-12-30T00:47:29.000Z</published>
-    <updated>2016-01-30T01:48:20.000Z</updated>
+    <updated>2016-03-10T04:10:11.000Z</updated>
     <content type="html"><![CDATA[<p>因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。</p>
 <p>花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。</p>
 <p><strong>1. 虚拟机</strong></p>
+<a id="more"></a>
 <p>可以下载安装镜像进行安装，但是更好的方法是下载安装好MAC 10.10的VMware镜像。</p>
 <p>另外有种方式是用VirtualBox，有个环境部署的可以直接搜到很多镜像，名字忘记了。</p>
 <p>性能实在太差，安装VMsvga2_v1.2.5_OS_10.9这个驱动后虽然可以用但是还是卡，可能与我不能开启3D加速有关。</p>
@@ -304,8 +356,8 @@
     <summary type="html">
     <![CDATA[<p>因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。</p>
 <p>花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。</p>
-<p><strong>1. 虚拟机</strong></p>
-<p>可以下载安装镜像进行安装，但是更好的方法是]]>
+<p><strong>1. 虚拟机</strong></p>]]>
+    
     </summary>
     
       <category term="LinuX" scheme="http://doubles.me/categories/LinuX/"/>
@@ -317,9 +369,10 @@
     <link href="http://doubles.me/2014/12/06/1043/"/>
     <id>http://doubles.me/2014/12/06/1043/</id>
     <published>2014-12-06T09:54:12.000Z</published>
-    <updated>2016-01-30T01:48:20.000Z</updated>
+    <updated>2016-03-10T04:10:56.000Z</updated>
     <content type="html"><![CDATA[<p>网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。<br>如意云自带的地址过期了，404.<br>先在 系统-&gt;软件源-&gt;配置 中修改原本的网址为<br><a href="http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages" target="_blank" rel="external">http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages</a></p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" alt="QQ20141206123304"></a></p>
+<a id="more"></a>
 <p>然后ssh登入，192.168.99.1  帐号是root：54321<br>接着执行： opkg update<br>然后执行：opkg install libopenssl python pyopenssl python-openssl<br>执行这一句的时候会出错，提示找不到依赖。</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206124135.png" alt="QQ20141206124135"></p>
 <p>satisfy_dependencies_for: Cannot satisfy the following dependencies for python:</p>
@@ -337,7 +390,9 @@
 <p>下一步是安装Gevent，可以减少CPU的消耗，但是还没有成功。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。<br>如意云自带的地址过期了，404.<br>先在 系统-&gt;软件源-&gt;配置 中修改原本的网址为<br><a href="http://downloads.openwrt.org.cn/Pa]]>
+    <![CDATA[<p>网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。<br>如意云自带的地址过期了，404.<br>先在 系统-&gt;软件源-&gt;配置 中修改原本的网址为<br><a href="http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages">http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages</a></p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" alt="QQ20141206123304"></a></p>]]>
+    
     </summary>
     
       <category term="LinuX" scheme="http://doubles.me/categories/LinuX/"/>
