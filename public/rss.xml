@@ -4,7 +4,7 @@
   <subtitle><![CDATA[有事邮件我 fjjwlzd(at)163]]></subtitle>
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-03-10T04:18:50.000Z</updated>
+  <updated>2016-03-15T15:23:50.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -13,6 +13,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Wireshark & Ethereal Network Protocol Analyzer Toolkit]]></title>
+    <link href="http://doubles.me/2016/03/15/160315/"/>
+    <id>http://doubles.me/2016/03/15/160315/</id>
+    <published>2016-03-15T15:17:17.000Z</published>
+    <updated>2016-03-15T15:23:50.000Z</updated>
+    <content type="html"><![CDATA[<p>去年从学校捡来的一本书，原本过年前就应该看完的，结果被我拖到了现在。<br>毫无疑问是一本工具书，刚好我做的项目需要做pcap包的数据分析，就翻翻了。<br>其实并不需要看的很仔细，这本书就是介绍一下Wireshark相关的。<br>由于大部分的知识我都有，所以只花了2个小时浏览了一遍。<br>而且我惊奇的发现，我阅读这种书籍毫无压力。<br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/IMG_20160315_161739.jpg-body" alt=""></p>
+<p>具体的书目可以看这里<br><a href="http://www.amazon.com/Wireshark-Ethereal-Protocol-Analyzer-Security/dp/1597490733" target="_blank" rel="external">Wireshark &amp; Ethereal Network Protocol Analyzer Toolkit</a></p>
+<p>第一章 介绍了些网络知识，七层模型，TCP 协议等。<br>第二章 介绍了Wireshark的基本功能和使用场景。<br>第三章 介绍了如何安装。<br>第四章 介绍了Wireshark的界面，以及如何使用。<br>第五章 过滤器<br>第六章 无线嗅探<br>第七章 一些数据包的实例，比如Null Scan。<br>第八章 如何开发Wireshark<br>第九章 Wireshark中包含的其他小程序， 实际上这里比较实用，毕竟其他的都不如打开一个Wireshark来用。然后照着网上的文章参考着用。</p>
+<p>我对Wireshark还是表示敬佩的，支持所有平台，支持300多个协议，开放源代码的。<br>关键是没有像其他的开元程序一样，Bug多或者界面巨丑。<br>好看，好用，似乎都没有其他的替代品。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>去年从学校捡来的一本书，原本过年前就应该看完的，结果被我拖到了现在。<br>毫无疑问是一本工具书，刚好我做的项目需要做pcap包的数据分析，就翻翻了。<br>其实并不需要看的很仔细，这本书就是介绍一下Wireshark相关的。<br>由于大部分的知识我都有，所以只花了2个小时浏览了一遍。<br>而且我惊奇的发现，我阅读这种书籍毫无压力。<br>]]>
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://doubles.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="读书笔记" scheme="http://doubles.me/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[VPS Bench]]></title>
@@ -59,7 +82,7 @@
     <link href="http://doubles.me/2016/02/29/160229/"/>
     <id>http://doubles.me/2016/02/29/160229/</id>
     <published>2016-02-28T22:00:00.000Z</published>
-    <updated>2016-03-10T04:08:41.000Z</updated>
+    <updated>2016-03-18T13:30:10.000Z</updated>
     <content type="html"><![CDATA[<h2 id="1-_AR-Drone">1. AR.Drone</h2><p>学校一门 Real Time Software Development 课程做的就是AR.Drone的自动搜救。</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>
 <a id="more"></a>
@@ -67,12 +90,12 @@
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_144808.jpg-body" alt=""></p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_144655.jpg-body" alt=""></p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_144535.jpg-body" alt=""></p>
-<h2 id="3-_Nexus_5X">3. Nexus 5X</h2><p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_144938.jpg-body" alt=""></p>
+<h2 id="3-_Nexus_5X">3. Nexus 5X</h2><p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_1449381.jpg-body" alt=""></p>
 <h2 id="4-_ChromeCast">4. ChromeCast</h2><p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_150338.jpg-body" alt=""><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_150311.jpg-body" alt=""></p>
 <h2 id="5-_3D_Connextion">5. 3D Connextion</h2><p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160229_151236.jpg-body" alt=""></p>
-<h2 id="6-_Apple_TV">6. Apple TV</h2><h2 id="7-_VR_眼镜">7. VR 眼镜</h2><p>新工作室的小宅墨镜。居然是国产的。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/da5a301c-4da0-4f08-8030-34487f5a3eb3.jpg-body" alt=""></p>
+<h2 id="6-_Apple_TV">6. Apple TV</h2><h2 id="7-_VR_眼镜">7. VR 眼镜</h2><p>新工作室的小宅墨镜。居然是国产的。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160314_134912.jpg-body" alt=""></p>
 <h2 id="8-_iwon智能手环">8. iwon智能手环</h2><p>自己买的，并没有什么用处。处于吃灰状态。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/IMG_20160303_165445.jpg-body" alt=""></p>
-<h2 id="9-_Dell_E6630">9. Dell E6630</h2><p>发的笔记本<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/dsc_0098.jpg-body" alt=""></p>
+<h2 id="9-_Dell_E6630">9. Dell E6630</h2><p>发的笔记本，主要是觉得Dock 这个东西真的神器，不然每天插那么多的线，烦死。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/02/dsc_0098.jpg-body" alt=""></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="1-_AR-Drone">1. AR.Drone</h2><p>学校一门 Real Time Software Development 课程做的就是AR.Drone的自动搜救。</p>
@@ -164,28 +187,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Diary 2015/11/18]]></title>
-    <link href="http://doubles.me/2015/11/18/151118/"/>
-    <id>http://doubles.me/2015/11/18/151118/</id>
-    <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-03-10T04:08:11.000Z</updated>
-    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
-    
-    </summary>
-    
-      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
-    
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Diary 2016/01/18]]></title>
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
@@ -199,6 +200,28 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Diary 2015/11/18]]></title>
+    <link href="http://doubles.me/2015/11/18/151118/"/>
+    <id>http://doubles.me/2015/11/18/151118/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-03-10T04:08:11.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
     
     </summary>
     
