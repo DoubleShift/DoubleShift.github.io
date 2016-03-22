@@ -114,7 +114,7 @@
     <link href="http://doubles.me/2016/01/30/160130/"/>
     <id>http://doubles.me/2016/01/30/160130/</id>
     <published>2016-01-30T01:57:29.000Z</published>
-    <updated>2016-03-10T04:08:33.000Z</updated>
+    <updated>2016-03-21T20:32:48.000Z</updated>
     <content type="html"><![CDATA[<h2 id="迁移WordPress">迁移WordPress</h2><p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress" target="_blank" rel="external">hexo-migrator-wordpress</a></p>
 <p>Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.<br>Execute the following command after installed. source is the file path or URL of WordPress export file.</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-migrator-wordpress <span class="comment">--save</span></span><br><span class="line">$ hexo migrate wordpress &lt;<span class="keyword">source</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -131,6 +131,7 @@
 <p>然后使用七牛的CDN<br>使用了一个python的客户端脚本，用来上传图片。<br><a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a><br>新建一个目录保存图片，然后运行 <code>python qiniu_sync</code> 就可以自动同步。</p>
 <h2 id="绑定域名">绑定域名</h2><p>Github的域名绑定比较简单，只需要新建CNAME文件就行。<br>首先 <code>ping</code> 你的 Github域名，<code>ping doubleshift.github.com</code>。<br>然后得到一个IP地址，将域名解析A记录到这个IP。<br>然后创建一个文件名为<code>CNAME</code>的空文件，放到<code>source</code>就是你放博客<code>_posts</code>的父目录。<br>然后里面内容是你的域名，我的就是<code>doubles.me</code>。<br>之后<code>Hexo g -d</code>，然后就等解析生效。</p>
 <h2 id="添加统计">添加统计</h2><p>使用了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a>的统计, 只需要在模版里加入2行代码就行。<br>具体教程可以参考这里 <a href="http://wangcaiyong.com/2015/06/26/busuanzi/" target="_blank" rel="external">Hexo静态博客使用不蒜子添加计数功能</a>。</p>
+<h2 id="添加站内搜索">添加站内搜索</h2><p>由于使用的Github托管的，所以能看到本博客也不担心不能访问Google的问题，就用了Google Search。<br>教程参考的这里 <a href="http://lulee007.github.io/2016/01/23/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE%E4%B9%8B-%E4%B8%BA%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/" target="_blank" rel="external">Hexo博客优化配置之–为自己博客添加站内搜索</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="迁移WordPress">迁移WordPress</h2><p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress">hexo-migrator-wordpress</a></p>

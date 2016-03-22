@@ -14,7 +14,7 @@ Export your WordPress in “Tools” → “Export” → “WordPress” in you
 <meta property="og:site_name" content="双人份 Blog">
 <meta property="og:description" content="迁移WordPress使用插件 hexo-migrator-wordpress
 Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.Execute the following command after installed. source is the file path or URL of Wor">
-<meta property="og:updated_time" content="2016-03-10T04:08:33.000Z">
+<meta property="og:updated_time" content="2016-03-21T20:32:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WordPress迁移到Hexo">
 <meta name="twitter:description" content="迁移WordPress使用插件 hexo-migrator-wordpress
@@ -47,6 +47,21 @@ Export your WordPress in “Tools” → “Export” → “WordPress” in you
 		
 		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
 		
+		
+		<!--Google Search-->
+<script>
+  (function() {
+    var cx = '012042098901994657358:1ti593trjim';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
 
 		
 			<div class="switch-btn">
@@ -100,6 +115,8 @@ Export your WordPress in “Tools” → “Export” → “WordPress” in you
 								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
 					        
 								<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd@163.com" title="mail">mail</a>
 					        
 						</div>
 					</nav>
@@ -164,6 +181,8 @@ Export your WordPress in “Tools” → “Export” → “WordPress” in you
 			        
 						<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
 			        
+						<a class="mail" target="_blank" href="/fjjwlzd@163.com" title="mail">mail</a>
+			        
 				</div>
 			</nav>
 		</header>				
@@ -223,6 +242,7 @@ Export your WordPress in “Tools” → “Export” → “WordPress” in you
 <p>然后使用七牛的CDN<br>使用了一个python的客户端脚本，用来上传图片。<br><a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a><br>新建一个目录保存图片，然后运行 <code>python qiniu_sync</code> 就可以自动同步。</p>
 <h2 id="绑定域名">绑定域名</h2><p>Github的域名绑定比较简单，只需要新建CNAME文件就行。<br>首先 <code>ping</code> 你的 Github域名，<code>ping doubleshift.github.com</code>。<br>然后得到一个IP地址，将域名解析A记录到这个IP。<br>然后创建一个文件名为<code>CNAME</code>的空文件，放到<code>source</code>就是你放博客<code>_posts</code>的父目录。<br>然后里面内容是你的域名，我的就是<code>doubles.me</code>。<br>之后<code>Hexo g -d</code>，然后就等解析生效。</p>
 <h2 id="添加统计">添加统计</h2><p>使用了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a>的统计, 只需要在模版里加入2行代码就行。<br>具体教程可以参考这里 <a href="http://wangcaiyong.com/2015/06/26/busuanzi/" target="_blank" rel="external">Hexo静态博客使用不蒜子添加计数功能</a>。</p>
+<h2 id="添加站内搜索">添加站内搜索</h2><p>由于使用的Github托管的，所以能看到本博客也不担心不能访问Google的问题，就用了Google Search。<br>教程参考的这里 <a href="http://lulee007.github.io/2016/01/23/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE%E4%B9%8B-%E4%B8%BA%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/" target="_blank" rel="external">Hexo博客优化配置之–为自己博客添加站内搜索</a></p>
 
       
     </div>
