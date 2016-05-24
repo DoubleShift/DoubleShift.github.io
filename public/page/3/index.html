@@ -41,23 +41,34 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
 		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
 		
-		<!--Google Search-->
-<script>
-  (function() {
-    var cx = '012042098901994657358:1ti593trjim';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
 </script>
-<gcse:searchbox-only></gcse:searchbox-only>
+
+        
 
 		
 			<div class="switch-btn">
@@ -152,8 +163,6 @@
 			  <h1 class="header-author">双人份</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
-			
 			<nav class="header-menu">
 				<ul>
 				
@@ -186,6 +195,112 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-903" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/11/23/903/" class="article-date">
+  	<time datetime="2013-11-23T03:17:42.000Z" itemprop="datePublished">2013-11-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/11/23/903/">泡泡云盒子折腾笔记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>双11买的泡泡云，易迅29块钱一个。配置还不错，今天才有网线来折腾一下。</p>
+<h1 id="晒个配置">晒个配置</h1><p>CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。</p>
+<p>内置2GByte的flash存储(df查看剩余用户可用1.67G)，256M内存(free查看剩余190M)，ARMV5TE指令集支持，双USB（另一个标记为供电口的需要拆开外壳短接两个电阻位：NR127，NR128）。</p>
+<p>ssh 连接上去看看。</p>
+<p>SSH  root:123456</p>
+<p>Samba root:Popobox</p>
+<p>Welcome to PopoCloud!</p>
+<p>[root@PopoCloud ~]# cat /proc/cpuinfo<br>Processor : ARM926EJ-S rev 5 (v5l)<br>BogoMIPS : 179.40<br>Features : swp half thumb fastmult edsp java<br>CPU implementer : 0x41<br>CPU architecture: 5TEJ<br>CPU variant : 0x0<br>CPU part : 0x926<br>CPU revision : 5</p>
+<p>Hardware : BOARD_AK9801ATHENA<br>Revision : 0000<br>Serial : 0000000000000000</p>
+<p>&nbsp;</p>
+<p>[root@PopoCloud ~]# df -m<br>Filesystem 1M-blocks Used Available Use% Mounted on<br>/dev/root 349 205 144 59% /<br>tmpfs 64 0 64 0% /tmp<br>tmpfs 1 0 1 0% /dev<br>tmpfs 16 0 16 3% /var/volatile<br>tmpfs 0 0 0 0% /mnt/disks<br>/dev/sda1 7615 122 7493 2% /mnt/disks/sda1<br>/dev/mtdblock1 1672 11 1661 1% /mnt/flash</p>
+<p>&nbsp;</p>
+<p>[root@PopoCloud ~]# uname -a<br>Linux PopoCloud 2.6.32.9-ak98 #6 PREEMPT Tue Aug 14 14:27:10 CST 2012 armv5tejl GNU/Linux</p>
+<p>&nbsp;</p>
+<p>[root@PopoCloud ~]# dmesg | grep ‘CPU’<br>CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177<br>CPU: VIVT data cache, VIVT instruction cache<br>ANYKA CPU AK9801 (id 0x20090c00)<br>SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1<br>CPU: Testing write buffer coherency: ok<br>AK98: PLL 360 MHz, CPU Core 360 MHz, MEM 180 MHz, ASIC 90 MHz<br>NAND driver:L2_CPU_MODE<br>CPU Core &gt; 340 MHz</p>
+<p>&nbsp;</p>
+<h1 id="1-装个迅雷">1.装个迅雷</h1><p>以下命令在putty里一条条复制粘帖就行了。</p>
+<p>脚本会自动处理thunder_mounts.cfg，无需手动。</p>
+<p>1.首先插上移动存储设备并挂载到目录（方法自己Google）</p>
+<p>2.下载管理脚本<br>mkdir -p /opt/bin<br>rm -rf /opt/xunlei /opt/bin/xunlei<br>wget <a href="http://lazyzhu.com/file/xunlei" target="_blank" rel="external">http://lazyzhu.com/file/xunlei</a> -P /opt/bin &amp;&amp; chmod +x /opt/bin/xunlei<br>export PATH=/opt/bin:$PATH<br>复制代码<br>3.下载部署迅雷远程主程序<br>xunlei setup<br>复制代码<br>4.启动迅雷远程下载<br>xunlei start<br>复制代码<br>5.获取迅雷远程状态信息（含激活码）<br>xunlei status<br>复制代码<br>6.关闭或重启<br>xunlei stop<br>xunlei restart<br>复制代码<br>7.开机自启动<br>xunlei boot<br>复制代码<br>再次运行可移除。</p>
+<p>8.如需异常状态自动重启的话<br>xunlei crontab<br>复制代码<br>再次运行可移除。<br>查看日志<br>xunlei logs</p>
+<p>/opt/xunlei/portal 可以启动迅雷</p>
+<p>9.重装或升级<br>xunlei setup</p>
+<p><del><span style="color: #ff0000;">一直没有启动成功，后来开了dmz，公网访问后才能得到激活码。不知道什么原因</span></del></p>
+<h1 id="2-取消泡泡云服务">2.取消泡泡云服务</h1><p>编辑文件 /root/rc.popocloud</p>
+<p>注释掉</p>
+<h1 id="if__stopped_“python”;_then">if _stopped “python”; then</h1><h1 id="start_popocloud">start_popocloud</h1><h1 id="fi">fi</h1><p>reboot ，自带的服务就没了。</p>
+<h1 id="3-关闭minidlna">3.关闭minidlna</h1><p>编辑文件 /root/rc.popocloud<br>vi /root/rc.popocloud<br>编辑掉：</p>
+<h1 id="if__stopped_“minidlna”;_then">if _stopped “minidlna”; then</h1><h1 id="start_minidlna_${ipaddr}_&amp;">start_minidlna ${ipaddr} &amp;</h1><h1 id="else">else</h1><h1 id="stop_minidlna">stop_minidlna</h1><h1 id="fi-1">fi</h1><p>之后保存，/etc/minidlna stop</p>
+<p>并reboot，miniDlna服务就关闭了。</p>
+<p>DLNA 服务器，配置文件在 /etc/minidlna.conf</p>
+<h1 id="4配置_BT_下载服务_transmission">4配置 BT 下载服务 transmission</h1><p>/etc/transmission start 启动。如果需要自启动，可以在 /etc/init.d/rc.local 最后加上这句就可以了。<br>web 访问： <a href="http://IP:9091。" target="_blank" rel="external">http://IP:9091。</a><br>如果需要手动配置，可以在： /root/transmission/config 目录下，有一个json文件可以配置；<br>建议直接 web 端配置（例如下载目录配置到你的 samba 服务器目录，下载后直接访问）<br>另外 web内容在 /root/transmission/web 下，可以更换汉化版本。</p>
+<p>启动： /etc/transmission start (如果需要自启动，加入 /etc/init.d/rc.local 就可以了）</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" alt="QQ20131123132532"></a></p>
+<h1 id="5-安装optware">5.安装optware</h1><p>以下命令在putty里一条条复制粘帖就行了</p>
+<p>1.下载部署OptWare<br>feed=<a href="http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable" target="_blank" rel="external">http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable</a><br>ipk_name=<code>wget -qO- $feed/Packages | awk &#39;/^Filename: ipkg-opt/ {print $2}&#39;</code><br>wget $feed/$ipk_name<br>tar -xOvzf $ipk_name ./data.tar.gz | tar -C / -xzvf -<br>mkdir -p /opt/tmp<br>mkdir -p /opt/etc/ipkg<br>echo “src cross $feed” &gt; /opt/etc/ipkg/feeds.conf<br>复制代码<br>2.配置环境变量<br>LD_LIBRARY_PATH=/opt/lib:/lib:/usr/lib<br>sed -i “s#LD_LIBRARY_PATH=.<em>#LD_LIBRARY_PATH=${LD_LIBRARY_PATH}#g” /etc/profile<br>PATH=/opt/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin<br>sed -i “s#PATH=.</em>#PATH=${PATH}#g” /etc/profile<br>. /etc/profile</p>
+<p>3.ipkg安装实例<br>ipkg update<br>ipkg install ncurses nano<br>which nano</p>
+<p>提醒：目前Popobox没有不死uboot，所以操作需谨慎！</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"> </a></p>
+<p>最后，总共找到了这些资料</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" alt="QQ20131123133905"></a></p>
+<h2 id="2014-1-31更新">2014.1.31更新</h2><p>回家过年更新了一遍，但是没有网络，最后蹭到了邻居家的wifi。密码是1到9.然后就考虑怎么来搞搞，最后用路由桥接了这个信号。</p>
+<p>开启wds，然后扫描到ap，设置好保存，这样就可以连接上我的泡泡云了。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" alt="QQ20140131224250"></a></p>
+<p>开启dhcp，不启用的话我们的泡泡云没有ip，不能自动获取ip就ssh不上了。网关要选桥接的那个路由内网地址。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" alt="QQ20140131224321"></a></p>
+<p>给本路由设置一个ip地址，确保没有ip冲突就ok。保存重启，就可以用线连接泡泡云了。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224358.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224358.png" alt="QQ20140131224358"></a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/硬件/">硬件</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-901" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -1012,66 +1127,6 @@
 <p>}</p>
 <p>dt<span style="font-family: 宋体;">变量表示延迟时间。这是上次调用</span><span style="font-family: 'Times New Roman';">update</span><span style="font-family: 宋体;">方法之后至今的时间。</span></p>
 
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Code/">Code</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-773" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/08/02/773/" class="article-date">
-  	<time datetime="2013-08-02T17:32:53.000Z" itemprop="datePublished">2013-08-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/08/02/773/">游戏内使用websocket通信</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <div><br><br>Websocket<span style="font-family: 宋体;">实现比较简单，但是</span><span style="font-family: 'Times New Roman';">chrome firefox</span><span style="font-family: 宋体;">均存在不同问题</span><br><br>实现看附件就行了。<br><br>Nodejs，服务端代码<br><table><br><tbody><br><tr><br><td valign="top" width="568">var conns = new Array();var ws = require(‘websocket-server’);var server = ws.createServer();<br><br>server.addListener(‘connection’, function(conn)<br><br>{<br><br>console.log(‘connection….’);<br><br>conns.push(conn);<br><br>conn.addListener(‘message’,function(msg)<br><br>{<br><br>console.log(msg);<br><br>for(var i=0; i&lt;conns.length; i++)<br><br>{<br><br>if(conns[i]!=conn)<br><br>{<br><br>conns[i].send(msg);<br><br>}<br><br>}<br><br>});<br><br>});<br><br>server.listen(8080);<br><br>console.log(‘running……’);<br><br>&nbsp;</td><br></tr><br></tbody><br></table><br>客户端代码 <span style="font-family: 'Times New Roman';">html</span><br><table><br><tbody><br><tr><br><td valign="top" width="568">&lt;html&gt;&lt;head&gt;&lt;meta charset=”utf-8” /&gt;<br><br>&lt;script type=”text/javascript”&gt;<br><br>var host = ‘127.0.0.1’;<br><br>var port = 8080;<br><br>var url = ‘ws://‘+host+’:’+port+’/‘;<br><br>var w = new WebSocket(url);  //<span style="font-family: 宋体;">构建于服务器之间的连接通信</span><br><br>&lt;!–var audioElement = document.createElement(‘audio’);  –&gt;<br><br>&lt;!–audioElement.setAttribute(‘src’, ‘qqmsg.mp3’);–&gt;<br><br>w.onopen = function()//<span style="font-family: 宋体;">通过</span><span style="font-family: 'Times New Roman';">onopen</span><span style="font-family: 宋体;">事件句柄来监听</span><span style="font-family: 'Times New Roman';">socket</span><span style="font-family: 宋体;">的打开事件</span><br><br>{<br><br>$(‘chat-box’).innerHTML = ‘<span style="font-family: 宋体;">已连接到服务器</span><span style="font-family: 'Times New Roman';">……&lt;br/&gt;’;  </span><br><br>}<br><br>w.onmessage = function(e)//<span style="font-family: 宋体;">用</span><span style="font-family: 'Times New Roman';">onmessage</span><span style="font-family: 宋体;">事件句柄接受服务器传过来的数据</span><br><br>{<br><br>var msg = e.data;<br><br>var chatBox = $(‘chat-box’);<br><br>// audioElement.play();<br><br>chatBox.innerHTML = chatBox.innerHTML+msg+’&lt;br/&gt;’;<br><br>}<br><br>function send()//<span style="font-family: 宋体;">使用</span><span style="font-family: 'Times New Roman';">send</span><span style="font-family: 宋体;">方法向服务器发送数据</span><br><br>{<br><br>var talk = $(‘talk’);<br><br>var nike = $(‘nike’);<br><br>w.send(‘&lt;strong style=”color:red”&gt;’+nike.value+’:&lt;/strong&gt;’+talk.value);<br><br>}<br><br>function $(id)<br><br>{<br><br>return document.getElementById(id);<br><br>}<br><br>&lt;/script&gt;<br><br>&lt;/head&gt;<br><br>&lt;body&gt;<br><br>&lt;div id=”chat-box” style=”border:1px solid #cccccc; width:400px; height:400px; overflow:scroll;”&gt;&lt;/div&gt;<br><br>昵称<span style="font-family: 'Times New Roman';">:</span><br><br>&lt;input type=”text” id=”nike”/&gt;<br><br>&lt;br/&gt;<br><br>内容<span style="font-family: 'Times New Roman';">:</span><br><br>&lt;input type=”text” id=”talk”/&gt;<br><br>&lt;input type=”button” id=”send” onClick=”send();” value=”<span style="font-family: 宋体;">发送</span><span style="font-family: 'Times New Roman';">“/&gt;</span><br><br>&lt;/body&gt;<br><br>&lt;/html&gt;</td><br></tr><br></tbody><br></table><br>不要使用谷歌浏览器，会出现如下的错误：<span style="font-family: 'Times New Roman';">Error during WebSocket handshake: ‘Sec-WebSocket-Accept’ header is missing</span><br><br>原因如下：<br><br>因为<span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">协议已经更新到</span><span style="font-family: 'Times New Roman';">13</span><span style="font-family: 宋体;">版本。</span><br><br>客户端发送数据格式类似这样：<br><br>GET /demo HTTP/1.1<br><br>Host: example.com<br><br>Connection: Upgrade<br><br>Sec-WebSocket-Key2: 12998 5 Y3 1  .P00<br><br>Sec-WebSocket-Protocol: sample<br><br>Upgrade: WebSocket<br><br>Sec-WebSocket-Key1: 4 @1  46546xW%0l 1 5<br><br>Origin: <a href="http://example.com" target="_blank" rel="external">http://example.com</a><br><br>^n:ds[4U<br><br>服务端返回的信息是：<br><br>HTTP/1.1 101 WebSocket Protocol Handshake<br><br>Upgrade: WebSocket<br><br>Connection: Upgrade<br><br>Sec-WebSocket-Origin: <a href="http://example.com" target="_blank" rel="external">http://example.com</a><br><br>Sec-WebSocket-Location: ws://example.com/demo<br><br>Sec-WebSocket-Protocol: sample<br><br>8jKS’y:G*Co,Wxa-<br><br>但是之前的版本是这样的：<br><br>客户端发送数据格式类似这样：<br><br>GET /chat HTTP/1.1<br><br>Upgrade: WebSocket<br><br>Connection: Upgrade<br><br>Host: www.zendstudio.net:9108<br><br>Origin: <a href="http://www.zendstudio.net" target="_blank" rel="external">http://www.zendstudio.net</a><br><br>Cookie: somenterCookie<br><br>此时服务端应该返回的信息是：<br><br>HTTP/1.1 101 Web Socket Protocol Handshake<br><br>Upgrade: WebSocket<br><br>Connection: Upgrade<br><br>WebSocket-Origin: <a href="http://www.zendstudio.net" target="_blank" rel="external">http://www.zendstudio.net</a><br><br>WebSocket-Location: ws://www.zendstudio.net:9108/chat<br><br>从这里我们太容易看出来，<span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">协议的握手部分根本就是个类</span><span style="font-family: 'Times New Roman';">http</span><span style="font-family: 宋体;">的协议，所不同的是</span><span style="font-family: 'Times New Roman';">http</span><span style="font-family: 宋体;">每次都会有这样子的头信息交互，这在某些时候不得不显得很糟糕。而</span><span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">只会执行一次这个过程，之后的传输信息就变得异常简洁了。</span><br><br>这里我们发现，<span style="font-family: 'Times New Roman';">version 13</span><span style="font-family: 宋体;">这个版本的</span><span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">协议，与之前版本最大不同就是多了一个验证，客户端会发送一个“</span><span style="font-family: 'Times New Roman';">Sec-WebSocket-Key</span><span style="font-family: 宋体;">”的</span><span style="font-family: 'Times New Roman';">base64</span><span style="font-family: 宋体;">编码的密钥，要求服务端必须返回一个“</span><span style="font-family: 'Times New Roman';">Sec-WebSocket-Accept</span><span style="font-family: 宋体;">”，否则客户端会抛出一个“</span><span style="font-family: 'Times New Roman';">Error during WebSocket handshake: Sec-WebSocket-Accept mismatch</span><span style="font-family: 宋体;">”错误之后，关闭连接，当然，这个</span><span style="font-family: 'Times New Roman';">Sec-WebSocket-Accept</span><span style="font-family: 宋体;">的值是计算出来的。</span><br><br>谷歌<span style="font-family: 'Times New Roman';">14</span><span style="font-family: 宋体;">版本</span><span style="font-family: 'Times New Roman';">+</span><span style="font-family: 宋体;">支持新的标准，而</span><span style="font-family: 'Times New Roman';">websocket-server</span><span style="font-family: 宋体;">是按原来的版本写的。火狐也有类似的原因。</span><br><br><a href="http://blog.csdn.net/mayixixi/article/details/7700201" target="_blank" rel="external">http://blog.csdn.net/mayixixi/article/details/7700201</a> 看这里<br><br>也就是说使用<span style="font-family: 'Times New Roman';">websocket-server </span><span style="font-family: 宋体;">的话由于版本太低，</span><span style="font-family: 'Times New Roman';">chrome</span><span style="font-family: 宋体;">，</span><span style="font-family: 'Times New Roman';">firefox</span><span style="font-family: 宋体;">什么的不支持，只能有</span><span style="font-family: 'Times New Roman';">safari</span><span style="font-family: 宋体;">来测试。</span><br><br>方案<span style="font-family: 'Times New Roman';">2</span><span style="font-family: 宋体;">就是可以使用一个  </span><a href="http://socket.io/" target="_blank" rel="external">http://socket.io</a>  来解决。纯<span style="font-family: 'Times New Roman';">js</span><span style="font-family: 宋体;">的，提供了</span><span style="font-family: 'Times New Roman';">node.js</span><span style="font-family: 宋体;">（服务端）</span><br><br>当然可以自己实现<span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">，都没有一个标准</span><br><br></div>
       
     </div>
     

@@ -41,23 +41,34 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
 		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
 		
-		<!--Google Search-->
-<script>
-  (function() {
-    var cx = '012042098901994657358:1ti593trjim';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
 </script>
-<gcse:searchbox-only></gcse:searchbox-only>
+
+        
 
 		
 			<div class="switch-btn">
@@ -152,8 +163,6 @@
 			  <h1 class="header-author">双人份</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
-			
 			<nav class="header-menu">
 				<ul>
 				
@@ -186,6 +195,81 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-84" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/11/13/84/" class="article-date">
+  	<time datetime="2012-11-13T10:03:59.000Z" itemprop="datePublished">2012-11-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2012/11/13/84/">PHP代理翻墙</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>goagent的翻墙很多人都用了，可是都是利用gae的方法吧。</p>
+<p>goagent不仅仅可以利用gae，php空间也是可以的。我们下载过来会发现Server文件夹中有2个文件夹，一个python，一个php，只要把php中的文件上传到任何一个php空间 中就可以使用。不过不能是限制太多的，也不要有广告。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/11.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/11.png" alt="" title="1"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/31.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/31.png" alt="" title="3"></a>只有这一个文件哦，上传完成后记住地址，等会要用的。</p>
+<p>打开local中的proxy.ini文件，找到[paas]这里，如下修改。地址按你的改，记住加上index.php，如果你改了就按你改的。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/21.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/21.png" alt="" title="2"></a></p>
+<p>然后就OK了，打开goagent，它就开始为你服务了。这时候设置一下浏览器的代理方式。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/41.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/41.png" alt="" title="4"></a></p>
+<p>选择http代理，默认的是127.0.0.1，端口是8088.其他浏览器类似的。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/61.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/61.png" alt="" title="6"></a>最后我们就可以上youtube观看视频了。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/51.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/51.png" alt="" title="5"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这里使用的是goagent2.1.5，googlecode的地址没翻墙好像不能下载，这里给个地址吧。</p>
+<p>下载地址：<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/goagent-2.1.5.zip" target="_blank" rel="external">goagent-2.1.5</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/翻墙/">翻墙</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Web/">Web</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-69" class="article article-type-post" itemscope itemprop="blogPost">
   

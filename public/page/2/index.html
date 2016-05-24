@@ -41,23 +41,34 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
 		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
 		
-		<!--Google Search-->
-<script>
-  (function() {
-    var cx = '012042098901994657358:1ti593trjim';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
 </script>
-<gcse:searchbox-only></gcse:searchbox-only>
+
+        
 
 		
 			<div class="switch-btn">
@@ -152,8 +163,6 @@
 			  <h1 class="header-author">双人份</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
-			
 			<nav class="header-menu">
 				<ul>
 				
@@ -186,6 +195,64 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-1063" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/06/1063/" class="article-date">
+  	<time datetime="2015-01-06T01:46:00.000Z" itemprop="datePublished">2015-01-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/06/1063/">再也不相信Google的翻译了</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一直感觉Google的翻译不如Bing,但是google的译者工具包是唯一提供文档翻译的。</p>
+<p>然后看到了这个，累觉不爱。Google翻译再见。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/QQ20150106054342.png" alt=""></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Life/">Life</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-1053" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -861,112 +928,6 @@
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Code/">Code</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-903" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/11/23/903/" class="article-date">
-  	<time datetime="2013-11-23T03:17:42.000Z" itemprop="datePublished">2013-11-23</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/11/23/903/">泡泡云盒子折腾笔记</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>双11买的泡泡云，易迅29块钱一个。配置还不错，今天才有网线来折腾一下。</p>
-<h1 id="晒个配置">晒个配置</h1><p>CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。</p>
-<p>内置2GByte的flash存储(df查看剩余用户可用1.67G)，256M内存(free查看剩余190M)，ARMV5TE指令集支持，双USB（另一个标记为供电口的需要拆开外壳短接两个电阻位：NR127，NR128）。</p>
-<p>ssh 连接上去看看。</p>
-<p>SSH  root:123456</p>
-<p>Samba root:Popobox</p>
-<p>Welcome to PopoCloud!</p>
-<p>[root@PopoCloud ~]# cat /proc/cpuinfo<br>Processor : ARM926EJ-S rev 5 (v5l)<br>BogoMIPS : 179.40<br>Features : swp half thumb fastmult edsp java<br>CPU implementer : 0x41<br>CPU architecture: 5TEJ<br>CPU variant : 0x0<br>CPU part : 0x926<br>CPU revision : 5</p>
-<p>Hardware : BOARD_AK9801ATHENA<br>Revision : 0000<br>Serial : 0000000000000000</p>
-<p>&nbsp;</p>
-<p>[root@PopoCloud ~]# df -m<br>Filesystem 1M-blocks Used Available Use% Mounted on<br>/dev/root 349 205 144 59% /<br>tmpfs 64 0 64 0% /tmp<br>tmpfs 1 0 1 0% /dev<br>tmpfs 16 0 16 3% /var/volatile<br>tmpfs 0 0 0 0% /mnt/disks<br>/dev/sda1 7615 122 7493 2% /mnt/disks/sda1<br>/dev/mtdblock1 1672 11 1661 1% /mnt/flash</p>
-<p>&nbsp;</p>
-<p>[root@PopoCloud ~]# uname -a<br>Linux PopoCloud 2.6.32.9-ak98 #6 PREEMPT Tue Aug 14 14:27:10 CST 2012 armv5tejl GNU/Linux</p>
-<p>&nbsp;</p>
-<p>[root@PopoCloud ~]# dmesg | grep ‘CPU’<br>CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177<br>CPU: VIVT data cache, VIVT instruction cache<br>ANYKA CPU AK9801 (id 0x20090c00)<br>SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1<br>CPU: Testing write buffer coherency: ok<br>AK98: PLL 360 MHz, CPU Core 360 MHz, MEM 180 MHz, ASIC 90 MHz<br>NAND driver:L2_CPU_MODE<br>CPU Core &gt; 340 MHz</p>
-<p>&nbsp;</p>
-<h1 id="1-装个迅雷">1.装个迅雷</h1><p>以下命令在putty里一条条复制粘帖就行了。</p>
-<p>脚本会自动处理thunder_mounts.cfg，无需手动。</p>
-<p>1.首先插上移动存储设备并挂载到目录（方法自己Google）</p>
-<p>2.下载管理脚本<br>mkdir -p /opt/bin<br>rm -rf /opt/xunlei /opt/bin/xunlei<br>wget <a href="http://lazyzhu.com/file/xunlei" target="_blank" rel="external">http://lazyzhu.com/file/xunlei</a> -P /opt/bin &amp;&amp; chmod +x /opt/bin/xunlei<br>export PATH=/opt/bin:$PATH<br>复制代码<br>3.下载部署迅雷远程主程序<br>xunlei setup<br>复制代码<br>4.启动迅雷远程下载<br>xunlei start<br>复制代码<br>5.获取迅雷远程状态信息（含激活码）<br>xunlei status<br>复制代码<br>6.关闭或重启<br>xunlei stop<br>xunlei restart<br>复制代码<br>7.开机自启动<br>xunlei boot<br>复制代码<br>再次运行可移除。</p>
-<p>8.如需异常状态自动重启的话<br>xunlei crontab<br>复制代码<br>再次运行可移除。<br>查看日志<br>xunlei logs</p>
-<p>/opt/xunlei/portal 可以启动迅雷</p>
-<p>9.重装或升级<br>xunlei setup</p>
-<p><del><span style="color: #ff0000;">一直没有启动成功，后来开了dmz，公网访问后才能得到激活码。不知道什么原因</span></del></p>
-<h1 id="2-取消泡泡云服务">2.取消泡泡云服务</h1><p>编辑文件 /root/rc.popocloud</p>
-<p>注释掉</p>
-<h1 id="if__stopped_“python”;_then">if _stopped “python”; then</h1><h1 id="start_popocloud">start_popocloud</h1><h1 id="fi">fi</h1><p>reboot ，自带的服务就没了。</p>
-<h1 id="3-关闭minidlna">3.关闭minidlna</h1><p>编辑文件 /root/rc.popocloud<br>vi /root/rc.popocloud<br>编辑掉：</p>
-<h1 id="if__stopped_“minidlna”;_then">if _stopped “minidlna”; then</h1><h1 id="start_minidlna_${ipaddr}_&amp;">start_minidlna ${ipaddr} &amp;</h1><h1 id="else">else</h1><h1 id="stop_minidlna">stop_minidlna</h1><h1 id="fi-1">fi</h1><p>之后保存，/etc/minidlna stop</p>
-<p>并reboot，miniDlna服务就关闭了。</p>
-<p>DLNA 服务器，配置文件在 /etc/minidlna.conf</p>
-<h1 id="4配置_BT_下载服务_transmission">4配置 BT 下载服务 transmission</h1><p>/etc/transmission start 启动。如果需要自启动，可以在 /etc/init.d/rc.local 最后加上这句就可以了。<br>web 访问： <a href="http://IP:9091。" target="_blank" rel="external">http://IP:9091。</a><br>如果需要手动配置，可以在： /root/transmission/config 目录下，有一个json文件可以配置；<br>建议直接 web 端配置（例如下载目录配置到你的 samba 服务器目录，下载后直接访问）<br>另外 web内容在 /root/transmission/web 下，可以更换汉化版本。</p>
-<p>启动： /etc/transmission start (如果需要自启动，加入 /etc/init.d/rc.local 就可以了）</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" alt="QQ20131123132532"></a></p>
-<h1 id="5-安装optware">5.安装optware</h1><p>以下命令在putty里一条条复制粘帖就行了</p>
-<p>1.下载部署OptWare<br>feed=<a href="http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable" target="_blank" rel="external">http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable</a><br>ipk_name=<code>wget -qO- $feed/Packages | awk &#39;/^Filename: ipkg-opt/ {print $2}&#39;</code><br>wget $feed/$ipk_name<br>tar -xOvzf $ipk_name ./data.tar.gz | tar -C / -xzvf -<br>mkdir -p /opt/tmp<br>mkdir -p /opt/etc/ipkg<br>echo “src cross $feed” &gt; /opt/etc/ipkg/feeds.conf<br>复制代码<br>2.配置环境变量<br>LD_LIBRARY_PATH=/opt/lib:/lib:/usr/lib<br>sed -i “s#LD_LIBRARY_PATH=.<em>#LD_LIBRARY_PATH=${LD_LIBRARY_PATH}#g” /etc/profile<br>PATH=/opt/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin<br>sed -i “s#PATH=.</em>#PATH=${PATH}#g” /etc/profile<br>. /etc/profile</p>
-<p>3.ipkg安装实例<br>ipkg update<br>ipkg install ncurses nano<br>which nano</p>
-<p>提醒：目前Popobox没有不死uboot，所以操作需谨慎！</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"> </a></p>
-<p>最后，总共找到了这些资料</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" alt="QQ20131123133905"></a></p>
-<h2 id="2014-1-31更新">2014.1.31更新</h2><p>回家过年更新了一遍，但是没有网络，最后蹭到了邻居家的wifi。密码是1到9.然后就考虑怎么来搞搞，最后用路由桥接了这个信号。</p>
-<p>开启wds，然后扫描到ap，设置好保存，这样就可以连接上我的泡泡云了。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" alt="QQ20140131224250"></a></p>
-<p>开启dhcp，不启用的话我们的泡泡云没有ip，不能自动获取ip就ssh不上了。网关要选桥接的那个路由内网地址。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" alt="QQ20140131224321"></a></p>
-<p>给本路由设置一个ip地址，确保没有ip冲突就ok。保存重启，就可以用线连接泡泡云了。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224358.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224358.png" alt="QQ20140131224358"></a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/硬件/">硬件</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Others/">Others</a>
 	</div>
 
 

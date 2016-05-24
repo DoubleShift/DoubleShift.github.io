@@ -56,23 +56,34 @@ http://www.miniyun.cn/
 		</hgroup>
 
 		
-		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
 		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
 		
-		<!--Google Search-->
-<script>
-  (function() {
-    var cx = '012042098901994657358:1ti593trjim';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
 </script>
-<gcse:searchbox-only></gcse:searchbox-only>
+
+        
 
 		
 			<div class="switch-btn">
@@ -166,8 +177,6 @@ http://www.miniyun.cn/
 			<hgroup>
 			  <h1 class="header-author">双人份</h1>
 			</hgroup>
-			
-			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
 			
 			<nav class="header-menu">
 				<ul>

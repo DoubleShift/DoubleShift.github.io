@@ -41,23 +41,34 @@
 		</hgroup>
 
 		
-		<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
 		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
 		
-		<!--Google Search-->
-<script>
-  (function() {
-    var cx = '012042098901994657358:1ti593trjim';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
 </script>
-<gcse:searchbox-only></gcse:searchbox-only>
+
+        
 
 		
 			<div class="switch-btn">
@@ -152,8 +163,6 @@
 			  <h1 class="header-author">双人份</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">有事邮件我 fjjwlzd(at)163</p>
-			
 			<nav class="header-menu">
 				<ul>
 				
@@ -186,6 +195,63 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-650" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/05/24/650/" class="article-date">
+  	<time datetime="2013-05-24T07:22:57.000Z" itemprop="datePublished">2013-05-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/05/24/650/">思路太好了，一张图片让所有浏览器未响应</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一张图片让所有浏览器未响应">一张图片让所有浏览器未响应</h1><div><br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" title="79086246020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" alt="79086246020121126" title="79086246020121126"></a><br><br>你可能要问，一张图片怎么可能会导致整个浏览器无法响应呢，如果你不相信就自己来这个链接试一试吧，整个页面中真的只有一张图片哦。相信你在试过之后的确是发现了浏览器要么就是无法响应，或者是整个系统都卡住了，计算机性能好的可能会出现卡顿的情况，这个到底是为什么呢，今天我们就来讲解一下怎样利用 Gzip 创建一张冗大的 1G 的图片让浏览器未响应吧。<br><br>&nbsp;<br><br>首先补充一下知识：Gzip 是一种在网站当中常用的一种技术，他可以将网页压缩到只有原来的百分之 70% 左右。如果一个字符串“10000000000”使用压缩技术压缩之后，他就会变为“1+10<em>0”这样，这样字符串的长度和大小就变短了。那么，如果一个 1G 左右的图片被压缩了之后，只有 2M 多，然后发送到客户端之后再解压，客户端无法承受那么大的文件，自然就未响应了。<br><br>这个其实已经不是新鲜的东西，要让浏览器无法响应还是要几个要求的：1.图片够大、2.传送的速度够快。就像我提供的链接，因为传送的速度不是很快，所以要很久才会出现未响应的状况。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" title="58357946720121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" alt="58357946720121126" title="58357946720121126"></a><br><br>我们先挑选一张不是很大 普通图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" title="128816471120121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" alt="128816471120121126" title="128816471120121126"></a><br><br>&nbsp;<br><br>使用 16 进制编辑器不断在文件末尾添加 0，让他变成具有很多 0 字符的冗长的一张 1G 的图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" title="89868126020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" alt="89868126020121126" title="89868126020121126"></a><br><br>因为文件中大部分的字符串全部都是 0，所以压缩之后冗长的 0 被压缩到只有 2M 的大小。现在我们只要将这个 Gzip 文件<strong>以极快的速度发送到浏览器</strong>并且解压，浏览器就会未响应了。<br><br>&nbsp;<br><div id="crayon-519afed9abfd7" data-settings=" minimize scroll-mouseover"><br><br>&nbsp;<br><div><br><table><br><tbody><br><tr><br><td data-settings="show"></td><br><td><br><div><br><br>&lt;?php<br><br>header(“Content-Encoding: gzip”);<br><br>echo file_get_contents(“img.png.gz”);<br><br>?&gt;<br><br></div></td><br></tr><br></tbody><br></table><br></div><br></div><br>&nbsp;<br><br>仅仅是有压缩文件是不行的，我们还需要一个文件来告诉浏览器这个是一个压缩文件，你需要解压，一般主流的浏览器都是支持 Gzip 压缩的了，在上面的代码中，我们告诉浏览器这个是经过 Gzip 压缩的，然后加载并输出制作的压缩文件。在这里，主机输出的数据流只有压缩包的 2M，但是到了客户端浏览器，数据被解压之后就到达了 1.63G 的大小。<br><br>最后我们只需要用 img 标签在论坛或者是其他页面中插入这个页面就可以了，图片仍然是可以正常显示的，但是当数据全部加载完成，或者是数据加载超出 CPU 的负载之后，浏览器便出现了未响应的状态。<br><br>这个其实没有什么实际的用处，<em>*也请你不要去做不应该做的事情</em></em>，要构成浏览器未响应的要求首先就是文件传送的速度够快，如果你的主机要半天才能够加载这张图片，那么浏览器也要半天才能未响应了。<br><br><a href="http://1.theimgrongchang.duapp.com/" target="_blank" rel="external">点击此处进入测试页面
+</a><br><br></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-646" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -822,73 +888,6 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Others/">Others</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-614" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/04/17/614/" class="article-date">
-  	<time datetime="2013-04-17T02:37:05.000Z" itemprop="datePublished">2013-04-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/04/17/614/">11对战平台（记录）</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>以前看过11的，但是没找到xss，这下看到wooyun上的。我咋就是个傻逼呢。</p>
-<p><a href="http://wooyun.org/bugs/wooyun-2010-019305" target="_blank" rel="external">http://wooyun.org/bugs/wooyun-2010-019305</a>  私信处可以直接给写xss</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/28001940e7cd43a92347e1eccb596f69cd91898f.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/28001940e7cd43a92347e1eccb596f69cd91898f.jpg" alt="28001940e7cd43a92347e1eccb596f69cd91898f"></a></p>
-<p><a href="http://www.wooyun.org/bugs/wooyun-2010-08853" target="_blank" rel="external">http://www.wooyun.org/bugs/wooyun-2010-08853</a>   发布文章 TAG处写xss，修改maxlength限制<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/280019464145682eae13ad56a01569bffefaf2ff.jpg" target="_blank" rel="external">
-</a></p>
-<p>&nbsp;</p>
-<p>老实说，截获过来的cookie不知道有没有用，不过可以写个蠕虫。下一步来弄</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
 	</div>
 
 
