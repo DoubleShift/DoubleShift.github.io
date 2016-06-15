@@ -1,6 +1,13 @@
 title: 关于我
 ---
 
+完全没有任何艺术细菌的胖屌屌。
+
+## 胖屌进城 【游记】
+
+1. [Open Your Russia](http://doubles.me/2016/06/15/160615/)
+2. [Finland where the sun doesn't set]()
+
 ## 原创翻译
 
 以下翻译项目发表在CSDN.com, Linux.cn 等网站。
@@ -28,3 +35,4 @@ title: 关于我
 
 
 2016/03 [Wireshark & Ethereal Network Protocol Analyzer Toolkit](http://www.doubles.me/2016/03/15/160315/)
+
