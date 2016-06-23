@@ -196,6 +196,64 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-621" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/04/22/621/" class="article-date">
+  	<time datetime="2013-04-22T12:57:39.000Z" itemprop="datePublished">2013-04-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/04/22/621/">如何生成类似chrome首页的网页快照,截图，缩略图</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>网上找了很多，php有一个函数imagegasscreen，可以实现，但是windows only。测试中也一直是黑屏的。</p>
+<p>后来找了其他的许多方式。</p>
+<div>几个第三方的 API：（收费）<br><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="http://url2png.com/" target="_blank" rel="external">http://url2png.com/</a>   </span><br><a href="http://blitline.com/docs/blitshot" target="_blank" rel="external">http://blitline.com/docs/blitshot</a><br><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="http://www.paulhammond.org/webkit2png/" target="_blank" rel="external">http://www.paulhammond.org/webkit2png/</a>     </span>本机小工具<br><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="https://urlbox.io/" target="_blank" rel="external">https://urlbox.io/</a></span></div><br><div><span style="color: #778087;"> </span></div><br><div><span style="color: #778087;"> </span></div><br><div><span style="color: #778087;">javascript实现，客户端呈现，但是我想要的是能截图并保存下来的</span></div><br><div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="http://html2canvas.hertzen.com/screenshots.html" target="_blank" rel="external">http://html2canvas.hertzen.com/screenshots.html</a></span></div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"> </span></div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"> 最后找到了这个：</span></div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;">phantomjs，比较好</span></div><br><div><a href="https://github.com/ariya/phantomjs" target="_blank" rel="external">https://github.com/ariya/phantomjs</a></div><br><div></div><br><div> <a href="http://phantomjs.org/download.html下载bin文件过来，就可以直接使用，" target="_blank" rel="external">http://phantomjs.org/download.html下载bin文件过来，就可以直接使用，</a></div><br><div>examples目录下有js，执行bin文件就ok</div><br><div><br><pre></pre><br></div><br><div> 这里是 截屏的说明   <a href="https://github.com/ariya/phantomjs/wiki/Screen-Capture" target="_blank" rel="external">https://github.com/ariya/phantomjs/wiki/Screen-Capture</a></div><br><div>phantomjs rasterize.js <a href="http://raphaeljs.com/polar-clock.html" target="_blank" rel="external">http://raphaeljs.com/polar-clock.html</a> clock.png</div><br><div><br><pre>_<br>我连上ssh来试一下。<br><br>wget “phantomjs-1.9.0-linux-i686.tar.bz2”<br>tar -zvfj phantomjs-1.9.0-linux-i686.tar.bz2<br>cd phantomjs-1.9.0-linux-x86<em>64/bin<br><br>./phantomjs ../examples/rasterize.js <a href="http://raphaeljs.com/polar-clock.html" target="_blank" rel="external">http://raphaeljs.com/polar-clock.html</a> clock.png<br><br>然后看这里，<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130422235735.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130422235735.png" alt="QQ20130422235735"></a></em></pre><br></div><br><div></div><br></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-619" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -842,90 +900,9 @@ function dispatch() {
   
 
   
-    <article id="post-542" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/03/10/542/" class="article-date">
-  	<time datetime="2013-03-10T00:36:01.000Z" itemprop="datePublished">2013-03-10</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/03/10/542/">微信平台酱菜小助手</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天总算把4级的查询移到微信平台上去了。以前感觉很神器，原来也就是分词，然后返回一个数据。</p>
-<p>系统内置了一些功能，不过我们是要查询cet4，6级 还是要自定义返回数据格式才好。</p>
-<p>先去注册一个公众帐号，这个公众平台和开放平台是不一样的</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130310025443.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130310025443-430x106.png" alt="QQ20130310025443"></a>然后捏，进入高级设置后，进入里面的编辑模式关闭掉，然后进入开发者模式，打开此模式。</p>
-<p>这里需要有一个空间才行，可以把我们的接口文件丢这里。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ201303100255231.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ201303100255231.png" alt="QQ20130310025523"></a></p>
-<p>我用的是bae，sae，openshift什么的都可以。刚好今天令了bae发放的1000元现金券。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ201303100255471.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ201303100255471.png" alt="QQ20130310025547"></a></p>
-<p>&nbsp;</p>
-<p>在里面填入中转接口的地址，weixin这个在php里面设置。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130310102712.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130310102712.png" alt="QQ20130310102712"></a>给个地址吧。<a href="https://github.com/xhxu/weixin" target="_blank" rel="external">https://github.com/xhxu/weixin</a>，可以使用这个。</p>
-<p>里面的代码很简单了，先把消息体剥离一下，通过空格分离出keyword，然后进行操作。</p>
-<p>//分词处理，通过空格 剥离$keyword<br>$keyword = $weixin-&gt;msg[‘Content’];<br>$keyword=explode(“ “,$keyword);</p>
-<p>代码感觉没什么看的，我给添加了一个mysql查询的语句，就可以返回4，6级成绩了。</p>
-<p>输入 【help】 可以获取帮助，输入 【cet 学号】(中间有空格哦),可以获取4，6级成绩</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/2.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/2.png" alt="2"></a></p>
-<p>&nbsp;</p>
-<p>大家可以搜索 酱菜小助手，或者扫描如下2维码，添加关注。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/qr.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/qr.jpg" alt="qr"></a></p>
-<p>&nbsp;</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/江财微信平台.zip" target="_blank" rel="external">江财微信平台</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Code/">Code</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/5/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/7/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/5/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/7/">Next &raquo;</a>
     </nav>
   
 </div>

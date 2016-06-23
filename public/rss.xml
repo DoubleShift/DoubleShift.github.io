@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-06-15T18:24:07.000Z</updated>
+  <updated>2016-06-23T21:21:21.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[30分钟学会摩斯码]]></title>
+    <link href="http://doubles.me/2016/06/23/160623/"/>
+    <id>http://doubles.me/2016/06/23/160623/</id>
+    <published>2016-06-23T20:56:03.000Z</published>
+    <updated>2016-06-23T21:21:21.000Z</updated>
+    <content type="html"><![CDATA[<p>一直觉得很神秘的摩斯码，花了30分钟学习了一下。以后看电影就可以听懂他们的摩斯码了。<br>摩尔斯码通常的格式是字母和字母之间以空格隔开，单词和单词之间以“/”隔开。</p>
+<a id="more"></a>
+<p>正规的摩尔斯码对照表是这样：<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/7e5d4dfca_b.jpg" alt=""> </p>
+<p>然而26个字母有一张更简单的图：</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/8dd729969_b.jpg" alt=""> </p>
+<p>其实并不好记，最后发现最简单的就是这一个。</p>
+<p>哒是左边，滴是右边， <strong>T</strong> 就是 <strong>哒</strong>， <strong>M</strong> 就是 <strong>哒哒</strong> ，<strong>S</strong> 就是 <strong>嘀哒哒</strong>。</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/74c7f87e6014cb4fcf8cbcd0a3f3723c.jpg" alt=""> </p>
+<p>首先背一下这个2叉树，然后默写下来。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/101.jpg" alt=""> </p>
+<p>我是这样记的，头2层看一下就记住了。第3层是LOL中的OG战队，然后有几个孩神，id为kid，WD是 west 和 road的缩写。这样就记住了，位置一定要对好来。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/102.jpg" alt=""> </p>
+<p>最后数字实在是太好记了，看一下就能记住。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/103.jpg" alt=""> </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一直觉得很神秘的摩斯码，花了30分钟学习了一下。以后看电影就可以听懂他们的摩斯码了。<br>摩尔斯码通常的格式是字母和字母之间以空格隔开，单词和单词之间以“/”隔开。</p>]]>
+    
+    </summary>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[胖屌进城 - Open Your Russia]]></title>

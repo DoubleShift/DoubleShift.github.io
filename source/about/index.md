@@ -1,12 +1,17 @@
 title: 关于我
 ---
 
-完全没有任何艺术细菌的胖屌屌。
+完全没有任何艺术细菌的胖屌屌，充满了对世界的好奇。当不成科学家，总可以当一个梦想家咯。
 
-## 胖屌进城 【游记】
+## 闲来无事 【新技能Get】
+[30分钟学会的摩斯码](http://doubles.me/2016/06/23/160623/)
+[2小时学会的四弦吉他]()
+[2个周末学会的跳伞]()
+[半天学会的滑雪]()
+[参加的Hackthon - Slush 的前奏 Junction: 北欧最大Hackton](http://doubles.me/2015/11/10/151110/)
+[筹备中的摄影]()
+[准备中的算法]()
 
-1. [Open Your Russia](http://doubles.me/2016/06/15/160615/)
-2. [Finland where the sun doesn't set]()
 
 ## 原创翻译
 
@@ -31,8 +36,15 @@ title: 关于我
 2014/11/28 翻译 [原文](http://www.ubuntugeek.com/ubutricks-script-to-install-the-latest-versions-of-several-games-and-applications-in-ubuntu.html)
 2014/12/02 发表 [译文](https://linux.cn/article-4350-1.html)
 
-## 读书笔记
 
+
+## 胖屌进城 【游记】
+
+1. [Open Your Russia](http://doubles.me/2016/06/15/160615/)
+2. [Finland where the sun doesn't set]()
+
+
+## 读书笔记
 
 2016/03 [Wireshark & Ethereal Network Protocol Analyzer Toolkit](http://www.doubles.me/2016/03/15/160315/)
 
