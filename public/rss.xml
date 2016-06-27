@@ -46,13 +46,16 @@
     <link href="http://doubles.me/2016/06/21/160621/"/>
     <id>http://doubles.me/2016/06/21/160621/</id>
     <published>2016-06-21T17:20:03.000Z</published>
-    <updated>2016-06-26T03:08:19.000Z</updated>
-    <content type="html"><![CDATA[<embed src="http://player.youku.com/player.php/sid/XMTYyMTE5NzU0OA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
+    <updated>2016-06-27T01:38:48.000Z</updated>
+    <content type="html"><![CDATA[<p>这是小情歌的伴奏部分，按照这个谱子来就行了。<br>当然一不小心会弹出“ 天不刮风，天不下雨 ” 的调调。<br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_20160626_173728.jpg" alt="IMG_20160626_173728.jpg"></p>
+<embed src="http://player.youku.com/player.php/sid/XMTYyMTE5NzU0OA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 
 ]]></content>
     <summary type="html">
-    <![CDATA[<embed src="http://player.youku.com/player.php/sid/XMTYyMTE5NzU0OA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" a]]>
+    <![CDATA[<p>这是小情歌的伴奏部分，按照这个谱子来就行了。<br>当然一不小心会弹出“ 天不刮风，天不下雨 ” 的调调。<br>]]>
+    
     </summary>
     
       <category term="Life" scheme="http://doubles.me/categories/Life/"/>
@@ -155,7 +158,7 @@
     <link href="http://doubles.me/2016/03/15/160315/"/>
     <id>http://doubles.me/2016/03/15/160315/</id>
     <published>2016-03-15T15:17:17.000Z</published>
-    <updated>2016-03-15T15:23:50.000Z</updated>
+    <updated>2016-06-27T01:43:23.000Z</updated>
     <content type="html"><![CDATA[<p>去年从学校捡来的一本书，原本过年前就应该看完的，结果被我拖到了现在。<br>毫无疑问是一本工具书，刚好我做的项目需要做pcap包的数据分析，就翻翻了。<br>其实并不需要看的很仔细，这本书就是介绍一下Wireshark相关的。<br>由于大部分的知识我都有，所以只花了2个小时浏览了一遍。<br>而且我惊奇的发现，我阅读这种书籍毫无压力。<br><a id="more"></a></p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/IMG_20160315_161739.jpg-body" alt=""></p>
 <p>具体的书目可以看这里<br><a href="http://www.amazon.com/Wireshark-Ethereal-Protocol-Analyzer-Security/dp/1597490733" target="_blank" rel="external">Wireshark &amp; Ethereal Network Protocol Analyzer Toolkit</a></p>
@@ -167,9 +170,9 @@
     
     </summary>
     
-      <category term="读书笔记" scheme="http://doubles.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="Notes" scheme="http://doubles.me/tags/Notes/"/>
     
-      <category term="读书笔记" scheme="http://doubles.me/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="Notes" scheme="http://doubles.me/categories/Notes/"/>
     
   </entry>
   
@@ -436,14 +439,18 @@
     <link href="http://doubles.me/2015/09/26/150926/"/>
     <id>http://doubles.me/2015/09/26/150926/</id>
     <published>2015-09-26T14:10:03.000Z</published>
-    <updated>2016-06-26T03:19:45.000Z</updated>
-    <content type="html"><![CDATA[<p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。<br>如果想要拿到证装逼的话需要跳30次左右。我手上有一个航空日志，会记录每次跳伞的评价。<br>然而我只跳了一次。<br>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
+    <updated>2016-06-27T01:39:51.000Z</updated>
+    <content type="html"><![CDATA[<p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。</p>
+<p>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092603.jpg" alt="15092603.jpg"></p>
 <a id="more"></a>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092601.jpg" alt="15092601.jpg"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092602.jpg" alt="15092602.jpg"></p>
+<p>如果想要拿到证装逼的话需要跳30次左右。我手上有一个航空日志，会记录每次跳伞的评价。<br>然而我只跳了一次。</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_20160627_042542.jpg" alt="IMG_20160627_042542.jpg"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_20160627_042641.jpg" alt="IMG_20160627_042641.jpg"></p>
 <embed src="http://player.youku.com/player.php/sid/XMTYyMTIwNjcxMg==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">]]></content>
     <summary type="html">
-    <![CDATA[<p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。<br>如果想要拿到证装逼的话需要跳30次左右。我手上有一个航空日志，会记录每次跳伞的评价。<br>然而我只跳了一次。<br>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
+    <![CDATA[<p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。</p>
+<p>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092603.jpg" alt="15092603.jpg"></p>]]>
     
     </summary>
