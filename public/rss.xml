@@ -46,10 +46,10 @@
     <link href="http://doubles.me/2016/06/21/160621/"/>
     <id>http://doubles.me/2016/06/21/160621/</id>
     <published>2016-06-21T17:20:03.000Z</published>
-    <updated>2016-06-27T01:38:48.000Z</updated>
+    <updated>2016-06-30T14:33:40.000Z</updated>
     <content type="html"><![CDATA[<p>这是小情歌的伴奏部分，按照这个谱子来就行了。<br>当然一不小心会弹出“ 天不刮风，天不下雨 ” 的调调。<br><a id="more"></a></p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_20160626_173728.jpg" alt="IMG_20160626_173728.jpg"></p>
-<embed src="http://player.youku.com/player.php/sid/XMTYyMTE5NzU0OA==/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
+<embed src="http://player.youku.com/player.php/sid/XMTYyMTE5NzU0OA==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 
 ]]></content>
@@ -345,28 +345,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Diary 2015/11/18]]></title>
-    <link href="http://doubles.me/2015/11/18/151118/"/>
-    <id>http://doubles.me/2015/11/18/151118/</id>
-    <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-03-10T04:08:11.000Z</updated>
-    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
-    
-    </summary>
-    
-      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
-    
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Diary 2016/01/18]]></title>
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
@@ -380,6 +358,28 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Diary 2015/11/18]]></title>
+    <link href="http://doubles.me/2015/11/18/151118/"/>
+    <id>http://doubles.me/2015/11/18/151118/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-03-10T04:08:11.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
     
     </summary>
     
