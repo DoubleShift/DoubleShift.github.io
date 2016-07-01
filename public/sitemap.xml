@@ -2,8 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://doubles.me/about/index.html</loc>
+    <lastmod>2016-07-01T14:13:39.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/about/note.html</loc>
+    <lastmod>2016-07-01T14:12:38.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2016/02/01/160201/</loc>
+    <lastmod>2016-07-01T14:12:21.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2015/09/26/150926/</loc>
+    <lastmod>2016-07-01T14:12:01.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://doubles.me/2016/06/21/160621/</loc>
-    <lastmod>2016-06-30T14:33:40.000Z</lastmod>
+    <lastmod>2016-07-01T14:11:15.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2016/06/23/160623/</loc>
+    <lastmod>2016-07-01T14:11:02.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/links/index.html</loc>
+    <lastmod>2016-07-01T14:06:53.000Z</lastmod>
   </url>
   
   <url>
@@ -12,33 +42,8 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2015/09/26/150926/</loc>
-    <lastmod>2016-06-27T01:39:51.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/about/index.html</loc>
-    <lastmod>2016-06-26T03:21:43.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2016/02/01/160201/</loc>
-    <lastmod>2016-06-26T03:08:30.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2016/06/23/160623/</loc>
-    <lastmod>2016-06-26T03:08:06.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://doubles.me/2016/06/15/160615/</loc>
     <lastmod>2016-06-25T04:54:08.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/about/note.html</loc>
-    <lastmod>2016-06-23T21:21:55.000Z</lastmod>
   </url>
   
   <url>
@@ -49,11 +54,6 @@
   <url>
     <loc>http://doubles.me/categories/index.html</loc>
     <lastmod>2016-05-24T06:48:23.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/links/index.html</loc>
-    <lastmod>2016-04-20T13:57:48.000Z</lastmod>
   </url>
   
   <url>

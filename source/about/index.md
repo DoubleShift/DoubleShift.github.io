@@ -3,20 +3,21 @@ title: 关于我
 
 完全没有任何艺术细菌的胖屌屌，充满了对世界的好奇。当不成科学家，总可以当一个梦想家咯。
 
-## **新技能Get**
-[30分钟学会的摩斯码](http://doubles.me/2016/06/23/160623/)
-[2小时学会的四弦吉他](http://doubles.me/2016/06/21/160621/)
-[2个周末学会的跳伞](http://doubles.me/2015/09/26/150926/)
-[半天学会的滑雪](http://doubles.me/2016/02/01/160201/)
+## **从入门到放弃**
+[30分钟从入门到放弃 - 摩斯码](http://doubles.me/2016/06/23/160623/)
+[2小时从入门到放弃 - 尤里克克](http://doubles.me/2016/06/21/160621/)
+[2个周末从入门到放弃 - 跳伞](http://doubles.me/2015/09/26/150926/)
+[4小时从入门到放弃 - 滑雪](http://doubles.me/2016/02/01/160201/)
 [筹备中的摄影]()
 [准备中的算法]()
 
 
 ## **胖屌进城 【游记】**
 
+[Slush 的前奏 Junction: 北欧最大Hackton](http://doubles.me/2015/11/10/151110/)
 [Open Your Russia](http://doubles.me/2016/06/15/160615/)
 [Finland where the sun doesn't set]()
-[Slush 的前奏 Junction: 北欧最大Hackton](http://doubles.me/2015/11/10/151110/)
+
 
 
 

@@ -7,6 +7,9 @@ title: links
 [天心流水](https://blog.skyx.in/)
 > 我们所经历的每个平凡的日常，也许就是连续发生的奇迹 —— 《日常》
 
+[吴钧泽博客](https://wujunze.com/)
+> 互联网技术交流与分享|CODE因为分享而变得更美好
+
 [异次元sky](http://www.ycysky.com/)
 > 分享技术和生活
 
@@ -15,3 +18,5 @@ title: links
 
 [雨宫千鹤](https://bismarck.moe/)
 > 分享技术和生活
+
+
