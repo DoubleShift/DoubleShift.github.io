@@ -3,7 +3,7 @@ title: 关于我
 
 完全没有任何艺术细菌的胖屌屌，充满了对世界的好奇。当不成科学家，总可以当一个梦想家咯。
 
-## **从入门到放弃**
+## **从入门到放弃 【新技能Get】**
 [30分钟从入门到放弃 - 摩斯码](http://doubles.me/2016/06/23/160623/)
 [2小时从入门到放弃 - 尤里克克](http://doubles.me/2016/06/21/160621/)
 [2个周末从入门到放弃 - 跳伞](http://doubles.me/2015/09/26/150926/)
@@ -14,9 +14,9 @@ title: 关于我
 
 ## **胖屌进城 【游记】**
 
-[Slush 的前奏 Junction: 北欧最大Hackton](http://doubles.me/2015/11/10/151110/)
-[Open Your Russia](http://doubles.me/2016/06/15/160615/)
-[Finland where the sun doesn't set]()
+2015/11 [Slush 的前奏 Junction: 北欧最大Hackton](http://doubles.me/2015/11/10/151110/)
+2016/06 [Open Your Russia](http://doubles.me/2016/06/15/160615/)
+2014-16 [Finland where the sun doesn't set]()
 
 
 
@@ -26,23 +26,23 @@ title: 关于我
 以下翻译项目发表在CSDN.com, Linux.cn 等网站。
 
 **Why JavaScript Is and Continue to Be the First Choise of Programmer？**
-2014/11/16 翻译 [原文](http://www.dzone.com/articles/why-javascript-and-will)
-2014/11/18 发表 [译文](http://code.csdn.net/news/2822698)
+2014/11/16 [原文](http://www.dzone.com/articles/why-javascript-and-will)
+2014/11/18 [译文](http://code.csdn.net/news/2822698)
 
 
 **5 Best Open Source Web Browser Security Apps**
-2014/11/20 翻译 [原文](http://www.smallbusinesscomputing.com/biztools/5-best-open-source-web-browser-security-apps.html)
-2014/11/21 发表 [译文](http://code.csdn.net/news/2822757)
+2014/11/20 [原文](http://www.smallbusinesscomputing.com/biztools/5-best-open-source-web-browser-security-apps.html)
+2014/11/21 [译文](http://code.csdn.net/news/2822757)
 
 
 **5 Awesome Open Source Backup Software For Linux and Unix-like Systems**
-2014/11/26 翻译 [原文](http://www.cyberciti.biz/open-source/awesome-backup-software-for-linux-unix-osx-windows-systems/)
-2014/11/29 发表 [译文](http://code.csdn.net/news/2822844)
+2014/11/26 [原文](http://www.cyberciti.biz/open-source/awesome-backup-software-for-linux-unix-osx-windows-systems/)
+2014/11/29 [译文](http://code.csdn.net/news/2822844)
 
 
 ** UbuTricks--Script to install the latest versions of several games and applications in Ubuntu **
-2014/11/28 翻译 [原文](http://www.ubuntugeek.com/ubutricks-script-to-install-the-latest-versions-of-several-games-and-applications-in-ubuntu.html)
-2014/12/02 发表 [译文](https://linux.cn/article-4350-1.html)
+2014/11/28 [原文](http://www.ubuntugeek.com/ubutricks-script-to-install-the-latest-versions-of-several-games-and-applications-in-ubuntu.html)
+2014/12/02 [译文](https://linux.cn/article-4350-1.html)
 
 
 ## **读书笔记**
