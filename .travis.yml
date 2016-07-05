@@ -1,0 +1,24 @@
+branches:
+  only:
+  - backup
+
+language: node_js
+
+sudo: false
+
+node_js:
+    - 'stable'
+
+before_install:
+- git config --global user.name "travis.org"
+- git config --global user.email fjjwlzd@163.com
+- git clone -b master git@github.com:DoubleShift/DoubleShift.github.io.git .deploy_git
+
+install:
+- npm install hexo-cli -g
+- npm install
+
+script:
+- hexo clean
+- hexo g
+- hexo d
