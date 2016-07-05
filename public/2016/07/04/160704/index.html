@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>如何处理博客图片 | 双人份 Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="博客的图床用的是七牛的空间，使用了一个叫做 qiniu_sync的python脚本上传。不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。我repo的 qiniu_sync">
+  <meta name="description" content="0x00 图片压缩由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。接着使用这个repo 的python 脚本 TinyPng。python tinypng.py -d test这样就压缩了test目录下的所有图片。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何处理博客图片">
 <meta property="og:url" content="http://doubles.me/2016/07/04/160704/index.html">
 <meta property="og:site_name" content="双人份 Blog">
-<meta property="og:description" content="博客的图床用的是七牛的空间，使用了一个叫做 qiniu_sync的python脚本上传。不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。我repo的 qiniu_sync">
+<meta property="og:description" content="0x00 图片压缩由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。接着使用这个repo 的python 脚本 TinyPng。python tinypng.py -d test这样就压缩了test目录下的所有图片。">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160705.png">
-<meta property="og:updated_time" content="2016-07-05T07:15:33.000Z">
+<meta property="og:updated_time" content="2016-07-05T18:12:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何处理博客图片">
-<meta name="twitter:description" content="博客的图床用的是七牛的空间，使用了一个叫做 qiniu_sync的python脚本上传。不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。我repo的 qiniu_sync">
+<meta name="twitter:description" content="0x00 图片压缩由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。接着使用这个repo 的python 脚本 TinyPng。python tinypng.py -d test这样就压缩了test目录下的所有图片。">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
@@ -201,7 +201,8 @@ function dispatch() {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>博客的图床用的是七牛的空间，使用了一个叫做 <a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a>的python脚本上传。<br>不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。<br>我repo的 <a href="https://github.com/DoubleShift/qiniu_sync" target="_blank" rel="external">qiniu_sync</a><br><a id="more"></a></p>
+        <h2 id="0x00_图片压缩">0x00 图片压缩</h2><p>由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。<br>使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。<br>接着使用这个repo 的python 脚本 <a href="https://github.com/GcsSloop/TinyPng" target="_blank" rel="external">TinyPng</a>。<br><code>python tinypng.py -d test</code><br>这样就压缩了test目录下的所有图片。<br><a id="more"></a></p>
+<h2 id="0x01_图片上传">0x01 图片上传</h2><p>博客的图床用的是七牛的空间，使用了一个叫做 <a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a>的python脚本上传。<br>不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。<br>我repo的 <a href="https://github.com/DoubleShift/qiniu_sync" target="_blank" rel="external">qiniu_sync</a></p>
 <p>图片放到这里，然后运行脚本就可以了。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160705.png" alt="20160705.png"></p>
 
       

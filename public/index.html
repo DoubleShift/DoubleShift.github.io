@@ -190,7 +190,7 @@ function dispatch() {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>博客的图床用的是七牛的空间，使用了一个叫做 <a href="https://github.com/heqingpan/qiniu_sync">qiniu_sync</a>的python脚本上传。<br>不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。<br>我repo的 <a href="https://github.com/DoubleShift/qiniu_sync">qiniu_sync</a><br>
+        <h2 id="0x00_图片压缩">0x00 图片压缩</h2><p>由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。<br>使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。<br>接着使用这个repo 的python 脚本 <a href="https://github.com/GcsSloop/TinyPng">TinyPng</a>。<br><code>python tinypng.py -d test</code><br>这样就压缩了test目录下的所有图片。<br>
       
     </div>
     
