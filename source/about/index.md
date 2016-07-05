@@ -14,9 +14,9 @@ title: 关于我
 
 ## **胖屌进城 【游记】**
 
-2015/11 [Slush 的前奏 Junction: 北欧最大Hackton](http://doubles.me/2015/11/10/151110/)
-2016/06 [Open Your Russia](http://doubles.me/2016/06/15/160615/)
-2014-16 [Finland where the sun doesn't set]()
+[Slush 的前奏 Junction: 北欧最大Hackton](http://doubles.me/2015/11/10/151110/)
+[Open Your Russia](http://doubles.me/2016/06/15/160615/)
+[Finland where the sun doesn't set]()
 
 
 

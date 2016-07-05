@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-07-01T14:11:02.000Z</updated>
+  <updated>2016-07-05T07:15:33.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[如何处理博客图片]]></title>
+    <link href="http://doubles.me/2016/07/04/160704/"/>
+    <id>http://doubles.me/2016/07/04/160704/</id>
+    <published>2016-07-04T04:01:08.000Z</published>
+    <updated>2016-07-05T07:15:33.000Z</updated>
+    <content type="html"><![CDATA[<p>博客的图床用的是七牛的空间，使用了一个叫做 <a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a>的python脚本上传。<br>不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。<br>我repo的 <a href="https://github.com/DoubleShift/qiniu_sync" target="_blank" rel="external">qiniu_sync</a><br><a id="more"></a></p>
+<p>图片放到这里，然后运行脚本就可以了。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160705.png" alt="20160705.png"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>博客的图床用的是七牛的空间，使用了一个叫做 <a href="https://github.com/heqingpan/qiniu_sync">qiniu_sync</a>的python脚本上传。<br>不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。<br>我repo的 <a href="https://github.com/DoubleShift/qiniu_sync">qiniu_sync</a><br>]]>
+    
+    </summary>
+    
+      <category term="Code" scheme="http://doubles.me/categories/Code/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[30分钟从入门到放弃 - 摩斯码]]></title>
@@ -46,9 +64,9 @@
     <link href="http://doubles.me/2016/06/21/160621/"/>
     <id>http://doubles.me/2016/06/21/160621/</id>
     <published>2016-06-21T17:20:03.000Z</published>
-    <updated>2016-07-01T14:11:15.000Z</updated>
+    <updated>2016-07-04T03:37:18.000Z</updated>
     <content type="html"><![CDATA[<p>这是小情歌的伴奏部分，按照这个谱子来就行了。<br>当然一不小心会弹出“ 天不刮风，天不下雨 ” 的调调。<br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_20160626_173728.jpg" alt="IMG_20160626_173728.jpg"></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/IMG_20160626_173728.jpg" alt="IMG_20160626_173728.jpg"></p>
 <embed src="http://player.youku.com/player.php/sid/XMTYyMTE5NzU0OA==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 
@@ -439,19 +457,19 @@
     <link href="http://doubles.me/2015/09/26/150926/"/>
     <id>http://doubles.me/2015/09/26/150926/</id>
     <published>2015-09-26T14:10:03.000Z</published>
-    <updated>2016-07-01T14:12:01.000Z</updated>
+    <updated>2016-07-04T03:36:36.000Z</updated>
     <content type="html"><![CDATA[<p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。</p>
 <p>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092603.jpg" alt="15092603.jpg"></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/15092603.jpg" alt="15092603.jpg"></p>
 <a id="more"></a>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092601.jpg" alt="15092601.jpg"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092602.jpg" alt="15092602.jpg"></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/15092601.jpg" alt="15092601.jpg"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/15092602.jpg" alt="15092602.jpg"></p>
 <p>如果想要拿到证装逼的话需要跳30次左右。我手上有一个航空日志，会记录每次跳伞的评价。<br>然而我只跳了一次。</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_20160627_042542.jpg" alt="IMG_20160627_042542.jpg"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/IMG_20160627_042641.jpg" alt="IMG_20160627_042641.jpg"></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/IMG_20160627_042542.jpg" alt="IMG_20160627_042542.jpg"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/IMG_20160627_042641.jpg" alt="IMG_20160627_042641.jpg"></p>
 <embed src="http://player.youku.com/player.php/sid/XMTYyMTIwNjcxMg==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">]]></content>
     <summary type="html">
     <![CDATA[<p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。</p>
 <p>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/15092603.jpg" alt="15092603.jpg"></p>]]>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/15092603.jpg" alt="15092603.jpg"></p>]]>
     
     </summary>
     

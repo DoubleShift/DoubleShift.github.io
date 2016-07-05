@@ -164,6 +164,82 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-749" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/07/07/749/" class="article-date">
+  	<time datetime="2013-07-07T10:48:33.000Z" itemprop="datePublished">2013-07-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/07/07/749/">WordPress 如何建立一个展示站点</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>接了个单，就是建立一个展示站点，可以说是十分简单的，可是我在wordpress中和dedecms中犹豫很久，dedecms功能很强大，比较</p>
+<p>适合这种的，最后实在没有找到好的模版，就还是用wordpress了，毕竟熟悉一点，修改方便多了。</p>
+<p>首先使用了一个淘宝客主题，由于是制作衣服的，所以这个只需要简单的修改一下。</p>
+<p>这个主题可以设置的地方感觉比较麻烦，都要自己写html才行，简单说一下，不然很难上手的。</p>
+<p>使用的是这一个淘宝客主题，所以里面广告之类的还是有的，需要手动去除。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707215748.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707215748.png" alt="QQ20130707215748"></a></p>
+<p>首先给里面建立一下菜单，左方主题位置对应了分类的规则，一定要自己设置好，可以设置后在主页中查看一下，那个次导航我到现在也不知道是哪里哈哈。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707215811.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707215811.png" alt="QQ20130707215811"></a></p>
+<p>看到这个主题的设置是不是懵了，我看到就头大，这是什么玩意啊，不过还好，他提供了一个默认代码包，找到对应的名字复制过去就行了。不过这样真的很麻烦。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220110.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220110.png" alt="QQ20130707220110"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220131.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220131.png" alt="QQ20130707220131"></a></p>
+<p>这一个一般人还真看不懂，上下是对应的，上面是分类id，下面是显示名称，不过我觉得太长了，去掉了一些，所以后面的设置就没有用了。第3排确实不知道用处。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220231.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220231.png" alt="QQ20130707220231"></a></p>
+<p>这个是我为他安装的插件，都是必须的是不。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220258.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/QQ20130707220258.png" alt="QQ20130707220258"></a></p>
+<p>代码还是进行修改了的，他代码风格不是一般的shit。。。。最后来看一下网站效果。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/xuezi.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/xuezi.png" alt="xuezi"></a></p>
+<p>## </p>
+<div><br><br>最后我们恢复一下连接管理器，<br><br>WordPress 3.5 发布的时候，为了更加简洁易用，WordPress 就把一些不太常用的代码从核心代码中取消或者禁用，比如全新安装的 WordPress 博客在后台就没有链接管理器。但是如果你还是有很多朋友，需要交换链接，怎么办呢？WordPress 提供接口：<br>&gt; add_filter( ‘pre_option_link_manager_enabled’, ‘__return_true’ );<br>将上面的代码复制到当前主题的 functions.php 文件即可。<br><br>&nbsp;<br><br>都做完了他要求又变了。不过说真的，难怪网上那么多网站那么丑，在他的指导下我把网站改出了07年的风格。<br><br>而且把要创新，取消文章的概念。就是首页放5个图集。点进去就是指定的图集，然后完了。我去啊，就做个相册。。。。。。<br><br>然后选定了NextGen Gallery，功能比较多，不过还要自己修改主题模版，就是幻灯片的样式不合要求。<br><br>文章或者页面里面的放这个shortcode就行了，不过id为1的图集要创建一个<br><br>[ngg_images gallery_ids=”1”  display_type=”photocrati-nextgen_basic_thumbnails”]<br><br>&nbsp;<br><br>注：<br><br>官网上的示例代码是这样的<br><br>[ ngg_images gallery_ids=”1,3” exclusions=”4,6” display_type=”photocrati-nextgen_basic_thumbnails” ]<br><br>但实际上没有用，要把[   ]这个括号里面的空格去掉2个。然后就可以了。<br><br>&nbsp;<br><br>&nbsp;<br><br>主题下载：<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/07/taobaoke2.3free.rar" target="_blank" rel="external">taobaoke2.3free</a><br><br></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Web/">Web</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-725" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -1284,77 +1360,6 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Code/">Code</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-641" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/05/11/641/" class="article-date">
-  	<time datetime="2013-05-11T13:30:47.000Z" itemprop="datePublished">2013-05-11</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/05/11/641/">openshift用ssh登陆后的目录结构</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>之前把博客挂在sae上面- -不过速度还真是慢的可以- -</p>
-<p>最近发现openshift好像还不错，还支持ssh，所以决定弄过去</p>
-<p>折腾了一天弄openshift，ssh登陆功能比较强大</p>
-<p>不过ssh登上去之后权限比较少，能访问的目录没几个</p>
-<p>首先是/tmp/，临时文件目录，这个目录里面的文件10天不访问就会被自动删除</p>
-<p>然后就是home目录~，具体路径是/var/lib/openshift//var/lib/openshift/3b67be8bfb3c4af9ac5348b6aeaabb91，其中3b67be8bfb3c4af9ac5348b6aeaabb91是一串随机的字符串，每个不同的应用都不一样</p>
-<p>除了这个目录之外其他目录的权限都很少，要么只能读，要么连读都没法- -</p>
-<p>在home目录下面，有app-root  cron-1.4  git  mysql-5.1  php-5.3这几个目录，从名字就很容易看出来每个目录是干嘛的，在cron,mysql跟php目录下面，主要是相应的配置文件，git下面是应用对应的git库，另外home目录本身我们是没有权限对齐进行写入的，也就是没办法添加或删除这个目录下的文件</p>
-<p>然后app-root下面就是应用的数据了，里面有data，repo跟runtime三个文件夹，data里面的数据是永久保存的，repo是个符号链接，其正式路径是~/runtime/repo，里面的数据就是git push上去的东西，如果wordpress之类的东西把附件放在这个目录的子目录下面，push新代码之后数据就会丢失！runtime下面有repo文件夹，以及前面data文件夹的符号链接，和一个.state文件，里面是当前应用的状态</p>
-<p>由于repo里面的东西，每次push之后就会丢失，所以保险起见，我把wp-contest文件夹整个移动到data下面，再在repo里面弄了一个符号链接，这样每次重新push就不会出现这个问题</p>
-<p>在~下面还有隐藏文件夹.env，里面都是环境变量配置的一些文件，都是只读的，有个脚本USER_VARS，它会</p>
-<p>从.uservars的脚本里面读相应的环境变量</p>
-<p>但是我试了一下，.uservars打不开,官方在<a href="https://bugzilla.redhat.com/show_bug.cgi?id=883317里面说暂时还没开放这个功能-" target="_blank" rel="external">https://bugzilla.redhat.com/show_bug.cgi?id=883317里面说暂时还没开放这个功能-</a> -</p>
-<p>网上很多利用ssh管理openshift空间的帖子中，大都直接把数据放在repo里面，这样万一不小心用git push了一次，数据就全部丢失了，随意最好还是把有用的数据放在data里面之后做符号链接，为了方便，可以再git的脚本里面添加相应的代码</p>
-<p>如果嫌麻烦，为了保险起见，最好想办法把git的功能禁用掉- -我在网站里面没找到相应的选项，干脆就把git文件夹下面的东西都删了- -这样再对空间进行git操作就会报错- -结果就是没法用git上传代码了- -</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
 	</div>
 
 
