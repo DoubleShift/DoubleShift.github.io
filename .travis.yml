@@ -12,7 +12,8 @@ node_js:
 before_install:
 - git config --global user.name "travis.org"
 - git config --global user.email fjjwlzd@163.com
-- git clone -b master git@github.com:DoubleShift/DoubleShift.github.io.git .deploy_git
+- git clone -b backup https://github.com/DoubleShift/DoubleShift.github.io.git
+- cd DoubleShift.github.io
 
 install:
 - npm install hexo-cli -g
