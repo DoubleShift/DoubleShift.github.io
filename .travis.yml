@@ -24,7 +24,7 @@ script:
 - hexo g
 
 
--after_script:		
+after_script:		
 - cd ./public		
 - git init		
 - git config user.name "Travis.org"		
