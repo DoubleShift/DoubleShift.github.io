@@ -24,7 +24,7 @@ script:
 - hexo g
 
 
-after_script:		
+after_success:		
 - sudo rm -f '/home/travis/build/DoubleShift/DoubleShift.github.io/DoubleShift.github.io/.git/index.lock'
 - sed -i'' "/^ *repo/s~github\.com~${GH_TOKEN}@github.com~" _config.yml
 - hexo d
