@@ -71,7 +71,7 @@ stylus:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://DoubleShift@github.com/DoubleShift/DoubleShift.github.io.git
+  repo: https://${GH_TOKEN}@${GH_REF}
   branch: master
   message: Update
   
