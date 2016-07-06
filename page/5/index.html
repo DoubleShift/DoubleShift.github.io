@@ -161,79 +161,6 @@ function dispatch() {
 
       <div class="body-wrap">
   
-    <article id="post-759" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/07/07/759/" class="article-date">
-  	<time datetime="2013-07-07T11:30:32.000Z" itemprop="datePublished">2013-07-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/07/07/759/">OpenShift空间服务器503错误解决办法</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>OpenShift空间经常性的进行升级和例行的维护，短的时候1~2小时即可完成维护，有时甚至长达十几个小时都出现“503 Service Temporarily Unavailable”。那可能是httpd服务没有启动导致503错误。(httpd是Apache超文本传输协议(HTTP)服务器的主程序，被设计为一个独立运行的后台进程，它会建立一个处理请求的子进程或线程的池。)<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/07/143032B00.gif" alt=""></p>
-<h4 id="OpenShift空间503服务器错误解决"><a href="#OpenShift空间503服务器错误解决" class="headerlink" title="OpenShift空间503服务器错误解决"></a>OpenShift空间503服务器错误解决</h4><p>&nbsp;</p>
-<p>用户可以使用SSH登陆工具putty登陆，输入 “ctl_all start”或”ctl_all restart”启动httpd服务。试着输入”ctl_all restart”命令后重启了所有的服务，网站恢复即可正常。</p>
-<p>&nbsp;</p>
-<p><div></div></p>
-<p><table></table></p>
-<p><tbody></tbody></p>
-<p><tr></tr></p>
-<p><td></td></p>
-<p><pre>1<br>2<br>3<br>4</pre><br></p>
-<p><td></td></p>
-<p><pre>ctl_all start<br>ctl_all stop<br>ctl_all restart<br>ctl_all status</pre><br><br><br><br><br><br>以上代码依次为1启动、2停止、3重启、4查看应用，出现“503 Service Temporarily Unavailable”一般是执行启动和重启就行了。</p>
-<p>关于OpenShift升级进度，你可以关注OpenShift的Twitter “@openshift_ops”或访问OpenShift的Open Issue页面<a href="https://openshift.redhat.com/app/status获得最新消息。" target="_blank" rel="external">https://openshift.redhat.com/app/status获得最新消息。</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/error/">error</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Others/">Others</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
     <article id="post-749" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -1368,6 +1295,68 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-642" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/05/11/642/" class="article-date">
+  	<time datetime="2013-05-11T13:35:25.000Z" itemprop="datePublished">2013-05-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/05/11/642/">Android应用编程之Override错误</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>i一、java @override 报错处理</strong></p>
+<p>有时候在自己电脑上编译通过的java代码，在别人那里却编译不通过，总是@override报错，把@override去掉就好了，但不能从根本上解决问题。</p>
+<div>据说这是jdk的问题，@Override是JDK5就已经有了，但有个小小的Bug，就是不支持对接口的实现，认为这不是Override 而JDK6修正了这个Bug，无论是对父类的方法覆盖还是对接口的实现都可以加上@Override。</div><br><div>首先要确保安装了jdk 1.6，</div><br><div></div><br><div>然后，在eclipse中修改配置，在 Windows-&gt;Preferences–&gt;java-&gt;Compiler–&gt;compiler compliance level 中选择 1.6，刷新工程，重新编译下；</div><br><div>如果还是不行，就在报错的工程上，鼠标右键选择 Properties–&gt;Java Compiler–&gt;compiler compliance level 中选择 1.6,刷新工程，重新编译下。</div><br><div></div><br><div><strong>二、Android之@Override详解</strong></div><br><div><br><br>Android的开发者对@Override肯定是非常熟悉，不管是自己的代码中还是书上都会出现，但是他是什么意思呢？如下：<br>@Override是伪代码,表示重写(当然不写也可以),不过写上有如下好处:<br>1、可以当注释用,方便阅读<br>2、编译器可以给你验证@Override下面的方法名是否是你父类中所有的,如果没有则报错比如你如果没写@Override而你下面的方法名又写错了,这时你的编译器是可以通过的(它以为这个方法是你的子类中自己增加的方法)<br>example:<br><br>在重写父类的onCreate时，在方法前面加上@Override系统可以帮你检查方法的正确性。例如：<br><br>publicvoidonCreate(BundlesavedInstanceState){…….}<br>这种写法是正确的，如果你写成<br>publicvoidoncreate(BundlesavedInstanceState){…….}<br>这样编译器会报如下错误——<br>Themethodoncreate(Bundle)oftypeHelloWorldmustoverrideorimplementasupertypemethod，<br>以确保你正确重写onCreate方法。（因为oncreate应该为onCreate）<br>而如果你不加@Override，则编译器将不会检测出错误，而是会认为你新定义了一个方法oncreate。<br><br></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
 	</div>
 
 
