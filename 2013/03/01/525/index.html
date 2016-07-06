@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>批量拉取CET4,6级成绩 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今天4级成绩出来了，考了3趟啊，总算过了。
+话说第一次考424然后426过的没几个人吧。暗爽
+一个同学问我js好不，一问才知道他想批量拉取cet4，6级成绩。
+好吧，我弄了一下午的采集也没什么成果，就干这个吧。
+brup抓包看看，post的数据，只要我们把这个发过去就会返回结果了。
+他用sina的fetchurl，(还真没用过),没成功。
+我用nc发包过去，能成功。所以是他代码的问题。
+看了看他没">
+<meta property="og:type" content="article">
+<meta property="og:title" content="批量拉取CET4,6级成绩">
+<meta property="og:url" content="http://doubles.me/2013/03/01/525/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="今天4级成绩出来了，考了3趟啊，总算过了。
+话说第一次考424然后426过的没几个人吧。暗爽
+一个同学问我js好不，一问才知道他想批量拉取cet4，6级成绩。
+好吧，我弄了一下午的采集也没什么成果，就干这个吧。
+brup抓包看看，post的数据，只要我们把这个发过去就会返回结果了。
+他用sina的fetchurl，(还真没用过),没成功。
+我用nc发包过去，能成功。所以是他代码的问题。
+看了看他没">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302005502.png">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="批量拉取CET4,6级成绩">
+<meta name="twitter:description" content="今天4级成绩出来了，考了3趟啊，总算过了。
+话说第一次考424然后426过的没几个人吧。暗爽
+一个同学问我js好不，一问才知道他想批量拉取cet4，6级成绩。
+好吧，我弄了一下午的采集也没什么成果，就干这个吧。
+brup抓包看看，post的数据，只要我们把这个发过去就会返回结果了。
+他用sina的fetchurl，(还真没用过),没成功。
+我用nc发包过去，能成功。所以是他代码的问题。
+看了看他没">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302005502.png">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-525" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/03/01/525/" class="article-date">
+  	<time datetime="2013-03-01T14:58:29.000Z" itemprop="datePublished">2013-03-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      批量拉取CET4,6级成绩
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天4级成绩出来了，考了3趟啊，总算过了。</p>
+<p>话说第一次考424然后426过的没几个人吧。暗爽</p>
+<p>一个同学问我js好不，一问才知道他想批量拉取cet4，6级成绩。</p>
+<p>好吧，我弄了一下午的采集也没什么成果，就干这个吧。</p>
+<p>brup抓包看看，post的数据，只要我们把这个发过去就会返回结果了。</p>
+<p>他用sina的fetchurl，(还真没用过),没成功。</p>
+<p>我用nc发包过去，能成功。所以是他代码的问题。</p>
+<p>看了看他没成功的原因是没有加入referer:。</p>
+<p>&nbsp;</p>
+<p>POST /s HTTP/1.1<br>User-Agent: Opera/9.80 (Windows NT 6.1; WOW64; U; zh-cn) Presto/2.10.229 Version/11.64<br>Host: cet.99sushe.com<br>Accept: text/html, application/xml;q=0.9, application/xhtml+xml, image/png, image/webp, image/jpeg, image/gif, image/x-xbitmap, <em>/</em>;q=0.1<br>Accept-Language: zh-CN,zh;q=0.9,en;q=0.8<br>Accept-Encoding: gzip, deflate<br>Referer: <a href="http://cet.99sushe.com/" target="_blank" rel="external">http://cet.99sushe.com/</a><br>Cookie: CNZZDATA30023677=cnzz_eid%3D2104667147-1362148509-http%253A%252F%252Fcet.99sushe.com%26ntime%3D1362148509%26cnzz_a%3D0%26retime%3D1362148581357%26sin%3D%26ltime%3D1362148581357%26rtime%3D0; searchtime=1362148702<br>Connection: Keep-Alive<br>Content-Length: 36<br>Content-Type: application/x-www-form-urlencoded</p>
+<p>id=360032122111423&amp;name=%D6%DC%D0%C7</p>
+<p>&nbsp;</p>
+<p>其实我一看就知道了，然后告诉他怎么做。自己也写了一个脚本。</p>
+<p>发这些就够了，吐槽一下99sushe，广告太多了，内部人员弄的吧。</p>
+<p>POST /s HTTP/1.1<br>User-Agent: Socket Example<br>Host: cet.99sushe.com<br>Referer: <a href="http://cet.99sushe.com/" target="_blank" rel="external">http://cet.99sushe.com/</a><br>Content-Length: 36<br>Content-Type: application/x-www-form-urlencoded</p>
+<p>id=360032122111423&amp;name=%D6%DC%D0%C7</p>
+<p>&nbsp;</p>
+<p>下面看代码</p>
+<p>function getCet($ID,$NAME)<br>{</p>
+<p>$srv_ip = ‘cet.99sushe.com’;//目标服务地址<br>$srv_port = 80;<br>$url = ‘/s’; //post的URL<br>//$post_str = “id=360032122111423&amp;name=%D6%DC%D0%C7”;//要提交的内容.<br>$post_str = “id=”.$ID.”&amp;name=”.$NAME;<br>$fp = ‘’;<br>$resp_str = ‘’;<br>$errno = 0;<br>$errstr = ‘’;<br>$timeout = 10;</p>
+<p>//echo $url_str;<br>if ($srv_ip == ‘’ || $url == ‘’){<br>echo(‘ip or dest url empty&lt;br&gt;’);<br>}<br>//echo($srv_ip);<br>$fp = fsockopen($srv_ip,$srv_port,$errno,$errstr,$timeout);<br>if (!$fp){<br>echo(‘fp fail’);<br>}<br>$content_length = strlen($post_str);<br>$post_header = “POST $url HTTP/1.1\r\n”;<br>$post_header .= “Content-Type: application/x-www-form-urlencoded\r\n”;<br>$post_header .= “User-Agent: MSIE\r\n”;<br>$post_header .= “Host: “.$srv_ip.”\r\n”;<br>$post_header .= “Referer: <a href="http://cet.99sushe.com/\r\n" target="_blank" rel="external">http://cet.99sushe.com/\r\n</a>“;<br>$post_header .= “Content-Length: “.$content_length.”\r\n”;<br>$post_header .= “Connection: close\r\n\r\n”;<br>$post_header .= $post_str.”\r\n\r\n”;</p>
+<p>&nbsp;</p>
+<p>fwrite($fp,$post_header);<br>// while(!feof($fp)){<br>// $resp_str .= fgets($fp,512);<br>// }</p>
+<p>for($i=0;$i&lt;8;$i++){<br>$aa.= fgets($fp,512);}<br>$resp_str .= fgets($fp,512);<br>fclose($fp);<br>echo($resp_str);//返回值</p>
+<p>}</p>
+<p>代码比较简单，就是简单的拼接一下参数，然后post过去。</p>
+<p>在学校下载所有学生的准考证号，导出到txt。开始一直读不出数据，用空格,tab分割数据，后面发现中间是以09分割.</p>
+<p>09是什么字符？果断替换成20(空格)。</p>
+<p>list.txt中是这样的</p>
+<p>360031122105930 蔡钧泰<br>360031122107701 徐蔚然</p>
+<p>查询的姓名只要前2个字，</p>
+<p>比如我查：</p>
+<p>360031122107701 徐蔚</p>
+<p>然后就会返回：</p>
+<p>6,159,177,46,100,482,江西财经大学,徐蔚然</p>
+<p>我将结果保存在result。txt里面了。</p>
+<p>&nbsp;</p>
+<p>最终代码：</p>
+<p>&nbsp;</p>
+<p>&lt;?php</p>
+<p>$handle = fopen(‘list.txt’,’r’);<br>if($handle) {<br>while (!feof($handle)) {<br>$buffer = fgets($handle,1024);<br>$brarray = explode(‘ ‘,$buffer);</p>
+<p>$ID=$brarray[0];<br>$NAME=substr($brarray[1],0,4);</p>
+<p>getCet($ID,$NAME);<br>}<br>fclose($handle);<br>}<br>function getCet($ID,$NAME)<br>{</p>
+<p>$srv_ip = ‘cet.99sushe.com’;//目标服务地址<br>$srv_port = 80;<br>$url = ‘/s’; //post的URL<br>//$post_str = “id=360032122111423&amp;name=%D6%DC%D0%C7”;//要提交的内容.<br>$post_str = “id=”.$ID.”&amp;name=”.$NAME;<br>$fp = ‘’;<br>$resp_str = ‘’;<br>$errno = 0;<br>$errstr = ‘’;<br>$timeout = 10;</p>
+<p>//echo $url_str;<br>if ($srv_ip == ‘’ || $url == ‘’){<br>echo(‘ip or dest url empty&lt;br&gt;’);<br>}<br>//echo($srv_ip);<br>$fp = fsockopen($srv_ip,$srv_port,$errno,$errstr,$timeout);<br>if (!$fp){<br>echo(‘fp fail’);<br>}<br>$content_length = strlen($post_str);<br>$post_header = “POST $url HTTP/1.1\r\n”;<br>$post_header .= “Content-Type: application/x-www-form-urlencoded\r\n”;<br>$post_header .= “User-Agent: MSIE\r\n”;<br>$post_header .= “Host: “.$srv_ip.”\r\n”;<br>$post_header .= “Referer: <a href="http://cet.99sushe.com/\r\n" target="_blank" rel="external">http://cet.99sushe.com/\r\n</a>“;<br>$post_header .= “Content-Length: “.$content_length.”\r\n”;<br>$post_header .= “Connection: close\r\n\r\n”;<br>$post_header .= $post_str.”\r\n\r\n”;</p>
+<p>&nbsp;</p>
+<p>fwrite($fp,$post_header);<br>// while(!feof($fp)){<br>// $resp_str .= fgets($fp,512);<br>// }</p>
+<p>for($i=0;$i&lt;8;$i++){<br>$aa.= fgets($fp,512);}<br>$resp_str .= fgets($fp,512);<br>fclose($fp);<br>echo($resp_str);//返回值<br>file_put_contents(“result.txt”,$resp_str.”,”.$ID.”\r\n”,FILE_APPEND);</p>
+<p>}<br>?&gt;</p>
+<p>代码不要喷了。我是菜鸟。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302005502.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302005502.png" alt="QQ20130302005502"></a></p>
+<p>3月10日，发现这个没有拉取全，就重新拉取一下，结果居然拉不下来。抓包看一下，原来他们添加了cookies，重新制作了一下，并且捏，给做成了 <a href="http://dlinux.sinaapp.com/code%e5%be%ae%e4%bf%a1%e5%b9%b3%e5%8f%b0%e9%85%b1%e8%8f%9c%e5%b0%8f%e5%8a%a9%e6%89%8b/" title="[CODE]微信平台酱菜小助手" target="_blank" rel="external">微信平台查询cet4，6级</a>，</p>
+<p>下载地址：<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4，6级批量查分.zip" target="_blank" rel="external">4，6级批量查分代码</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/03/02/529/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          继续昨天的4级查询
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/03/01/517/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">把博客主题修改了一下</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="525" data-title="批量拉取CET4,6级成绩" data-url="http://doubles.me/2013/03/01/525/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

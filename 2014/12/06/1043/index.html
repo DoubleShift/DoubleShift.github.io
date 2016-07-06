@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>如意云安装Goagent | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。如意云自带的地址过期了，404.先在 系统-&amp;gt;软件源-&amp;gt;配置 中修改原本的网址为http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如意云安装Goagent">
+<meta property="og:url" content="http://doubles.me/2014/12/06/1043/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。如意云自带的地址过期了，404.先在 系统-&amp;gt;软件源-&amp;gt;配置 中修改原本的网址为http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206124135.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ201412061242591.png">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如意云安装Goagent">
+<meta name="twitter:description" content="网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。如意云自带的地址过期了，404.先在 系统-&amp;gt;软件源-&amp;gt;配置 中修改原本的网址为http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-1043" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/06/1043/" class="article-date">
+  	<time datetime="2014-12-06T09:54:12.000Z" itemprop="datePublished">2014-12-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      如意云安装Goagent
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。<br>如意云自带的地址过期了，404.<br>先在 系统-&gt;软件源-&gt;配置 中修改原本的网址为<br><a href="http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages" target="_blank" rel="external">http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages</a></p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" alt="QQ20141206123304"></a></p>
+<a id="more"></a>
+<p>然后ssh登入，192.168.99.1  帐号是root：54321<br>接着执行： opkg update<br>然后执行：opkg install libopenssl python pyopenssl python-openssl<br>执行这一句的时候会出错，提示找不到依赖。</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206124135.png" alt="QQ20141206124135"></p>
+<p>satisfy_dependencies_for: Cannot satisfy the following dependencies for python:</p>
+<ul>
+<li>libc <em> libc </em> libc <em> libc </em></li>
+<li>opkg_install_cmd: Cannot install package python</li>
+</ul>
+<p>不要紧，直接找到它的地址，下载回来再安装。<br>wget <a href="http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages/libc_0.9.33.2-1_ralink.ipk" target="_blank" rel="external">http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages/libc_0.9.33.2-1_ralink.ipk</a><br>opkg install libc_0.9.33.2-1_ralink.ipk</p>
+<p>然后会看到安装成功的图，这下查看一下安装了哪些包。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ201412061242591.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ201412061242591.png" alt="QQ20141206124259"></a></p>
+<p>然后就是配置goagent，这个就不多说了。</p>
+<p>注意0.0.0.0是监听所有地址，这样才能在局域网中生效。</p>
+<p>然后是添加到启动项中，添加 python /root/goagent/proxy.py 到 /etc/rc.local 中就Ok。</p>
+<p>也可以在路由配置Web的启动项中添加。</p>
+<p>路径没有注册，所以用的/opt/usr/bin/python /root/goagent/proxy.py</p>
+<p>下一步是安装Gevent，可以减少CPU的消耗，但是还没有成功。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/12/30/1053/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Thinkpad E531 安装Mac 10.10
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/11/17/1031/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">博客待办事项</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="1043" data-title="如意云安装Goagent" data-url="http://doubles.me/2014/12/06/1043/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

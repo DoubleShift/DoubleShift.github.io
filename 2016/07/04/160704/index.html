@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>如何处理博客图片 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="0x00 图片压缩由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。接着使用这个repo 的python 脚本 TinyPng。python tinypng.py -d test这样就压缩了test目录下的所有图片。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何处理博客图片">
+<meta property="og:url" content="http://doubles.me/2016/07/04/160704/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="0x00 图片压缩由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。接着使用这个repo 的python 脚本 TinyPng。python tinypng.py -d test这样就压缩了test目录下的所有图片。">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160705.png">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何处理博客图片">
+<meta name="twitter:description" content="0x00 图片压缩由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。接着使用这个repo 的python 脚本 TinyPng。python tinypng.py -d test这样就压缩了test目录下的所有图片。">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160705.png">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-160704" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/07/04/160704/" class="article-date">
+  	<time datetime="2016-07-04T04:01:08.000Z" itemprop="datePublished">2016-07-04</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      如何处理博客图片
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="0x00-图片压缩"><a href="#0x00-图片压缩" class="headerlink" title="0x00 图片压缩"></a>0x00 图片压缩</h2><p>由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。<br>使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。<br>接着使用这个repo 的python 脚本 <a href="https://github.com/GcsSloop/TinyPng" target="_blank" rel="external">TinyPng</a>。<br><code>python tinypng.py -d test</code><br>这样就压缩了test目录下的所有图片。<br><a id="more"></a></p>
+<h2 id="0x01-图片上传"><a href="#0x01-图片上传" class="headerlink" title="0x01 图片上传"></a>0x01 图片上传</h2><p>博客的图床用的是七牛的空间，使用了一个叫做 <a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a>的python脚本上传。<br>不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。<br>我repo的 <a href="https://github.com/DoubleShift/qiniu_sync" target="_blank" rel="external">qiniu_sync</a></p>
+<p>图片放到这里，然后运行脚本就可以了。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160705.png" alt="20160705.png"></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/07/05/160705/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Travis + Hexo + Github 打造在线编辑博客
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/23/160623/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">30分钟从入门到放弃 - 摩斯码</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="160704" data-title="如何处理博客图片" data-url="http://doubles.me/2016/07/04/160704/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

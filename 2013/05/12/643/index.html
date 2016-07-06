@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>openshift部署python环境及端口问题 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="https://github.com/openshift/openshift-diy-py27-django
+按照这个方式可以部署python2.7
+Create a new OpenShift app:
+
+rhc app create -a &amp;amp;lt;app_name&amp;amp;gt; -t diy-0.1Login to the application host using the cre">
+<meta property="og:type" content="article">
+<meta property="og:title" content="openshift部署python环境及端口问题">
+<meta property="og:url" content="http://doubles.me/2013/05/12/643/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="https://github.com/openshift/openshift-diy-py27-django
+按照这个方式可以部署python2.7
+Create a new OpenShift app:
+
+rhc app create -a &amp;amp;lt;app_name&amp;amp;gt; -t diy-0.1Login to the application host using the cre">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="openshift部署python环境及端口问题">
+<meta name="twitter:description" content="https://github.com/openshift/openshift-diy-py27-django
+按照这个方式可以部署python2.7
+Create a new OpenShift app:
+
+rhc app create -a &amp;amp;lt;app_name&amp;amp;gt; -t diy-0.1Login to the application host using the cre">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-643" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/05/12/643/" class="article-date">
+  	<time datetime="2013-05-12T18:41:37.000Z" itemprop="datePublished">2013-05-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      openshift部署python环境及端口问题
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://github.com/openshift/openshift-diy-py27-django" target="_blank" rel="external">https://github.com/openshift/openshift-diy-py27-django</a></p>
+<p>按照这个方式可以部署python2.7</p>
+<p>Create a new OpenShift app:</p>
+<ul>
+<li><p><code>rhc app create -a &amp;lt;app_name&amp;gt; -t diy-0.1</code><br>Login to the application host using the credentials from the above command. It will look like<code>ssh://c8812345:123214@&amp;lt;app_name&amp;gt;-namespace.rhcloud.com</code>:</p>
+</li>
+<li><p><code>ssh c8812345:123214@&amp;lt;app_name&amp;gt;-namespace.rhcloud.com</code><br>Change into the application tmp directory:</p>
+</li>
+<li><p><code>cd $OPENSHIFT_TMP_DIR</code><br>Download Python2.7 and extract:</p>
+</li>
+<li><p><code>wget http://python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2</code></p>
+</li>
+<li><p><code>tar jxf Python-2.7.3.tar.bz2</code><br>Build and install Python</p>
+</li>
+<li><p><code>./configure --prefix=$OPENSHIFT_DATA_DIR</code></p>
+</li>
+<li><p><code>make ; make install</code><br>Export new Python path for later configuration (you will need to run this if you logout, etc.):</p>
+</li>
+<li><p><code>export PATH=$OPENSHIFT_DATA_DIR/bin:$PATH</code><br>Check that new Python is used (should be <code>Python 2.7.3</code>):</p>
+</li>
+<li><p><code>python -V</code><br>Install setuptools and pip</p>
+</li>
+<li><p><code>cd $OPENSHIFT_TMP_DIR</code></p>
+</li>
+<li><code>wget http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz</code></li>
+<li><code>tar zxf setuptools-0.6c11.tar.gz</code></li>
+<li><code>cd setuptools-0.6c11</code></li>
+<li><code>python setup.py install</code></li>
+<li><code>cd $OPENSHIFT_TMP_DIR</code></li>
+<li><code>wget http://pypi.python.org/packages/source/p/pip/pip-1.1.tar.gz</code></li>
+<li><code>tar zxf pip-1.1.tar.gz</code></li>
+<li><code>cd pip-1.1</code></li>
+<li><code>python setup.py install</code><br>端口绑定的问题</li>
+</ul>
+<p>openshift 不是每个端口都可以对外的。大部分你熟悉的端口都已经<a href="https://openshift.redhat.com/community/kb/kb-e1038-i-cant-bind-to-a-port" target="_blank" rel="external">在内外两边都为官方应用保留了</a>，内部你只可以用 15000 – 35530，对外只可以 bind 到 ${OPENSHIFT_INTERNAL_PORT} 也就是 8080，会通过 80 端口转发给外部。</p>
+<p>&nbsp;</p>
+<p>使用 $ rhc port-forward -a applicationName 则可以将端口转发到本地</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/05/22/646/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          一键评教
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/05/11/642/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Android应用编程之Override错误</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="643" data-title="openshift部署python环境及端口问题" data-url="http://doubles.me/2013/05/12/643/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

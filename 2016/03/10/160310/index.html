@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>VPS Bench | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="总是会买各种各样的VPS，买完就要测速，然后就是闲着。真的是浪费生命浪费钱啊。这里总结一下买来VPS后如何了解VPS的情况。推荐在你常用的时候跑测试，毕竟服务器的负载不一样跑出来的结果也不一样。我用AWS的机器来测试一下。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VPS Bench">
+<meta property="og:url" content="http://doubles.me/2016/03/10/160310/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="总是会买各种各样的VPS，买完就要测速，然后就是闲着。真的是浪费生命浪费钱啊。这里总结一下买来VPS后如何了解VPS的情况。推荐在你常用的时候跑测试，毕竟服务器的负载不一样跑出来的结果也不一样。我用AWS的机器来测试一下。">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603101.png-body">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603102.png-body">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603103.png-body">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603104.png-body">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="VPS Bench">
+<meta name="twitter:description" content="总是会买各种各样的VPS，买完就要测速，然后就是闲着。真的是浪费生命浪费钱啊。这里总结一下买来VPS后如何了解VPS的情况。推荐在你常用的时候跑测试，毕竟服务器的负载不一样跑出来的结果也不一样。我用AWS的机器来测试一下。">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603101.png-body">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-160310" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/10/160310/" class="article-date">
+  	<time datetime="2016-03-09T22:00:00.000Z" itemprop="datePublished">2016-03-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      VPS Bench
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VPS/">VPS</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>总是会买各种各样的VPS，买完就要测速，然后就是闲着。真的是浪费生命浪费钱啊。<br>这里总结一下买来VPS后如何了解VPS的情况。<br>推荐在你常用的时候跑测试，毕竟服务器的负载不一样跑出来的结果也不一样。<br>我用AWS的机器来测试一下。</p>
+<a id="more"></a>
+<h2 id="1-网络性能测试"><a href="#1-网络性能测试" class="headerlink" title="1. 网络性能测试"></a>1. 网络性能测试</h2><p>首先执行<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- bench.sh <span class="string">| bash</span></div></pre></td></tr></table></figure></p>
+<p>其中的那个 <code>bench.sh</code> 就是域名， 也是脚本名字了。我真的很崇拜能想到这个的人。<br>再来看下<code>bench.sh</code>能干什么:</p>
+<ol>
+<li>显示当前测试的各种系统信息；</li>
+<li>取自世界多处的知名数据中心的测试点，下载测试比较全面；</li>
+<li>支持 IPv6 下载测速；</li>
+<li>IO 测试三次，并显示平均值。</li>
+</ol>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603101.png-body" alt=""></p>
+<p>另一个选择就是使用<code>Speedtest-cli</code>,这个还能看到上传速度。<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wget -O speedtest-<span class="keyword">cli</span> https://raw.githubusercontent.com/sivel/speedtest-<span class="keyword">cli</span>/master/speedtest_cli.py</div><div class="line">chmod +<span class="built_in">x</span> speedtest-<span class="keyword">cli</span></div><div class="line">./speedtest_cli</div></pre></td></tr></table></figure></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603102.png-body" alt=""></p>
+<h2 id="2-IO性能测试"><a href="#2-IO性能测试" class="headerlink" title="2. IO性能测试"></a>2. IO性能测试</h2><p>测试硬盘IO性能，对硬盘的损害很大，不建议多次或长时间尝试，命令如下：<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dd <span class="attr">if=/dev/zero</span> <span class="attr">of=test</span> <span class="attr">bs=64k</span> <span class="attr">count=4k</span> <span class="attr">oflag=dsync</span></div></pre></td></tr></table></figure></p>
+<p>一般来说，如果测试结果超过10M，对正常建站就无影响。超过50M，就是非常给力状态。<br>不过现在一般都是SSD了，所以上百也正常。<br>（注：本测试对硬盘损伤较大，请酌情使用,请勿长时间使用，会被封的）<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603103.png-body" alt=""></p>
+<h2 id="3-综合性能测试"><a href="#3-综合性能测试" class="headerlink" title="3. 综合性能测试"></a>3. 综合性能测试</h2><p>这里用的是<code>UnixBench</code>，一款国外提供的linux性能专用软件，可以跑出分数来让你做对比：<br>总分情况，低于400的就算性能低下；600-800是属于正常VPS水准；超过1000分性能就算给力。<br><figure class="highlight x86asm"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">wget http://7xnueu.com1.z0.glb.clouddn.com/<span class="number">2016</span>/<span class="number">03</span>/UnixBench5<span class="meta">.1</span><span class="meta">.3</span>.tgz</div><div class="line">tar xvf UnixBench5<span class="meta">.1</span><span class="meta">.3</span>.tar.gz </div><div class="line">cd UnixBench5<span class="meta">.1</span><span class="meta">.3</span> </div><div class="line">./Run</div></pre></td></tr></table></figure></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/201603104.png-body" alt=""><br>说实话，这个成绩也是吓到我了。一般都是买廉价的VPS用来翻墙的，所以跑分多为200-400的样子，AWS将近2000着实给力。</p>
+<p>Referrence:</p>
+<ol>
+<li><a href="https://teddysun.com/444.html" target="_blank" rel="external">一键测试脚本bench.sh</a></li>
+<li><a href="https://github.com/sivel/speedtest-cli" target="_blank" rel="external">speedtest-cli</a></li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/15/160315/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Wireshark &amp; Ethereal Network Protocol Analyzer Toolkit
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/02/29/160229/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">4年一遇的闰年，晒晒我这1年用过的科技产品</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="160310" data-title="VPS Bench" data-url="http://doubles.me/2016/03/10/160310/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

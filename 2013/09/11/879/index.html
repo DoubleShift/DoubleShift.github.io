@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Cocos2d-html5山寨神仙道 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="就是把以前学习的东西总结了一下，不然就完全不知道学过什么。
+下载cocos2d-html5引擎，我这里有2.14的。现在最新版本是2，15
+http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Download
+https://github.com/cocos2d
+7.5m大小的不带例子
+目录samples 下有他的例子，主要是有4个游戏，其中有个飞机的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cocos2d-html5山寨神仙道">
+<meta property="og:url" content="http://doubles.me/2013/09/11/879/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="就是把以前学习的东西总结了一下，不然就完全不知道学过什么。
+下载cocos2d-html5引擎，我这里有2.14的。现在最新版本是2，15
+http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Download
+https://github.com/cocos2d
+7.5m大小的不带例子
+目录samples 下有他的例子，主要是有4个游戏，其中有个飞机的">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130912033323.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130912033357.png">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cocos2d-html5山寨神仙道">
+<meta name="twitter:description" content="就是把以前学习的东西总结了一下，不然就完全不知道学过什么。
+下载cocos2d-html5引擎，我这里有2.14的。现在最新版本是2，15
+http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Download
+https://github.com/cocos2d
+7.5m大小的不带例子
+目录samples 下有他的例子，主要是有4个游戏，其中有个飞机的">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130912033323.png">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-879" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/09/11/879/" class="article-date">
+  	<time datetime="2013-09-11T16:46:48.000Z" itemprop="datePublished">2013-09-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Cocos2d-html5山寨神仙道
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>就是把以前学习的东西总结了一下，不然就完全不知道学过什么。</p>
+<p>下载<span style="font-family: 'Times New Roman';">cocos2d-html5</span><span style="font-family: 宋体;">引擎，我这里有</span><span style="font-family: 'Times New Roman';">2.14</span><span style="font-family: 宋体;">的。现在最新版本是</span><span style="font-family: 'Times New Roman';">2</span><span style="font-family: 宋体;">，</span><span style="font-family: 'Times New Roman';">15</span></p>
+<p><a href="http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Download" target="_blank" rel="external">http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Download</a></p>
+<p><a href="https://github.com/cocos2d" target="_blank" rel="external">https://github.com/cocos2d</a></p>
+<p>7.5m大小<span style="font-family: 宋体;">的不带例子</span></p>
+<p>目录<span style="font-family: 'Times New Roman';">samples </span><span style="font-family: 宋体;">下有他的例子，主要是有</span><span style="font-family: 'Times New Roman';">4</span><span style="font-family: 宋体;">个游戏，其中有个飞机的大家可以特别看看，对了解整个游戏过程很不错。我是看完了。</span></p>
+<p>然后把<span style="font-family: 'Times New Roman';">hello word</span><span style="font-family: 宋体;">中的代码复制到根目录中，（这些不是必须的，只是我是要发布的，所以先这么干了）。删掉其他用不到的目录，最后结果是这样的。</span></p>
+<p>然后 修改<span style="font-family: 'Times New Roman';">index.htm ,main.js,cocos2d.js, src/resouorce.js,src/start.js</span></p>
+<p>这几个文件可以在官方说明中看到他们的关系，</p>
+<p>Index.htm <span style="font-family: 宋体;">中要包含一个</span><span style="font-family: 'Times New Roman';">canvas </span></p>
+<p>&lt;canvas id=”gameCanvas” width=”960” height=”512”&gt;</p>
+<p>然后引入我们的<span style="font-family: 'Times New Roman';">cocos2d.js</span></p>
+<p>&lt;script src=”cocos2d.js”&gt;&lt;/script&gt;</p>
+<p>Cocos2d.js</p>
+<p>这个文件中要修改我们 <span style="font-family: 'Times New Roman';">canvas </span><span style="font-family: 宋体;">的</span><span style="font-family: 'Times New Roman';">id</span><span style="font-family: 宋体;">，</span><span style="font-family: 'Times New Roman';">cocos </span><span style="font-family: 宋体;">的引擎地址，和我们要包含的</span><span style="font-family: 'Times New Roman';">js</span><span style="font-family: 宋体;">文件</span></p>
+<p>var cc = cc || {};</p>
+<p>(function () {</p>
+<p>var d = document;</p>
+<p>var c = {</p>
+<p>menuType:’canvas’, //whether to use canvas mode menu or dom menu</p>
+<p>COCOS2D_DEBUG:2, //0 to turn debug off, 1 for basic debug, and 2 for full debug</p>
+<p>showFPS:true,</p>
+<p>loadExtension:true,</p>
+<p>frameRate:60,</p>
+<p>tag:’gameCanvas’, //the dom element to run cocos2d on</p>
+<p>engineDir:’cocos2d/‘,   //<span style="font-family: 宋体;">引擎地址</span></p>
+<p>appFiles:[             //<span style="font-family: 宋体;">绑定文件</span></p>
+<p>‘src/resource.js’,</p>
+<p>‘src/start.js’,</p>
+<p>‘src/mainpage.js’</p>
+<p>&nbsp;</p>
+<p>]</p>
+<p>};</p>
+<p>window.addEventListener(‘DOMContentLoaded’, function () {</p>
+<p>//first load engine file if specified</p>
+<p>var s = d.createElement(‘script’);</p>
+<p>/<strong><strong>*</strong></strong>Delete this section if you have packed all files into one<strong><em>*</em></strong>/</p>
+<p>if (c.SingleEngineFile &amp;&amp; !c.engineDir) {</p>
+<p>s.src = c.SingleEngineFile;</p>
+<p>}</p>
+<p>else if (c.engineDir &amp;&amp; !c.SingleEngineFile) {</p>
+<p>s.src = c.engineDir + ‘platform/jsloader.js’;</p>
+<p>}</p>
+<p>else {</p>
+<p>alert(‘You must specify either the single engine file OR the engine directory in “cocos2d.js”‘);</p>
+<p>}</p>
+<p>/<strong><strong>*</strong></strong>Delete this section if you have packed all files into one<strong><em>*</em></strong>/</p>
+<p>&nbsp;</p>
+<p>//s.src = ‘Packed_Release_File.js’; //IMPORTANT: Un-comment this line if you have packed all files into one</p>
+<p>&nbsp;</p>
+<p>d.body.appendChild(s);</p>
+<p>document.ccConfig = c;</p>
+<p>s.id = ‘cocos2d-html5’;</p>
+<p>//else if single file specified, load singlefile</p>
+<p>});</p>
+<p>&nbsp;</p>
+<p>})();</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Main.js</p>
+<p>这个文件是我们的入口文件，其他的都默认，</p>
+<p>var myApp = new cocos2dApp(WorldScene);  <span style="font-family: 宋体;">这一句话 创建了我们定义的场景了。</span></p>
+<p>&nbsp;</p>
+<p>WordScene <span style="font-family: 宋体;">在我们的</span><span style="font-family: 'Times New Roman';">start.js</span><span style="font-family: 宋体;">中定义了。</span></p>
+<p>var WorldScene = cc.Scene.extend({</p>
+<p>onEnter : function() {</p>
+<p>this._super();</p>
+<p>var layer = new MainPage();</p>
+<p>this.addChild(layer);</p>
+<p>}</p>
+<p>});</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>准备好背景资源 ，写入<span style="font-family: 'Times New Roman';">resource.js</span></p>
+<p>//BackGround</p>
+<p>var s_ground=”res/ground.png”;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>var g_ressources = [</p>
+<p>//Image</p>
+<p>{type:”image”, src:s_ground},</p>
+<p>];</p>
+<p>&nbsp;</p>
+<p>保存后就可以看到我们的场景了。</p>
+<p>&nbsp;</p>
+<p>是不是有些文不对题，因为中间的文字还没写完。</p>
+<p>这个实现了人物的动画，左右跑动，可拖动对话框，同时使用websocket简单的进行了通讯，能够自动应答。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130912033323.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130912033323.png" alt="QQ20130912033323"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130912033357.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130912033357.png" alt="QQ20130912033357"></a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/09/27/886/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          暴力破解wordpress后台
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/08/28/874/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">总结下家里装电视的方案</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="879" data-title="Cocos2d-html5山寨神仙道" data-url="http://doubles.me/2013/09/11/879/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

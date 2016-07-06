@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Thinkpad E531 安装Mac 10.10 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。
+花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。
+1. 虚拟机">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Thinkpad E531 安装Mac 10.10">
+<meta property="og:url" content="http://doubles.me/2014/12/30/1053/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。
+花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。
+1. 虚拟机">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/2.png">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Thinkpad E531 安装Mac 10.10">
+<meta name="twitter:description" content="因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。
+花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。
+1. 虚拟机">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/2.png">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-1053" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/30/1053/" class="article-date">
+  	<time datetime="2014-12-30T00:47:29.000Z" itemprop="datePublished">2014-12-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Thinkpad E531 安装Mac 10.10
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。</p>
+<p>花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。</p>
+<p><strong>1. 虚拟机</strong></p>
+<a id="more"></a>
+<p>可以下载安装镜像进行安装，但是更好的方法是下载安装好MAC 10.10的VMware镜像。</p>
+<p>另外有种方式是用VirtualBox，有个环境部署的可以直接搜到很多镜像，名字忘记了。</p>
+<p>性能实在太差，安装VMsvga2_v1.2.5_OS_10.9这个驱动后虽然可以用但是还是卡，可能与我不能开启3D加速有关。</p>
+<p>2天后放弃。</p>
+<p><strong>2.懒人版</strong></p>
+<p>PCbeta上的安装方式，但是我感觉他们有特殊的目的似乎。可以很简单的过程非要搞的这么复杂。</p>
+<p>过程是下载一个懒人版的镜像，后缀是cdr。将镜像写入一个硬盘分区，然后用变色龙引导启动，之后进行安装到另一个硬盘分区。为什么要这样？硬盘读写快吧，看起来是，但是特别麻烦。</p>
+<p><strong>3.超级懒人版&amp;整合版</strong></p>
+<p>pcbeta封掉的安装方式，但是却是最友好的方式。这里可以下载GHO镜像，<a href="http://ifunple.com/" target="_blank" rel="external">http://ifunple.com/</a>。如果它们安装成功了我会觉得是很厉害，但是它们似乎只能UEFI引导，而且官方论坛挂了，也没有教程。微博没有人回复。我尝试了其他方式引导，失败。然后下载了一个另外的镜像 <a href="http://hackintosh.zone/" target="_blank" rel="external">http://hackintosh.zone</a>，找到了番茄花园的感觉。</p>
+<p>&nbsp;</p>
+<p><strong>安装方法</strong></p>
+<p>1.下载</p>
+<p>才3个包，最简单的了。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/Yosemite-DMG-Torrent.zip" target="_blank" rel="external">Yosemite DMG Torrent</a>   <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/TransMac.zip" target="_blank" rel="external">TransMac</a>  <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/E531.zip" target="_blank" rel="external">E531</a></p>
+<p>2.用TransMac将Yosemite-Zone.dmg写入8gU盘。</p>
+<p>然后u盘启动，进入安装就OK。安装的时候选择不需要网络连接，安装完毕重启一次就行，但是只限于网线。</p>
+<p>3.驱动问题比较麻烦，我太懒了，而且很多东西也不用所以只驱动最简单的就行了。进入后唯一不能正常的就是声卡驱动，</p>
+<p>在上方前往里面选择前往/根目录，将 “ E531完美驱动 ”文件夹下的Extra文件夹，拷到MAC OS X的根目录下。然后安装压缩包里面的VoodooHDA-v2.8.0.x64.ML.pkg安装一下，就可以驱动声卡了。</p>
+<p>如果触摸板不能驱动的话把AppleACPIPS2Nub.kext这个文件删掉。</p>
+<p>如果想全部安装的话可以看这里 <a href="http://bbs.pcbeta.com/viewthread-1534401-1-1.html" target="_blank" rel="external">http://bbs.pcbeta.com/viewthread-1534401-1-1.html</a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/Yosemite-DMG-Torrent.zip" target="_blank" rel="external">
+</a></p>
+<p>&nbsp;</p>
+<p><strong>缺陷</strong></p>
+<p><span style="color: #ff0000;">1.不能驱动无线网卡</span></p>
+<p>2. 不能调节亮度，千万别按F5，F6，会花屏死机（使用esc+fn退出特殊功能可以按f5）</p>
+<p>3.没有装蓝牙，读卡器，USB3.0等的驱动</p>
+<p>4.电池电量不能显示</p>
+<p>5.不能识别插入的显示器</p>
+<p>6.尝试打lol，10分钟以后有爆显存的危险。</p>
+<p>&nbsp;</p>
+<p>就这样了，其他的要等我再使用过后才知道，慢慢编辑，力图完美。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/2.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/2.png" alt="2"></a></p>
+<p><span style="color: #ff0000;">3月1日更新</span></p>
+<p><span style="color: #000000;">花了数小时配置了mac osx的常用环境，下载了很多软件进行使用。还有一个bug就是不能修改默认视频软件，使用mplayerx不能最大化，不然就灰屏了。</span></p>
+<p><strong><span style="color: #000000;">NTFS读写</span></strong></p>
+<p><span style="color: #000000;">首先需要解决的是对ntfs的读写。安装一个叫做tuxera ntfs的软件，是ntfs-3g的更新版，可惜是收费的。pcbeta有2014版的注册码，虽然不是很鼓励，但是如果有其他像我这样一天3欧伙食费的人还是去远景把。</span></p>
+<p><strong>快捷键</strong></p>
+<p>最好能win用一样的配置。</p>
+<p><strong>alfored2</strong></p>
+<p><span style="color: #000000;"> </span></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/06/1063/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          再也不相信Google的翻译了
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/12/06/1043/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如意云安装Goagent</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="1053" data-title="Thinkpad E531 安装Mac 10.10" data-url="http://doubles.me/2014/12/30/1053/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

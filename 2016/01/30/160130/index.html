@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>WordPress迁移到Hexo | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="迁移WordPress使用插件 hexo-migrator-wordpress
+Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.Execute the following command after installed. source is the file path or URL of Wor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WordPress迁移到Hexo">
+<meta property="og:url" content="http://doubles.me/2016/01/30/160130/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="迁移WordPress使用插件 hexo-migrator-wordpress
+Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.Execute the following command after installed. source is the file path or URL of Wor">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WordPress迁移到Hexo">
+<meta name="twitter:description" content="迁移WordPress使用插件 hexo-migrator-wordpress
+Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.Execute the following command after installed. source is the file path or URL of Wor">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-160130" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/30/160130/" class="article-date">
+  	<time datetime="2016-01-30T01:57:29.000Z" itemprop="datePublished">2016-01-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      WordPress迁移到Hexo
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="迁移WordPress"><a href="#迁移WordPress" class="headerlink" title="迁移WordPress"></a>迁移WordPress</h2><p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress" target="_blank" rel="external">hexo-migrator-wordpress</a></p>
+<p>Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.<br>Execute the following command after installed. source is the file path or URL of WordPress export file.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="keyword">install</span> hexo-migrator-wordpress <span class="comment">--save</span></div><div class="line">$ hexo migrate wordpress &lt;<span class="keyword">source</span>&gt;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="处理特殊字符"><a href="#处理特殊字符" class="headerlink" title="处理特殊字符"></a>处理特殊字符</h2><p>现有问题是不能处理文章标题中的中文和特殊符号。</p>
+<p>从Wordpress迁移过来时，生成的文件名会出现如下例子<br><code>e8-bd-af-e8-bf-9e-e6-8e-a5-e5-92-8c-e7-a1-ac-e8-bf-9e-e6-8e-a5.md</code><br>因为URL中，中文是UTF-8编码。解决办法是写了一个Python脚本，然后从文件内容的id部分提取出文件名，代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os,sys,re</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">getTitle</span><span class="params">(firstLine)</span>:</span></div><div class="line">    strs = <span class="string">':'</span>.join(firstLine.split(<span class="string">':'</span>)[<span class="number">1</span>:])</div><div class="line">    strs = strs.replace(<span class="string">"'"</span>, <span class="string">''</span>) </div><div class="line">    strs = strs.strip()</div><div class="line">    title = <span class="string">'-'</span>.join(strs.split(<span class="string">' '</span>))</div><div class="line">    <span class="keyword">return</span> title</div><div class="line">    </div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    dirName = sys.argv[<span class="number">1</span>]</div><div class="line">    <span class="keyword">for</span> root,dirs,fileNames <span class="keyword">in</span> os.walk(dirName):</div><div class="line">        <span class="keyword">for</span> fileName <span class="keyword">in</span> fileNames:</div><div class="line">            <span class="keyword">print</span> <span class="string">"Old file:"</span>+fileName </div><div class="line">            <span class="comment"># print root</span></div><div class="line">            fileName = os.path.join(root, fileName)</div><div class="line">            f = open(fileName)</div><div class="line">            </div><div class="line">            <span class="comment"># Get id </span></div><div class="line">            <span class="keyword">for</span> line <span class="keyword">in</span> f: </div><div class="line">                match=re.findall(<span class="string">'^id:'</span>,line)</div><div class="line">                <span class="keyword">if</span> match != []: </div><div class="line">                    <span class="keyword">break</span>;</div><div class="line">            </div><div class="line">            title = getTitle(line)</div><div class="line">            f.close()</div><div class="line">            </div><div class="line">            newname = title + <span class="string">'.md'</span></div><div class="line">            <span class="keyword">print</span> <span class="string">"New file:"</span>+newname</div><div class="line">            os.rename(fileName, os.path.join(root,newname))</div></pre></td></tr></table></figure>
+<p>如果脚本出错的花，就是标题中出现了特殊的符号，劲量保证id中没有其他的符号。<br>也可以使用title，但是那个就比较麻烦需要是全英文的。</p>
+<p>使用方法:</p>
+<blockquote>
+<p>python convert.py source/_posts/</p>
+</blockquote>
+<h2 id="替换附件地址-使用CDN"><a href="#替换附件地址-使用CDN" class="headerlink" title="替换附件地址+使用CDN"></a>替换附件地址+使用CDN</h2><p>然后需要替换所有文本中的图片地址，这个需要看个人情况的。<br>我只需要修改域名就行，所以本地用notepad++来批量替换了。</p>
+<p>然后使用七牛的CDN<br>使用了一个python的客户端脚本，用来上传图片。<br><a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a><br>新建一个目录保存图片，然后运行 <code>python qiniu_sync</code> 就可以自动同步。</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>Github的域名绑定比较简单，只需要新建CNAME文件就行。<br>首先 <code>ping</code> 你的 Github域名，<code>ping doubleshift.github.com</code>。<br>然后得到一个IP地址，将域名解析A记录到这个IP。<br>然后创建一个文件名为<code>CNAME</code>的空文件，放到<code>source</code>就是你放博客<code>_posts</code>的父目录。<br>然后里面内容是你的域名，我的就是<code>doubles.me</code>。<br>之后<code>Hexo g -d</code>，然后就等解析生效。</p>
+<h2 id="添加统计"><a href="#添加统计" class="headerlink" title="添加统计"></a>添加统计</h2><p>使用了<a href="http://busuanzi.ibruce.info/" target="_blank" rel="external">不蒜子</a>的统计, 只需要在模版里加入2行代码就行。<br>具体教程可以参考这里 <a href="http://wangcaiyong.com/2015/06/26/busuanzi/" target="_blank" rel="external">Hexo静态博客使用不蒜子添加计数功能</a>。</p>
+<h2 id="添加站内搜索"><a href="#添加站内搜索" class="headerlink" title="添加站内搜索"></a>添加站内搜索</h2><p>由于使用的Github托管的，所以能看到本博客也不担心不能访问Google的问题，就用了Google Search。<br>教程参考的这里 <a href="http://lulee007.github.io/2016/01/23/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96%E9%85%8D%E7%BD%AE%E4%B9%8B-%E4%B8%BA%E8%87%AA%E5%B7%B1%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/" target="_blank" rel="external">Hexo博客优化配置之–为自己博客添加站内搜索</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/02/01/160201/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          4小时从入门到放弃 - 滑雪
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/01/24/160124/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">OpenCV3.0 + IntelliJ IDEA</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="160130" data-title="WordPress迁移到Hexo" data-url="http://doubles.me/2016/01/30/160130/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

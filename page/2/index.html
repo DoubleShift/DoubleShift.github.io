@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="双人份 Blog">
+<meta property="og:url" content="http://doubles.me/page/2/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="双人份 Blog">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+  
+    <article id="post-160130" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/30/160130/" class="article-date">
+  	<time datetime="2016-01-30T01:57:29.000Z" itemprop="datePublished">2016-01-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/30/160130/">WordPress迁移到Hexo</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="迁移WordPress"><a href="#迁移WordPress" class="headerlink" title="迁移WordPress"></a>迁移WordPress</h2><p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress">hexo-migrator-wordpress</a></p>
+<p>Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.<br>Execute the following command after installed. source is the file path or URL of WordPress export file.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="keyword">install</span> hexo-migrator-wordpress <span class="comment">--save</span></div><div class="line">$ hexo migrate wordpress &lt;<span class="keyword">source</span>&gt;</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/01/30/160130/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-160124" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/24/160124/" class="article-date">
+  	<time datetime="2016-01-23T22:00:00.000Z" itemprop="datePublished">2016-01-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/01/24/160124/">OpenCV3.0 + IntelliJ IDEA</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OpenCV3-0-IntelliJ-IDEA"><a href="#OpenCV3-0-IntelliJ-IDEA" class="headerlink" title="OpenCV3.0 + IntelliJ IDEA"></a>OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
+<p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenCV/">OpenCV</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/01/24/160124/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-151118" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/18/151118/" class="article-date">
+  	<time datetime="2015-11-17T22:00:00.000Z" itemprop="datePublished">2015-11-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/18/151118/">Diary 2015/11/18</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/diary/">diary</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Life/">Life</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/18/151118/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-160118" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/18/160118/" class="article-date">
+  	<time datetime="2015-11-17T22:00:00.000Z" itemprop="datePublished">2015-11-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/18/160118/">Diary 2016/01/18</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/diary/">diary</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Life/">Life</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/18/160118/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-151110" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/10/151110/" class="article-date">
+  	<time datetime="2015-11-09T22:00:00.000Z" itemprop="datePublished">2015-11-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/10/151110/">Slush 的前奏-Junction: 北欧最大Hackton</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
+<p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-812dec44bc984231.jpg-body" alt=""></p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hackthon/">hackthon</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Life/">Life</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/11/10/151110/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-150926" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/26/150926/" class="article-date">
+  	<time datetime="2015-09-26T14:10:03.000Z" itemprop="datePublished">2015-09-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/26/150926/">2个周末从入门到放弃 - 跳伞</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。</p>
+<p>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/15092603.jpg" alt="15092603.jpg"></p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Life/">Life</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/09/26/150926/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-1075" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/05/06/1075/" class="article-date">
+  	<time datetime="2015-05-06T17:17:47.000Z" itemprop="datePublished">2015-05-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/06/1075/">看看最近关于黑客的电影</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>主要有这几部，持续更新。</p>
+<h1 id="我是谁，没有安全的系统"><a href="#我是谁，没有安全的系统" class="headerlink" title="我是谁，没有安全的系统"></a>我是谁，没有安全的系统</h1><p>这部电影很值得一看，最后多重反转，而且黑客案例让人热血沸腾。虽然这些案例是俺们都yy过的。</p>
+<p>社会工程才是最牛逼的。</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Life/">Life</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/05/06/1075/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-1063" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/06/1063/" class="article-date">
+  	<time datetime="2015-01-06T01:46:00.000Z" itemprop="datePublished">2015-01-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/06/1063/">再也不相信Google的翻译了</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一直感觉Google的翻译不如Bing,但是google的译者工具包是唯一提供文档翻译的。</p>
+<p>然后看到了这个，累觉不爱。Google翻译再见。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/QQ20150106054342.png" alt=""></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Life/">Life</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-1053" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/30/1053/" class="article-date">
+  	<time datetime="2014-12-30T00:47:29.000Z" itemprop="datePublished">2014-12-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/30/1053/">Thinkpad E531 安装Mac 10.10</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。</p>
+<p>花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。</p>
+<p><strong>1. 虚拟机</strong></p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2014/12/30/1053/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-1043" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/06/1043/" class="article-date">
+  	<time datetime="2014-12-06T09:54:12.000Z" itemprop="datePublished">2014-12-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/06/1043/">如意云安装Goagent</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。<br>如意云自带的地址过期了，404.<br>先在 系统-&gt;软件源-&gt;配置 中修改原本的网址为<br><a href="http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages">http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages</a></p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" alt="QQ20141206123304"></a></p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2014/12/06/1043/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+    </nav>
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

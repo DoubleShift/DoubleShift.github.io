@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>BackTrack自动升级脚本 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;nbsp;
+相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升
+级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。
+&amp;nbsp;
+Script to update BackTrack5 V.: 1.5The purpose of Bt5up is to update/add and bug fix B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="BackTrack自动升级脚本">
+<meta property="og:url" content="http://doubles.me/2012/10/31/22/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="&amp;nbsp;
+相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升
+级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。
+&amp;nbsp;
+Script to update BackTrack5 V.: 1.5The purpose of Bt5up is to update/add and bug fix B">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BackTrack自动升级脚本">
+<meta name="twitter:description" content="&amp;nbsp;
+相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升
+级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。
+&amp;nbsp;
+Script to update BackTrack5 V.: 1.5The purpose of Bt5up is to update/add and bug fix B">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-22" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/10/31/22/" class="article-date">
+  	<time datetime="2012-10-31T13:42:56.000Z" itemprop="datePublished">2012-10-31</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      BackTrack自动升级脚本
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BackTrack/">BackTrack</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/LinuX/">LinuX</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;</p>
+<p>相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升</p>
+<p>级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。</p>
+<p>&nbsp;</p>
+<h2 id="Script-to-update-BackTrack5-V-1-5"><a href="#Script-to-update-BackTrack5-V-1-5" class="headerlink" title="Script to update BackTrack5 V.: 1.5"></a>Script to update BackTrack5 V.: 1.5</h2><p>The purpose of Bt5up is to update/add and bug fix BackTrack 5 tools.</p>
+<p><strong>Compatible with Backtrack 5 R3</strong></p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png" alt="" title="bt5up-r2-283x300"></a></p>
+<p><strong>Version 1.5 is out</strong> see the <a href="http://bl4ck5w4n.tk/wp-content/uploads/2011/07/changelog.txt" title="ChangeLog" target="_blank" rel="external">changelog </a>to read the fixes and addons.</p>
+<p>&nbsp;</p>
+<p>As you can see in the screen it display the version you have installed and the latest version available and the Main Menu with all the different topics to update/install, here is the complete menu:</p>
+<p><strong>1. Update and clean Backtrack.</strong></p>
+<p><strong>2. Exploit tools.</strong></p>
+<ol>
+<li>Metasploit Framework.</li>
+<li>Exploit-db.</li>
+<li>SET – Social Engineering Toolkit.</li>
+<li><p>Update all.<br><strong>3. Wireless &amp; Telephony.</strong></p>
+</li>
+<li><p>Aircrack-ng and Airdrop.</p>
+</li>
+<li>WarVox.</li>
+<li>WiFite.</li>
+<li>Dedected.</li>
+<li>Fern Wifi Cracker</li>
+<li>Giskismet.</li>
+<li><p>Update all<br><strong>4. Web &amp; Database.</strong></p>
+</li>
+<li><p>W3AF.</p>
+</li>
+<li>Nikto.</li>
+<li>BeEF</li>
+<li>Sqlmap.</li>
+<li>SQLNinja.</li>
+<li>Fimap.</li>
+<li>JoomScan.</li>
+<li>WPScan.</li>
+<li>HexorBase.</li>
+<li><p>Update all.<br><strong>5. Others.</strong></p>
+</li>
+<li><p>Nessus.</p>
+</li>
+<li>Wireshark</li>
+<li>OpenVAS.</li>
+<li>Nmap</li>
+<li><p>Update all.<br><div><strong>6. Update All</strong></div><br><div><strong>7. Update Script</strong></div><br><div><strong>8. Changelog</strong></div><br><div><strong>9. Feedback (Gmail)</strong></div><br><div><strong>10. Fix BT5 Bugs/Customize BT5</strong></div></p>
+<div>
+</div></li>
+<li><p>Startx after login</p>
+</li>
+<li>Change Login message(motd)</li>
+<li>Set PulseAudio to autostart</li>
+<li>Set Wicd autostart</li>
+<li><p>Install FlashPlayer 11<br><br><strong>11. Additional Tools</strong></p>
+</li>
+<li><p>Nessus</p>
+</li>
+<li>Crypter</li>
+<li>Ghost Phisher</li>
+<li>TMNT Project</li>
+<li>MinidWep-GTK</li>
+<li>The Mole<br>Download: <a href="http://bl4ck5w4n.tk/wp-content/uploads/2011/07/bt5up.tar" target="_blank" rel="external">bt5up</a></li>
+</ol>
+<p><strong>How to run:</strong></p>
+<p><div></div></p>
+<p><div id="highlighter_612158"></div></p>
+<p><table border="0" cellspacing="0" cellpadding="0"></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td></td></p>
+<p><div>1</div></p>
+<p><div>2</div></p>
+<p><div>3</div></p>
+<p><td></td></p>
+<p><div></div></p>
+<p><div><code>wget http:``//bl4ck5w4n``.tk``/wp-content/uploads/2011/07/bt5up``.``tar</code></div></p>
+<p><div><code>tar</code> <code>-xvf bt5up.``tar</code></div></p>
+<p><div><code>python bt5up.py</code></div><br><br><br><br><br><br><br><del>You can copy the bt5up.py to /bin/ to make it easy to use it:<br>cp bt5up.py /bin/bt5up<br>chmod +x /bin/bt5up</del><br>After <strong>version 1.5</strong> the script will auto install in <em>/pentest/bt5up</em> and has a symlink to <em>/bin/bt5up ,</em> so after the first time you run the script you can just type:</p>
+<p><div></div></p>
+<p><div id="highlighter_353179"></div></p>
+<p><table border="0" cellspacing="0" cellpadding="0"></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td></td></p>
+<p><div>1</div></p>
+<p><td></td></p>
+<p><div></div></p>
+<p><div><code>bt5up</code></div><br><br><br><br><br><br><br>And thats it!</p>
+<p>For more details use:</p>
+<p><div></div></p>
+<p><div id="highlighter_229048"></div></p>
+<p><table border="0" cellspacing="0" cellpadding="0"></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td></td></p>
+<p><div>1</div></p>
+<p><td></td></p>
+<p><div></div></p>
+<p><div><code>bt5up -h</code></div><br><br><br><br><br><br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png" alt="" title="bt5up-r2-283x300"></a></p>
+<p>Hope you enjoy</p>
+<p>打开终端，依次输入下列3条命令可以打开脚本，</p>
+<p><table border="0" cellspacing="0" cellpadding="0"></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td></td></p>
+<p><div>1</div></p>
+<p><div>2</div></p>
+<p><div>3</div></p>
+<p><td></td></p>
+<p><div><code>wget http:``//bl4ck5w4n``.tk``/wp-content/uploads/2011/07/bt5up``.``tar</code></div></p>
+<p><div><code>tar</code> <code>-xvf bt5up.``tar</code></div></p>
+<p><div><code>python bt5up.py</code></div><br><br><br><br>以后要试用的话只要在终端中输入bt5up就可以打开。</p>
+<p>输入bt5up -h获取帮助</p>
+<p>&nbsp;</p>
+<p>提醒大家一下，有时候升级不了的话可能是被墙了，GAE还是什么的大家掂量一下吧！</p>
+<p>大家可以访问官方主页：<a href="http://bl4ck5w4n.tk/" target="_blank" rel="external">http://bl4ck5w4n.tk</a>了解更多。</p>
+<p>当然，大家也可以在本站进行下载。</p>
+<p>本地下载：<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up.tar" target="_blank" rel="external">bt5up</a></p>
+<p>&nbsp;</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2012/11/03/34/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          WifiCrack
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2012/10/29/16/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">BackTrack 5 打包下载</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="22" data-title="BackTrack自动升级脚本" data-url="http://doubles.me/2012/10/31/22/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

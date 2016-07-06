@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Cocos2d JSB 记录贴 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="搞了一个礼拜的Jsbinding了，东拼西凑也能在手机上跑起来了。
+官方的demo在弄好环境的第2天就跑动了，但是自己创建的工程死活跑不动。这里记录遇到的坑。
+1. 创建的工程导入eclipse缺少构建器没办法，把官方的那个飞机拖出来，里面代码改掉，改成自己的。2.远程调试搞了很久的远程调试，依然连不上 。Firefox提供了远程调试，需要安装最新版本的firefox，在开发工具里面设置打开远程调">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cocos2d JSB 记录贴">
+<meta property="og:url" content="http://doubles.me/2014/01/21/962/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="搞了一个礼拜的Jsbinding了，东拼西凑也能在手机上跑起来了。
+官方的demo在弄好环境的第2天就跑动了，但是自己创建的工程死活跑不动。这里记录遇到的坑。
+1. 创建的工程导入eclipse缺少构建器没办法，把官方的那个飞机拖出来，里面代码改掉，改成自己的。2.远程调试搞了很久的远程调试，依然连不上 。Firefox提供了远程调试，需要安装最新版本的firefox，在开发工具里面设置打开远程调">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/11.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/24.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/3.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/4.png">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/52.png">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cocos2d JSB 记录贴">
+<meta name="twitter:description" content="搞了一个礼拜的Jsbinding了，东拼西凑也能在手机上跑起来了。
+官方的demo在弄好环境的第2天就跑动了，但是自己创建的工程死活跑不动。这里记录遇到的坑。
+1. 创建的工程导入eclipse缺少构建器没办法，把官方的那个飞机拖出来，里面代码改掉，改成自己的。2.远程调试搞了很久的远程调试，依然连不上 。Firefox提供了远程调试，需要安装最新版本的firefox，在开发工具里面设置打开远程调">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/11.png">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-962" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/01/21/962/" class="article-date">
+  	<time datetime="2014-01-21T07:43:45.000Z" itemprop="datePublished">2014-01-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Cocos2d JSB 记录贴
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cocos2d/">cocos2d</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>搞了一个礼拜的Jsbinding了，东拼西凑也能在手机上跑起来了。</p>
+<p>官方的demo在弄好环境的第2天就跑动了，但是自己创建的工程死活跑不动。这里记录遇到的坑。</p>
+<p>1. 创建的工程导入eclipse缺少构建器<br>没办法，把官方的那个飞机拖出来，里面代码改掉，改成自己的。<br>2.远程调试<br>搞了很久的远程调试，依然连不上 。<br>Firefox提供了远程调试，需要安装最新版本的firefox，在开发工具里面设置打开远程调试。<br>然后设置Android <a href="https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Firefox_for_Android" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Firefox_for_Android</a><br>修改代码支持远程调试 <a href="https://github.com/cocos2d/cocos2d-x/blob/f9c34bc18ee061f1964d8c7d100f0c4fce9c6ee5/cocos/scripting/javascript/script/debugger/README.md" target="_blank" rel="external">https://github.com/cocos2d/cocos2d-x/blob/f9c34bc18ee061f1964d8c7d100f0c4fce9c6ee5/cocos/scripting/javascript/script/debugger/README.md</a> （didn’t run）<br>注意端口不是6000</p>
+<p>3.运行后黑屏等错误<br>出错了，虽然logcat里经常看不到出错的信息，但是就是出错了。 手动排查一下，可能就是哪个js文件不能绑定上去。<br>比如说 NotificationCenter，需要复制到自己的工程中作为js引用，但是不能直接绑定，但是应该是可以的，原因待定。<br>比如说 setFlippedX 在 html5是 ok的，但是在jsb中要使用 setFlipX （3.0版本修复 <a href="http://www.cocos2d-x.org/forums/20/topics/41167）。" target="_blank" rel="external">http://www.cocos2d-x.org/forums/20/topics/41167）。</a></p>
+<p>4.分辨率错误<br>实在是不好弄，到处错位，而且只有show_all不会黑屏</p>
+<p>最后，游戏demo预期图应该是这样的。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/52.png" target="_blank" rel="external">
+</a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/11.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/11.png" alt="1"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/24.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/24.png" alt="2"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/3.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/3.png" alt="3"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/4.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/4.png" alt="4"></a></p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/52.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/01/52.png" alt="5"></a></p>
+<p>&nbsp;</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/01/26/980/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          如何一次清空Gmail邮件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/12/18/937/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Cocos2d-html5 touch事件总结</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="962" data-title="Cocos2d JSB 记录贴" data-url="http://doubles.me/2014/01/21/962/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

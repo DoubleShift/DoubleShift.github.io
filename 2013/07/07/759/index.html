@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>OpenShift空间服务器503错误解决办法 | 双人份 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="OpenShift空间经常性的进行升级和例行的维护，短的时候1~2小时即可完成维护，有时甚至长达十几个小时都出现“503 Service Temporarily Unavailable”。那可能是httpd服务没有启动导致503错误。(httpd是Apache超文本传输协议(HTTP)服务器的主程序，被设计为一个独立运行的后台进程，它会建立一个处理请求的子进程或线程的池。)
+OpenShift空间">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenShift空间服务器503错误解决办法">
+<meta property="og:url" content="http://doubles.me/2013/07/07/759/index.html">
+<meta property="og:site_name" content="双人份 Blog">
+<meta property="og:description" content="OpenShift空间经常性的进行升级和例行的维护，短的时候1~2小时即可完成维护，有时甚至长达十几个小时都出现“503 Service Temporarily Unavailable”。那可能是httpd服务没有启动导致503错误。(httpd是Apache超文本传输协议(HTTP)服务器的主程序，被设计为一个独立运行的后台进程，它会建立一个处理请求的子进程或线程的池。)
+OpenShift空间">
+<meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/07/143032B00.gif">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="OpenShift空间服务器503错误解决办法">
+<meta name="twitter:description" content="OpenShift空间经常性的进行升级和例行的维护，短的时候1~2小时即可完成维护，有时甚至长达十几个小时都出现“503 Service Temporarily Unavailable”。那可能是httpd服务没有启动导致503错误。(httpd是Apache超文本传输协议(HTTP)服务器的主程序，被设计为一个独立运行的后台进程，它会建立一个处理请求的子进程或线程的池。)
+OpenShift空间">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/07/143032B00.gif">
+  
+    <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">双人份</a></h1>
+		</hgroup>
+
+		
+		
+		<!--Search Box-->
+
+
+		<div id="Search">
+			<form onsubmit="dispatch()" >
+
+			<input type="text" maxlength="40" name="q" id="q" value="" placeholder="Search..." style = "width:180 px; height: 22px;">
+			</form>
+		</div>
+		
+<script type="text/javascript">
+
+function dispatch() {
+    var q = document.getElementById("q");
+    if (q.value != "") {
+        var url = 'https://www.google.com/search?q=site:doubles.me%20' + q.value;
+
+        window.open(url, "_blank");
+        
+        return false;
+    } else {
+        return false;
+    }
+}
+</script>
+
+        
+
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">归档</a></li>
+				        
+							<li><a href="/about">关于</a></li>
+				        
+							<li><a href="/links">友链</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+					        
+								<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">双人份</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img src="http://7xnueu.com1.z0.glb.clouddn.com/avatar.jpg" class="js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">双人份</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">归档</a></li>
+		        
+					<li><a href="/about">关于</a></li>
+		        
+					<li><a href="/links">友链</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/DoubleShift" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/agmol" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="http://doubles.me/rss.xml" title="rss">rss</a>
+			        
+						<a class="mail" target="_blank" href="/fjjwlzd#163.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-759" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/07/07/759/" class="article-date">
+  	<time datetime="2013-07-07T11:30:32.000Z" itemprop="datePublished">2013-07-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      OpenShift空间服务器503错误解决办法
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/error/">error</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>OpenShift空间经常性的进行升级和例行的维护，短的时候1~2小时即可完成维护，有时甚至长达十几个小时都出现“503 Service Temporarily Unavailable”。那可能是httpd服务没有启动导致503错误。(httpd是Apache超文本传输协议(HTTP)服务器的主程序，被设计为一个独立运行的后台进程，它会建立一个处理请求的子进程或线程的池。)<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/07/143032B00.gif" alt=""></p>
+<h4 id="OpenShift空间503服务器错误解决"><a href="#OpenShift空间503服务器错误解决" class="headerlink" title="OpenShift空间503服务器错误解决"></a>OpenShift空间503服务器错误解决</h4><p>&nbsp;</p>
+<p>用户可以使用SSH登陆工具putty登陆，输入 “ctl_all start”或”ctl_all restart”启动httpd服务。试着输入”ctl_all restart”命令后重启了所有的服务，网站恢复即可正常。</p>
+<p>&nbsp;</p>
+<p><div></div></p>
+<p><table></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td></td></p>
+<p><pre>1<br>2<br>3<br>4</pre><br></p>
+<p><td></td></p>
+<p><pre>ctl_all start<br>ctl_all stop<br>ctl_all restart<br>ctl_all status</pre><br><br><br><br><br><br>以上代码依次为1启动、2停止、3重启、4查看应用，出现“503 Service Temporarily Unavailable”一般是执行启动和重启就行了。</p>
+<p>关于OpenShift升级进度，你可以关注OpenShift的Twitter “@openshift_ops”或访问OpenShift的Open Issue页面<a href="https://openshift.redhat.com/app/status获得最新消息。" target="_blank" rel="external">https://openshift.redhat.com/app/status获得最新消息。</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2013/07/16/763/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          WordPress搭建一个微信公众平台网站
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2013/07/07/749/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">WordPress 如何建立一个展示站点</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="759" data-title="OpenShift空间服务器503错误解决办法" data-url="http://doubles.me/2013/07/07/759/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"doubles"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+  
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+
+            
+    	<div class="footer-left">
+    		&copy; 2016 双人份
+    	</div>
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+
+      <div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: false,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
