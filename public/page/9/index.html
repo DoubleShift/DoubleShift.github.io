@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>双人份 Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="双人份 Blog">
 <meta property="og:url" content="http://doubles.me/page/9/index.html">
 <meta property="og:site_name" content="双人份 Blog">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="双人份 Blog">
-<meta name="twitter:description">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -163,6 +160,67 @@ function dispatch() {
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-320" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/01/13/320/" class="article-date">
+  	<time datetime="2013-01-13T14:33:38.000Z" itemprop="datePublished">2013-01-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/01/13/320/">网易邮箱未读邮件置顶</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://dlinux.sinaapp.com/2013/01/13/hack%e7%bd%91%e6%98%93%e9%82%ae%e7%ae%b1%e6%9c%aa%e8%af%bb%e9%82%ae%e4%bb%b6%e7%bd%ae%e9%a1%b6/qq%e6%88%aa%e5%9b%be20130114003048/" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/01/QQ20130114003048.png" alt="QQ20130114003048"></a>将发送时间修改到一个很远的时间，然后这封邮件无论如何都会显示在今天收信列表中。垃圾邮件可以好好干哦。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-315" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -328,10 +386,10 @@ function dispatch() {
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/170359NvK.png" alt="使用BigDump导入2M以上超大MySQL数据库文件" title="使用BigDump导入2M以上超大MySQL数据库文件 | 倡萌的自留地 cmhello.com"></p>
 <p>这是因为你的 SQL 文件体积太大，超过了 PhpMyAdmin 的处理能力，这种情况在网络速度比较慢的情况下尤为突出，例如站长在周末晚上8点这个网络拥挤的时段尝试使用 PhpMyAdmin 来恢复大型 MySQL 数据库备份，就容易遇到这种问题。</p>
 <p>很显然 phpMyAdmin 只适用于恢复比较小的 SQL 文件备份。对于超大 MySQL 数据库备份的恢复，你必须换一个专用的恢复工具，那就是：<strong>BigDump</strong>！</p>
-<h3 id="BigDump_数据库导入工具简介">BigDump 数据库导入工具简介</h3><p>BigDump 是由德国人 <strong>Alexey Ozerov</strong> 用 PHP 语言开发的一个工具脚本，它只有一个文件，名为 bigdump.php（你可以改名运行）。这个文件是独立运行的，因此与你的网站核心程序无关，不管是 WordPress，Drupal 还是 Joomla，只要你使用的是 MySQL 数据库，都可以用 BigDump 来恢复超大的 .sql 格式备份文件。</p>
+<h3 id="BigDump-数据库导入工具简介"><a href="#BigDump-数据库导入工具简介" class="headerlink" title="BigDump 数据库导入工具简介"></a>BigDump 数据库导入工具简介</h3><p>BigDump 是由德国人 <strong>Alexey Ozerov</strong> 用 PHP 语言开发的一个工具脚本，它只有一个文件，名为 bigdump.php（你可以改名运行）。这个文件是独立运行的，因此与你的网站核心程序无关，不管是 WordPress，Drupal 还是 Joomla，只要你使用的是 MySQL 数据库，都可以用 BigDump 来恢复超大的 .sql 格式备份文件。</p>
 <p>BigDump 工作的原理也很简单：切割分段导入。它在读取 SQL 文件时，每次只读取一小部分，将其导入，然后重新开始一次恢复进程，再读取一小部分…… 周而复始，直到将整个 SQL 文件全部导入。</p>
-<h3 id="BigDump_数据库恢复工具用法演示">BigDump 数据库恢复工具用法演示</h3><p>假设我们已经有了一个 MySQL 数据库的备份文件，名为 gate2.sql，文件大小约 150MB（这么大的文件别指望通过 phpMyAdmin 来恢复了）。数据库字符编码为 utf-8。我们演示一下如何通过 bigdump.php 工具将这个备份文件恢复到在线数据库中去。</p>
-<h4 id="1、获取_BigDump_文件并设置">1、获取 BigDump 文件并设置</h4><p>我们下载 BidDump 工具并解 压，得到一个 bigdump.php 文件。毫无疑问，bigdump.php 文件需要设置一些参数，否则它怎么知道要导入的数据库的连接帐号？</p>
+<h3 id="BigDump-数据库恢复工具用法演示"><a href="#BigDump-数据库恢复工具用法演示" class="headerlink" title="BigDump 数据库恢复工具用法演示"></a>BigDump 数据库恢复工具用法演示</h3><p>假设我们已经有了一个 MySQL 数据库的备份文件，名为 gate2.sql，文件大小约 150MB（这么大的文件别指望通过 phpMyAdmin 来恢复了）。数据库字符编码为 utf-8。我们演示一下如何通过 bigdump.php 工具将这个备份文件恢复到在线数据库中去。</p>
+<h4 id="1、获取-BigDump-文件并设置"><a href="#1、获取-BigDump-文件并设置" class="headerlink" title="1、获取 BigDump 文件并设置"></a>1、获取 BigDump 文件并设置</h4><p>我们下载 BidDump 工具并解 压，得到一个 bigdump.php 文件。毫无疑问，bigdump.php 文件需要设置一些参数，否则它怎么知道要导入的数据库的连接帐号？</p>
 <p>用文本编辑器打开 bigdump.php 文件，在大约第 38 行开始，我们设置要导入的 MySQL 数据库连接参数。如下图所示：</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/170401HAT.png" alt="使用BigDump导入2M以上超大MySQL数据库文件" title="使用BigDump导入2M以上超大MySQL数据库文件 | 倡萌的自留地 cmhello.com"></p>
 <p>一般来说，设置好这几项就可以了。对于某些特殊数据库，还需要在下面第66行左右设置数据库字符编码。bigdump.php 文件中没有预设这个参数，原文是：</p>
@@ -353,14 +411,14 @@ function dispatch() {
 <p><pre>$db_connection_charset = ‘utf8’;</pre><br><br><br><br><br><br>注意那个连字符要去掉。如下图所示：</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/1704020HY.png" alt="使用BigDump导入2M以上超大MySQL数据库文件" title="使用BigDump导入2M以上超大MySQL数据库文件 | 倡萌的自留地 cmhello.com"></p>
 <p>接下来将设置好的 bigdump.php 文件上传到 Joomla 网站上，推荐上传到 /tmp 这个临时目录。</p>
-<h4 id="2、上传_MySQL_数据库备份文件">2、上传 MySQL 数据库备份文件</h4><p>现在需要将数据库备份文件上传到 bigdump.php 所在的 /tmp 目录中。考虑到文件较大，我们通过 FTP 软件 FileZilla 上传 zip 格式的文件，然后借助 Joomla 后台安装的 eXtplorer 资源管理器组件 将其远程解压，在 /tmp 目录中得到 gate2.sql 文件。</p>
-<h4 id="3、启动_BigDump_工具">3、启动 BigDump 工具</h4><p>在浏览器地址栏输入 bigdump.php 所在 URL 并回车，运行这个文件。例如本次演示是在本地测试服务器上进行，那么对应的运行网址是：</p>
+<h4 id="2、上传-MySQL-数据库备份文件"><a href="#2、上传-MySQL-数据库备份文件" class="headerlink" title="2、上传 MySQL 数据库备份文件"></a>2、上传 MySQL 数据库备份文件</h4><p>现在需要将数据库备份文件上传到 bigdump.php 所在的 /tmp 目录中。考虑到文件较大，我们通过 FTP 软件 FileZilla 上传 zip 格式的文件，然后借助 Joomla 后台安装的 eXtplorer 资源管理器组件 将其远程解压，在 /tmp 目录中得到 gate2.sql 文件。</p>
+<h4 id="3、启动-BigDump-工具"><a href="#3、启动-BigDump-工具" class="headerlink" title="3、启动 BigDump 工具"></a>3、启动 BigDump 工具</h4><p>在浏览器地址栏输入 bigdump.php 所在 URL 并回车，运行这个文件。例如本次演示是在本地测试服务器上进行，那么对应的运行网址是：</p>
 <p><a href="http://localhost/gate/tmp/bigdump.php" target="_blank" rel="external">http://localhost/gate/tmp/bigdump.php</a></p>
 <p>如果你输入的 URL 正确，就应该看到如下画面：</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/170404gdL.png" alt="使用BigDump导入2M以上超大MySQL数据库文件" title="使用BigDump导入2M以上超大MySQL数据库文件 | 倡萌的自留地 cmhello.com"></p>
 <p>这就表示 BigDump 工具已经成功启动，它在启动时就自动扫描所在目录中的全部文件和子目录。如果找到 SQL 格式或者 gzip/zip 格式文件，就假设这是数据库文件，在这些文件后面，就会显示出相应的操作链接。例如在上图中，它探测到所在目录中有一个 gate2.sql 文件，那么针对该文件就在表格右侧同一行中显示了两条操作链接，分别是“Start Import”（开始导入）和“Delete file” （删除文件）。上图的表格中也显示了 SQL 文件的大小，可以看到这个备份文件接近 150MB。</p>
 <p>在上图中，还可以看到一个文件上传功能，点击那个“浏览”按钮，你就可以上传一个 SQL 文件（或其压缩包）来进行导入。但是我们不推荐使用此功能。对于大型文件，FTP 上传是最佳选择。</p>
-<h4 id="4、运行_BigDump_导入功能">4、运行 BigDump 导入功能</h4><p>点击上图中的“Start Import” 链接，就看到如下画面：</p>
+<h4 id="4、运行-BigDump-导入功能"><a href="#4、运行-BigDump-导入功能" class="headerlink" title="4、运行 BigDump 导入功能"></a>4、运行 BigDump 导入功能</h4><p>点击上图中的“Start Import” 链接，就看到如下画面：</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/170406gxR.png" alt="使用BigDump导入2M以上超大MySQL数据库文件" title="使用BigDump导入2M以上超大MySQL数据库文件 | 倡萌的自留地 cmhello.com">点</p>
 <p>上面这个是导入开始一段时间之后所截取的，可以看出 BigDump 正在顺利进行 SQL 文件的导入。表格中不仅显示了文件大小，还显示了已经导入的字节数及总体进度。</p>
 <p>经过一段时间后（大约20分钟），这个 150MB 大小的 SQL 文件终于导入结束，看到如下画面：</p>
@@ -370,16 +428,16 @@ function dispatch() {
 </strong></p>
 <p>意思是说：已经到达文件末尾，想必应该成功了。看到这条消息，你就可以完全放心了。BigDump 已经成功地将你的 SQL 备份文件导入到你所指定的 MySQL 数据库里面了。</p>
 <p>注意：数据库恢复成功结束后，不要忘记删除 bigdump.php 备份工具和你的 SQL 文件！</p>
-<h3 id="使用_BigDump_数据库导入工具的注意事项">使用 BigDump 数据库导入工具的注意事项</h3><h4 id="1、在开始导入之前，目标数据库必须清空">1、在开始导入之前，目标数据库必须清空</h4><p>如果目标数据库里面含有记录，那么 BigDump 就无法导入，会报错停止。因此请在开始运行 bigdump.php 文件之前，将目标数据库清空（最好删除全部内容）。</p>
-<h4 id="2、所用的_SQL_文件不能含有_Extended_Inserts">2、所用的 SQL 文件不能含有 Extended Inserts</h4><p>或许很多第一次使用 BigDump 的用户都会遭遇这个问题。这是因为 phpMyAdmin 在导出数据库时，已经默认勾选了“使用扩展插入”。</p>
+<h3 id="使用-BigDump-数据库导入工具的注意事项"><a href="#使用-BigDump-数据库导入工具的注意事项" class="headerlink" title="使用 BigDump 数据库导入工具的注意事项"></a>使用 BigDump 数据库导入工具的注意事项</h3><h4 id="1、在开始导入之前，目标数据库必须清空"><a href="#1、在开始导入之前，目标数据库必须清空" class="headerlink" title="1、在开始导入之前，目标数据库必须清空"></a>1、在开始导入之前，目标数据库必须清空</h4><p>如果目标数据库里面含有记录，那么 BigDump 就无法导入，会报错停止。因此请在开始运行 bigdump.php 文件之前，将目标数据库清空（最好删除全部内容）。</p>
+<h4 id="2、所用的-SQL-文件不能含有-Extended-Inserts"><a href="#2、所用的-SQL-文件不能含有-Extended-Inserts" class="headerlink" title="2、所用的 SQL 文件不能含有 Extended Inserts"></a>2、所用的 SQL 文件不能含有 Extended Inserts</h4><p>或许很多第一次使用 BigDump 的用户都会遭遇这个问题。这是因为 phpMyAdmin 在导出数据库时，已经默认勾选了“使用扩展插入”。</p>
 <p>这里的“扩展插入”就是 Extended Inserts，而 BigDump 是不能处理带有 Extended Inserts 的 SQL 文件的。所以，在你制作数据库备份时，必须在 phpMyAdmin 的面板上去掉“扩展插入”的勾选。如下图所示：</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/170412WUR.png" alt="使用BigDump导入2M以上超大MySQL数据库文件" title="使用BigDump导入2M以上超大MySQL数据库文件 | 倡萌的自留地 cmhello.com"></p>
-<h4 id="3、如何使_Akeeba_Backup_与_BigDump_配合工作？">3、如何使 Akeeba Backup 与 BigDump 配合工作？</h4><p>我们前面推荐大家使用 Akeeba Backup 来制作备份文件。那么，可否使用 Akeeba Backup 来制作数据库备份，然后通过 BigDump 导入？当然是可以的。不过，这里面需要一些特殊技巧。我们将在 Akeeba Backup 使用详解 这篇教程中介绍。</p>
-<h4 id="4、使用_BigDump_导入仍然发生超时错误">4、使用 BigDump 导入仍然发生超时错误</h4><p>这种问题多见于配置比较低的服务器，或者服务器繁忙时段。那么，你可以尝试修改 bigdump.php 文件中的“Other settings (optional)” 这部分的 <strong>$linespersession</strong> 参数，将默认值 3000 修改得更小一些。（不过，我认为你还是换一个更好的服务器吧，例如 Hawkhost）。</p>
-<h4 id="5、发生_MySQL_服务器超载怎么办？">5、发生 MySQL 服务器超载怎么办？</h4><p>如果服务器性能较差，在运行 bigdump.php 过程中可能会发生 MySQL 服务器超载（overrun）故障。你可以修改 bigdump.php 文件中的 <strong>$delaypersession</strong> 参数来解决。该参数让 bigdump.php 文件在结束一个片段的导入之后，休息一段时间（你设定的数值就是暂停的时间，单位：毫秒），然后再开始下一个片段的导入，这样服务器就不会太累了。</p>
-<h4 id="6、直接把_-sql_格式文件交给_BigDump">6、直接把 .sql 格式文件交给 BigDump</h4><p>在本次演示中，我们先将 zip 格式的备份包上传到服务器上，然后又将它解压成 .sql 格式的文件，再通过 BigDump 来导入。为什么不直接用 BigDump 来导入压缩格式的备份文件？</p>
+<h4 id="3、如何使-Akeeba-Backup-与-BigDump-配合工作？"><a href="#3、如何使-Akeeba-Backup-与-BigDump-配合工作？" class="headerlink" title="3、如何使 Akeeba Backup 与 BigDump 配合工作？"></a>3、如何使 Akeeba Backup 与 BigDump 配合工作？</h4><p>我们前面推荐大家使用 Akeeba Backup 来制作备份文件。那么，可否使用 Akeeba Backup 来制作数据库备份，然后通过 BigDump 导入？当然是可以的。不过，这里面需要一些特殊技巧。我们将在 Akeeba Backup 使用详解 这篇教程中介绍。</p>
+<h4 id="4、使用-BigDump-导入仍然发生超时错误"><a href="#4、使用-BigDump-导入仍然发生超时错误" class="headerlink" title="4、使用 BigDump 导入仍然发生超时错误"></a>4、使用 BigDump 导入仍然发生超时错误</h4><p>这种问题多见于配置比较低的服务器，或者服务器繁忙时段。那么，你可以尝试修改 bigdump.php 文件中的“Other settings (optional)” 这部分的 <strong>$linespersession</strong> 参数，将默认值 3000 修改得更小一些。（不过，我认为你还是换一个更好的服务器吧，例如 Hawkhost）。</p>
+<h4 id="5、发生-MySQL-服务器超载怎么办？"><a href="#5、发生-MySQL-服务器超载怎么办？" class="headerlink" title="5、发生 MySQL 服务器超载怎么办？"></a>5、发生 MySQL 服务器超载怎么办？</h4><p>如果服务器性能较差，在运行 bigdump.php 过程中可能会发生 MySQL 服务器超载（overrun）故障。你可以修改 bigdump.php 文件中的 <strong>$delaypersession</strong> 参数来解决。该参数让 bigdump.php 文件在结束一个片段的导入之后，休息一段时间（你设定的数值就是暂停的时间，单位：毫秒），然后再开始下一个片段的导入，这样服务器就不会太累了。</p>
+<h4 id="6、直接把-sql-格式文件交给-BigDump"><a href="#6、直接把-sql-格式文件交给-BigDump" class="headerlink" title="6、直接把 .sql 格式文件交给 BigDump"></a>6、直接把 .sql 格式文件交给 BigDump</h4><p>在本次演示中，我们先将 zip 格式的备份包上传到服务器上，然后又将它解压成 .sql 格式的文件，再通过 BigDump 来导入。为什么不直接用 BigDump 来导入压缩格式的备份文件？</p>
 <p>没错，BigDump 具有导入压缩格式 SQL 备份文件（zip/gzip）的能力，但是在处理压缩文件时，它需要先在临时目录中将其解压，再读取。请注意：这个解压并不是一次性的，而是每导入一个小 片段，就要将整个压缩包重新解压一次。因此，直接导入压缩格式文件，反而使 bigdump.php 运行变慢。</p>
-<h4 id="7、还有更奇怪的问题……">7、还有更奇怪的问题……</h4><p>一般来说，运行 bigdump.php 导入一个 SQL 备份文件非常容易。如果你参照上述注意事项及操作过程，仍然不能顺利完成数据库备份文件的导入，那么请到 BigDump 官方网站 阅读更多 FAQ，查找原因。如果还无法解决，可以到 Joomla 中文论坛 发帖讨论。</p>
+<h4 id="7、还有更奇怪的问题……"><a href="#7、还有更奇怪的问题……" class="headerlink" title="7、还有更奇怪的问题……"></a>7、还有更奇怪的问题……</h4><p>一般来说，运行 bigdump.php 导入一个 SQL 备份文件非常容易。如果你参照上述注意事项及操作过程，仍然不能顺利完成数据库备份文件的导入，那么请到 BigDump 官方网站 阅读更多 FAQ，查找原因。如果还无法解决，可以到 Joomla 中文论坛 发帖讨论。</p>
 <p><a href="http://www.joomlagate.com/download/other-free-stuff/bigdump/start-download/" target="_blank" rel="external">下载 BigDump（bigdump.php） 大型数据库 SQL 文件分段导入工具 v0.32b 英文版</a></p>
 <p>最后导入状况是这样的。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20130101010304.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20130101010304.png" alt="" title="QQ20130101010304"></a></p>
@@ -501,7 +559,7 @@ function dispatch() {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id=""><a id="the_cap_and_hccap" name="the_cap_and_hccap"></a></h2><p>这个网站里面有4个文件：这里下载<a href="http://hashcat.net" target="_blank" rel="external">http://hashcat.net</a></p>
+        <h2 id=""><a href="#" class="headerlink" title=""></a><a id="the_cap_and_hccap" name="the_cap_and_hccap"></a></h2><p>这个网站里面有4个文件：这里下载<a href="http://hashcat.net" target="_blank" rel="external">http://hashcat.net</a></p>
 <p>hashcat-0.41.7z<br>hashcat-gui-0.5.1.7z<br>oclHashcat-lite-0.10.7z<br>oclHashcat-plus-0.09.7z</p>
 <p>注意一下，里面hashcat是主项目，hashcat-gui是增加了一个界面，oclhashcat-plus可以破解wpa2，lite自然是精简版啦。</p>
 <p>里面只有oclhashcat-plus可以破解wpa/wpa2，下载后，将<br>hashcat-0.41.7z<br>oclHashcat-lite-0.10.7z<br>oclHashcat-plus-0.09.7z</p>
@@ -527,20 +585,20 @@ function dispatch() {
 <p>可以看到目标是FAST410，速度是2500，和我的ewsa是一样的速度，但是他的好处就是，完全不卡。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/51.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/51.png" alt="" title="5"></a></p>
 <p>cpu只占用25%，干什么都行了。下面是官方说明。</p>
-<h2 id="The_-cap_and_-hccap">The .cap and .hccap</h2><div><br><br>oclHashcat-plus accepts the WPA/WPA2 hashes in it’s own “hccap” file. Assuming you already captured a 4-way handshake using airodump-ng, Wireshark or tcpdump, the next step will be converting the .cap file to a format oclHashcat-plus will understand. The easiest way is to go to one of these sites for converting:<br><br>*   <div><a href="http://hashcat.net/cap2hccap/" title="http://hashcat.net/cap2hccap/" target="_blank" rel="external">http://hashcat.net/cap2hccap/</a></div><br>Upload your .cap and get a .hccap file.<br><br>The problem with that is that you upload some sensitive data to a strange place. If you dont mind go for it.<br><br>Otherwise here is what they do (in this order):<br><br>1.  <div>Run it through “wpaclean” utility</div><br>2.  <div>Convert it with “aircrack-ng” using the -J option</div><br></div>
+<h2 id="The-cap-and-hccap"><a href="#The-cap-and-hccap" class="headerlink" title="The .cap and .hccap"></a>The .cap and .hccap</h2><div><br><br>oclHashcat-plus accepts the WPA/WPA2 hashes in it’s own “hccap” file. Assuming you already captured a 4-way handshake using airodump-ng, Wireshark or tcpdump, the next step will be converting the .cap file to a format oclHashcat-plus will understand. The easiest way is to go to one of these sites for converting:<br><br>*   <div><a href="http://hashcat.net/cap2hccap/" title="http://hashcat.net/cap2hccap/" target="_blank" rel="external">http://hashcat.net/cap2hccap/</a></div><br>Upload your .cap and get a .hccap file.<br><br>The problem with that is that you upload some sensitive data to a strange place. If you dont mind go for it.<br><br>Otherwise here is what they do (in this order):<br><br>1.  <div>Run it through “wpaclean” utility</div><br>2.  <div>Convert it with “aircrack-ng” using the -J option</div><br></div>
 
-<h5 id="To_convert_your_-cap_files_manually_in_Backtrack-"><a id="to_convert_your_cap_files_manually_in_backtrack" name="to_convert_your_cap_files_manually_in_backtrack"></a>To convert your .cap files manually in Backtrack.</h5><div><br><br>Download and install the latest Aircrack build <a href="http://nightly.aircrack-ng.org/aircrack-ng/trunk/" title="http://nightly.aircrack-ng.org/aircrack-ng/trunk/" target="_blank" rel="external">here.</a> The list of builds is upside down so the latest can be found at the bottom of the page.<br><br>Example working code for wpaclean.<br><pre>wpaclean &lt;out.cap&gt; &lt;in.cap&gt;</pre><br>Please note that the wpaclean options are the wrong way round. &lt;out.cap&gt; &lt;in.cap&gt; instead of &lt;in.cap&gt; &lt;out.cap&gt; which may cause some confusion.<br><br>Example working code aircrack .cap conversion to .hccap<br><pre>aircrack-ng &lt;out.cap&gt; -J &lt;out.hccap&gt;</pre><br>Note the -J is a capitol J not lower case j.<br><br>A script is provided <a href="http://hashcat.net/wiki/doku.php?id=wpa_clean_and_convert_script" title="wpa_clean_and_convert_script" target="_blank" rel="external">here</a> to automate this process.<br><br></div>
+<h5 id="To-convert-your-cap-files-manually-in-Backtrack"><a href="#To-convert-your-cap-files-manually-in-Backtrack" class="headerlink" title="To convert your .cap files manually in Backtrack."></a><a id="to_convert_your_cap_files_manually_in_backtrack" name="to_convert_your_cap_files_manually_in_backtrack"></a>To convert your .cap files manually in Backtrack.</h5><div><br><br>Download and install the latest Aircrack build <a href="http://nightly.aircrack-ng.org/aircrack-ng/trunk/" title="http://nightly.aircrack-ng.org/aircrack-ng/trunk/" target="_blank" rel="external">here.</a> The list of builds is upside down so the latest can be found at the bottom of the page.<br><br>Example working code for wpaclean.<br><pre>wpaclean &lt;out.cap&gt; &lt;in.cap&gt;</pre><br>Please note that the wpaclean options are the wrong way round. &lt;out.cap&gt; &lt;in.cap&gt; instead of &lt;in.cap&gt; &lt;out.cap&gt; which may cause some confusion.<br><br>Example working code aircrack .cap conversion to .hccap<br><pre>aircrack-ng &lt;out.cap&gt; -J &lt;out.hccap&gt;</pre><br>Note the -J is a capitol J not lower case j.<br><br>A script is provided <a href="http://hashcat.net/wiki/doku.php?id=wpa_clean_and_convert_script" title="wpa_clean_and_convert_script" target="_blank" rel="external">here</a> to automate this process.<br><br></div>
 
-<h2 id="Preparation"><a id="preparation" name="preparation"></a>Preparation</h2><div><br><br>oclHashcat-plus is very flexible, so I’ll cover three most common and basic scenarios:<br><br>1.  <div><a href="http://hashcat.net/wiki/doku.php?id=dictionary_attack" title="dictionary_attack" target="_blank" rel="external">Dictionary attack</a></div><br>2.  <div><a href="http://hashcat.net/wiki/doku.php?id=brute_force_attack" title="brute_force_attack" target="_blank" rel="external">Brute-Force attack</a></div><br>3.  <div><a href="http://hashcat.net/wiki/doku.php?id=rule_based_attack" title="rule_based_attack" target="_blank" rel="external">Rule-based attack</a></div><br></div>
+<h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a><a id="preparation" name="preparation"></a>Preparation</h2><div><br><br>oclHashcat-plus is very flexible, so I’ll cover three most common and basic scenarios:<br><br>1.  <div><a href="http://hashcat.net/wiki/doku.php?id=dictionary_attack" title="dictionary_attack" target="_blank" rel="external">Dictionary attack</a></div><br>2.  <div><a href="http://hashcat.net/wiki/doku.php?id=brute_force_attack" title="brute_force_attack" target="_blank" rel="external">Brute-Force attack</a></div><br>3.  <div><a href="http://hashcat.net/wiki/doku.php?id=rule_based_attack" title="rule_based_attack" target="_blank" rel="external">Rule-based attack</a></div><br></div>
 
-<h3 id="Dictionary_attack"><a id="dictionary_attack" name="dictionary_attack"></a>Dictionary attack</h3><div><br><br><em>   <div>Grab some wordlist, like <a href="http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2" title="http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2" target="_blank" rel="external">Rockyou</a>.</div>
+<h3 id="Dictionary-attack"><a href="#Dictionary-attack" class="headerlink" title="Dictionary attack"></a><a id="dictionary_attack" name="dictionary_attack"></a>Dictionary attack</h3><div><br><br><em>   <div>Grab some wordlist, like <a href="http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2" title="http://downloads.skullsecurity.org/passwords/rockyou.txt.bz2" target="_blank" rel="external">Rockyou</a>.</div>
 </em>   <div>Put it into oclhc-plus folder.</div><br><em>   <div>Rename your converted capture file “capture.hccap”.</div>
 </em>   <div>Create a batch file “attack.bat”.</div><br>*   <div>Open it with a text editor, and paste the following:</div><br><pre>oclHashcat-plus64.exe -m 2500 capture.hccap rockyou.txt<br>pause</pre><br>NOTE: If your <acronym title="Operating System">OS</acronym> is 32 bit, then replace 64 with 32 in the binary name.<br><br>Execute the attack using the batch file, which should be changed to suit your needs.<br><br></div>
 
-<h3 id="Brute-Force_Attack"><a id="brute-force_attack" name="brute-force_attack"></a>Brute-Force Attack</h3><div><br><br><em>   <div>Rename your converted capture file “capture.hccap”.</div>
+<h3 id="Brute-Force-Attack"><a href="#Brute-Force-Attack" class="headerlink" title="Brute-Force Attack"></a><a id="brute-force_attack" name="brute-force_attack"></a>Brute-Force Attack</h3><div><br><br><em>   <div>Rename your converted capture file “capture.hccap”.</div>
 </em>   <div>Create a batch file “attack.bat”.</div><br>*   <div>Open it with a text editor and paste the following:</div><br><pre>oclhashcat-plus64.exe -m 2500 -a3 capture.hccap ?d?d?d?d?d?d?d?d<br>pause</pre><br>This will pipe len8 digits only to oclhc-plus, replace the ?d as needed.<br><br>Would be wise to first estimate the time it would take to process using a <a href="http://hashcat.net/wiki/doku.php?id=combination_count_formula" title="combination_count_formula" target="_blank" rel="external">calculator</a>.<br><br>TBD: add some example timeframes for common masks / common speed<br><br></div>
 
-<h3 id="Rule-based_attack"><a id="rule-based_attack" name="rule-based_attack"></a>Rule-based attack</h3><div><br><br>This is a similar to Dictionary attack, but commands look a bit different:<br><pre>oclHashcat-plus64.exe -m 2500 -r rules/best64.rule capture.hccap rockyou.txt<br>pause</pre><br>This will mutate rockyou wordlist with best 64 rules, which come along in oclHashcat-plus distribution.<br><br>Change as necessary and remember, the time it will take the attack to finish will increase proportionally with the amount of rules.<br><br><a href="http://hashcat.net/wiki/doku.php?id=rule_based_attack" title="rule_based_attack" target="_blank" rel="external">What are rules ?</a><br><br></div><br><div></div><br><div></div>
+<h3 id="Rule-based-attack"><a href="#Rule-based-attack" class="headerlink" title="Rule-based attack"></a><a id="rule-based_attack" name="rule-based_attack"></a>Rule-based attack</h3><div><br><br>This is a similar to Dictionary attack, but commands look a bit different:<br><pre>oclHashcat-plus64.exe -m 2500 -r rules/best64.rule capture.hccap rockyou.txt<br>pause</pre><br>This will mutate rockyou wordlist with best 64 rules, which come along in oclHashcat-plus distribution.<br><br>Change as necessary and remember, the time it will take the attack to finish will increase proportionally with the amount of rules.<br><br><a href="http://hashcat.net/wiki/doku.php?id=rule_based_attack" title="rule_based_attack" target="_blank" rel="external">What are rules ?</a><br><br></div><br><div></div><br><div></div>
       
     </div>
     
@@ -934,72 +992,6 @@ function dispatch() {
   
 
   
-    <article id="post-209" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/12/09/209/" class="article-date">
-  	<time datetime="2012-12-09T14:03:02.000Z" itemprop="datePublished">2012-12-09</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/12/09/209/">迷你云xss一枚</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>迷你云是一套软件，不是在线存储服务，迷你云助您快速搭建私有Dropbox(宇宙最受欢迎的同步网盘)。</p>
-<p><a href="http://www.miniyun.cn/" target="_blank" rel="external">http://www.miniyun.cn/</a></p>
-<p>当然看到这个是因为他那个说南昌话介绍产品的妹纸，坑爹啊，好好的妹纸就这样切了货啊。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/000313u8I.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/000313u8I.png" alt="" title="QQ20121207183150"></a></p>
-<p>官方提供了默认的测试帐号，然后进去找了各输入框。就是通讯录里面的新建分组或者联系人，然后只要有人登入进来就可以看到这个了吧。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/000316vrV.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/000316vrV.png" alt="" title="QQ20121207181945"></a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/8/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/10/">Next &raquo;</a>
@@ -1025,7 +1017,7 @@ function dispatch() {
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -1041,8 +1033,8 @@ function dispatch() {
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

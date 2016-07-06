@@ -24,20 +24,21 @@ cc.Touch：它封装了触摸点，可以通过locationInView函数返回一个c
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131218161200.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131218164643.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ201312181613291.png">
-<meta property="og:updated_time" content="2016-01-30T01:48:19.000Z">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cocos2d-html5 touch事件总结">
 <meta name="twitter:description" content="可以说，当初困扰最久的就是touch事件。各个层上重叠区域，可视区域的消息传递机制不知道如何处理。现在又花了1天时间把以前的总结一下，再了解了cocos2d内部是如何处理touch事件的。
 首先看一下api当中所有关于touch事件的类
 
 cc.Touch：它封装了触摸点，可以通过locationInView函数返回一个cc.Point。cc.TouchDelegate：它是触摸事件委托，就是系统">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131218161329.png">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -239,13 +240,13 @@ function dispatch() {
 <p><strong>触摸事件的优先级和消息链</strong></p>
 <p>  虽然已经能响应触摸消息了，但是还是有很多问题没有处理的，比如说谁先谁后，装备栏覆盖了属性栏，那么消息就应该在装备栏被消化掉，属性栏就不应该收到消息等等。</p>
 <p>消息拦截：</p>
-<pre><code>cc.StandardTouchDelegate<span class="keyword">*</span><span class="keyword">*</span> <span class="keyword">*</span><span class="keyword">*</span>将所有的Touch信息直接传递给实现该协议的对象，而cc.TargetedTouchDelegate 则要求实现该代理的类一次只能处理一个事件，并且吃掉该事件，不再传播(swallowTouches=YES;)。
+<pre><code>cc.StandardTouchDelegate** **将所有的Touch信息直接传递给实现该协议的对象，而cc.TargetedTouchDelegate 则要求实现该代理的类一次只能处理一个事件，并且吃掉该事件，不再传播(swallowTouches=YES;)。
 </code></pre><p> 当然还是需要在处理完onTouch 事件后返回false 或者的true的。只不过在onTouchesBegan 中无论返回 true 或者false 都是可以继续传递的，而onTouchBegan 中返回false 可以继续传递，true则被消化掉了。</p>
 <p>不清楚的可以查看这篇博文：<a href="http://blog.csdn.net/tskyfree/article/details/8249689" target="_blank" rel="external">http://blog.csdn.net/tskyfree/article/details/8249689</a></p>
 <p>优先级：</p>
 <p>优先级的值越小优先级反而越高,也就能先响应事件（CCMenu的默认值是-128）</p>
 <p>cc.TargetedTouchDelegate比cc.StandardTouchDelegate优先级高</p>
-<pre><code>cocos2d把响应事件的对像放入一个栈中，用先进后出的规率来响应事件。可以设置响应的优先级 -<span class="number">128</span> - <span class="number">128</span>，最上层的优先级是-<span class="number">128</span>（即值越小越先响应事件）。
+<pre><code>cocos2d把响应事件的对像放入一个栈中，用先进后出的规率来响应事件。可以设置响应的优先级 -128 - 128，最上层的优先级是-128（即值越小越先响应事件）。
 </code></pre><p>响应的规则：</p>
 <ul>
 <li>不同优先级先按优先级响应（即无视入栈顺序，先按优先级响应）</li>
@@ -266,7 +267,7 @@ function dispatch() {
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>给精灵注册触摸事件</strong></p>
-<pre><code>默认cc.Sprite是没有触摸事件的 ，不过我们可以依据layer的实现方法给他添加上去。主要用到这<span class="number">3</span>个事件
+<pre><code>默认cc.Sprite是没有触摸事件的 ，不过我们可以依据layer的实现方法给他添加上去。主要用到这3个事件
 </code></pre><p>cc.Director.getInstance().getTouchDispatcher()._addTargetedDelegate(delegate, priority, swallowsTouches);</p>
 <p>cc.Director.getInstance().getTouchDispatcher()._addStandardDelegate(delegate, priority);</p>
 <p> cc.Director.getInstance().getTouchDispatcher()._removeDelegate(delegate);</p>
@@ -364,7 +365,7 @@ function dispatch() {
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -380,8 +381,8 @@ function dispatch() {
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

@@ -27,20 +27,21 @@
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203005830.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203010022.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203010039.png">
-<meta property="og:updated_time" content="2016-01-30T01:48:19.000Z">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="全自动小说订阅微信推送">
 <meta name="twitter:description" content="一直有看小说的习惯，其他的作者的不稳定更新让人很烦恼，而我一直是贴吧看的小说，很没节操么，但是穷屌丝就这个样子了。
 然后决定自己利用微信写一个小说推送平台，就不用每次一个一个贴吧去切换了，当然用户只是我自己啦。
 由于vps坑爹的跑路了，所以转回sae上跑博客，域名也就不绑定了，这个采集本来放openshift上，但是被墙了，好噶，继续sae。
 我们的目标是：  全自动采集推送小说到微信 ，这里大概">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202175818.png">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -227,7 +228,7 @@ function dispatch() {
 <p>由于vps坑爹的跑路了，所以转回sae上跑博客，域名也就不绑定了，这个采集本来放openshift上，但是被墙了，好噶，继续sae。</p>
 <p>我们的目标是：  全自动采集推送小说到微信 ，这里大概分3个部分</p>
 <p>文章只写实现过程和注意要点，代码会放在最后的。</p>
-<h2 id="1-_自动小说采集">1. 自动小说采集</h2><p>首先选定一个小说网址，我找到一个，google的排名很靠前啊。唐家三少的绝世唐门，然后看源码，分别要匹配一下他的目录页和内容页。</p>
+<h2 id="1-自动小说采集"><a href="#1-自动小说采集" class="headerlink" title="1. 自动小说采集"></a>1. 自动小说采集</h2><p>首先选定一个小说网址，我找到一个，google的排名很靠前啊。唐家三少的绝世唐门，然后看源码，分别要匹配一下他的目录页和内容页。</p>
 <p><a href="view-source:http://www.douluodalu.com.cn/jueshitangmen" target="_blank" rel="external">view-source:http://www.douluodalu.com.cn/jueshitangmen</a>   看了他的源码发现每次都抓这个页面很费流量，而且也不好排除其他的url是否为小说的更新，然后就从第一章开始采集，每次加载他的下一页。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202175818.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202175818.png" alt="QQ20140202175818"></a></p>
 <p>打开 第一章 的页面源码 <a href="view-source:http://www.douluodalu.com.cn/jueshitangmen/6860.html" target="_blank" rel="external">view-source:http://www.douluodalu.com.cn/jueshitangmen/6860.html</a>  很自然的找到需要采集的标签， 需要 标题，时间，内容，下一页。如果下一页为空就是到了更新的最后一章了。然后程序就从这个入口开始，采集这几个标签，一直到下一页为空就停止，下次再取最后一个文章地址作为开头继续采集。 先写个函数过滤掉重复，空白，html标签等。空白有空格，n个空格，空行，tab键，等等，所以过滤的正则找了好多，最后效果比较好。然后写正则匹配，取到这几个标签。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202180553.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202180553.png" alt="QQ20140202180553"></a></p>
@@ -242,7 +243,7 @@ function dispatch() {
 <li>description: 自动采集<br>url: app/caiji4sae.php<br>schedule: every 4 hours</li>
 </ul>
 <p><strong><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203010322.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203010322.png" alt="QQ20140203010322"></a></strong></p>
-<h2 id="2-小说入库Wordpress">2.小说入库Wordpress</h2><p>发布这里费了点事，其实可以使用xmlrpc ， 邮箱发布等，那样采集程序就不用放一个地方跑，sae上放采集程序不是很好，日志什么的很麻烦，流量也贵，本地读写也没有，但是速度快，不然用国外的微信公众平台会没响应。（当然是指免费的云空间）</p>
+<h2 id="2-小说入库Wordpress"><a href="#2-小说入库Wordpress" class="headerlink" title="2.小说入库Wordpress"></a>2.小说入库Wordpress</h2><p>发布这里费了点事，其实可以使用xmlrpc ， 邮箱发布等，那样采集程序就不用放一个地方跑，sae上放采集程序不是很好，日志什么的很麻烦，流量也贵，本地读写也没有，但是速度快，不然用国外的微信公众平台会没响应。（当然是指免费的云空间）</p>
 <p>我在这里使用了直接写数据库的方式，需要先分析一下wordpres的数据表。</p>
 <p>wordpress数据表定义如下，由于我们没有图片，所以 存储文章的包括 wp_posts，wp_term_relationships</p>
 <p>wp_commentmeta：存储评论的元数据<br>wp_comments：存储评论<br>wp_links：存储友情链接（Blogroll）<br>wp_options：存储WordPress系统选项和插件、主题配置<br>wp_postmeta：存储文章（包括页面、上传文件、修订）的元数据<br>wp_posts：存储文章（包括页面、上传文件、修订）<br>wp_terms：存储每个目录、标签<br>wp_term_relationships：存储每个文章、链接和对应分类的关系<br>wp_term_taxonomy：存储每个目录、标签所对应的分类<br>wp_usermeta：存储用户的元数据<br>wp_users：存储用户</p>
@@ -259,7 +260,7 @@ function dispatch() {
 <p>还没完，选择一个单本wordpress小说主题Danx，然后使用Any Mobile Theme  为桌面和手机分别适配2个不同主题，移动主题选择好像不多，我使用了mobilepack 。当然，主题都需要修改一下下，很多不需要的去掉了。</p>
 <p>OK到这里就基本完成了数据的部分了，然后就是推送了。可以预览一下我们的网站和原网站的对比了。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190523.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190523.png" alt="QQ20140202190523"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190640.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190640.png" alt="QQ20140202190640"></a></p>
-<h2 id="3-微信公众平台推送">3.微信公众平台推送</h2><p>这里看需求，可以自己写，我的上一个微信平台就是自己写的，也可以用3方的平台，开源的平台，但是这里我用了个wordpress的插件。任务不多，所以这个应该可以满足的。置于消息实时推送，只能放后面再说，今天时间不多了。找到我爱水煮鱼的微信机器人，安装上配置一下后台地址就OK，不过只有查找功能，最新的消息还没有，等会添加。</p>
+<h2 id="3-微信公众平台推送"><a href="#3-微信公众平台推送" class="headerlink" title="3.微信公众平台推送"></a>3.微信公众平台推送</h2><p>这里看需求，可以自己写，我的上一个微信平台就是自己写的，也可以用3方的平台，开源的平台，但是这里我用了个wordpress的插件。任务不多，所以这个应该可以满足的。置于消息实时推送，只能放后面再说，今天时间不多了。找到我爱水煮鱼的微信机器人，安装上配置一下后台地址就OK，不过只有查找功能，最新的消息还没有，等会添加。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203005917.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203005917.png" alt="QQ20140203005917"></a></p>
 <p>最终的实现效果就是这样了，看起来还不错，不过主题好像没有适配好。<img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203005830.png" alt="20140203005830"> <img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203010022.png" alt="20140203010022"> <img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203010039.png" alt="20140203010039"></p>
 <p> 最后访问地址 <a href="http://iniu.sinaapp.com" target="_blank" rel="external">http://iniu.sinaapp.com</a></p>
@@ -340,7 +341,7 @@ function dispatch() {
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -356,8 +357,8 @@ function dispatch() {
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

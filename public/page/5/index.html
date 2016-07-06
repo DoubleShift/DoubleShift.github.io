@@ -6,22 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>双人份 Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="双人份 Blog">
 <meta property="og:url" content="http://doubles.me/page/5/index.html">
 <meta property="og:site_name" content="双人份 Blog">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="双人份 Blog">
-<meta name="twitter:description">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -163,6 +160,79 @@ function dispatch() {
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-759" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/07/07/759/" class="article-date">
+  	<time datetime="2013-07-07T11:30:32.000Z" itemprop="datePublished">2013-07-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/07/07/759/">OpenShift空间服务器503错误解决办法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>OpenShift空间经常性的进行升级和例行的维护，短的时候1~2小时即可完成维护，有时甚至长达十几个小时都出现“503 Service Temporarily Unavailable”。那可能是httpd服务没有启动导致503错误。(httpd是Apache超文本传输协议(HTTP)服务器的主程序，被设计为一个独立运行的后台进程，它会建立一个处理请求的子进程或线程的池。)<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/07/143032B00.gif" alt=""></p>
+<h4 id="OpenShift空间503服务器错误解决"><a href="#OpenShift空间503服务器错误解决" class="headerlink" title="OpenShift空间503服务器错误解决"></a>OpenShift空间503服务器错误解决</h4><p>&nbsp;</p>
+<p>用户可以使用SSH登陆工具putty登陆，输入 “ctl_all start”或”ctl_all restart”启动httpd服务。试着输入”ctl_all restart”命令后重启了所有的服务，网站恢复即可正常。</p>
+<p>&nbsp;</p>
+<p><div></div></p>
+<p><table></table></p>
+<p><tbody></tbody></p>
+<p><tr></tr></p>
+<p><td></td></p>
+<p><pre>1<br>2<br>3<br>4</pre><br></p>
+<p><td></td></p>
+<p><pre>ctl_all start<br>ctl_all stop<br>ctl_all restart<br>ctl_all status</pre><br><br><br><br><br><br>以上代码依次为1启动、2停止、3重启、4查看应用，出现“503 Service Temporarily Unavailable”一般是执行启动和重启就行了。</p>
+<p>关于OpenShift升级进度，你可以关注OpenShift的Twitter “@openshift_ops”或访问OpenShift的Open Issue页面<a href="https://openshift.redhat.com/app/status获得最新消息。" target="_blank" rel="external">https://openshift.redhat.com/app/status获得最新消息。</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/error/">error</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
   
     <article id="post-749" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -1099,7 +1169,7 @@ function dispatch() {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一张图片让所有浏览器未响应">一张图片让所有浏览器未响应</h1><div><br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" title="79086246020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" alt="79086246020121126" title="79086246020121126"></a><br><br>你可能要问，一张图片怎么可能会导致整个浏览器无法响应呢，如果你不相信就自己来这个链接试一试吧，整个页面中真的只有一张图片哦。相信你在试过之后的确是发现了浏览器要么就是无法响应，或者是整个系统都卡住了，计算机性能好的可能会出现卡顿的情况，这个到底是为什么呢，今天我们就来讲解一下怎样利用 Gzip 创建一张冗大的 1G 的图片让浏览器未响应吧。<br><br>&nbsp;<br><br>首先补充一下知识：Gzip 是一种在网站当中常用的一种技术，他可以将网页压缩到只有原来的百分之 70% 左右。如果一个字符串“10000000000”使用压缩技术压缩之后，他就会变为“1+10<em>0”这样，这样字符串的长度和大小就变短了。那么，如果一个 1G 左右的图片被压缩了之后，只有 2M 多，然后发送到客户端之后再解压，客户端无法承受那么大的文件，自然就未响应了。<br><br>这个其实已经不是新鲜的东西，要让浏览器无法响应还是要几个要求的：1.图片够大、2.传送的速度够快。就像我提供的链接，因为传送的速度不是很快，所以要很久才会出现未响应的状况。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" title="58357946720121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" alt="58357946720121126" title="58357946720121126"></a><br><br>我们先挑选一张不是很大 普通图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" title="128816471120121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" alt="128816471120121126" title="128816471120121126"></a><br><br>&nbsp;<br><br>使用 16 进制编辑器不断在文件末尾添加 0，让他变成具有很多 0 字符的冗长的一张 1G 的图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" title="89868126020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" alt="89868126020121126" title="89868126020121126"></a><br><br>因为文件中大部分的字符串全部都是 0，所以压缩之后冗长的 0 被压缩到只有 2M 的大小。现在我们只要将这个 Gzip 文件<strong>以极快的速度发送到浏览器</strong>并且解压，浏览器就会未响应了。<br><br>&nbsp;<br><div id="crayon-519afed9abfd7" data-settings=" minimize scroll-mouseover"><br><br>&nbsp;<br><div><br><table><br><tbody><br><tr><br><td data-settings="show"></td><br><td><br><div><br><br>&lt;?php<br><br>header(“Content-Encoding: gzip”);<br><br>echo file_get_contents(“img.png.gz”);<br><br>?&gt;<br><br></div></td><br></tr><br></tbody><br></table><br></div><br></div><br>&nbsp;<br><br>仅仅是有压缩文件是不行的，我们还需要一个文件来告诉浏览器这个是一个压缩文件，你需要解压，一般主流的浏览器都是支持 Gzip 压缩的了，在上面的代码中，我们告诉浏览器这个是经过 Gzip 压缩的，然后加载并输出制作的压缩文件。在这里，主机输出的数据流只有压缩包的 2M，但是到了客户端浏览器，数据被解压之后就到达了 1.63G 的大小。<br><br>最后我们只需要用 img 标签在论坛或者是其他页面中插入这个页面就可以了，图片仍然是可以正常显示的，但是当数据全部加载完成，或者是数据加载超出 CPU 的负载之后，浏览器便出现了未响应的状态。<br><br>这个其实没有什么实际的用处，<em>*也请你不要去做不应该做的事情</em></em>，要构成浏览器未响应的要求首先就是文件传送的速度够快，如果你的主机要半天才能够加载这张图片，那么浏览器也要半天才能未响应了。<br><br><a href="http://1.theimgrongchang.duapp.com/" target="_blank" rel="external">点击此处进入测试页面
+        <h1 id="一张图片让所有浏览器未响应"><a href="#一张图片让所有浏览器未响应" class="headerlink" title="一张图片让所有浏览器未响应"></a>一张图片让所有浏览器未响应</h1><div><br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" title="79086246020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" alt="79086246020121126" title="79086246020121126"></a><br><br>你可能要问，一张图片怎么可能会导致整个浏览器无法响应呢，如果你不相信就自己来这个链接试一试吧，整个页面中真的只有一张图片哦。相信你在试过之后的确是发现了浏览器要么就是无法响应，或者是整个系统都卡住了，计算机性能好的可能会出现卡顿的情况，这个到底是为什么呢，今天我们就来讲解一下怎样利用 Gzip 创建一张冗大的 1G 的图片让浏览器未响应吧。<br><br>&nbsp;<br><br>首先补充一下知识：Gzip 是一种在网站当中常用的一种技术，他可以将网页压缩到只有原来的百分之 70% 左右。如果一个字符串“10000000000”使用压缩技术压缩之后，他就会变为“1+10<em>0”这样，这样字符串的长度和大小就变短了。那么，如果一个 1G 左右的图片被压缩了之后，只有 2M 多，然后发送到客户端之后再解压，客户端无法承受那么大的文件，自然就未响应了。<br><br>这个其实已经不是新鲜的东西，要让浏览器无法响应还是要几个要求的：1.图片够大、2.传送的速度够快。就像我提供的链接，因为传送的速度不是很快，所以要很久才会出现未响应的状况。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" title="58357946720121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" alt="58357946720121126" title="58357946720121126"></a><br><br>我们先挑选一张不是很大 普通图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" title="128816471120121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" alt="128816471120121126" title="128816471120121126"></a><br><br>&nbsp;<br><br>使用 16 进制编辑器不断在文件末尾添加 0，让他变成具有很多 0 字符的冗长的一张 1G 的图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" title="89868126020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" alt="89868126020121126" title="89868126020121126"></a><br><br>因为文件中大部分的字符串全部都是 0，所以压缩之后冗长的 0 被压缩到只有 2M 的大小。现在我们只要将这个 Gzip 文件<strong>以极快的速度发送到浏览器</strong>并且解压，浏览器就会未响应了。<br><br>&nbsp;<br><div id="crayon-519afed9abfd7" data-settings=" minimize scroll-mouseover"><br><br>&nbsp;<br><div><br><table><br><tbody><br><tr><br><td data-settings="show"></td><br><td><br><div><br><br>&lt;?php<br><br>header(“Content-Encoding: gzip”);<br><br>echo file_get_contents(“img.png.gz”);<br><br>?&gt;<br><br></div></td><br></tr><br></tbody><br></table><br></div><br></div><br>&nbsp;<br><br>仅仅是有压缩文件是不行的，我们还需要一个文件来告诉浏览器这个是一个压缩文件，你需要解压，一般主流的浏览器都是支持 Gzip 压缩的了，在上面的代码中，我们告诉浏览器这个是经过 Gzip 压缩的，然后加载并输出制作的压缩文件。在这里，主机输出的数据流只有压缩包的 2M，但是到了客户端浏览器，数据被解压之后就到达了 1.63G 的大小。<br><br>最后我们只需要用 img 标签在论坛或者是其他页面中插入这个页面就可以了，图片仍然是可以正常显示的，但是当数据全部加载完成，或者是数据加载超出 CPU 的负载之后，浏览器便出现了未响应的状态。<br><br>这个其实没有什么实际的用处，<em>*也请你不要去做不应该做的事情</em></em>，要构成浏览器未响应的要求首先就是文件传送的速度够快，如果你的主机要半天才能够加载这张图片，那么浏览器也要半天才能未响应了。<br><br><a href="http://1.theimgrongchang.duapp.com/" target="_blank" rel="external">点击此处进入测试页面
 </a><br><br></div>
       
     </div>
@@ -1318,68 +1388,6 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
   
 
   
-    <article id="post-642" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/05/11/642/" class="article-date">
-  	<time datetime="2013-05-11T13:35:25.000Z" itemprop="datePublished">2013-05-11</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/05/11/642/">Android应用编程之Override错误</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>i一、java @override 报错处理</strong></p>
-<p>有时候在自己电脑上编译通过的java代码，在别人那里却编译不通过，总是@override报错，把@override去掉就好了，但不能从根本上解决问题。</p>
-<div>据说这是jdk的问题，@Override是JDK5就已经有了，但有个小小的Bug，就是不支持对接口的实现，认为这不是Override 而JDK6修正了这个Bug，无论是对父类的方法覆盖还是对接口的实现都可以加上@Override。</div><br><div>首先要确保安装了jdk 1.6，</div><br><div></div><br><div>然后，在eclipse中修改配置，在 Windows-&gt;Preferences–&gt;java-&gt;Compiler–&gt;compiler compliance level 中选择 1.6，刷新工程，重新编译下；</div><br><div>如果还是不行，就在报错的工程上，鼠标右键选择 Properties–&gt;Java Compiler–&gt;compiler compliance level 中选择 1.6,刷新工程，重新编译下。</div><br><div></div><br><div><strong>二、Android之@Override详解</strong></div><br><div><br><br>Android的开发者对@Override肯定是非常熟悉，不管是自己的代码中还是书上都会出现，但是他是什么意思呢？如下：<br>@Override是伪代码,表示重写(当然不写也可以),不过写上有如下好处:<br>1、可以当注释用,方便阅读<br>2、编译器可以给你验证@Override下面的方法名是否是你父类中所有的,如果没有则报错比如你如果没写@Override而你下面的方法名又写错了,这时你的编译器是可以通过的(它以为这个方法是你的子类中自己增加的方法)<br>example:<br><br>在重写父类的onCreate时，在方法前面加上@Override系统可以帮你检查方法的正确性。例如：<br><br>publicvoidonCreate(BundlesavedInstanceState){…….}<br>这种写法是正确的，如果你写成<br>publicvoidoncreate(BundlesavedInstanceState){…….}<br>这样编译器会报如下错误——<br>Themethodoncreate(Bundle)oftypeHelloWorldmustoverrideorimplementasupertypemethod，<br>以确保你正确重写onCreate方法。（因为oncreate应该为onCreate）<br>而如果你不加@Override，则编译器将不会检测出错误，而是会认为你新定义了一个方法oncreate。<br><br></div>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Code/">Code</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/6/">Next &raquo;</a>
@@ -1405,7 +1413,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -1421,8 +1429,8 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

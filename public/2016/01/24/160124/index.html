@@ -18,18 +18,19 @@
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/a81ebcb1-4d84-47e0-a700-01166355b29c.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/2c58f57d-eb65-4d03-a82b-7f260b5f2f73.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/8e198c39-c730-4193-9d0c-2e3abda38bd9.png">
-<meta property="og:updated_time" content="2016-03-10T04:08:25.000Z">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OpenCV3.0 + IntelliJ IDEA">
 <meta name="twitter:description" content="OpenCV3.0 + IntelliJ IDEA装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。
 官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/clipboard.png">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -211,16 +212,16 @@ function dispatch() {
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="OpenCV3-0_+_IntelliJ_IDEA">OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
+        <h1 id="OpenCV3-0-IntelliJ-IDEA"><a href="#OpenCV3-0-IntelliJ-IDEA" class="headerlink" title="OpenCV3.0 + IntelliJ IDEA"></a>OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
 <p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
 <a id="more"></a>
-<h2 id="Environment">Environment</h2><ul>
+<h2 id="Environment"><a href="#Environment" class="headerlink" title="Environment"></a>Environment</h2><ul>
 <li>IntelliJ IDEA 14.1.5</li>
 <li>JDK 1.8</li>
 <li>OpenCV 3.0</li>
 <li>Windows 10 Pro</li>
 </ul>
-<h2 id="Instruction">Instruction</h2><ol>
+<h2 id="Instruction"><a href="#Instruction" class="headerlink" title="Instruction"></a>Instruction</h2><ol>
 <li><p>下载OpenCV3.0 for Windows<br>运行 <em>opencv-3.0.0.exe</em> ，解压到磁盘任意位置。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/clipboard.png" alt=""></p>
 </li>
 <li><p>用IntelliJ IDEA创建一个空项目，然后打开 “File-&gt;Project Structure-&gt;Libraries”<br>添加一个库， “opencb/build/java/opencv300.jar”<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/a81ebcb1-4d84-47e0-a700-01166355b29c.png" alt=""></p>
@@ -231,7 +232,7 @@ function dispatch() {
 </li>
 </ol>
 <p>public class Main<br>{<br>    public static void main( String[] args )<br>    {<br>        System.loadLibrary( Core.NATIVE_LIBRARY_NAME );<br>        Mat mat = Mat.eye( 3, 3, CvType.CV_8UC1 );<br>        System.out.println( “mat = “ + mat.dump() );<br>    }<br>}<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/8e198c39-c730-4193-9d0c-2e3abda38bd9.png" alt=""></p>
-<h2 id="References">References</h2><ol>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
 <li><a href="http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse" target="_blank" rel="external">http://docs.opencv.org/2.4/doc/tutorials/introduction/java_eclipse/java_eclipse.html#java-eclipse</a></li>
 <li><a href="http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html" target="_blank" rel="external">http://labusers.net/member/YoshitomoMatsubara/menu/blog.php?path=20150516.html</a></li>
 </ol>
@@ -311,7 +312,7 @@ function dispatch() {
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -327,8 +328,8 @@ function dispatch() {
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

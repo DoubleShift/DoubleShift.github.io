@@ -23,20 +23,21 @@ ssh 连接">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png">
 <meta property="og:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224358.png">
-<meta property="og:updated_time" content="2016-01-30T01:48:19.000Z">
+<meta property="og:updated_time" content="2016-07-05T19:55:00.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="泡泡云盒子折腾笔记">
 <meta name="twitter:description" content="双11买的泡泡云，易迅29块钱一个。配置还不错，今天才有网线来折腾一下。
 晒个配置CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。
 内置2GByte的flash存储(df查看剩余用户可用1.67G)，256M内存(free查看剩余190M)，ARMV5TE指令集支持，双USB（另一个标记为供电口的需要拆开外壳短接两个电阻位：NR127，NR128）。
 ssh 连接">
+<meta name="twitter:image" content="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png">
   
     <link rel="alternative" href="/rss.xml" title="双人份 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -219,7 +220,7 @@ function dispatch() {
     <div class="article-entry" itemprop="articleBody">
       
         <p>双11买的泡泡云，易迅29块钱一个。配置还不错，今天才有网线来折腾一下。</p>
-<h1 id="晒个配置">晒个配置</h1><p>CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。</p>
+<h1 id="晒个配置"><a href="#晒个配置" class="headerlink" title="晒个配置"></a>晒个配置</h1><p>CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。</p>
 <p>内置2GByte的flash存储(df查看剩余用户可用1.67G)，256M内存(free查看剩余190M)，ARMV5TE指令集支持，双USB（另一个标记为供电口的需要拆开外壳短接两个电阻位：NR127，NR128）。</p>
 <p>ssh 连接上去看看。</p>
 <p>SSH  root:123456</p>
@@ -234,7 +235,7 @@ function dispatch() {
 <p>&nbsp;</p>
 <p>[root@PopoCloud ~]# dmesg | grep ‘CPU’<br>CPU: ARM926EJ-S [41069265] revision 5 (ARMv5TEJ), cr=00053177<br>CPU: VIVT data cache, VIVT instruction cache<br>ANYKA CPU AK9801 (id 0x20090c00)<br>SLUB: Genslabs=11, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1<br>CPU: Testing write buffer coherency: ok<br>AK98: PLL 360 MHz, CPU Core 360 MHz, MEM 180 MHz, ASIC 90 MHz<br>NAND driver:L2_CPU_MODE<br>CPU Core &gt; 340 MHz</p>
 <p>&nbsp;</p>
-<h1 id="1-装个迅雷">1.装个迅雷</h1><p>以下命令在putty里一条条复制粘帖就行了。</p>
+<h1 id="1-装个迅雷"><a href="#1-装个迅雷" class="headerlink" title="1.装个迅雷"></a>1.装个迅雷</h1><p>以下命令在putty里一条条复制粘帖就行了。</p>
 <p>脚本会自动处理thunder_mounts.cfg，无需手动。</p>
 <p>1.首先插上移动存储设备并挂载到目录（方法自己Google）</p>
 <p>2.下载管理脚本<br>mkdir -p /opt/bin<br>rm -rf /opt/xunlei /opt/bin/xunlei<br>wget <a href="http://lazyzhu.com/file/xunlei" target="_blank" rel="external">http://lazyzhu.com/file/xunlei</a> -P /opt/bin &amp;&amp; chmod +x /opt/bin/xunlei<br>export PATH=/opt/bin:$PATH<br>复制代码<br>3.下载部署迅雷远程主程序<br>xunlei setup<br>复制代码<br>4.启动迅雷远程下载<br>xunlei start<br>复制代码<br>5.获取迅雷远程状态信息（含激活码）<br>xunlei status<br>复制代码<br>6.关闭或重启<br>xunlei stop<br>xunlei restart<br>复制代码<br>7.开机自启动<br>xunlei boot<br>复制代码<br>再次运行可移除。</p>
@@ -242,24 +243,24 @@ function dispatch() {
 <p>/opt/xunlei/portal 可以启动迅雷</p>
 <p>9.重装或升级<br>xunlei setup</p>
 <p><del><span style="color: #ff0000;">一直没有启动成功，后来开了dmz，公网访问后才能得到激活码。不知道什么原因</span></del></p>
-<h1 id="2-取消泡泡云服务">2.取消泡泡云服务</h1><p>编辑文件 /root/rc.popocloud</p>
+<h1 id="2-取消泡泡云服务"><a href="#2-取消泡泡云服务" class="headerlink" title="2.取消泡泡云服务"></a>2.取消泡泡云服务</h1><p>编辑文件 /root/rc.popocloud</p>
 <p>注释掉</p>
-<h1 id="if__stopped_“python”;_then">if _stopped “python”; then</h1><h1 id="start_popocloud">start_popocloud</h1><h1 id="fi">fi</h1><p>reboot ，自带的服务就没了。</p>
-<h1 id="3-关闭minidlna">3.关闭minidlna</h1><p>编辑文件 /root/rc.popocloud<br>vi /root/rc.popocloud<br>编辑掉：</p>
-<h1 id="if__stopped_“minidlna”;_then">if _stopped “minidlna”; then</h1><h1 id="start_minidlna_${ipaddr}_&amp;">start_minidlna ${ipaddr} &amp;</h1><h1 id="else">else</h1><h1 id="stop_minidlna">stop_minidlna</h1><h1 id="fi-1">fi</h1><p>之后保存，/etc/minidlna stop</p>
+<h1 id="if-stopped-“python”-then"><a href="#if-stopped-“python”-then" class="headerlink" title="if _stopped “python”; then"></a>if _stopped “python”; then</h1><h1 id="start-popocloud"><a href="#start-popocloud" class="headerlink" title="start_popocloud"></a>start_popocloud</h1><h1 id="fi"><a href="#fi" class="headerlink" title="fi"></a>fi</h1><p>reboot ，自带的服务就没了。</p>
+<h1 id="3-关闭minidlna"><a href="#3-关闭minidlna" class="headerlink" title="3.关闭minidlna"></a>3.关闭minidlna</h1><p>编辑文件 /root/rc.popocloud<br>vi /root/rc.popocloud<br>编辑掉：</p>
+<h1 id="if-stopped-“minidlna”-then"><a href="#if-stopped-“minidlna”-then" class="headerlink" title="if _stopped “minidlna”; then"></a>if _stopped “minidlna”; then</h1><h1 id="start-minidlna-ipaddr-amp"><a href="#start-minidlna-ipaddr-amp" class="headerlink" title="start_minidlna ${ipaddr} &amp;"></a>start_minidlna ${ipaddr} &amp;</h1><h1 id="else"><a href="#else" class="headerlink" title="else"></a>else</h1><h1 id="stop-minidlna"><a href="#stop-minidlna" class="headerlink" title="stop_minidlna"></a>stop_minidlna</h1><h1 id="fi-1"><a href="#fi-1" class="headerlink" title="fi"></a>fi</h1><p>之后保存，/etc/minidlna stop</p>
 <p>并reboot，miniDlna服务就关闭了。</p>
 <p>DLNA 服务器，配置文件在 /etc/minidlna.conf</p>
-<h1 id="4配置_BT_下载服务_transmission">4配置 BT 下载服务 transmission</h1><p>/etc/transmission start 启动。如果需要自启动，可以在 /etc/init.d/rc.local 最后加上这句就可以了。<br>web 访问： <a href="http://IP:9091。" target="_blank" rel="external">http://IP:9091。</a><br>如果需要手动配置，可以在： /root/transmission/config 目录下，有一个json文件可以配置；<br>建议直接 web 端配置（例如下载目录配置到你的 samba 服务器目录，下载后直接访问）<br>另外 web内容在 /root/transmission/web 下，可以更换汉化版本。</p>
+<h1 id="4配置-BT-下载服务-transmission"><a href="#4配置-BT-下载服务-transmission" class="headerlink" title="4配置 BT 下载服务 transmission"></a>4配置 BT 下载服务 transmission</h1><p>/etc/transmission start 启动。如果需要自启动，可以在 /etc/init.d/rc.local 最后加上这句就可以了。<br>web 访问： <a href="http://IP:9091。" target="_blank" rel="external">http://IP:9091。</a><br>如果需要手动配置，可以在： /root/transmission/config 目录下，有一个json文件可以配置；<br>建议直接 web 端配置（例如下载目录配置到你的 samba 服务器目录，下载后直接访问）<br>另外 web内容在 /root/transmission/web 下，可以更换汉化版本。</p>
 <p>启动： /etc/transmission start (如果需要自启动，加入 /etc/init.d/rc.local 就可以了）</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" alt="QQ20131123132532"></a></p>
-<h1 id="5-安装optware">5.安装optware</h1><p>以下命令在putty里一条条复制粘帖就行了</p>
+<h1 id="5-安装optware"><a href="#5-安装optware" class="headerlink" title="5.安装optware"></a>5.安装optware</h1><p>以下命令在putty里一条条复制粘帖就行了</p>
 <p>1.下载部署OptWare<br>feed=<a href="http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable" target="_blank" rel="external">http://ipkg.nslu2-linux.org/feeds/optware/cs08q1armel/cross/unstable</a><br>ipk_name=<code>wget -qO- $feed/Packages | awk &#39;/^Filename: ipkg-opt/ {print $2}&#39;</code><br>wget $feed/$ipk_name<br>tar -xOvzf $ipk_name ./data.tar.gz | tar -C / -xzvf -<br>mkdir -p /opt/tmp<br>mkdir -p /opt/etc/ipkg<br>echo “src cross $feed” &gt; /opt/etc/ipkg/feeds.conf<br>复制代码<br>2.配置环境变量<br>LD_LIBRARY_PATH=/opt/lib:/lib:/usr/lib<br>sed -i “s#LD_LIBRARY_PATH=.<em>#LD_LIBRARY_PATH=${LD_LIBRARY_PATH}#g” /etc/profile<br>PATH=/opt/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin<br>sed -i “s#PATH=.</em>#PATH=${PATH}#g” /etc/profile<br>. /etc/profile</p>
 <p>3.ipkg安装实例<br>ipkg update<br>ipkg install ncurses nano<br>which nano</p>
 <p>提醒：目前Popobox没有不死uboot，所以操作需谨慎！</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123132532.png" target="_blank" rel="external"> </a></p>
 <p>最后，总共找到了这些资料</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131123133905.png" alt="QQ20131123133905"></a></p>
-<h2 id="2014-1-31更新">2014.1.31更新</h2><p>回家过年更新了一遍，但是没有网络，最后蹭到了邻居家的wifi。密码是1到9.然后就考虑怎么来搞搞，最后用路由桥接了这个信号。</p>
+<h2 id="2014-1-31更新"><a href="#2014-1-31更新" class="headerlink" title="2014.1.31更新"></a>2014.1.31更新</h2><p>回家过年更新了一遍，但是没有网络，最后蹭到了邻居家的wifi。密码是1到9.然后就考虑怎么来搞搞，最后用路由桥接了这个信号。</p>
 <p>开启wds，然后扫描到ap，设置好保存，这样就可以连接上我的泡泡云了。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224250.png" alt="QQ20140131224250"></a></p>
 <p>开启dhcp，不启用的话我们的泡泡云没有ip，不能自动获取ip就ssh不上了。网关要选桥接的那个路由内网地址。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20140131224321.png" alt="QQ20140131224321"></a></p>
@@ -340,7 +341,7 @@ function dispatch() {
 </footer>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
 
 <script>
@@ -356,8 +357,8 @@ function dispatch() {
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 
