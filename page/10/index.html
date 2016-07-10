@@ -161,6 +161,83 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-215" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/12/10/215/" class="article-date">
+  	<time datetime="2012-12-10T05:07:01.000Z" itemprop="datePublished">2012-12-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2012/12/10/215/">轻松搭建私有云</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;</p>
+<p>昨天的迷你云xss可以说是没什么用处，今天发现迷你云确实很不错，至少不用担心数据会别人窃取。</p>
+<p>今天就做了一个搭建迷你云的教程。</p>
+<p>可以在家中的电脑上搭建迷你云，只要使用他的windows或者linux一键环境。不过我还是喜欢用php空间搭建。</p>
+<p>因为这样不用担心家中电脑关机，也可以保证传输速度。这里空间使用的是openshift，以前有过教程，翻墙一直用的他。</p>
+<p>openshift申请一个数据库后，</p>
+<p>ssh连上 cd app-root\repo\php</p>
+<p>然后wget <a href="http://www.miniyun.cn/app/download/type/server/mime/zip" target="_blank" rel="external">http://www.miniyun.cn/app/download/type/server/mime/zip</a></p>
+<p>之后unzip zip。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173145.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173145-300x57.png" alt="" title="QQ20121208173145"></a></p>
+<p>接下来进入数据库配置，很简单的，http进入你解压的目录我这里是<a href="https://tools.chenxing.org.cn/yun/[" target="_blank" rel="external">https://tools.chenxing.org.cn/yun/[</a><br>](<a href="http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173708.png)[" target="_blank" rel="external">http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173708.png)[</a><br>](<a href="http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173639.png)[![](http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639-210x300.png" target="_blank" rel="external">http://bcs.duapp.com/dlinux/QQ%E6%88%AA%E5%9B%BE20121208173639.png)[![](http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639-210x300.png</a> “QQ20121208173639”)](<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639.png" target="_blank" rel="external">http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173639.png</a>)</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173708.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173708-266x300.png" alt="" title="QQ20121208173708"></a></p>
+<p>选择mysl数据库，接下来配置信息。这些申请的时候都有的，openshift的不能填localhost，要进phpmyadmin看里面的地址才行。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173916.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208173916-300x267.png" alt="" title="QQ20121208173916"></a></p>
+<p>之后创建一个admin就好了。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208174043.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208174043-300x150.png" alt="" title="QQ20121208174043"></a></p>
+<p>注意看，他提供web，windows，android3种登入方式，ios的好像也可以了。登入后就可以在web上使用了，这个和金山快盘类似，因为他就是仿照快盘的，不对，借鉴借鉴。以前猪八戒看到过这个任务。嘿嘿。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175145.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175145-300x146.png" alt="" title="QQ20121208175145"></a></p>
+<p>由于这个是外国的空间，所以上传速度大概只有40k，下载在150k左右。不过没关系，大文件都用百度网盘之类的，私有云只是存储一些不方便放其他地方的文件，小文件，速度不担心。你又其他的就别担心了。</p>
+<p>点击右上角有管理功能哦，管理员才有，然后看看windows的界面吧。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175627.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ20121208175627-300x198.png" alt="" title="QQ20121208175627"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ201212081755441.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/QQ201212081755441-300x159.png" alt="" title="QQ201212081755441"></a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-209" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -1045,190 +1122,6 @@ function dispatch() {
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Hack/">Hack</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-147" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/11/20/147/" class="article-date">
-  	<time datetime="2012-11-20T08:19:39.000Z" itemprop="datePublished">2012-11-20</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/11/20/147/">简简单单的学院男女比例统计</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>以前在哪里看到过一个统计全学校男女比例的表格，我就想把他做成统计图，然后再统计下星座什么的。</p>
-<p>3月和9月的女生和我不合呐。</p>
-<p>这次使用了Highcharts这一开源图表库。他额好处就是纯脚本，哪里都能放。</p>
-<p>可以进入官网看看<a href="http://www.highcharts.com/" target="_blank" rel="external">http://www.highcharts.com/</a></p>
-<p>excel数据导入mysql中就不演示了，数据确实比较敏感，不好放出来。</p>
-<p>说说主要的实现过程。</p>
-<p>connect.php //数据库连接文件</p>
-<pre>&lt;?php
-$host="local";
-$db_user="eshos";
-$db_pass="123456";
-$db_name="eshos";
-$timezone="Asia/Shanghai";
-
-$link=mysql_connect($host,$db_user,$db_pass);
-mysql_select_db($db_name,$link);
-mysql_query("SET names UTF8");
-?&gt;</pre>
-<pre></pre>
-<pre>show.php // 生成图表</pre>
-<pre>&lt;?php
-include_once('connect.php');
-$year=$_GET['year'];
-//$exec="select * from JiangCai_College where year=".$year;
-$res = mysql_query("select * from JiangCai_College where year=".$year);
-
-while($row = mysql_fetch_array($res)){
-    $college[] = $row['college'];  //获取学院名称
-    $male[] = intval($row['male']);  //获取男生人数，并转换为数字整型
-    $female[] = intval($row['female']); //获取女生人数，并转换为数字整型
-}
-
-?&gt;
-
-&lt;!DOCTYPE HTML&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
-        &lt;title&gt;Highcharts Example&lt;/title&gt;
-
-        &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript"&gt;
-$(function () {
-    var chart;
-    $(document).ready(function() {
-        chart = new Highcharts.Chart({
-            chart: {
-                renderTo: 'container',
-                type: 'column'
-            },
-            title: {
-                text: '江西财经大学&lt;?php echo $year; ?&gt;年各学院男女分布图'
-            },
-            xAxis: {
-                categories:  &lt;?php echo json_encode($college); ?&gt;
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: '男女人数'
-                },
-                stackLabels: {
-                    enabled: true,
-                    style: {
-                        fontWeight: 'bold',
-                        color: (Highcharts.theme &amp;&amp; Highcharts.theme.textColor) || 'gray'
-                    }
-                }
-            },
-            legend: {
-                align: 'right',
-                x: -100,
-                verticalAlign: 'top',
-                y: 20,
-                floating: true,
-                backgroundColor: (Highcharts.theme &amp;&amp; Highcharts.theme.legendBackgroundColorSolid) || 'white',
-                borderColor: '#CCC',
-                borderWidth: 1,
-                shadow: false
-            },
-            tooltip: {
-                formatter: function() {
-                    return '&lt;b&gt;'+ this.x +'&lt;/b&gt;&lt;br/&gt;'+
-                        this.series.name +': '+ this.y +'&lt;br/&gt;'+
-                        'Total: '+ this.point.stackTotal;
-                }
-            },
-            plotOptions: {
-                column: {
-                    stacking: 'normal',
-                    dataLabels: {
-                        enabled: true,
-                        color: (Highcharts.theme &amp;&amp; Highcharts.theme.dataLabelsColor) || 'white'
-                    }
-                }
-            },
-            series: [{
-                name: '男',
-                data: &lt;?php echo json_encode($male);?&gt;
-            },{
-                name: '女',
-                data: &lt;?php echo json_encode($female);?&gt;
-            }]
-        });
-    });
-
-});
-        &lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-&lt;script src="js/highcharts.js"&gt;&lt;/script&gt;
-&lt;script src="js/modules/exporting.js"&gt;&lt;/script&gt;
-
-&lt;div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"&gt;&lt;/div&gt;
-
-    &lt;/body&gt;
-&lt;/html&gt;</pre>
-<pre></pre>
-<pre>很明显，这个存在注入，o(︶︿︶)o 唉，不会过滤，所以重要数据还是没放进数据库，不过大家还是别乱搞啊。</pre>
-<pre>最后结果在这里。</pre>
-<pre></pre>
-
-<p> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121120181359.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121120181359-1024x350.png" alt="" title="QQ20121120181359"></a></p>
-<p>访问链接：<a href="http://justforlove.sinaapp.com" target="_blank" rel="external">http://justforlove.sinaapp.com</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sae/">sae</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Code/">Code</a>
 	</div>
 
 
