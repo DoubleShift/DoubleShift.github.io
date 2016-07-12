@@ -161,6 +161,76 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-765" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/07/17/765/" class="article-date">
+  	<time datetime="2013-07-17T10:43:41.000Z" itemprop="datePublished">2013-07-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/07/17/765/">入手一个vps</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>赵荣部落看到的，一年只要10刀，然后在微魔部落找到代付， 一共63块钱。</p>
+<p><a href="http://www.zrblog.net/10955.html" target="_blank" rel="external">http://www.zrblog.net/10955.html</a></p>
+<p>配置如下：</p>
+<p>CPU：1 cores</p>
+<p>内存：256MB</p>
+<p>SWAP：256MB</p>
+<p>硬盘：5 GB</p>
+<p>月流量：256GB</p>
+<p>1 IP/SolusVM</p>
+<p>下面会持续更新一下如何跑上wordpress，再搭一个vpn的过程。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网站/">网站</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Web/">Web</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-763" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -1327,101 +1397,6 @@ function dispatch() {
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Others/">Others</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-646" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/05/22/646/" class="article-date">
-  	<time datetime="2013-05-22T14:06:52.000Z" itemprop="datePublished">2013-05-22</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/05/22/646/">一键评教</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>哎，前面的文章已经出卖我是哪里的了，这里也就无所谓了。</p>
-<p>油猴脚本，实现的一键评教。</p>
-<p><a href="http://userscripts.org/scripts/review/168166" target="_blank" rel="external">http://userscripts.org/scripts/review/168166</a></p>
-<p>&nbsp;</p>
-<p>分析了评教的页面，就是调用了个onsubmit的函数，然后进入评教页面，然后填入分数神马的，再submit一个表单。</p>
-<pre id="source">$("input[type='submit']").trigger("click");  自动提交，做个判断，然后执行onclick函数，跳转之后设置随机分数，然后再度提交。。。。懒得写那么多了，就这样把！
-
-</pre>
-<pre id="source">// ==UserScript==
-// @name      JiangCai Teaching Evaluation
-// @namespace  http://dlinux.sinaapp.com
-// @include        http://portal7.jxufe.edu.cn/portal/main.xsp/page/-1/?.a.p=aT0lMkZ4Znpwb3J0YWwlMkZwZ25ldyZ0PXImcz1ub3JtYWwmZXM9ZGV0YWNoJm09dmlldw%3D%3D&amp;mlinkf=pg%2Fpg.jsp
-// @version    0.1
-// @description  江财一键评教  请从这个地址登入 http://portal7.jxufe.edu.cn
-// @match      
-// @copyright  2013+,双人份,fjjwlzd@163.com
-// @require     http://code.jquery.com/jquery-1.9.1.min.js
-// ==/UserScript==
-
-//随机80几分
-var rs =function(){
-   return parseInt(Math.random()*10+80);
-}
-
-$("input[name='teachattitude']").val(rs);
-$("input[name='teachmethod']").val(rs);
-$("input[name='teacheffect']").val(rs);
-$("input[name='teachcontent']").val(rs);
-$("input[name='coursepleased']").val(rs);
-$("input[name='teachjc']").val(rs);
-
-$("textarea[name='stmemo']").val("十分不错");
-$("textarea[name='jcmemo']").val("不喜欢这种的教程");
-$("textarea[name='coursememo']").val("不是很想在这个时候上，应该早一年");
-
-//$("input[type='submit']").trigger("click");   //自动点击？还是自己修改一番把</pre>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Code/">Code</a>
 	</div>
 
 

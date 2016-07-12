@@ -161,6 +161,92 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-331" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/01/15/331/" class="article-date">
+  	<time datetime="2013-01-15T11:30:12.000Z" itemprop="datePublished">2013-01-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/01/15/331/">JBOSS育软电子政务平台</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>学校一片的这个，一般是扫mysql弱口令，然后进后台，可是后台不知道怎么拿shell。</p>
+<p>通用的方法就是利用JBOSS漏洞进入。</p>
+<p><a href="http://dlinux.sinaapp.com/2013/01/15/hackjboss%e8%82%b2%e8%bd%af%e7%94%b5%e5%ad%90%e6%94%bf%e5%8a%a1%e5%b9%b3%e5%8f%b0/%e5%9b%be%e7%89%871/" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/01/1.png" alt="图片1"></a></p>
+<p>后台就是这样的可是确实不好拿shell。<a href="http://dlinux.sinaapp.com/2013/01/15/hackjboss%e8%82%b2%e8%bd%af%e7%94%b5%e5%ad%90%e6%94%bf%e5%8a%a1%e5%b9%b3%e5%8f%b0/qq%e6%88%aa%e5%9b%be20130115212113/" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/01/QQ20130115212113.png" alt="QQ20130115212113"></a></p>
+<p>JBOSS默认配置会有一个后台漏洞，漏洞发生在<strong>jboss.deployment命名空间</strong></p>
+<p>中的<strong>addURL()函数,</strong>该函数可以远程下载一个war压缩包并解压</p>
+<p>访问<a href="http://www.safe3.com.cn:8080/jmx-console/" target="_blank" rel="external">http://www.safe3.com.cn:8080/jmx-console/</a> 后台，如下图</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/01/133014QSP.jpg" alt="" title="2010010816232452"></p>
+<p>下拉找到如下图所示</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/01/133015m33.jpg" alt="" title="2010010816245041"></p>
+<p>点击flavor=URL,type=DeploymentScanner进入</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/01/133015ql5.jpg" alt="" title="2010010816281370"></p>
+<p>在输入框中写入war压缩文件webshell的url地址，如上图</p>
+<p><a href="http://test-mozutaba.rhcloud.com/job.war" target="_blank" rel="external">http://test-mozutaba.rhcloud.com/job.war</a></p>
+<p>点击invoke执行界面获得一个jsp的webshell，如下图，shell拿一堆了。</p>
+<p>http：//xxx.com/job/index.jsp</p>
+<p>&nbsp;</p>
+<p><a href="http://dlinux.sinaapp.com/2013/01/15/hackjboss%e8%82%b2%e8%bd%af%e7%94%b5%e5%ad%90%e6%94%bf%e5%8a%a1%e5%b9%b3%e5%8f%b0/qq%e6%88%aa%e5%9b%be20130115212736/" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/01/QQ20130115212736.png" alt="QQ20130115212736"></a></p>
+<p>&nbsp;</p>
+<p><strong>临时漏洞修补办法：</strong>给jmx-console加上访问密码</p>
+<p>1.在 ${jboss.server.home.dir}/deploy下面找到jmx-console.war目录编辑WEB-INF/web.xml文件 去掉 security-constraint 块的注释，使其起作用</p>
+<p>2.编辑WEB-INF/classes/jmx-console-users.properties或server/default/conf/props/jmx-console-users.properties (version &gt;=4.0.2)和 WEB-INF/classes/jmx-console-roles.properties</p>
+<p>或server/default/conf/props/jmx-console-roles.properties(version &gt;=4.0.2) 添加用户名密码</p>
+<p>3.编辑WEB-INF/jboss-web.xml去掉 security-domain 块的注释 ，security-domain值的映射文件为 login-config.xml （该文件定义了登录授权方式）</p>
+<p>war文件可以在这里下载。解压rar就是war了。</p>
+<p><a href="http://dlinux.sinaapp.com/2013/01/15/hackjboss%e8%82%b2%e8%bd%af%e7%94%b5%e5%ad%90%e6%94%bf%e5%8a%a1%e5%b9%b3%e5%8f%b0/job/" target="_blank" rel="external">job</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-328" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -829,131 +915,6 @@ function dispatch() {
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li></ul>
 	</div>
 
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Others/">Others</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-227" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/12/10/227/" class="article-date">
-  	<time datetime="2012-12-10T05:46:47.000Z" itemprop="datePublished">2012-12-10</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/12/10/227/">脱裤门制作字典</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>脱裤门就不说什么了，但是好的数据库可不能就这么放着，我们完全可以构建一个社工库，或者用来制作一个比较牛逼的字典了。这里就使用mysql来制作一个字典好了。</p>
-<p>首先要有mysql环境，我使用的是apmserv，百度一下就好嘞。一键搭建win下的，进入mysql5.1，bin然后新建一个shell.bat 里面输入cmd，保存后运行就开始了。</p>
-<p>连接mysql</p>
-<p>mysql -h localhost -u root</p>
-<p>选择数据库，不知道可以show databases;看一下</p>
-<p>use test；</p>
-<p>创建一个表；这里用的是weibo.com.txt，创建表要根据里面的内容来，有的只有User和pass，有的多一个mail.看大家需不需要了。</p>
-<p>CREATE TABLE IF NOT EXISTS <code>weibo</code>(</p>
-<p><code>mail</code> varchar(50) NOT NULL,</p>
-<p><code>pass</code> varchar(50) NOT NULL</p>
-<p>)ENGINE=MyISAM DEFAULT CHARSET=utf8;</p>
-<p>导入数据； 路径 into 表名（列名），这里路径要注意是f：/不是f：\，千万注意。后面导出的才是f：\，我这里搞了很久啊;</p>
-<p>load data infile “F:/weibo.com.txt” into table weibo(mail,pass);</p>
-<p>导入了470w数据了，花费了8秒。</p>
-<p><a href="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154506.png" target="_blank" rel="external"><img src="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154506.png" alt="" title="QQ20121210154506"></a></p>
-<p>导出字典，就是导出pass字段，同时去除重复；</p>
-<p>select distinct pass from weibo into outfile ‘f:/weibo.dic’;</p>
-<p>重复是惊人的，居然一半以上是重复的密码。这里花了1分29秒。</p>
-<p><a href="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154519.png" target="_blank" rel="external"><img src="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154519.png" alt="" title="QQ20121210154519"></a></p>
-<p>导出sql文件，以免日后要转移，也方便一点。</p>
-<p>这里新运行一下shell.bat获得一个cmd，然后输入</p>
-<p>mysqldump -u root test&gt;f:\weibo.sql</p>
-<p>没有显示就成功了。</p>
-<p>&nbsp;</p>
-<p>最后我们就得到这几个文件了，可以发现他导出的去除重复的字典也就只有20m不到，</p>
-<p>如果把其他的数据库一起放过来，再去重估计也就几百m。当然如果能有其他的库就另外说了。</p>
-<p><a href="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154528.png" target="_blank" rel="external"><img src="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154528.png" alt="" title="QQ20121210154528"></a></p>
-<p>导入数据库的好处就是我们可以使用查询语句分析所有内容，比如可以查询里面使用频率最高的密码，用这个做出的字典就是精华了啊。</p>
-<p>&nbsp;</p>
-<p>也可以查询包含nimeimei的记录：</p>
-<p>SELECT * FROM renren WHERE user LIKE  ‘%nimeimei%’;</p>
-<p>数据库比较大的话时间会旧一点；</p>
-<p>&nbsp;</p>
-<p>2小时就整了3各字典，我这个效率o(︶︿︶)o 唉。不过明天就快了。</p>
-<p><a href="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154535.png" target="_blank" rel="external"><img src="http://dlinux.sinaapp.com/wp-content/uploads/2012/12/QQ20121210154535.png" alt="" title="QQ20121210154535"></a></p>
-<p>&nbsp;</p>
-<p>补充一点点，这里说下制作一些弱口令字典。就是统计里面的密码使用次数，使用比较多的就是若密码了。</p>
-<p>建立索引</p>
-<p>CREATE INDEX index_csdn ON csdn(pass)</p>
-<p>联合多表，生成弱密码统计的。按使用人数来排列的弱密码。</p>
-<p>SELECT pass, COUNT( pass ) FROM renren GROUP BY pass ORDER BY COUNT( * ) DESC;<br>select pass, num from (<br>(select pass, count(pass) as num from renren group by pass order by count(pass) desc limit 10000)<br>union<br>(select pass, count(pass) as num from weibo group by pass order by count(pass) desc limit 10000)<br>union<br>(select pass, count(pass) as num from csdn group by pass order by count(pass) desc limit 10000)<br>union<br>(select pass, count(pass) as num from kaixin766 group by pass order by count(pass) desc limit 10000)</p>
-<p>) as tmp<br>order by num desc limit 0,30</p>
-<p>然后导出来就得到了一个弱密码字典，可以用来跑些东东了。</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>今天又把他给做完整了一下，以后找到一个比较大的空间的话，我就传上去了。mysql 4g多。额<br>a.连接mysql<br>mysql -h localhost -u root</p>
-<p>b.进入mysql后，<br>show databases；<br>use test；</p>
-<p>c<br>如果是sql的<br>按照上面的执行后，再来这个<br>source f:/datafilename.sql</p>
-<p>或者直接是txt的，则按照这个来<br>1. 有些文件比较多，通过这个命令来合并成1个文件<br>copy <em>.</em> 1.txt<br>2.然后通过type查看里面的格式，再来决定导入的方法</p>
-<p>type 1.txt<br>3.连接sql，按照前面的use test；然后继续<br>4.添加表，通过type查看到的列来决定创建多少列。<br>CREATE TABLE IF NOT EXISTS <code>ispeak</code>(<br><code>user</code> varchar(50) NOT NULL,<br><code>pass</code> varchar(50) NOT NULL,<br><code>mail</code> varchar(50) NOT NULL<br>)ENGINE=MyISAM DEFAULT CHARSET=utf8;<br>5、导入数据<br>制表符分割的用这个<br>load data infile “F:/hackbase.txt” into table hackbase(user,pass,mail);<br>逗号分割的用这个，逗号也能换成其他的<br>load data infile “F:/ispeak.txt” into table ispeak fields terminated by’,’ lines terminated by’/n’<br>(user,pass,mail);<br>如果有时候导入出现一行都在一列里面，用这个<br>load data infile “F:/ispeak.txt” into table ispeak fields terminated by’,’ (user,pass,mail);</p>
-<p>按照逗号分割，导入sql，需要先create，但是这个老是会有问题，还是用上面的吧<br>mysqlimport –local -u root test F:/ispeak.txt<br>6.导出sql<br>别在mysql里输入，打开cmd，输入<br>mysqldump -u root test&gt;f:\ispeak.sql</p>
-<p>d<br>导入完成后就可以导出一个字典，用于干啥大家都知道吧。都是常用密码<br>select distinct pass from ispeak into outfile ‘f:/ispeak.dic’;</p>
-<p>&nbsp;</p>
-<p>2014-1-6 补充</p>
-<p>按照上面导入的方法如果有中文是会乱码的，所以需要处理一下</p>
-<p>1.转换文件编码gbk为utf8</p>
-<p>习惯问题，用bgk也可以，不过我喜欢统一化，避免问题。linux下有命令，常用环境不是linux 所以找了一个windows下的软件处理一下</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/GB2UTF8.zip" target="_blank" rel="external">GB2UTF8</a></p>
-<p>2.去除干扰</p>
-<p>把多个空格，空格行，空行，非统一的分隔符 全部处理一下，根据不同文件会需要到下面不同的命令</p>
-<p>$sed ‘/^$/d’ test.txt &gt;1.txt 去除回车空行<br>sed ‘/^[[:space:]][[:space:]]<em>$/d’ 1-20W.txt &gt;1.txt 替换空格形成的空行<br>sed -e ‘s/[ ][ ]</em>/,/g’ filename  &gt;1.txt  转换多个空格为 ， 进行分隔符</p>
-<p>还是装了一个cygwin来处理，实在是不方便</p>
-<p>3.导入</p>
-<p>由于是中文，所以和前面的有些不一样， 主要是 需要设置编码  character set utf8  这一句，选最长的一句来做示范 。</p>
-<p>load data local infile ‘D:/database/hotel/200W-400W.csv’ into table hotel character set utf8 fields terminated by ‘,’ lines terminated by ‘\n’ (Name,CardNo,Descriot,CtfTp,CtfId,Gender,Birthday,Address,Zip,Dirty,District1,District2,District3,District4,District5,District6,FirstNm,LastNm,Duty,Mobile,Tel,Fax,EMail,Nation,Taste,Education,Company,CTel,CAddress,CZip,Family,Version,id);</p>
-<p>&nbsp;</p>
-<p>导出备份一下</p>
-<p>导出整个数据库结构和数据<br>mysqldump -h localhost -uroot -p123456 database &gt; dump.sql</p>
-<p>导出单个数据表结构和数据，推荐这种，虽然麻烦，但是分表避免文件太大。<br>mysqldump -h localhost -uroot -p123456 database table &gt; dump.sql</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Others/">Others</a>
