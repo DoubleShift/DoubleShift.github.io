@@ -161,6 +161,90 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-242" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2012/12/11/242/" class="article-date">
+  	<time datetime="2012-12-11T11:29:07.000Z" itemprop="datePublished">2012-12-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2012/12/11/242/">提取握手包</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>蹭网的朋友经常会有抓到比较大的握手包吧。比如我就抓到一个136m。这里面大量都是无效数据，我们可以将其中认证部分提取出来。使用wireshark就可以了。下面是来自gpuhash上的说明。</p>
+<p>&nbsp;</p>
+<p><strong>Q: What do I do if my capture file is greater than 1MB?</strong></p>
+<p><strong>A:</strong> You’ll need to use Wireshark or something else to export only the handshake to a smaller file. Remember to leave at least one beacon for your target network in there, though, so that the handshake remains associated with the ESSID you’re targeting.</p>
+<p>Stripping your handshakes with Wireshark:</p>
+<ul>
+<li>Open your capture in Wireshark</li>
+<li>Enter “eapol || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x08” as filter expression (without quotes) then press “Apply”</li>
+<li>Go to File-&gt;Save As… menu, enter new file name and select “Displayed” to save filtered packets only<br>Command-line stripping capture file with pyrit:</li>
+</ul>
+<p>pyrit –r &lt;input file&gt; –o &lt;output file&gt; -e &lt;essid&gt; strip</p>
+<p>Command-line stripping capture file with tshark:</p>
+<p>tshark -r &lt;input file&gt; -R “eapol || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x08” -w &lt;output file&gt;</p>
+<p>tshark -r &lt;input file&gt; -R “eapol || wlan_mgt == &lt;bssid&gt;” -w &lt;output file&gt;</p>
+<p>tshark -r &lt;input file&gt; -R “eapol || wlan_mgt.tag.interpretation eq &lt;essid&gt;” -w &lt;output file&gt;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>打开wireshark，选择你的握手包，</p>
+<p>然后过滤规则输入   eapol || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x08</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/11.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/11.png" alt="" title="1"></a></p>
+<p>点击Apply，然后保存，界面里选择display。</p>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/21.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/21.png" alt="" title="2"></a></p>
+<p>然后我们将会有一个几kb的握手包。</p>
+<p>&nbsp;</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BackTrack/">BackTrack</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-234" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -977,67 +1061,6 @@ function dispatch() {
         <p>最早的14号，最晚的25号。如果算上那个换的话，今天才发过去。还一张。</p>
 <p>发北京真贵啊，21块。你妹的，发过来才8块。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173804.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173804-225x300.jpg" alt="" title="IMG_20121125_173804"></a></p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173743.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173743-225x300.jpg" alt="" title="IMG_20121125_173743"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173752.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173752-225x300.jpg" alt="" title="IMG_20121125_173752"></a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Life/">Life</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-173" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/11/25/173/" class="article-date">
-  	<time datetime="2012-11-25T08:27:22.000Z" itemprop="datePublished">2012-11-25</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/11/25/173/">中奖啦，DNSPOD的笔记本</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>确切的说，这是我这辈子第一次网上中到一个实物的奖品。</p>
-<p>泪牛满面啊。 10月30号买了个域名，还是info的，4块钱，godaddy解析不上，转dnspod了。然后11月说可以每天抽奖。</p>
-<p>乖乖，抽了个笔记本，还不要钱给送过来。虽然想要那个抱枕，但是很开心。支持dnspod啊。听说dnspod送老婆，是不是真得的。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171532.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171532-300x225.jpg" alt="" title="IMG_20121125_171532"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171935.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171935-300x225.jpg" alt="" title="IMG_20121125_171935"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171653.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171653-225x300.jpg" alt="" title="IMG_20121125_171653"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171642.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171642-225x300.jpg" alt="" title="IMG_20121125_171642"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171505.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171505-225x300.jpg" alt="" title="IMG_20121125_171505"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171543.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_171543-300x225.jpg" alt="" title="IMG_20121125_171543"></a></p>
-<p>&nbsp;</p>
 
       
     </div>

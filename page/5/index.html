@@ -161,6 +161,132 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-775" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/08/02/775/" class="article-date">
+  	<time datetime="2013-08-02T17:36:53.000Z" itemprop="datePublished">2013-08-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/08/02/775/">Cocos2d 动画记录</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以后会些完整，如果有必要的话。 这里是学习的时候记录的一点。不是一个完整的教程</p>
+<p>&nbsp;</p>
+<p>一直不知道载入图像的函数，今天总算找到了，原来是<span style="font-family: 'Times New Roman';">texture</span><span style="font-family: 宋体;">，纹理集。</span></p>
+<p>用这个对图片分段载入，然后我们可以实现一个动画。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>var diren = cc.Sprite.extend({</p>
+<p>speed:220,</p>
+<p>appearPosition:cc.p(300, 400),</p>
+<p>ctor:function () {</p>
+<p>&nbsp;</p>
+<p>// needed for JS-Bindings compatibility</p>
+<p>cc.associateWithNative( this, cc.Sprite );</p>
+<p>&nbsp;</p>
+<p>var shipTexture = cc.TextureCache.getInstance().addImage(‘res/diren.png’);//<span style="font-family: 宋体;">图片</span></p>
+<p>this.initWithTexture(shipTexture, cc.rect(0, 0, 190, 110));  // <span style="font-family: 宋体;">图片框</span></p>
+<p>this.setPosition(this.appearPosition);</p>
+<p>&nbsp;</p>
+<p>// set frame</p>
+<p>var frame=new Array(); //<span style="font-family: 宋体;">图片数组</span></p>
+<p>var animFrames = [];   //<span style="font-family: 宋体;">动画</span></p>
+<p>for(var i=0;i&lt;15;i++)</p>
+<p>{</p>
+<p>if(i&lt;9){</p>
+<p>frame[i] = cc.SpriteFrame.createWithTexture(shipTexture, cc.rect(0+i*190, 0, 190, 110));</p>
+<p>} else{</p>
+<p>frame[i] = cc.SpriteFrame.createWithTexture(shipTexture, cc.rect(0+(i-9)*190, 110, 190, 110));</p>
+<p>}</p>
+<p>animFrames.push(frame[i]);</p>
+<p>}</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>// ship animate</p>
+<p>var animation = cc.Animation.create(animFrames, 0.1);</p>
+<p>var animate = cc.Animate.create(animation);</p>
+<p>this.runAction(cc.RepeatForever.create(animate));</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>},</p>
+<p>&nbsp;</p>
+<p>update:function (dt) {  <span style="font-family: 宋体;">这里的代码会定时执行</span></p>
+<p>&nbsp;</p>
+<p>},</p>
+<p>shoot:function (dt) {</p>
+<p>},</p>
+<p>destroy:function () {</p>
+<p>},</p>
+<p>hurt:function () {</p>
+<p>},</p>
+<p>&nbsp;</p>
+<p>});</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>所有的节点会有一个叫<span style="font-family: 'Times New Roman';">scheduleUpdate</span><span style="font-family: 宋体;">的方法，这个方法执行一次之后会开始一个定时器，在每一帧绘制时候执行</span><span style="font-family: 'Times New Roman';">update</span><span style="font-family: 宋体;">方法。</span></p>
+<p>我们在<span style="font-family: 'Times New Roman';">init</span><span style="font-family: 宋体;">方法的最后添加如下代码来启动定时器：</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>this.scheduleUpdate();</p>
+<p>然后创建用来被调用的<span style="font-family: 'Times New Roman';">update</span><span style="font-family: 宋体;">方法：</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>update: function(dt) {</p>
+<p>}</p>
+<p>dt<span style="font-family: 宋体;">变量表示延迟时间。这是上次调用</span><span style="font-family: 'Times New Roman';">update</span><span style="font-family: 宋体;">方法之后至今的时间。</span></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Code/">Code</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-773" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -1305,96 +1431,6 @@ function dispatch() {
       
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自动登入/">自动登入</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Web/">Web</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-659" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/05/28/659/" class="article-date">
-  	<time datetime="2013-05-28T13:46:09.000Z" itemprop="datePublished">2013-05-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/05/28/659/">快盘自动签到</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>抓包过程不讲了，直接贴代码。github上有个类似代码，直接借鉴一下</p>
-<p>mycurl就是curl，自己实现一下get和post就行。这个做完了会把代码分享出来。</p>
-<p>下一步是做贴吧自动签到</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/05/QQ20130529004631.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/05/QQ20130529004631.png" alt="QQ20130529004631"></a><br>`<br>&lt;?php<br>/**</p>
-<ul>
-<li>快盘签到</li>
-<li>@author 双人份 &lt;fjjwlzd@163.com&gt;<br>*/<br>require_once “MyCurl.php”;`</li>
-</ul>
-<p>class KuaiPan<br>{</p>
-<p>protected $curl;<br>//用户名和密码<br>protected $username;<br>protected $password;<br>//登录 URL<br>private $loginUrl = ‘<a href="http://www.kuaipan.cn/home.htm" target="_blank" rel="external">http://www.kuaipan.cn/home.htm</a>‘;<br>private $postUrl = ‘<a href="https://www.kuaipan.cn/index.php?ac=account&amp;op=login" target="_blank" rel="external">https://www.kuaipan.cn/index.php?ac=account&amp;op=login</a>‘;</p>
-<p>//签到 URL<br>private $signUrl = ‘<a href="http://www.kuaipan.cn/index.php?ac=common&amp;op=usersign" target="_blank" rel="external">http://www.kuaipan.cn/index.php?ac=common&amp;op=usersign</a>‘;</p>
-<p>//空间信息<br>private $spaceUrl = ‘<a href="http://www.kuaipan.cn/index.php?ac=home&amp;op=space" target="_blank" rel="external">http://www.kuaipan.cn/index.php?ac=home&amp;op=space</a>‘;</p>
-<p>//用户信息<br>private $userInfoUrl = ‘<a href="http://www.kuaipan.cn/index.php?ac=home&amp;op=userinfo" target="_blank" rel="external">http://www.kuaipan.cn/index.php?ac=home&amp;op=userinfo</a>‘;</p>
-<p>/**</p>
-<ul>
-<li>初始化配置信息</li>
-<li>@param string $username</li>
-<li>@param string $password</li>
-<li>@return void<br>*/<br>public function init($username, $password)<br>{<br>$this-&gt;username = $username;<br>$this-&gt;password = $password;<br>$this-&gt;curl = new MyCurl();<br>}</li>
-</ul>
-<p>/**</p>
-<ul>
-<li>登入<br>*/<br>public function login()<br>{<br>$this-&gt;curl-&gt;get($this-&gt;loginUrl);//获取 cookie<br>$data = array(<br>‘username’=&gt;$this-&gt;username,<br>‘userpwd’=&gt;$this-&gt;password,<br>‘isajax’=&gt;’yes’,<br>‘rememberme’=&gt;1<br>);</li>
-</ul>
-<p>$loginResp = $this-&gt;curl-&gt;post($this-&gt;postUrl, $data);<br>$loginResp = json_decode($loginResp);</p>
-<p>echo “&lt;pre&gt;”;<br>var_dump(json_decode($this-&gt;curl-&gt;get($this-&gt;userInfoUrl)));<br>var_dump(json_decode($this-&gt;curl-&gt;get($this-&gt;spaceUrl)));</p>
-<p>var_dump($loginResp);<br>echo “&lt;/pre&gt;”;<br>}<br>/**</p>
-<ul>
-<li>签到方法<br>*/<br>public function sign()<br>{<br>$signResp = $this-&gt;curl-&gt;get($this-&gt;signUrl);<br>$signResp = json_decode($signResp);<br>$state = null;<br>if(isset($signResp-&gt;state))<br>$state = $signResp-&gt;state;<br>switch ($state)<br>{<br>case ‘-102’:<br>echo ‘已经签过了！’;<br>break;<br>case ‘1’:<br>echo ‘签到成功！ 获得空间：’.$signResp-&gt;rewardsize.’M’;<br>break;<br>default:<br>break;<br>}<br>}<br>}<br>?&gt;</li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自动登入/">自动登入</a></li></ul>
 	</div>
 
       

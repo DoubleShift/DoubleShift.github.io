@@ -161,6 +161,90 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-352" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/02/01/352/" class="article-date">
+  	<time datetime="2013-02-01T16:23:23.000Z" itemprop="datePublished">2013-02-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/02/01/352/">继续折腾一下openshift</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>由于在做一个html5的游戏，需要用到node.js,可能自己会写完，但是更大的可能是懒的写了。</p>
+<p>先搞一个如何绑定域名的。</p>
+<p>openshift要使用自己的rhc client来管理，安装方式可以参考这里：</p>
+<p><a href="https://access.redhat.com/knowledge/docs/en-US/OpenShift/2.0/html/Getting_Started_Guide/sect-Getting_Started_Guide-OpenShift_Client_Tools-Installing_Client_Tools.html#sect-Getting_Started_Guide-Installing_on_Windows" target="_blank" rel="external">windows</a>，linux可以进去后重新选择。</p>
+<p>RubyInstaller ，Git其实就是安装这2个。</p>
+<p>然后打开命令行,shuru :</p>
+<pre><code>gem install rhc`
+可能没反应，等一会就行了。&lt;/pre&gt;
+&lt;pre style=&quot;color: #333333;&quot;&gt;[![QQ20130202003621](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202003621.png)
+
+](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202003621.png)&lt;/pre&gt;
+&lt;pre&gt;`然后输入rhc setup，继续敲用户名和密码，可以进入管理。
+具体的可以参考这里：[http://www.freehao123.com/openshift-redhat/2/
+](http://www.freehao123.com/openshift-redhat/2/)，我这就不多说了，绑一下域名，先在dnspod里给自己域名添加一个cname，这里解析到proxy.chenxing.org.cn，先弄一个在线代理，虽然github已经可以访问了，但是还是方便点，用处你懂的。
+[![QQ20130202002903](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202002903.png)](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202002903.png)
+</code></pre><pre style="color: #333333;"></pre>
+<pre>然后再输入   $ rhc alias add test proxy.chenxing.org.cn
+绑定成功。
+
+[![QQ20130202002921](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202002921.png)
+](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202002921.png)然后找到一个在线代理给挂上。咋咋，顺手改了几个字
+百度：glype，就可以找到。可以加入收藏夹哦，速度很快的说。
+[http://proxy.chenxing.org.cn](http://proxy.chenxing.org.cn/)
+
+[![QQ20130202022124](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202022124.png)](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202022124.png) [![QQ20130202022155](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202022155.png)](http://7xnueu.com1.z0.glb.clouddn.com/2013/02/QQ20130202022155.png)</pre>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Web/">Web</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-342" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -824,90 +908,6 @@ function dispatch() {
       
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BackTrack/">BackTrack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-242" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/12/11/242/" class="article-date">
-  	<time datetime="2012-12-11T11:29:07.000Z" itemprop="datePublished">2012-12-11</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/12/11/242/">提取握手包</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>蹭网的朋友经常会有抓到比较大的握手包吧。比如我就抓到一个136m。这里面大量都是无效数据，我们可以将其中认证部分提取出来。使用wireshark就可以了。下面是来自gpuhash上的说明。</p>
-<p>&nbsp;</p>
-<p><strong>Q: What do I do if my capture file is greater than 1MB?</strong></p>
-<p><strong>A:</strong> You’ll need to use Wireshark or something else to export only the handshake to a smaller file. Remember to leave at least one beacon for your target network in there, though, so that the handshake remains associated with the ESSID you’re targeting.</p>
-<p>Stripping your handshakes with Wireshark:</p>
-<ul>
-<li>Open your capture in Wireshark</li>
-<li>Enter “eapol || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x08” as filter expression (without quotes) then press “Apply”</li>
-<li>Go to File-&gt;Save As… menu, enter new file name and select “Displayed” to save filtered packets only<br>Command-line stripping capture file with pyrit:</li>
-</ul>
-<p>pyrit –r &lt;input file&gt; –o &lt;output file&gt; -e &lt;essid&gt; strip</p>
-<p>Command-line stripping capture file with tshark:</p>
-<p>tshark -r &lt;input file&gt; -R “eapol || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x08” -w &lt;output file&gt;</p>
-<p>tshark -r &lt;input file&gt; -R “eapol || wlan_mgt == &lt;bssid&gt;” -w &lt;output file&gt;</p>
-<p>tshark -r &lt;input file&gt; -R “eapol || wlan_mgt.tag.interpretation eq &lt;essid&gt;” -w &lt;output file&gt;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>打开wireshark，选择你的握手包，</p>
-<p>然后过滤规则输入   eapol || wlan.fc.type_subtype == 0x04 || wlan.fc.type_subtype == 0x08</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/11.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/11.png" alt="" title="1"></a></p>
-<p>点击Apply，然后保存，界面里选择display。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/21.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/21.png" alt="" title="2"></a></p>
-<p>然后我们将会有一个几kb的握手包。</p>
-<p>&nbsp;</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BackTrack/">BackTrack</a></li></ul>
 	</div>
 
       

@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-07-30T18:41:47.000Z</updated>
+  <updated>2016-07-30T21:15:31.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[单手捏鸡蛋]]></title>
+    <link href="http://doubles.me/2016/07/30/160731/"/>
+    <id>http://doubles.me/2016/07/30/160731/</id>
+    <published>2016-07-30T20:55:04.000Z</published>
+    <updated>2016-07-30T21:15:31.000Z</updated>
+    <content type="html"><![CDATA[<p>今天看到一个视频说太极功夫可以捏爆鸡蛋。30分钟左右。</p>
+<p><a href="https://www.youtube.com/watch?v=yFicJ903V-g" target="_blank" rel="external">太极擒拿 【体验真功夫20150619】 720P</a></p>
+<p>但是我高中的时候捏爆过啊，被很多朋友质疑，他们以前还不信。</p>
+<p>冰箱掏出一盒鸡蛋我就捏爆2个。直接爆的，没用手指头扣，视频里的大师手上还转了一下。</p>
+<p>记得以前吃苹果和橘子可以直接单手扳开，好分给同桌吃。她嫌太脏不要，我就没干过了。</p>
+<a id="more"></a>
+<p>捏了2个，第一个非说我是4根指头扣掉的。</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/475194157166904754.jpg" alt="2016/07/475194157166904754.jpg"></p>
+<p>就再来一个顺带拍个视频。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160731.png" alt="2016/07/20160731.png"></p>
+<embed src="http://player.youku.com/player.php/sid/XMTY2NDk3NzgzMg==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天看到一个视频说太极功夫可以捏爆鸡蛋。30分钟左右。</p>
+<p><a href="https://www.youtube.com/watch?v=yFicJ903V-g">太极擒拿 【体验真功夫20150619】 720P</a></p>
+<p>但是我高中的时候捏爆过啊，被很多朋友质疑，他们以前还不信。</p>
+<p>冰箱掏出一盒鸡蛋我就捏爆2个。直接爆的，没用手指头扣，视频里的大师手上还转了一下。</p>
+<p>记得以前吃苹果和橘子可以直接单手扳开，好分给同桌吃。她嫌太脏不要，我就没干过了。</p>]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[空手劈砖]]></title>
@@ -444,28 +471,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Diary 2015/11/18]]></title>
-    <link href="http://doubles.me/2015/11/18/151118/"/>
-    <id>http://doubles.me/2015/11/18/151118/</id>
-    <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
-    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
-    
-    </summary>
-    
-      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
-    
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Diary 2016/01/18]]></title>
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
@@ -479,6 +484,28 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Diary 2015/11/18]]></title>
+    <link href="http://doubles.me/2015/11/18/151118/"/>
+    <id>http://doubles.me/2015/11/18/151118/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-07-05T19:55:00.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
     
     </summary>
     
