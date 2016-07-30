@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-07-12T13:46:07.000Z</updated>
+  <updated>2016-07-30T18:41:47.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -13,6 +13,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[空手劈砖]]></title>
+    <link href="http://doubles.me/2016/07/30/160730/"/>
+    <id>http://doubles.me/2016/07/30/160730/</id>
+    <published>2016-07-30T18:40:05.000Z</published>
+    <updated>2016-07-30T18:41:47.000Z</updated>
+    <content type="html"><![CDATA[<p>奇奇怪怪的技能。</p>
+<p><a href="http://www.guokr.com/blog/441840/" target="_blank" rel="external">解密劈砖背后的玄机</a></p>
+<p><embed src="http://player.youku.com/player.php/sid/XNDA2NTY1NjY0/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br><a id="more"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>奇奇怪怪的技能。</p>
+<p><a href="http://www.guokr.com/blog/441840/">解密劈砖背后的玄机</a></p>
+<p><embed src="http://player.youku.com/player.php/sid/XNDA2NTY1NjY0/v.swf" allowFullScreen="true" quality="high" width="600" height="480" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed><br>]]>
+    
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[博客居然被抄袭了]]></title>
@@ -425,6 +444,28 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Diary 2015/11/18]]></title>
+    <link href="http://doubles.me/2015/11/18/151118/"/>
+    <id>http://doubles.me/2015/11/18/151118/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-07-05T19:55:00.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Diary 2016/01/18]]></title>
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
@@ -438,28 +479,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
-    
-    </summary>
-    
-      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
-    
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Diary 2015/11/18]]></title>
-    <link href="http://doubles.me/2015/11/18/151118/"/>
-    <id>http://doubles.me/2015/11/18/151118/</id>
-    <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
-    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
     
     </summary>
     
