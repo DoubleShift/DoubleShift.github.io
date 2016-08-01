@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-07-30T21:15:31.000Z</updated>
+  <updated>2016-08-01T21:19:58.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -13,6 +13,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[写了十年代码是一种怎样的体验]]></title>
+    <link href="http://doubles.me/2016/08/02/160801/"/>
+    <id>http://doubles.me/2016/08/02/160801/</id>
+    <published>2016-08-01T21:10:04.000Z</published>
+    <updated>2016-08-01T21:19:58.000Z</updated>
+    <content type="html"><![CDATA[<p>知乎上看到 <strong>写了十年代码是一种怎样的体验</strong> 这么一个讨论，不禁感慨，今天是我写代码的第10个年头。<br>我写的第一个HelloWorld在2007年7月份，中考完，家里买了电脑，就开始写了咯。<br>VB还是Delphi都不记得了。</p>
+<p>问了一下周围的人，没有人知道小乌龟，没有人会五笔，更没有人知道有Delphi这个东西。<br>但为什么我还是一个大菜逼啊，为什么！为什么！为什么！<br>更被拒的是吃了10年饭就是个大胖子，写了10年代码怎么还是菜逼。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>知乎上看到 <strong>写了十年代码是一种怎样的体验</strong> 这么一个讨论，不禁感慨，今天是我写代码的第10个年头。<br>我写的第一个HelloWorld在2007年7月份，中考完，家里买了电脑，就开始写了咯。<br>VB还是Delphi都不记得了。</p>]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[单手捏鸡蛋]]></title>

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://doubles.me/2016/08/02/160801/</loc>
+    <lastmod>2016-08-01T21:19:58.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://doubles.me/2016/07/30/160731/</loc>
     <lastmod>2016-07-30T21:15:31.000Z</lastmod>
   </url>
@@ -33,11 +38,6 @@
   
   <url>
     <loc>http://doubles.me/2013/02/24/390/</loc>
-    <lastmod>2016-07-05T19:55:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://doubles.me/2012/11/14/117/</loc>
     <lastmod>2016-07-05T19:55:00.000Z</lastmod>
   </url>
   
@@ -168,6 +168,11 @@
   
   <url>
     <loc>http://doubles.me/2015/05/06/1075/</loc>
+    <lastmod>2016-07-05T19:55:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://doubles.me/2012/11/14/113/</loc>
     <lastmod>2016-07-05T19:55:00.000Z</lastmod>
   </url>
   
@@ -607,7 +612,7 @@
   </url>
   
   <url>
-    <loc>http://doubles.me/2012/11/14/113/</loc>
+    <loc>http://doubles.me/2012/11/14/117/</loc>
     <lastmod>2016-07-05T19:55:00.000Z</lastmod>
   </url>
   
