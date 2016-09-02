@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-08-01T21:19:58.000Z</updated>
+  <updated>2016-09-02T00:11:02.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -15,16 +15,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Windows 平板使用感受]]></title>
+    <link href="http://doubles.me/2016/08/27/160827/"/>
+    <id>http://doubles.me/2016/08/27/160827/</id>
+    <published>2016-08-27T16:52:34.000Z</published>
+    <updated>2016-09-02T00:11:02.000Z</updated>
+    <content type="html"><![CDATA[<p>我用的是这款 <a href="http://item.jd.com/1192413.html" target="_blank" rel="external">原道w11a</a></p>
+<p>说下使用感受：</p>
+<ol>
+<li>浏览器特别容易误操作。</li>
+<li>点击不方便，因为鼠标和手势会冲突。特别是在有键盘的情况下，很多情况就禁用了屏幕的缩放。</li>
+<li>没有APP，然后只能用网页，然后又容易误操作。比如Youtube。</li>
+<li>这个是带3G卡插槽的，可是Windows天生不方便管理这个。每次要重启。</li>
+<li>搞不清楚怎么打电话的，而且没有收短信的功能。</li>
+<li>发热。</li>
+</ol>
+<p>Surface肯定会好很多，可是这个手势操作、APP等和surface并无关系。所以，千万别把Windows平板当平板用。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>我用的是这款 <a href="http://item.jd.com/1192413.html" target="_blank" rel="external">原道w11a</a></p>
+<p>说下使用感受：</p>
+<ol>
+<li>浏览器特别容易误操作。</li>
+<]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[写了十年代码是一种怎样的体验]]></title>
     <link href="http://doubles.me/2016/08/02/160801/"/>
     <id>http://doubles.me/2016/08/02/160801/</id>
     <published>2016-08-01T21:10:04.000Z</published>
-    <updated>2016-08-01T21:19:58.000Z</updated>
-    <content type="html"><![CDATA[<p>知乎上看到 <strong>写了十年代码是一种怎样的体验</strong> 这么一个讨论，不禁感慨，今天是我写代码的第10个年头。<br>我写的第一个HelloWorld在2007年7月份，中考完，家里买了电脑，就开始写了咯。<br>VB还是Delphi都不记得了。</p>
-<p>问了一下周围的人，没有人知道小乌龟，没有人会五笔，更没有人知道有Delphi这个东西。<br>但为什么我还是一个大菜逼啊，为什么！为什么！为什么！<br>更被拒的是吃了10年饭就是个大胖子，写了10年代码怎么还是菜逼。</p>
+    <updated>2016-09-02T00:09:18.000Z</updated>
+    <content type="html"><![CDATA[<p>知乎上看到 <strong><a href="https://www.zhihu.com/question/35100740" target="_blank" rel="external">写了十年代码是一种怎样的体验</a></strong> 这么一个讨论，不禁感慨，今天是我写代码的第10个年头。<br>我写的第一个HelloWorld在2007年7月份，中考完，家里买了电脑，就开始写了咯。<br>用的还是VB，花了一个月的零花钱买了一本VB入门，58块啊，今天都觉得贵。</p>
+<p>问了一下周围的人，没有人知道小乌龟，没有人会五笔，更没有人知道有Delphi这个东西。<br>但为什么我还是这么菜，为什么！为什么！为什么！<br>更悲剧的是吃了10年饭就是个大胖子，写了10年代码怎么还是这么菜？</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>知乎上看到 <strong>写了十年代码是一种怎样的体验</strong> 这么一个讨论，不禁感慨，今天是我写代码的第10个年头。<br>我写的第一个HelloWorld在2007年7月份，中考完，家里买了电脑，就开始写了咯。<br>VB还是Delphi都不记得了。</p>]]>
+    <![CDATA[<p>知乎上看到 <strong><a href="https://www.zhihu.com/question/35100740" target="_blank" rel="external">写了十年代码是一种怎样的体验</a></strong> 这么一个讨论，不禁感慨，今天]]>
     </summary>
     
   </entry>
@@ -654,7 +682,7 @@
     <link href="http://doubles.me/2014/12/30/1053/"/>
     <id>http://doubles.me/2014/12/30/1053/</id>
     <published>2014-12-30T00:47:29.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-08-01T21:26:09.000Z</updated>
     <content type="html"><![CDATA[<p>因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。</p>
 <p>花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。</p>
 <p><strong>1. 虚拟机</strong></p>
@@ -668,7 +696,6 @@
 <p>过程是下载一个懒人版的镜像，后缀是cdr。将镜像写入一个硬盘分区，然后用变色龙引导启动，之后进行安装到另一个硬盘分区。为什么要这样？硬盘读写快吧，看起来是，但是特别麻烦。</p>
 <p><strong>3.超级懒人版&amp;整合版</strong></p>
 <p>pcbeta封掉的安装方式，但是却是最友好的方式。这里可以下载GHO镜像，<a href="http://ifunple.com/" target="_blank" rel="external">http://ifunple.com/</a>。如果它们安装成功了我会觉得是很厉害，但是它们似乎只能UEFI引导，而且官方论坛挂了，也没有教程。微博没有人回复。我尝试了其他方式引导，失败。然后下载了一个另外的镜像 <a href="http://hackintosh.zone/" target="_blank" rel="external">http://hackintosh.zone</a>，找到了番茄花园的感觉。</p>
-<p>&nbsp;</p>
 <p><strong>安装方法</strong></p>
 <p>1.下载</p>
 <p>才3个包，最简单的了。</p>
@@ -5553,23 +5580,19 @@ $(function () {
     <link href="http://doubles.me/2012/11/03/34/"/>
     <id>http://doubles.me/2012/11/03/34/</id>
     <published>2012-11-03T12:24:16.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-08-01T21:25:31.000Z</updated>
     <content type="html"><![CDATA[<p>外婆家待了1个多礼拜来，只破了2个wep加密的，一个每天就凌晨2点可以连上。</p>
-<p>&nbsp;</p>
 <p>另一个临走前才抓到密码。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Screenshot.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Screenshot-268x300.png" alt="" title="Screenshot"></a></p>
 <p>至于pin码我就不想多说什么了，78%都能卡住，至于跑字典的那活，1年前就断了念头，不报任何希望。</p>
-<p>&nbsp;</p>
 <p>这是现在用的，速度还不错，至少还能看看爱情公寓3.</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Screenshot-11.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Screenshot-11.png" alt="" title="Screenshot-11"></a></p>
 <p>这玩意，化了啊。</p>
-<p>&nbsp;</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>外婆家待了1个多礼拜来，只破了2个wep加密的，一个每天就凌晨2点可以连上。</p>
-<p>&nbsp;</p>
 <p>另一个临走前才抓到密码。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Sc]]>
+<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Screenshot.png" ]]>
     </summary>
     
       <category term="BackTrack" scheme="http://doubles.me/tags/BackTrack/"/>
@@ -5583,16 +5606,14 @@ $(function () {
     <link href="http://doubles.me/2012/10/31/22/"/>
     <id>http://doubles.me/2012/10/31/22/</id>
     <published>2012-10-31T13:42:56.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
-    <content type="html"><![CDATA[<p>&nbsp;</p>
-<p>相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升</p>
+    <updated>2016-08-01T21:24:16.000Z</updated>
+    <content type="html"><![CDATA[<p>相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升</p>
 <p>级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。</p>
-<p>&nbsp;</p>
+<a id="more"></a>
 <h2 id="Script-to-update-BackTrack5-V-1-5"><a href="#Script-to-update-BackTrack5-V-1-5" class="headerlink" title="Script to update BackTrack5 V.: 1.5"></a>Script to update BackTrack5 V.: 1.5</h2><p>The purpose of Bt5up is to update/add and bug fix BackTrack 5 tools.</p>
 <p><strong>Compatible with Backtrack 5 R3</strong></p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up-r2-283x300.png" alt="" title="bt5up-r2-283x300"></a></p>
 <p><strong>Version 1.5 is out</strong> see the <a href="http://bl4ck5w4n.tk/wp-content/uploads/2011/07/changelog.txt" title="ChangeLog" target="_blank" rel="external">changelog </a>to read the fixes and addons.</p>
-<p>&nbsp;</p>
 <p>As you can see in the screen it display the version you have installed and the latest version available and the Main Menu with all the different topics to update/install, here is the complete menu:</p>
 <p><strong>1. Update and clean Backtrack.</strong></p>
 <p><strong>2. Exploit tools.</strong></p>
@@ -5696,18 +5717,15 @@ $(function () {
 <p><div><code>tar</code> <code>-xvf bt5up.``tar</code></div></p>
 <p><div><code>python bt5up.py</code></div><br><br><br><br>以后要试用的话只要在终端中输入bt5up就可以打开。</p>
 <p>输入bt5up -h获取帮助</p>
-<p>&nbsp;</p>
 <p>提醒大家一下，有时候升级不了的话可能是被墙了，GAE还是什么的大家掂量一下吧！</p>
 <p>大家可以访问官方主页：<a href="http://bl4ck5w4n.tk/" target="_blank" rel="external">http://bl4ck5w4n.tk</a>了解更多。</p>
 <p>当然，大家也可以在本站进行下载。</p>
 <p>本地下载：<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/bt5up.tar" target="_blank" rel="external">bt5up</a></p>
-<p>&nbsp;</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>&nbsp;</p>
-<p>相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升</p>
-<p>级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。</p>
-<p>&nbsp;</p]]>
+    <![CDATA[<p>相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升</p>
+<p>级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。</p>]]>
+    
     </summary>
     
       <category term="BackTrack" scheme="http://doubles.me/tags/BackTrack/"/>
@@ -5721,19 +5739,15 @@ $(function () {
     <link href="http://doubles.me/2012/10/29/16/"/>
     <id>http://doubles.me/2012/10/29/16/</id>
     <published>2012-10-29T13:30:53.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-08-01T21:22:43.000Z</updated>
     <content type="html"><![CDATA[<p><strong>最新BackTrack 5 R3 was released on 13th of August, 2012.</strong></p>
 <p>可以前去<a href="http://www.backtrack-linux.org/" target="_blank" rel="external">http://www.backtrack-linux.org</a>获取最新Backtrack版本</p>
-<p>&nbsp;</p>
 <p>这里是BackTrack5 R3所有版本的种子打包，大家根据自己的需求进行下载。</p>
-<p>&nbsp;</p>
 <p>一共有17个种子，名称说明</p>
 <p>版本号[R3/R2/R1/]-桌面环境[Gnome-Kde]-系统版本[32位/64位]-系统环境[VM/ARM/RM]</p>
-<p>&nbsp;</p>
 <p>比如说我想要一个在虚拟机中的32位系统，然后最新的版本就是   BT5R3-GNOME-32-VM.torrent</p>
 <p>我想在手机上安装BackTrack，那么就要选择ARM版的，那我就下载  BT5-GNOME-ARM.torrent</p>
 <p>一般大家下载 BT5R3-GNOME-32.torrent这个文件就可以了。</p>
-<p>&nbsp;</p>
 <p>下载地址：<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/10/BackTrack5.zip" target="_blank" rel="external">BackTrack5</a></p>
 ]]></content>
     <summary type="html">

