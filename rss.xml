@@ -4,7 +4,7 @@
   
   <link href="/rss.xml" rel="self"/>
   <link href="http://doubles.me/"/>
-  <updated>2016-09-02T00:11:02.000Z</updated>
+  <updated>2016-09-26T20:59:02.000Z</updated>
   <id>http://doubles.me/</id>
   
   <author>
@@ -15,89 +15,15 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Windows 平板使用感受]]></title>
-    <link href="http://doubles.me/2016/08/27/160827/"/>
-    <id>http://doubles.me/2016/08/27/160827/</id>
-    <published>2016-08-27T16:52:34.000Z</published>
-    <updated>2016-09-02T00:11:02.000Z</updated>
-    <content type="html"><![CDATA[<p>我用的是这款 <a href="http://item.jd.com/1192413.html" target="_blank" rel="external">原道w11a</a></p>
-<p>说下使用感受：</p>
-<ol>
-<li>浏览器特别容易误操作。</li>
-<li>点击不方便，因为鼠标和手势会冲突。特别是在有键盘的情况下，很多情况就禁用了屏幕的缩放。</li>
-<li>没有APP，然后只能用网页，然后又容易误操作。比如Youtube。</li>
-<li>这个是带3G卡插槽的，可是Windows天生不方便管理这个。每次要重启。</li>
-<li>搞不清楚怎么打电话的，而且没有收短信的功能。</li>
-<li>发热。</li>
-</ol>
-<p>Surface肯定会好很多，可是这个手势操作、APP等和surface并无关系。所以，千万别把Windows平板当平板用。</p>
+    <title><![CDATA[博客居然被抄袭了]]></title>
+    <link href="http://doubles.me/2016/07/12/new/"/>
+    <id>http://doubles.me/2016/07/12/new/</id>
+    <published>2016-07-12T13:38:27.000Z</published>
+    <updated>2016-09-26T20:59:02.000Z</updated>
+    <content type="html"><![CDATA[<p>看图，我3年前的一篇关于Cocos2d-Html5的文章居然被这个博客转载了。<br>这本来没什么，可是他的Github里只有一个经常提交的Spider，然后博客里有300篇文章。<br>却全部是转载的，这这行为很讨厌啊。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607126.png" alt="2016/07/201607126.png"><br><a id="more"></a><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607124.png" alt="2016/07/201607124.png"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607125.png" alt="2016/07/201607125.png"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>我用的是这款 <a href="http://item.jd.com/1192413.html" target="_blank" rel="external">原道w11a</a></p>
-<p>说下使用感受：</p>
-<ol>
-<li>浏览器特别容易误操作。</li>
-<]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[写了十年代码是一种怎样的体验]]></title>
-    <link href="http://doubles.me/2016/08/02/160801/"/>
-    <id>http://doubles.me/2016/08/02/160801/</id>
-    <published>2016-08-01T21:10:04.000Z</published>
-    <updated>2016-09-02T00:09:18.000Z</updated>
-    <content type="html"><![CDATA[<p>知乎上看到 <strong><a href="https://www.zhihu.com/question/35100740" target="_blank" rel="external">写了十年代码是一种怎样的体验</a></strong> 这么一个讨论，不禁感慨，今天是我写代码的第10个年头。<br>我写的第一个HelloWorld在2007年7月份，中考完，家里买了电脑，就开始写了咯。<br>用的还是VB，花了一个月的零花钱买了一本VB入门，58块啊，今天都觉得贵。</p>
-<p>问了一下周围的人，没有人知道小乌龟，没有人会五笔，更没有人知道有Delphi这个东西。<br>但为什么我还是这么菜，为什么！为什么！为什么！<br>更悲剧的是吃了10年饭就是个大胖子，写了10年代码怎么还是这么菜？</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>知乎上看到 <strong><a href="https://www.zhihu.com/question/35100740" target="_blank" rel="external">写了十年代码是一种怎样的体验</a></strong> 这么一个讨论，不禁感慨，今天]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[单手捏鸡蛋]]></title>
-    <link href="http://doubles.me/2016/07/30/160731/"/>
-    <id>http://doubles.me/2016/07/30/160731/</id>
-    <published>2016-07-30T20:55:04.000Z</published>
-    <updated>2016-07-30T21:15:31.000Z</updated>
-    <content type="html"><![CDATA[<p>今天看到一个视频说太极功夫可以捏爆鸡蛋。30分钟左右。</p>
-<p><a href="https://www.youtube.com/watch?v=yFicJ903V-g" target="_blank" rel="external">太极擒拿 【体验真功夫20150619】 720P</a></p>
-<p>但是我高中的时候捏爆过啊，被很多朋友质疑，他们以前还不信。</p>
-<p>冰箱掏出一盒鸡蛋我就捏爆2个。直接爆的，没用手指头扣，视频里的大师手上还转了一下。</p>
-<p>记得以前吃苹果和橘子可以直接单手扳开，好分给同桌吃。她嫌太脏不要，我就没干过了。</p>
-<a id="more"></a>
-<p>捏了2个，第一个非说我是4根指头扣掉的。</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/475194157166904754.jpg" alt="2016/07/475194157166904754.jpg"></p>
-<p>就再来一个顺带拍个视频。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160731.png" alt="2016/07/20160731.png"></p>
-<embed src="http://player.youku.com/player.php/sid/XMTY2NDk3NzgzMg==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天看到一个视频说太极功夫可以捏爆鸡蛋。30分钟左右。</p>
-<p><a href="https://www.youtube.com/watch?v=yFicJ903V-g">太极擒拿 【体验真功夫20150619】 720P</a></p>
-<p>但是我高中的时候捏爆过啊，被很多朋友质疑，他们以前还不信。</p>
-<p>冰箱掏出一盒鸡蛋我就捏爆2个。直接爆的，没用手指头扣，视频里的大师手上还转了一下。</p>
-<p>记得以前吃苹果和橘子可以直接单手扳开，好分给同桌吃。她嫌太脏不要，我就没干过了。</p>]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[空手劈砖]]></title>
-    <link href="http://doubles.me/2016/07/30/160730/"/>
-    <id>http://doubles.me/2016/07/30/160730/</id>
-    <published>2016-07-30T18:40:05.000Z</published>
-    <updated>2016-07-30T18:41:47.000Z</updated>
-    <content type="html"><![CDATA[<p>奇奇怪怪的技能。</p>
-<p><a href="http://www.guokr.com/blog/441840/" target="_blank" rel="external">解密劈砖背后的玄机</a></p>
-<p><embed src="http://player.youku.com/player.php/sid/XNDA2NTY1NjY0/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br><a id="more"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>奇奇怪怪的技能。</p>
-<p><a href="http://www.guokr.com/blog/441840/">解密劈砖背后的玄机</a></p>
-<p><embed src="http://player.youku.com/player.php/sid/XNDA2NTY1NjY0/v.swf" allowFullScreen="true" quality="high" width="600" height="480" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed><br>]]>
+    <![CDATA[<p>看图，我3年前的一篇关于Cocos2d-Html5的文章居然被这个博客转载了。<br>这本来没什么，可是他的Github里只有一个经常提交的Spider，然后博客里有300篇文章。<br>却全部是转载的，这这行为很讨厌啊。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607126.png" alt="2016/07/201607126.png"><br>]]>
     
     </summary>
     
@@ -108,7 +34,7 @@
     <link href="http://doubles.me/2016/07/12/160712/"/>
     <id>http://doubles.me/2016/07/12/160712/</id>
     <published>2016-07-12T13:38:27.000Z</published>
-    <updated>2016-07-12T13:46:07.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>看图，我3年前的一篇关于Cocos2d-Html5的文章居然被这个博客转载了。<br>这本来没什么，可是他的Github里只有一个经常提交的Spider，然后博客里有300篇文章。<br>却全部是转载的，这这行为很讨厌啊。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607126.png" alt="2016/07/201607126.png"><br><a id="more"></a><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607124.png" alt="2016/07/201607124.png"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607125.png" alt="2016/07/201607125.png"></p>
 ]]></content>
     <summary type="html">
@@ -123,7 +49,7 @@
     <link href="http://doubles.me/2016/07/10/160710/"/>
     <id>http://doubles.me/2016/07/10/160710/</id>
     <published>2016-07-10T18:53:36.000Z</published>
-    <updated>2016-07-11T09:49:37.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>先挂上一个美国代理，我百度找的免费试用的那种。<br>然后下载一个Textnow，app里面设置一下取消接收voicemail，这样才能输入验证码。<br>接着就用按键精灵狂点。</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20170710.png" alt="20170710.png"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160711.png" alt="2016/07/20160711.png"></p>
 ]]></content>
@@ -139,7 +65,7 @@
     <link href="http://doubles.me/2016/07/08/160708/"/>
     <id>http://doubles.me/2016/07/08/160708/</id>
     <published>2016-07-08T04:50:49.000Z</published>
-    <updated>2016-07-08T04:55:12.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>我ebay上买的locksmith到了，算算也是上个月到的，一直没有试。拿起来无师自通了。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/2016070701.png" alt="2016/07/2016070701.png"><br><a id="more"></a></p>
 <p>这个套件包括1个透明的训练锁，然后一套开锁的。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/IMG_20160708_063954.jpg" alt="2016/07/IMG_20160708_063954.jpg"></p>
 <p>教程请看这个<a href="http://zh.wikihow.com/%E5%BC%80%E9%94%81" target="_blank" rel="external"><strong>WikiHow - 如何开锁</strong></a>，比较好理解。</p>
@@ -169,7 +95,7 @@
     <link href="http://doubles.me/2016/07/04/160704/"/>
     <id>http://doubles.me/2016/07/04/160704/</id>
     <published>2016-07-04T04:01:08.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id="0x00-图片压缩"><a href="#0x00-图片压缩" class="headerlink" title="0x00 图片压缩"></a>0x00 图片压缩</h2><p>由于不放心自动压缩后上传，所以使用这个脚本压缩一下图片。检查后再上传图片。<br>使用的是Tinypng 这个网站的API，需要在线申请一个Key，然后每个月可以压缩500张图片。<br>接着使用这个repo 的python 脚本 <a href="https://github.com/GcsSloop/TinyPng" target="_blank" rel="external">TinyPng</a>。<br><code>python tinypng.py -d test</code><br>这样就压缩了test目录下的所有图片。<br><a id="more"></a></p>
 <h2 id="0x01-图片上传"><a href="#0x01-图片上传" class="headerlink" title="0x01 图片上传"></a>0x01 图片上传</h2><p>博客的图床用的是七牛的空间，使用了一个叫做 <a href="https://github.com/heqingpan/qiniu_sync" target="_blank" rel="external">qiniu_sync</a>的python脚本上传。<br>不过我给改造了一下，上传完成后会生成一个txt，里面就是上传图片的地址了。<br>我repo的 <a href="https://github.com/DoubleShift/qiniu_sync" target="_blank" rel="external">qiniu_sync</a></p>
 <p>图片放到这里，然后运行脚本就可以了。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160705.png" alt="20160705.png"></p>
@@ -188,7 +114,7 @@
     <link href="http://doubles.me/2016/06/23/160623/"/>
     <id>http://doubles.me/2016/06/23/160623/</id>
     <published>2016-06-23T20:56:03.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>一直觉得很神秘的摩斯码，花了30分钟学习了一下。以后看电影就可以听懂他们的摩斯码了。<br>摩尔斯码通常的格式是字母和字母之间以空格隔开，单词和单词之间以“/”隔开。</p>
 <a id="more"></a>
 <p>正规的摩尔斯码对照表是这样：<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/7e5d4dfca_b.jpg" alt=""> </p>
@@ -215,7 +141,7 @@
     <link href="http://doubles.me/2016/06/21/160621/"/>
     <id>http://doubles.me/2016/06/21/160621/</id>
     <published>2016-06-21T17:20:03.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>这是小情歌的伴奏部分，按照这个谱子来就行了。<br>当然一不小心会弹出“ 天不刮风，天不下雨 ” 的调调。<br><a id="more"></a></p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/06/IMG_20160626_173728.jpg" alt="IMG_20160626_173728.jpg"></p>
 <embed src="http://player.youku.com/player.php/sid/XMTYyMTE5NzU0OA==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
@@ -236,7 +162,7 @@
     <link href="http://doubles.me/2016/06/15/160615/"/>
     <id>http://doubles.me/2016/06/15/160615/</id>
     <published>2016-06-15T06:17:03.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h1 id="0x01-引言"><a href="#0x01-引言" class="headerlink" title="0x01 引言"></a>0x01 引言</h1><p>2014年的12月我就应该去俄罗斯了，虽然哪些交换生都说是免签的，但我还是担心我的中国护照和他们不一样，我只能作罢。然后我查到了是乘坐Viking Line 去ST. PeterSburge可以有3天免签，我才把俄罗斯放入行程中。确切的说是我2016年的年度计划。然后选了一个月黑风高的好日子，我找了一个俄罗斯当地的学生导游团。啊哈哈，想不到吧。一直讨厌跟团的我居然选择了一个导游。这也是经过我深思熟虑的结果。听说老毛子的假警察，小偷又多，还不会英文。最重要的是，我怎么打俄语？给你们来一张俄罗斯的地铁图体验一下 </p>
 <p>每次看到俄语的宣传单我都会反过来看一下。然而这也是让这次旅行变得更为美妙的一个决定。</p>
 <a id="more"></a>
@@ -299,11 +225,57 @@
   </entry>
   
   <entry>
+    <title><![CDATA[单手捏鸡蛋]]></title>
+    <link href="http://doubles.me/2016/05/30/160531/"/>
+    <id>http://doubles.me/2016/05/30/160531/</id>
+    <published>2016-05-30T20:55:04.000Z</published>
+    <updated>2016-10-11T23:13:47.288Z</updated>
+    <content type="html"><![CDATA[<p>今天看到一个视频说太极功夫可以捏爆鸡蛋。30分钟左右。</p>
+<p><a href="https://www.youtube.com/watch?v=yFicJ903V-g" target="_blank" rel="external">太极擒拿 【体验真功夫20150619】 720P</a></p>
+<p>但是我高中的时候捏爆过啊，被很多朋友质疑，他们以前还不信。</p>
+<p>冰箱掏出一盒鸡蛋我就捏爆2个。直接爆的，没用手指头扣，视频里的大师手上还转了一下。</p>
+<p>记得以前吃苹果和橘子可以直接单手扳开，好分给同桌吃。她嫌太脏不要，我就没干过了。</p>
+<a id="more"></a>
+<p>捏了2个，第一个非说我是4根指头扣掉的。</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/475194157166904754.jpg" alt="2016/07/475194157166904754.jpg"></p>
+<p>就再来一个顺带拍个视频。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/20160731.png" alt="2016/07/20160731.png"></p>
+<embed src="http://player.youku.com/player.php/sid/XMTY2NDk3NzgzMg==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天看到一个视频说太极功夫可以捏爆鸡蛋。30分钟左右。</p>
+<p><a href="https://www.youtube.com/watch?v=yFicJ903V-g">太极擒拿 【体验真功夫20150619】 720P</a></p>
+<p>但是我高中的时候捏爆过啊，被很多朋友质疑，他们以前还不信。</p>
+<p>冰箱掏出一盒鸡蛋我就捏爆2个。直接爆的，没用手指头扣，视频里的大师手上还转了一下。</p>
+<p>记得以前吃苹果和橘子可以直接单手扳开，好分给同桌吃。她嫌太脏不要，我就没干过了。</p>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[空手劈砖]]></title>
+    <link href="http://doubles.me/2016/05/30/160530/"/>
+    <id>http://doubles.me/2016/05/30/160530/</id>
+    <published>2016-05-30T18:40:05.000Z</published>
+    <updated>2016-10-11T23:13:40.622Z</updated>
+    <content type="html"><![CDATA[<p>奇奇怪怪的技能。</p>
+<p><a href="http://www.guokr.com/blog/441840/" target="_blank" rel="external">解密劈砖背后的玄机</a></p>
+<p><embed src="http://player.youku.com/player.php/sid/XNDA2NTY1NjY0/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash"><br><a id="more"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>奇奇怪怪的技能。</p>
+<p><a href="http://www.guokr.com/blog/441840/">解密劈砖背后的玄机</a></p>
+<p><embed src="http://player.youku.com/player.php/sid/XNDA2NTY1NjY0/v.swf" allowFullScreen="true" quality="high" width="600" height="480" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed><br>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[电动牙刷]]></title>
     <link href="http://doubles.me/2016/05/24/160524/"/>
     <id>http://doubles.me/2016/05/24/160524/</id>
     <published>2016-05-24T06:17:03.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>今天逛超市，看到了超市有电动牙刷打折。原本打算买一个oral-b 700的，价格才20欧的样子。可惜同伴说这种低价的机械式效果不好。会震得手麻。他们用过60RMB的，也用过100欧的oral-b。我手机查查这些型号，发现和国内的都对不上。国内的都是d12，d16这样的，这边却是700 这种型号。 看来看去，找到一个Colgate ProClinical  A1500。声波牙刷，原价99，打折后59欧。<br>听说电动牙刷比较干净，而且不容易牙龈出血，我这个每天都刷牙出血的还是必须买一个了。<br>虽然我知道飞利浦的比较好，但是我也没看到飞利浦的啊。<br>就是这一款了。<br><a id="more"></a></p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">[<span class="string">2014年最值得购买十款电动牙刷！</span>](<span class="link">http://www.haitaozj.com/thread-126638-1-1.html</span>)</div><div class="line">【产品介绍】</div><div class="line">具有电动牙刷应有的所有功能，ProClinical A1500 真是一个全能的产品。</div><div class="line">它有最高的每分钟冲程数：32000，使用超声波刷牙功能据说能减少5倍的牙菌斑，此外还带有内置磨光功能。</div><div class="line">它真正突出的功能是智能自动调整刷牙功能，这取决于你的操作。</div><div class="line">所以，需要额外着重清洁的区域，或者敏感的牙龈部位，不用担心过度用力带来的伤害了。</div><div class="line"></div><div class="line">【品牌介绍】</div><div class="line">高露洁棕榄有限公司是全球领先的日用消费品公司，拥有200多个国家的40,000多员工，</div><div class="line">在口腔护理、个人护理、家居护理和宠物食品等方面为大众提供高品质的消费品，其中</div><div class="line">有很多是广大消费者耳熟能详的全球著名品牌，如高露洁、棕榄、Ajax、</div><div class="line">Protex、Irish Spring、Fab、Mennen、Simply White和Hill's Science Diet等，</div><div class="line">特别是在口腔护理、液体香皂和腋下护理领域，在全球具有明显优势，在其他领域，</div><div class="line">高露洁也有一大批在日用卫生方面为全球消费者所熟知的品牌。</div></pre></td></tr></table></figure>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/05/IMG_2408.JPG-long" alt=""><br>(京东卖1499，然后送一辆自行车，这是什么鬼？买牙刷送自行车，我了个天。)</p>
@@ -327,7 +299,7 @@
     <link href="http://doubles.me/2016/03/15/160315/"/>
     <id>http://doubles.me/2016/03/15/160315/</id>
     <published>2016-03-15T15:17:17.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>去年从学校捡来的一本书，原本过年前就应该看完的，结果被我拖到了现在。<br>毫无疑问是一本工具书，刚好我做的项目需要做pcap包的数据分析，就翻翻了。<br>其实并不需要看的很仔细，这本书就是介绍一下Wireshark相关的。<br>由于大部分的知识我都有，所以只花了2个小时浏览了一遍。<br>而且我惊奇的发现，我阅读这种书籍毫无压力。<br><a id="more"></a></p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/03/IMG_20160315_161739.jpg-body" alt=""></p>
 <p>具体的书目可以看这里<br><a href="http://www.amazon.com/Wireshark-Ethereal-Protocol-Analyzer-Security/dp/1597490733" target="_blank" rel="external">Wireshark &amp; Ethereal Network Protocol Analyzer Toolkit</a></p>
@@ -350,7 +322,7 @@
     <link href="http://doubles.me/2016/03/10/160310/"/>
     <id>http://doubles.me/2016/03/10/160310/</id>
     <published>2016-03-09T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>总是会买各种各样的VPS，买完就要测速，然后就是闲着。真的是浪费生命浪费钱啊。<br>这里总结一下买来VPS后如何了解VPS的情况。<br>推荐在你常用的时候跑测试，毕竟服务器的负载不一样跑出来的结果也不一样。<br>我用AWS的机器来测试一下。</p>
 <a id="more"></a>
 <h2 id="1-网络性能测试"><a href="#1-网络性能测试" class="headerlink" title="1. 网络性能测试"></a>1. 网络性能测试</h2><p>首先执行<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -qO- bench.sh <span class="string">| bash</span></div></pre></td></tr></table></figure></p>
@@ -390,7 +362,7 @@
     <link href="http://doubles.me/2016/02/29/160229/"/>
     <id>http://doubles.me/2016/02/29/160229/</id>
     <published>2016-02-28T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id="1-AR-Drone"><a href="#1-AR-Drone" class="headerlink" title="1. AR.Drone"></a>1. AR.Drone</h2><p>学校一门 Real Time Software Development 课程做的就是AR.Drone的自动搜救。</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>
 <a id="more"></a>
@@ -423,7 +395,7 @@
     <link href="http://doubles.me/2016/02/01/160201/"/>
     <id>http://doubles.me/2016/02/01/160201/</id>
     <published>2016-02-01T15:20:03.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<embed src="http://player.youku.com/player.php/sid/XMTYyMTE5ODUwMA==/v.swf" allowfullscreen="true" quality="high" width="600" height="480" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 
 ]]></content>
@@ -440,7 +412,7 @@
     <link href="http://doubles.me/2016/01/30/160130/"/>
     <id>http://doubles.me/2016/01/30/160130/</id>
     <published>2016-01-30T01:57:29.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id="迁移WordPress"><a href="#迁移WordPress" class="headerlink" title="迁移WordPress"></a>迁移WordPress</h2><p>使用插件 <a href="https://github.com/hexojs/hexo-migrator-wordpress" target="_blank" rel="external">hexo-migrator-wordpress</a></p>
 <p>Export your WordPress in “Tools” → “Export” → “WordPress” in your dashboard.<br>Execute the following command after installed. source is the file path or URL of WordPress export file.</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ npm <span class="keyword">install</span> hexo-migrator-wordpress <span class="comment">--save</span></div><div class="line">$ hexo migrate wordpress &lt;<span class="keyword">source</span>&gt;</div></pre></td></tr></table></figure>
@@ -475,7 +447,7 @@
     <link href="http://doubles.me/2016/01/24/160124/"/>
     <id>http://doubles.me/2016/01/24/160124/</id>
     <published>2016-01-23T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h1 id="OpenCV3-0-IntelliJ-IDEA"><a href="#OpenCV3-0-IntelliJ-IDEA" class="headerlink" title="OpenCV3.0 + IntelliJ IDEA"></a>OpenCV3.0 + IntelliJ IDEA</h1><p>装备装VistualStudio2015的，但是被他搞疯掉了。装在系统盘以外但是还是花掉了我20G的系统盘，然后撑爆了C盘，终止安装。 之后删除了一些东西，卸载重装，装不上了。遂重装系统，改用Java版。</p>
 <p>官方提供了一个Eclipse的环境设置文档，但是并不打算用Eclipse。使用的是 Intellij IDEA.</p>
 <a id="more"></a>
@@ -514,11 +486,33 @@
   </entry>
   
   <entry>
+    <title><![CDATA[Diary 2015/11/18]]></title>
+    <link href="http://doubles.me/2015/11/18/151118/"/>
+    <id>http://doubles.me/2015/11/18/151118/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-09-26T20:59:02.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Diary 2016/01/18]]></title>
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
     <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>
 <a id="more"></a>
 <p>[试飞]</p>
@@ -537,33 +531,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Diary 2015/11/18]]></title>
-    <link href="http://doubles.me/2015/11/18/151118/"/>
-    <id>http://doubles.me/2015/11/18/151118/</id>
-    <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
-    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
-    
-    </summary>
-    
-      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
-    
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Slush 的前奏-Junction: 北欧最大Hackton]]></title>
     <link href="http://doubles.me/2015/11/10/151110/"/>
     <id>http://doubles.me/2015/11/10/151110/</id>
     <published>2015-11-09T22:00:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p><em>Slush</em> is the focal point for European and Asian startups and tech talent to meet with top-tier international investors, executives and media.<br>2015年10月13日，芬兰顶尖创新创业机构Slush在中关村软件园主办了“SlushChina2015”。今年的Slush将于11月11日-12日，与赫尔辛基举办。而在此之前，有一个相对小型的Hackthon活动— Junction.</p>
 <p>Junction 2015 与11月7-8号 在Helsinki举行。参与者超过500人，赞助商也都是是财大气粗的 Uber,Airbnb,OP 等公司。第一名将被选取以初创企业的身份参加Slush，其他的奖励也都是5000€的upcloud, Raspiberry，Apple TV, IBM实验室之旅等。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-812dec44bc984231.jpg-body" alt=""></p>
 <a id="more"></a>
@@ -608,7 +580,7 @@
     <link href="http://doubles.me/2015/09/26/150926/"/>
     <id>http://doubles.me/2015/09/26/150926/</id>
     <published>2015-09-26T14:10:03.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>报名花了230欧，然后拿到了一个跳伞的眼镜，并且可以跳2次。<br>没有报Tandom的双人跳，就只能自己培训然后开始跳了。<br>据说有这项运动以来芬兰一共才死65个人，还是很安全的。</p>
 <p>第一次跳只能从1000米左右开始跳，后面才能慢慢跳到3000米的高度。<br>而且前面4次必须是用拉钩自动开伞的，后面才能自己手动开伞。</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/09/15092603.jpg" alt="15092603.jpg"></p>
@@ -633,7 +605,7 @@
     <link href="http://doubles.me/2015/05/06/1075/"/>
     <id>http://doubles.me/2015/05/06/1075/</id>
     <published>2015-05-06T17:17:47.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>主要有这几部，持续更新。</p>
 <h1 id="我是谁，没有安全的系统"><a href="#我是谁，没有安全的系统" class="headerlink" title="我是谁，没有安全的系统"></a>我是谁，没有安全的系统</h1><p>这部电影很值得一看，最后多重反转，而且黑客案例让人热血沸腾。虽然这些案例是俺们都yy过的。</p>
 <p>社会工程才是最牛逼的。</p>
@@ -664,7 +636,7 @@
     <link href="http://doubles.me/2015/01/06/1063/"/>
     <id>http://doubles.me/2015/01/06/1063/</id>
     <published>2015-01-06T01:46:00.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>一直感觉Google的翻译不如Bing,但是google的译者工具包是唯一提供文档翻译的。</p>
 <p>然后看到了这个，累觉不爱。Google翻译再见。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2015/01/QQ20150106054342.png" alt=""></p>
 ]]></content>
@@ -682,7 +654,7 @@
     <link href="http://doubles.me/2014/12/30/1053/"/>
     <id>http://doubles.me/2014/12/30/1053/</id>
     <published>2014-12-30T00:47:29.000Z</published>
-    <updated>2016-08-01T21:26:09.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>因为想做IOS开发，这个笔记本又是刚买，所以必须安装黑苹果了。</p>
 <p>花了一个星期下了几个镜像和尝试了几种安装方式，最后搞定了，虽然有很多BUG。</p>
 <p><strong>1. 虚拟机</strong></p>
@@ -743,7 +715,7 @@
     <link href="http://doubles.me/2014/12/06/1043/"/>
     <id>http://doubles.me/2014/12/06/1043/</id>
     <published>2014-12-06T09:54:12.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>网上找了很久，并且都没有成功安装上Goagent，花了4个小时最后搞定。<br>如意云自带的地址过期了，404.<br>先在 系统-&gt;软件源-&gt;配置 中修改原本的网址为<br><a href="http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages" target="_blank" rel="external">http://downloads.openwrt.org.cn/PandoraBox/ralink/mt7620/packages</a></p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2014/12/QQ20141206123304.png" alt="QQ20141206123304"></a></p>
 <a id="more"></a>
@@ -778,7 +750,7 @@
     <link href="http://doubles.me/2014/11/17/1031/"/>
     <id>http://doubles.me/2014/11/17/1031/</id>
     <published>2014-11-17T18:39:34.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p><del>自动博客备份（数据库+文件）</del>- 七牛云+sae jobs</p>
 <p><del>垃圾评论过滤，插件没用啊。</del>- 数据库批量删了，使用多说</p>
 <p><del>评论者头像被墙了，wtf。</del>  - 修改主题，使用多说的头像服务</p>
@@ -804,7 +776,7 @@
     <link href="http://doubles.me/2014/02/02/991/"/>
     <id>http://doubles.me/2014/02/02/991/</id>
     <published>2014-02-02T15:08:50.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>一直有看小说的习惯，其他的作者的不稳定更新让人很烦恼，而我一直是贴吧看的小说，很没节操么，但是穷屌丝就这个样子了。</p>
 <p>然后决定自己利用微信写一个小说推送平台，就不用每次一个一个贴吧去切换了，当然用户只是我自己啦。</p>
 <p>由于vps坑爹的跑路了，所以转回sae上跑博客，域名也就不绑定了，这个采集本来放openshift上，但是被墙了，好噶，继续sae。</p>
@@ -867,7 +839,7 @@
     <link href="http://doubles.me/2014/01/26/980/"/>
     <id>http://doubles.me/2014/01/26/980/</id>
     <published>2014-01-26T05:55:34.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>Gmail已经5000+的邮件了，都不是有用的邮件，就想着怎么清楚它。弄了半天发现几个方法，分享一下。</p>
 <h2 id="使用过滤器"><a href="#使用过滤器" class="headerlink" title="*使用过滤器"></a>*使用过滤器</h2><p>1，在设置里面创建过滤器，<br>2，条件设为不包含“軣“（尽量选择生僻字），<br>3，根据此条件创建过滤器，选择删除邮件，同时勾选”同时将此过滤器应用于与 个会话匹配的xxx“<br>4，到已删除邮件里选择所有，然后在下拉栏里再选择”所有文件“，点删除。</p>
 <p>&nbsp;</p>
@@ -892,7 +864,7 @@
     <link href="http://doubles.me/2014/01/21/962/"/>
     <id>http://doubles.me/2014/01/21/962/</id>
     <published>2014-01-21T07:43:45.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>搞了一个礼拜的Jsbinding了，东拼西凑也能在手机上跑起来了。</p>
 <p>官方的demo在弄好环境的第2天就跑动了，但是自己创建的工程死活跑不动。这里记录遇到的坑。</p>
 <p>1. 创建的工程导入eclipse缺少构建器<br>没办法，把官方的那个飞机拖出来，里面代码改掉，改成自己的。<br>2.远程调试<br>搞了很久的远程调试，依然连不上 。<br>Firefox提供了远程调试，需要安装最新版本的firefox，在开发工具里面设置打开远程调试。<br>然后设置Android <a href="https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Firefox_for_Android" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Firefox_for_Android</a><br>修改代码支持远程调试 <a href="https://github.com/cocos2d/cocos2d-x/blob/f9c34bc18ee061f1964d8c7d100f0c4fce9c6ee5/cocos/scripting/javascript/script/debugger/README.md" target="_blank" rel="external">https://github.com/cocos2d/cocos2d-x/blob/f9c34bc18ee061f1964d8c7d100f0c4fce9c6ee5/cocos/scripting/javascript/script/debugger/README.md</a> （didn’t run）<br>注意端口不是6000</p>
@@ -922,7 +894,7 @@
     <link href="http://doubles.me/2013/12/18/937/"/>
     <id>http://doubles.me/2013/12/18/937/</id>
     <published>2013-12-18T07:48:07.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>可以说，当初困扰最久的就是touch事件。各个层上重叠区域，可视区域的消息传递机制不知道如何处理。现在又花了1天时间把以前的总结一下，再了解了cocos2d内部是如何处理touch事件的。</p>
 <p>首先看一下api当中所有关于touch事件的类</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131218161329.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131218161329.png" alt="QQ20131218161329"></a></p>
@@ -1010,7 +982,7 @@
     <link href="http://doubles.me/2013/12/11/920/"/>
     <id>http://doubles.me/2013/12/11/920/</id>
     <published>2013-12-11T06:57:03.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<div>继续学习cocos2d-html5，想先熟悉一下jsbing。所以需要配置一下安装环境。主要还是 web 和 android，因为我也只会这2个，其他的都没有设备测试。</div><br><div>这里有一个官方文档的，但是似乎没成功，所以还是要靠自己：</div><br><div><a href="http://www.cocos2d-x.org/wiki/How_to_set_up_the_android_cocos2d-x_development_environment_on_Windows_7" target="_blank" rel="external">http://www.cocos2d-x.org/wiki/How_to_set_up_the_android_cocos2d-x_development_environment_on_Windows_7</a></div><br><div>一共需要安装挺多东西的，不过看需求了，但是 android+sdk+ndk+cocos2d-x 是最基本的，其他的只是为了方便。</div><br><div></div><br><div><br><br>1.  JDK<br>2.  eclipse<br>3.  Android SDK<br>4.  eclipse adt plugin                                   (以上是android 开发环境)<br>5.  Android NDK                                           (Android交叉编译c++)<br>6.  eclipse cdt plugin                                  (c++开发插件，不开发可以不装)<br>7.  cocos2d-x                                                (游戏引擎 c++，jsb绑定)<br>8.  cocos2d-html5                                      (开发使用的cocos2d版本)<br>9.  webstrom                                                (开发工具，notepad++感觉不够用了)<br>10.  python                                                      (cocos2d  2.x版本以后管理代码都用python脚本了)<br>11.  cygwin                                                      (本地编译c++工具)<br></div><br><div><br><div>1.cocos2d-x</div><br><div>由于是jsb，所以是3个都下， 用cocos2d-html5 开发，绑定到cocos2d-x上去。cocostudio是开发工具，可以省去以前很多资源处理的精力，下一篇会写他的使用。</div><br><div> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211102839.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211102839.png" alt="QQ20131211102839"></a></div><br><div>官网下载  <a href="http://www.cocos2d-x.org/download" target="_blank" rel="external">http://www.cocos2d-x.org/download</a></div><br></div><br><div></div><br><div>2.安装python</div><br><div>一定安装2.7版本的，安装完成后把安装目录加入系统path当中。</div><br><div>下载地址：<a href="http://www.python.org/" target="_blank" rel="external">http://www.python.org/</a></div><br><div></div><br><div>3.安装webstrom</div><br><div>不得不说是很不错的一款编辑器，到目前发现基本可以省略掉apache了，他内置了一个http服务器。</div><br><div>但是配色很让我心碎，没有我熟悉的notepad++ 或者 eclipse 的配色。最后只能自己编辑一下了。</div><br><div>默认好像中文是乱码吧，需要修改一个中文的字体，这是我的设置方案 ：<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/webstrom_setting.zip" target="_blank" rel="external">webstrom_setting</a>  中文+eclipse keymap+notepad++配色。</div><br><div>下载解压，然后file—import setting找到这个jar包就可以了。</div><br><div>导入Cocos2d-html5的方法很简单，解压cocos2d-html5 的包到一个本地非中文目录，不要有空格，然后webstrom打开这个并设置为rootproject就成。由于代码全部导入了，所以会有智能提示。</div><br><div>如果有多个项目公用一个lib，可以添加一个cocos2d-html5 libarary。只要做到这一步就可以开始开发html5的游戏了。</div><br><div>其他更详细的配置可以在 <a href="http://www.ityran.com/archives/4857" target="_blank" rel="external">http://www.ityran.com/archives/4857</a> 看到</div><br><div><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211104758.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211104758.png" alt="QQ20131211104758"></a></div><br><div></div><br><div>下载地址：<a href="http://www.jetbrains.com/webstorm/" target="_blank" rel="external">http://www.jetbrains.com/webstorm/</a></div><br><div></div><br><div>4.安装cygwin</div><br><div>安装到不难，但是很麻烦</div><br><div>选一个版本下载，然后安装，其他的看看就知道了，所以只说一下要安装哪些组件。</div><br><div>安装时，在 Cygwin 默认安装配置没有安装gcc 编译器，我们必须用到的 Devel 类中的几个组件包，如果嫌找起来过于麻烦，可将Devel 类从Default改为Install 全部安装也可，组件包为：binutils，gcc ，gcc - mingw，gdb ，make <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211115409.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211115409.png" alt="QQ20131211115409"></a></div><br><div><br><br>安装完成后，把cygwin路径加入系统path，然后运行cygwin，在弹出的命令行窗口输入：cygcheck -c cygwin命令，会打印出当前cygwin的版本和运行状态，如果status是ok的话，则cygwin运行正常。<br><br>然后依次输入gcc –v，g++ -v，make –v，gdb –v进行测试，如果都打印出版本信息和一些描述信息，至此，你的cygwin安装完成了！<br><br></div><br><div>下载地址：<a href="http://cygwin.com/install.html" target="_blank" rel="external">http://cygwin.com/install.html</a></div><br><div></div><br><div></div><br><div><br><div>5.安装Android开发环境</div><br><div>这个比较麻烦，所以可以参考其他教程：<strong>(必看这篇，没有写的很详细，所以看他的最好了)</strong></div><br><div><br><div><a href="http://blog.csdn.net/sttyytw/article/details/17005263" target="_blank" rel="external">http://blog.csdn.net/sttyytw/article/details/17005263</a></div><br><div></div><br></div><br><div>JDK+Eclipse+Android SDK +ADT = CMCC_UDE</div><br><div>移动的这个集成包还是挺不错的，我最讨厌重复性的劳动了，比如说每次换电脑都要配环境。</div><br><div>cmcc_ude 可以省略 jdk，adt，eclipse 的安装，安装完成就OK。</div><br><div>下载地址：<a href="http://dev.10086.cn/cmdn/bbs/thread-47163-1-1.html" target="_blank" rel="external">http://dev.10086.cn/cmdn/bbs/thread-47163-1-1.html</a></div><br><div></div><br><div><br><div>然后安装cdt，查看eclipse版本，对应安装cdt。</div><br><div>cmcc_ude 的是3.7版本 对应名称为 Indigo，如果更新还是换版本了可以在readme中查看。</div><br><div>下载地址：  <a href="http://www.eclipse.org/cdt/downloads.php" target="_blank" rel="external">http://www.eclipse.org/cdt/downloads.php</a></div><br><div>然后help-&gt;install 就可以了。可以在新建项目中看到c++的就是安装成功。</div><br><div></div><br><div>上诉安装过程中的java，sdk，ndk的路径都要加入系统path，推荐教程中有详细过程。</div><br><div></div><br><div>6.配置Android环境</div><br><div>由于是交叉编译，所以需要对project进行设置,就是使用cygwin编译c++代码，还有用ndk编译c++代码的。</div><br><div>过程就是添加一个构建器，这里使用cygwin编译c++代码。</div><br><div><br><br>右键project，properties–&gt;builders，点击new–&gt;program<br><div>name栏输入：Native_Builder</div><br><div>Location栏输入：C:\cygwin\bin\bash.exe</div><br><div>Arguments栏输入：–login -c “cd /cygdrive/d/game/android-ndk-r9b &amp;&amp; make APP=SimpleGame”</div><br><div>这里的路径是ndk路径</div><br><div>再然后还是看上面推荐文章的<strong>第七章编译Android项目</strong>，实在懒的写了，都是一样的。</div><br><div></div><br></div><br><div>7.创建工程使用内置的python脚本</div><br><div>进入cocos2d-x-2.2.1-&gt;tools-&gt;project-creator，大家可以看到有一个create_project.py脚本</div><br><div><br><br>python create_project.py -project test -package com.example.test -language cpp<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211135451.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211135451.png" alt="QQ20131211135451"></a><br><br></div><br><div>然后会在cocos2d-x-2.2.1/project/test 中生成所有支持平台的项目<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211135523.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/12/QQ20131211135523.png" alt="QQ20131211135523"></a></div><br><div></div><br><div>8.导入cocos2d-x项目到eclipse</div><br><div><br><br>现在以cocos2d-x-2.2\samples\Cpp\SimpleGame 这个项目来示例：<br><br>1.  导入lib cocos2d-x 到eclipse中，cocos2d-x-2.2\cocos2dx\platform\android\java，设置为isLibrary<br>2.  导入cocos2d-x-2.2\samples\Cpp\SimpleGame\proj.android 到eclipse中<br>3.  复制cocos2d-x-2.2\samples\Cpp\SimpleGame\Resources到cocos2d-x-2.2\samples\Cpp\SimpleGame\proj.android\assets中<br>4.  修改SimpleGame引用库为上面导入的，如果没出错的话<br>5.  复制cocos2d-x-2.2目录下的cocos2dx,CocosDenshion,extensions,external这4个目录到你的NDK的sources目录下,就是注册到path中的ndk路径下的sources<br></div><br></div><br></div><br><div>到这里，原生的应用已经可以跑在Android上了，模拟器太卡根本就没试，一直真机开发的。下面就是jsb绑定的过程了。</div><br><div></div><br><div>9.cocos2d-x jsbing</div><br><div>这个暂时还不知道如何搞定，但是系统提供的例子到可以正确运行。</div><br><div>导入D:\Game\cocos2d-x-2.2.1\samples\Javascript\MoonWarriors\proj.android 到eclipse</div><br><div>复制D:\Game\cocos2d-x-2.2.1\samples\Javascript\Shared\games\MoonWarriors 下所有的文件到 assets下，然后编译就ok。</div><br><div>参考文章：</div><br><div><a href="http://www.ptoh.net/blog/index.php/archives/80" target="_blank" rel="external">http://www.ptoh.net/blog/index.php/archives/80</a></div><br><div><a href="http://bbs.chinaunix.net/thread-4069373-1-1.html" target="_blank" rel="external">http://bbs.chinaunix.net/thread-4069373-1-1.html</a></div><br><div></div><br><div></div><br><div></div><br><div>最后，推荐一些很好的学习cocos2d的网站：</div><br><div>官方的：</div><br><div><a href="http://www.cocos2d-x.org/wiki/Developers_Manual?version=67" target="_blank" rel="external">http://www.cocos2d-x.org/wiki/</a></div><br><div>api：</div><br><div><a href="http://www.cocos2d-x.org/wiki/Reference" target="_blank" rel="external">http://www.cocos2d-x.org/wiki/Reference</a></div><br><div></div><br><div>子龙山人 翻译了很多官方和国外的教程 ：</div><br><div><a href="http://www.cnblogs.com/zilongshanren/" target="_blank" rel="external">http://www.cnblogs.com/zilongshanren/</a></div><br><div></div><br><div>cocostudio 中文版使用手册 ：</div><br><div><a href="http://upyun.cocimg.com/CocoStudio/helpdoc/v1.0.0.0/zh/index.html" target="_blank" rel="external">http://upyun.cocimg.com/CocoStudio/helpdoc/v1.0.0.0/zh/index.html</a></div><br><div>上面的会了这里不是很需要，除非有其他问题就看这个：</div><br><div><a href="http://www.cocoachina.com/bbs/read.php?tid=161616" target="_blank" rel="external">http://www.cocoachina.com/bbs/read.php?tid=161616</a></div><br><div></div><br><div>泰然之家 翻译或者原创的文章:</div><br><div> <a href="http://www.ityran.com/archives/3863" target="_blank" rel="external">http://www.ityran.com/archives/3863</a></div><br><div><a href="http://www.ityran.com/tutorials" target="_blank" rel="external">http://www.ityran.com/tutorials</a></div><br><div></div><br><div>交流论坛可能还是要去官方论坛，感觉国内的不是特别活跃，不过html5china 可以@陈升想，感谢大大回复我。</div><br><div><a href="http://www.cocoachina.com/bbs/thread.php?fid=41" target="_blank" rel="external">http://www.cocoachina.com/bbs/thread.php?fid=41</a></div><br><div><a href="http://www.cocos2d-x.org/forums" target="_blank" rel="external">http://www.cocos2d-x.org/forums</a></div><br><div></div>]]></content>
     <summary type="html">
     <![CDATA[<div>继续学习cocos2d-html5，想先熟悉一下jsbing。所以需要配置一下安装环境。主要还是 web 和 android，因为我也只会这2个，其他的都没有设备测试。</div><br><div>这里有一个官方文档的，但是似乎没成功，所以还是要靠自己：</div><b]]>
@@ -1031,7 +1003,7 @@
     <link href="http://doubles.me/2013/11/29/912/"/>
     <id>http://doubles.me/2013/11/29/912/</id>
     <published>2013-11-29T04:56:50.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>由于要用到一个图表程序，花了几天时间，分享一下过程。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131129145508.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/11/QQ20131129145508.png" alt="QQ20131129145508"></a></p>
 <p>A.使用achartengine<br>这是一个开源的图表引擎。以前用过，不过有个bug，更新不是很频繁。就是可以通过拖动把图表的x，y上限给扩充，禁止触控事件都不行。<br>而且使用很麻烦的说，看了他代码就知道，又丑又长。丑的令人发指。</p>
@@ -1070,7 +1042,7 @@
     <link href="http://doubles.me/2013/11/23/903/"/>
     <id>http://doubles.me/2013/11/23/903/</id>
     <published>2013-11-23T03:17:42.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>双11买的泡泡云，易迅29块钱一个。配置还不错，今天才有网线来折腾一下。</p>
 <h1 id="晒个配置"><a href="#晒个配置" class="headerlink" title="晒个配置"></a>晒个配置</h1><p>CPU arm926EJ（SoC是AK9806），大概350Mhz（详细看下面）。</p>
 <p>内置2GByte的flash存储(df查看剩余用户可用1.67G)，256M内存(free查看剩余190M)，ARMV5TE指令集支持，双USB（另一个标记为供电口的需要拆开外壳短接两个电阻位：NR127，NR128）。</p>
@@ -1134,7 +1106,7 @@
     <link href="http://doubles.me/2013/11/18/901/"/>
     <id>http://doubles.me/2013/11/18/901/</id>
     <published>2013-11-18T09:04:18.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>shardhost当初的9.9美金的vps，跑路了。买的时候就在担心，果真跑路了。</p>
 <p>真心操蛋，我的博客数据回档到10.03了。而且那个印刷站也没有了。</p>
 <p>根本就没备份啊。</p>
@@ -1157,7 +1129,7 @@
     <link href="http://doubles.me/2013/10/02/891/"/>
     <id>http://doubles.me/2013/10/02/891/</id>
     <published>2013-10-02T16:33:38.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>家里断网了，装上minidwep开始搞了。</p>
 <p>找到了好多个腾达的c83a35开头的路由，算了半天才发现没开wps。</p>
 <p>放弃，信号实在不行，还是抓包吧。</p>
@@ -1196,7 +1168,7 @@
     <link href="http://doubles.me/2013/09/27/886/"/>
     <id>http://doubles.me/2013/09/27/886/</id>
     <published>2013-09-27T15:37:53.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>主要来源是 wooyun的 <a href="http://wooyun.org/bugs/wooyun-2010-028908" target="_blank" rel="external">http://wooyun.org/bugs/wooyun-2010-028908</a></p>
 <p>说说方法，先得到用户名 ，就是通过遍历这个地址的author</p>
 <p><a href="http://www.lufuli.com/?author=1" target="_blank" rel="external">http://www.lufuli.com/?author=1</a></p>
@@ -1237,7 +1209,7 @@
     <link href="http://doubles.me/2013/09/11/879/"/>
     <id>http://doubles.me/2013/09/11/879/</id>
     <published>2013-09-11T16:46:48.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>就是把以前学习的东西总结了一下，不然就完全不知道学过什么。</p>
 <p>下载<span style="font-family: 'Times New Roman';">cocos2d-html5</span><span style="font-family: 宋体;">引擎，我这里有</span><span style="font-family: 'Times New Roman';">2.14</span><span style="font-family: 宋体;">的。现在最新版本是</span><span style="font-family: 'Times New Roman';">2</span><span style="font-family: 宋体;">，</span><span style="font-family: 'Times New Roman';">15</span></p>
 <p><a href="http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Download" target="_blank" rel="external">http://www.cocos2d-x.org/projects/cocos2d-x/wiki/Download</a></p>
@@ -1343,7 +1315,7 @@
     <link href="http://doubles.me/2013/08/28/874/"/>
     <id>http://doubles.me/2013/08/28/874/</id>
     <published>2013-08-28T03:01:25.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>这边拆迁，都搬家了，于是乎，我被叫去装电视了。、、还好不是修电视，专业对口修电脑就算了，为什么电视都要我修。</p>
 <p>主要是有线电视一年300，还有初装费。也就是第一年680块一个。 家里有2台电视很正常的，还有3台的。</p>
 <p>&nbsp;</p>
@@ -1434,7 +1406,7 @@
     <link href="http://doubles.me/2013/08/22/870/"/>
     <id>http://doubles.me/2013/08/22/870/</id>
     <published>2013-08-22T06:14:59.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>今天网上看到百度云盘又送1TB了。</p>
 <p>去年送了100g，早些时候放出一个bug 0.1元买100g。很成功的营销。</p>
 <p>然后7月份0.2元续费去年的100G。</p>
@@ -1465,7 +1437,7 @@
     <link href="http://doubles.me/2013/08/15/862/"/>
     <id>http://doubles.me/2013/08/15/862/</id>
     <published>2013-08-15T13:25:35.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>换了个主题，所以想把速度也给也给优化一下。</p>
 <p>这个博客是托管在openshift上的，所以国内经常访问不上，或者速度更不上。</p>
 <p>首先是给添加了个cdn，由于太怕麻烦了，所以就supercache，添加了七牛的cdn。</p>
@@ -1498,7 +1470,7 @@
     <link href="http://doubles.me/2013/08/12/859/"/>
     <id>http://doubles.me/2013/08/12/859/</id>
     <published>2013-08-12T00:03:28.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>什么时候改的我不清楚，不过很多大号被删掉了。</p>
 <p>我现在都不看好这个的开发了，又没钱赚。</p>
 <p>&nbsp;</p>
@@ -1549,7 +1521,7 @@
     <link href="http://doubles.me/2013/08/02/775/"/>
     <id>http://doubles.me/2013/08/02/775/</id>
     <published>2013-08-02T17:36:53.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>以后会些完整，如果有必要的话。 这里是学习的时候记录的一点。不是一个完整的教程</p>
 <p>&nbsp;</p>
 <p>一直不知道载入图像的函数，今天总算找到了，原来是<span style="font-family: 'Times New Roman';">texture</span><span style="font-family: 宋体;">，纹理集。</span></p>
@@ -1634,7 +1606,7 @@
     <link href="http://doubles.me/2013/08/02/773/"/>
     <id>http://doubles.me/2013/08/02/773/</id>
     <published>2013-08-02T17:32:53.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<div><br><br>Websocket<span style="font-family: 宋体;">实现比较简单，但是</span><span style="font-family: 'Times New Roman';">chrome firefox</span><span style="font-family: 宋体;">均存在不同问题</span><br><br>实现看附件就行了。<br><br>Nodejs，服务端代码<br><table><br><tbody><br><tr><br><td valign="top" width="568">var conns = new Array();var ws = require(‘websocket-server’);var server = ws.createServer();<br><br>server.addListener(‘connection’, function(conn)<br><br>{<br><br>console.log(‘connection….’);<br><br>conns.push(conn);<br><br>conn.addListener(‘message’,function(msg)<br><br>{<br><br>console.log(msg);<br><br>for(var i=0; i&lt;conns.length; i++)<br><br>{<br><br>if(conns[i]!=conn)<br><br>{<br><br>conns[i].send(msg);<br><br>}<br><br>}<br><br>});<br><br>});<br><br>server.listen(8080);<br><br>console.log(‘running……’);<br><br>&nbsp;</td><br></tr><br></tbody><br></table><br>客户端代码 <span style="font-family: 'Times New Roman';">html</span><br><table><br><tbody><br><tr><br><td valign="top" width="568">&lt;html&gt;&lt;head&gt;&lt;meta charset=”utf-8” /&gt;<br><br>&lt;script type=”text/javascript”&gt;<br><br>var host = ‘127.0.0.1’;<br><br>var port = 8080;<br><br>var url = ‘ws://‘+host+’:’+port+’/‘;<br><br>var w = new WebSocket(url);  //<span style="font-family: 宋体;">构建于服务器之间的连接通信</span><br><br>&lt;!–var audioElement = document.createElement(‘audio’);  –&gt;<br><br>&lt;!–audioElement.setAttribute(‘src’, ‘qqmsg.mp3’);–&gt;<br><br>w.onopen = function()//<span style="font-family: 宋体;">通过</span><span style="font-family: 'Times New Roman';">onopen</span><span style="font-family: 宋体;">事件句柄来监听</span><span style="font-family: 'Times New Roman';">socket</span><span style="font-family: 宋体;">的打开事件</span><br><br>{<br><br>$(‘chat-box’).innerHTML = ‘<span style="font-family: 宋体;">已连接到服务器</span><span style="font-family: 'Times New Roman';">……&lt;br/&gt;’;  </span><br><br>}<br><br>w.onmessage = function(e)//<span style="font-family: 宋体;">用</span><span style="font-family: 'Times New Roman';">onmessage</span><span style="font-family: 宋体;">事件句柄接受服务器传过来的数据</span><br><br>{<br><br>var msg = e.data;<br><br>var chatBox = $(‘chat-box’);<br><br>// audioElement.play();<br><br>chatBox.innerHTML = chatBox.innerHTML+msg+’&lt;br/&gt;’;<br><br>}<br><br>function send()//<span style="font-family: 宋体;">使用</span><span style="font-family: 'Times New Roman';">send</span><span style="font-family: 宋体;">方法向服务器发送数据</span><br><br>{<br><br>var talk = $(‘talk’);<br><br>var nike = $(‘nike’);<br><br>w.send(‘&lt;strong style=”color:red”&gt;’+nike.value+’:&lt;/strong&gt;’+talk.value);<br><br>}<br><br>function $(id)<br><br>{<br><br>return document.getElementById(id);<br><br>}<br><br>&lt;/script&gt;<br><br>&lt;/head&gt;<br><br>&lt;body&gt;<br><br>&lt;div id=”chat-box” style=”border:1px solid #cccccc; width:400px; height:400px; overflow:scroll;”&gt;&lt;/div&gt;<br><br>昵称<span style="font-family: 'Times New Roman';">:</span><br><br>&lt;input type=”text” id=”nike”/&gt;<br><br>&lt;br/&gt;<br><br>内容<span style="font-family: 'Times New Roman';">:</span><br><br>&lt;input type=”text” id=”talk”/&gt;<br><br>&lt;input type=”button” id=”send” onClick=”send();” value=”<span style="font-family: 宋体;">发送</span><span style="font-family: 'Times New Roman';">“/&gt;</span><br><br>&lt;/body&gt;<br><br>&lt;/html&gt;</td><br></tr><br></tbody><br></table><br>不要使用谷歌浏览器，会出现如下的错误：<span style="font-family: 'Times New Roman';">Error during WebSocket handshake: ‘Sec-WebSocket-Accept’ header is missing</span><br><br>原因如下：<br><br>因为<span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">协议已经更新到</span><span style="font-family: 'Times New Roman';">13</span><span style="font-family: 宋体;">版本。</span><br><br>客户端发送数据格式类似这样：<br><br>GET /demo HTTP/1.1<br><br>Host: example.com<br><br>Connection: Upgrade<br><br>Sec-WebSocket-Key2: 12998 5 Y3 1  .P00<br><br>Sec-WebSocket-Protocol: sample<br><br>Upgrade: WebSocket<br><br>Sec-WebSocket-Key1: 4 @1  46546xW%0l 1 5<br><br>Origin: <a href="http://example.com" target="_blank" rel="external">http://example.com</a><br><br>^n:ds[4U<br><br>服务端返回的信息是：<br><br>HTTP/1.1 101 WebSocket Protocol Handshake<br><br>Upgrade: WebSocket<br><br>Connection: Upgrade<br><br>Sec-WebSocket-Origin: <a href="http://example.com" target="_blank" rel="external">http://example.com</a><br><br>Sec-WebSocket-Location: ws://example.com/demo<br><br>Sec-WebSocket-Protocol: sample<br><br>8jKS’y:G*Co,Wxa-<br><br>但是之前的版本是这样的：<br><br>客户端发送数据格式类似这样：<br><br>GET /chat HTTP/1.1<br><br>Upgrade: WebSocket<br><br>Connection: Upgrade<br><br>Host: www.zendstudio.net:9108<br><br>Origin: <a href="http://www.zendstudio.net" target="_blank" rel="external">http://www.zendstudio.net</a><br><br>Cookie: somenterCookie<br><br>此时服务端应该返回的信息是：<br><br>HTTP/1.1 101 Web Socket Protocol Handshake<br><br>Upgrade: WebSocket<br><br>Connection: Upgrade<br><br>WebSocket-Origin: <a href="http://www.zendstudio.net" target="_blank" rel="external">http://www.zendstudio.net</a><br><br>WebSocket-Location: ws://www.zendstudio.net:9108/chat<br><br>从这里我们太容易看出来，<span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">协议的握手部分根本就是个类</span><span style="font-family: 'Times New Roman';">http</span><span style="font-family: 宋体;">的协议，所不同的是</span><span style="font-family: 'Times New Roman';">http</span><span style="font-family: 宋体;">每次都会有这样子的头信息交互，这在某些时候不得不显得很糟糕。而</span><span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">只会执行一次这个过程，之后的传输信息就变得异常简洁了。</span><br><br>这里我们发现，<span style="font-family: 'Times New Roman';">version 13</span><span style="font-family: 宋体;">这个版本的</span><span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">协议，与之前版本最大不同就是多了一个验证，客户端会发送一个“</span><span style="font-family: 'Times New Roman';">Sec-WebSocket-Key</span><span style="font-family: 宋体;">”的</span><span style="font-family: 'Times New Roman';">base64</span><span style="font-family: 宋体;">编码的密钥，要求服务端必须返回一个“</span><span style="font-family: 'Times New Roman';">Sec-WebSocket-Accept</span><span style="font-family: 宋体;">”，否则客户端会抛出一个“</span><span style="font-family: 'Times New Roman';">Error during WebSocket handshake: Sec-WebSocket-Accept mismatch</span><span style="font-family: 宋体;">”错误之后，关闭连接，当然，这个</span><span style="font-family: 'Times New Roman';">Sec-WebSocket-Accept</span><span style="font-family: 宋体;">的值是计算出来的。</span><br><br>谷歌<span style="font-family: 'Times New Roman';">14</span><span style="font-family: 宋体;">版本</span><span style="font-family: 'Times New Roman';">+</span><span style="font-family: 宋体;">支持新的标准，而</span><span style="font-family: 'Times New Roman';">websocket-server</span><span style="font-family: 宋体;">是按原来的版本写的。火狐也有类似的原因。</span><br><br><a href="http://blog.csdn.net/mayixixi/article/details/7700201" target="_blank" rel="external">http://blog.csdn.net/mayixixi/article/details/7700201</a> 看这里<br><br>也就是说使用<span style="font-family: 'Times New Roman';">websocket-server </span><span style="font-family: 宋体;">的话由于版本太低，</span><span style="font-family: 'Times New Roman';">chrome</span><span style="font-family: 宋体;">，</span><span style="font-family: 'Times New Roman';">firefox</span><span style="font-family: 宋体;">什么的不支持，只能有</span><span style="font-family: 'Times New Roman';">safari</span><span style="font-family: 宋体;">来测试。</span><br><br>方案<span style="font-family: 'Times New Roman';">2</span><span style="font-family: 宋体;">就是可以使用一个  </span><a href="http://socket.io/" target="_blank" rel="external">http://socket.io</a>  来解决。纯<span style="font-family: 'Times New Roman';">js</span><span style="font-family: 宋体;">的，提供了</span><span style="font-family: 'Times New Roman';">node.js</span><span style="font-family: 宋体;">（服务端）</span><br><br>当然可以自己实现<span style="font-family: 'Times New Roman';">websocket</span><span style="font-family: 宋体;">，都没有一个标准</span><br><br></div>]]></content>
     <summary type="html">
     <![CDATA[<div><br><br>Websocket<span style="font-family: 宋体;">实现比较简单，但是</span><span style="font-family: 'Times New Roman';">chrome firefox</span><spa]]>
@@ -1651,7 +1623,7 @@
     <link href="http://doubles.me/2013/07/17/765/"/>
     <id>http://doubles.me/2013/07/17/765/</id>
     <published>2013-07-17T10:43:41.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>赵荣部落看到的，一年只要10刀，然后在微魔部落找到代付， 一共63块钱。</p>
 <p><a href="http://www.zrblog.net/10955.html" target="_blank" rel="external">http://www.zrblog.net/10955.html</a></p>
 <p>配置如下：</p>
@@ -1679,7 +1651,7 @@
     <link href="http://doubles.me/2013/07/16/763/"/>
     <id>http://doubles.me/2013/07/16/763/</id>
     <published>2013-07-16T16:21:15.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>需要使用微信制作一个旅游网站导航，所以这里介绍一下使用wordpress搭建整个网站的过程。</p>
 <h1 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h1><p>1.网页中要加入预定功能</p>
 <p>2.评论，预定最好和微信信息绑定</p>
@@ -1788,7 +1760,7 @@
     <link href="http://doubles.me/2013/07/07/759/"/>
     <id>http://doubles.me/2013/07/07/759/</id>
     <published>2013-07-07T11:30:32.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>OpenShift空间经常性的进行升级和例行的维护，短的时候1~2小时即可完成维护，有时甚至长达十几个小时都出现“503 Service Temporarily Unavailable”。那可能是httpd服务没有启动导致503错误。(httpd是Apache超文本传输协议(HTTP)服务器的主程序，被设计为一个独立运行的后台进程，它会建立一个处理请求的子进程或线程的池。)<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/07/143032B00.gif" alt=""></p>
 <h4 id="OpenShift空间503服务器错误解决"><a href="#OpenShift空间503服务器错误解决" class="headerlink" title="OpenShift空间503服务器错误解决"></a>OpenShift空间503服务器错误解决</h4><p>&nbsp;</p>
 <p>用户可以使用SSH登陆工具putty登陆，输入 “ctl_all start”或”ctl_all restart”启动httpd服务。试着输入”ctl_all restart”命令后重启了所有的服务，网站恢复即可正常。</p>
@@ -1822,7 +1794,7 @@
     <link href="http://doubles.me/2013/07/07/749/"/>
     <id>http://doubles.me/2013/07/07/749/</id>
     <published>2013-07-07T10:48:33.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>接了个单，就是建立一个展示站点，可以说是十分简单的，可是我在wordpress中和dedecms中犹豫很久，dedecms功能很强大，比较</p>
 <p>适合这种的，最后实在没有找到好的模版，就还是用wordpress了，毕竟熟悉一点，修改方便多了。</p>
 <p>首先使用了一个淘宝客主题，由于是制作衣服的，所以这个只需要简单的修改一下。</p>
@@ -1857,7 +1829,7 @@
     <link href="http://doubles.me/2013/06/06/725/"/>
     <id>http://doubles.me/2013/06/06/725/</id>
     <published>2013-06-06T01:41:45.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>原本是想等证书寄过来再来show一下的，可是rp一向如此啊。</p>
 <p>&nbsp;</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/06/QQ201306061239161.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/06/QQ201306061239161.png" alt="QQ20130606123916"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/06/QQ20130606123955.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/06/QQ20130606123955.png" alt="QQ20130606123955"></a></p>
@@ -1882,7 +1854,7 @@
     <link href="http://doubles.me/2013/05/30/665/"/>
     <id>http://doubles.me/2013/05/30/665/</id>
     <published>2013-05-30T04:42:20.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>很少转贴的，转的都是比较有价值的</p>
 <p><strong>1、准备好工具并配置好工具</strong></p>
 <p>打开IE9，打开百度首页（<a href="http://www.baidu.com/" target="_blank" rel="external">www.baidu.com</a>），然后按F12，调出F12开发人员工具，再切换到Network界面：</p>
@@ -2080,7 +2052,7 @@
     <link href="http://doubles.me/2013/05/29/688/"/>
     <id>http://doubles.me/2013/05/29/688/</id>
     <published>2013-05-29T13:51:18.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>前面一个是分析工具的使用。</p>
 <p>由于签到器利用的是模拟浏览器发送http请求，所以第一步肯定是去了解一下每个步骤都要提交什么参数，用的是post还是get方法，返回给用户的又是什么内容。</p>
 <p>这里我用的是FireFox + HTTP Header，这个插件可以很轻易地截取浏览器的数据包。</p>
@@ -2413,7 +2385,7 @@
     <link href="http://doubles.me/2013/05/29/664/"/>
     <id>http://doubles.me/2013/05/29/664/</id>
     <published>2013-05-29T13:31:12.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>花了我一天时间啊，到处去问也没有一个回答的。</p>
 <p>开始是post username 和password不成功，一直返回的false。</p>
 <p>var_dump(curl_error($ch));看到错误是 malformed，也就是错误的数据嘛。我百度了很久，</p>
@@ -2444,7 +2416,7 @@
     <link href="http://doubles.me/2013/05/28/659/"/>
     <id>http://doubles.me/2013/05/28/659/</id>
     <published>2013-05-28T13:46:09.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>抓包过程不讲了，直接贴代码。github上有个类似代码，直接借鉴一下</p>
 <p>mycurl就是curl，自己实现一下get和post就行。这个做完了会把代码分享出来。</p>
 <p>下一步是做贴吧自动签到</p>
@@ -2494,7 +2466,7 @@
     <link href="http://doubles.me/2013/05/24/650/"/>
     <id>http://doubles.me/2013/05/24/650/</id>
     <published>2013-05-24T07:22:57.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h1 id="一张图片让所有浏览器未响应"><a href="#一张图片让所有浏览器未响应" class="headerlink" title="一张图片让所有浏览器未响应"></a>一张图片让所有浏览器未响应</h1><div><br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" title="79086246020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102328ptX.png" alt="79086246020121126" title="79086246020121126"></a><br><br>你可能要问，一张图片怎么可能会导致整个浏览器无法响应呢，如果你不相信就自己来这个链接试一试吧，整个页面中真的只有一张图片哦。相信你在试过之后的确是发现了浏览器要么就是无法响应，或者是整个系统都卡住了，计算机性能好的可能会出现卡顿的情况，这个到底是为什么呢，今天我们就来讲解一下怎样利用 Gzip 创建一张冗大的 1G 的图片让浏览器未响应吧。<br><br>&nbsp;<br><br>首先补充一下知识：Gzip 是一种在网站当中常用的一种技术，他可以将网页压缩到只有原来的百分之 70% 左右。如果一个字符串“10000000000”使用压缩技术压缩之后，他就会变为“1+10<em>0”这样，这样字符串的长度和大小就变短了。那么，如果一个 1G 左右的图片被压缩了之后，只有 2M 多，然后发送到客户端之后再解压，客户端无法承受那么大的文件，自然就未响应了。<br><br>这个其实已经不是新鲜的东西，要让浏览器无法响应还是要几个要求的：1.图片够大、2.传送的速度够快。就像我提供的链接，因为传送的速度不是很快，所以要很久才会出现未响应的状况。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" title="58357946720121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/1023308w0.png" alt="58357946720121126" title="58357946720121126"></a><br><br>我们先挑选一张不是很大 普通图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" title="128816471120121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102331Kxp.png" alt="128816471120121126" title="128816471120121126"></a><br><br>&nbsp;<br><br>使用 16 进制编辑器不断在文件末尾添加 0，让他变成具有很多 0 字符的冗长的一张 1G 的图片。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" title="89868126020121126" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/05/102333Lio.png" alt="89868126020121126" title="89868126020121126"></a><br><br>因为文件中大部分的字符串全部都是 0，所以压缩之后冗长的 0 被压缩到只有 2M 的大小。现在我们只要将这个 Gzip 文件<strong>以极快的速度发送到浏览器</strong>并且解压，浏览器就会未响应了。<br><br>&nbsp;<br><div id="crayon-519afed9abfd7" data-settings=" minimize scroll-mouseover"><br><br>&nbsp;<br><div><br><table><br><tbody><br><tr><br><td data-settings="show"></td><br><td><br><div><br><br>&lt;?php<br><br>header(“Content-Encoding: gzip”);<br><br>echo file_get_contents(“img.png.gz”);<br><br>?&gt;<br><br></div></td><br></tr><br></tbody><br></table><br></div><br></div><br>&nbsp;<br><br>仅仅是有压缩文件是不行的，我们还需要一个文件来告诉浏览器这个是一个压缩文件，你需要解压，一般主流的浏览器都是支持 Gzip 压缩的了，在上面的代码中，我们告诉浏览器这个是经过 Gzip 压缩的，然后加载并输出制作的压缩文件。在这里，主机输出的数据流只有压缩包的 2M，但是到了客户端浏览器，数据被解压之后就到达了 1.63G 的大小。<br><br>最后我们只需要用 img 标签在论坛或者是其他页面中插入这个页面就可以了，图片仍然是可以正常显示的，但是当数据全部加载完成，或者是数据加载超出 CPU 的负载之后，浏览器便出现了未响应的状态。<br><br>这个其实没有什么实际的用处，<em>*也请你不要去做不应该做的事情</em></em>，要构成浏览器未响应的要求首先就是文件传送的速度够快，如果你的主机要半天才能够加载这张图片，那么浏览器也要半天才能未响应了。<br><br><a href="http://1.theimgrongchang.duapp.com/" target="_blank" rel="external">点击此处进入测试页面
 </a><br><br></div>]]></content>
     <summary type="html">
@@ -2510,7 +2482,7 @@
     <link href="http://doubles.me/2013/05/22/646/"/>
     <id>http://doubles.me/2013/05/22/646/</id>
     <published>2013-05-22T14:06:52.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>哎，前面的文章已经出卖我是哪里的了，这里也就无所谓了。</p>
 <p>油猴脚本，实现的一键评教。</p>
 <p><a href="http://userscripts.org/scripts/review/168166" target="_blank" rel="external">http://userscripts.org/scripts/review/168166</a></p>
@@ -2566,7 +2538,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/05/12/643/"/>
     <id>http://doubles.me/2013/05/12/643/</id>
     <published>2013-05-12T18:41:37.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p><a href="https://github.com/openshift/openshift-diy-py27-django" target="_blank" rel="external">https://github.com/openshift/openshift-diy-py27-django</a></p>
 <p>按照这个方式可以部署python2.7</p>
 <p>Create a new OpenShift app:</p>
@@ -2618,7 +2590,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/05/11/642/"/>
     <id>http://doubles.me/2013/05/11/642/</id>
     <published>2013-05-11T13:35:25.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p><strong>i一、java @override 报错处理</strong></p>
 <p>有时候在自己电脑上编译通过的java代码，在别人那里却编译不通过，总是@override报错，把@override去掉就好了，但不能从根本上解决问题。</p>
 <div>据说这是jdk的问题，@Override是JDK5就已经有了，但有个小小的Bug，就是不支持对接口的实现，认为这不是Override 而JDK6修正了这个Bug，无论是对父类的方法覆盖还是对接口的实现都可以加上@Override。</div><br><div>首先要确保安装了jdk 1.6，</div><br><div></div><br><div>然后，在eclipse中修改配置，在 Windows-&gt;Preferences–&gt;java-&gt;Compiler–&gt;compiler compliance level 中选择 1.6，刷新工程，重新编译下；</div><br><div>如果还是不行，就在报错的工程上，鼠标右键选择 Properties–&gt;Java Compiler–&gt;compiler compliance level 中选择 1.6,刷新工程，重新编译下。</div><br><div></div><br><div><strong>二、Android之@Override详解</strong></div><br><div><br><br>Android的开发者对@Override肯定是非常熟悉，不管是自己的代码中还是书上都会出现，但是他是什么意思呢？如下：<br>@Override是伪代码,表示重写(当然不写也可以),不过写上有如下好处:<br>1、可以当注释用,方便阅读<br>2、编译器可以给你验证@Override下面的方法名是否是你父类中所有的,如果没有则报错比如你如果没写@Override而你下面的方法名又写错了,这时你的编译器是可以通过的(它以为这个方法是你的子类中自己增加的方法)<br>example:<br><br>在重写父类的onCreate时，在方法前面加上@Override系统可以帮你检查方法的正确性。例如：<br><br>publicvoidonCreate(BundlesavedInstanceState){…….}<br>这种写法是正确的，如果你写成<br>publicvoidoncreate(BundlesavedInstanceState){…….}<br>这样编译器会报如下错误——<br>Themethodoncreate(Bundle)oftypeHelloWorldmustoverrideorimplementasupertypemethod，<br>以确保你正确重写onCreate方法。（因为oncreate应该为onCreate）<br>而如果你不加@Override，则编译器将不会检测出错误，而是会认为你新定义了一个方法oncreate。<br><br></div>]]></content>
@@ -2639,7 +2611,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/05/11/641/"/>
     <id>http://doubles.me/2013/05/11/641/</id>
     <published>2013-05-11T13:30:47.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>之前把博客挂在sae上面- -不过速度还真是慢的可以- -</p>
 <p>最近发现openshift好像还不错，还支持ssh，所以决定弄过去</p>
 <p>折腾了一天弄openshift，ssh登陆功能比较强大</p>
@@ -2672,7 +2644,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/05/11/630/"/>
     <id>http://doubles.me/2013/05/11/630/</id>
     <published>2013-05-11T13:11:26.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>首先确定你的SDK是新的。</p>
 <p>其次接下来检查你的.xml文件，文件名不能大写。</p>
 <p>如果xml文件太多 ，那么clean一下你的项目，这时候注意看Console的提示。</p>
@@ -2698,7 +2670,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/05/11/628/"/>
     <id>http://doubles.me/2013/05/11/628/</id>
     <published>2013-05-11T13:03:43.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>ps -ef | grep -i mysqld       查看mysql是否启动，有显示就是启动了。</p>
 <p>然后重启一下mysql  <a href="https://www.openshift.com/forums/openshift/can-not-connect-to-mysql-in-application-node-0请看5楼" target="_blank" rel="external">https://www.openshift.com/forums/openshift/can-not-connect-to-mysql-in-application-node-0请看5楼</a></p>
 <p>&nbsp;</p>
@@ -2735,7 +2707,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/04/25/623/"/>
     <id>http://doubles.me/2013/04/25/623/</id>
     <published>2013-04-25T13:55:34.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>最早是wooyun上讨论的</p>
 <p><a href="http://zone.wooyun.org/content/3354" target="_blank" rel="external">http://zone.wooyun.org/content/3354</a></p>
 <p>&nbsp;</p>
@@ -2772,7 +2744,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/04/22/621/"/>
     <id>http://doubles.me/2013/04/22/621/</id>
     <published>2013-04-22T12:57:39.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>网上找了很多，php有一个函数imagegasscreen，可以实现，但是windows only。测试中也一直是黑屏的。</p>
 <p>后来找了其他的许多方式。</p>
 <div>几个第三方的 API：（收费）<br><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="http://url2png.com/" target="_blank" rel="external">http://url2png.com/</a>   </span><br><a href="http://blitline.com/docs/blitshot" target="_blank" rel="external">http://blitline.com/docs/blitshot</a><br><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="http://www.paulhammond.org/webkit2png/" target="_blank" rel="external">http://www.paulhammond.org/webkit2png/</a>     </span>本机小工具<br><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="https://urlbox.io/" target="_blank" rel="external">https://urlbox.io/</a></span></div><br><div><span style="color: #778087;"> </span></div><br><div><span style="color: #778087;"> </span></div><br><div><span style="color: #778087;">javascript实现，客户端呈现，但是我想要的是能截图并保存下来的</span></div><br><div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"><a href="http://html2canvas.hertzen.com/screenshots.html" target="_blank" rel="external">http://html2canvas.hertzen.com/screenshots.html</a></span></div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"> </span></div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;"> 最后找到了这个：</span></div><br><div><span style="color: #778087; font-family: 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti;">phantomjs，比较好</span></div><br><div><a href="https://github.com/ariya/phantomjs" target="_blank" rel="external">https://github.com/ariya/phantomjs</a></div><br><div></div><br><div> <a href="http://phantomjs.org/download.html下载bin文件过来，就可以直接使用，" target="_blank" rel="external">http://phantomjs.org/download.html下载bin文件过来，就可以直接使用，</a></div><br><div>examples目录下有js，执行bin文件就ok</div><br><div><br><pre></pre><br></div><br><div> 这里是 截屏的说明   <a href="https://github.com/ariya/phantomjs/wiki/Screen-Capture" target="_blank" rel="external">https://github.com/ariya/phantomjs/wiki/Screen-Capture</a></div><br><div>phantomjs rasterize.js <a href="http://raphaeljs.com/polar-clock.html" target="_blank" rel="external">http://raphaeljs.com/polar-clock.html</a> clock.png</div><br><div><br><pre>_<br>我连上ssh来试一下。<br><br>wget “phantomjs-1.9.0-linux-i686.tar.bz2”<br>tar -zvfj phantomjs-1.9.0-linux-i686.tar.bz2<br>cd phantomjs-1.9.0-linux-x86<em>64/bin<br><br>./phantomjs ../examples/rasterize.js <a href="http://raphaeljs.com/polar-clock.html" target="_blank" rel="external">http://raphaeljs.com/polar-clock.html</a> clock.png<br><br>然后看这里，<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130422235735.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130422235735.png" alt="QQ20130422235735"></a></em></pre><br></div><br><div></div><br></div>]]></content>
@@ -2791,7 +2763,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/04/21/619/"/>
     <id>http://doubles.me/2013/04/21/619/</id>
     <published>2013-04-21T13:04:33.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>使用这个软件，可以将gae应用到所有的软件设置上。<br><a href="http://www.proxycap.com/index.html" target="_blank" rel="external">http://www.proxycap.com/index.html</a><br>看下介绍。<br>ProxyCap enables you to redirect your computer’s network connections through proxy servers. You can tell ProxyCap which applications will connect to the Internet through a proxy and under what circumstances. This is done through a user friendly interface, without the need to reconfigure any of your Internet clients. ProxyCap has native support for the SSH protocol, allowing you to specify a SSH server as the proxy server.</p>
 <p>破解补丁</p>
 <p><a href="http://www.astray.cn/proxycap-crack-patch/" target="_blank" rel="external">http://www.astray.cn/proxycap-crack-patch/</a></p>
@@ -2809,7 +2781,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/04/17/614/"/>
     <id>http://doubles.me/2013/04/17/614/</id>
     <published>2013-04-17T02:37:05.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>以前看过11的，但是没找到xss，这下看到wooyun上的。我咋就是个傻逼呢。</p>
 <p><a href="http://wooyun.org/bugs/wooyun-2010-019305" target="_blank" rel="external">http://wooyun.org/bugs/wooyun-2010-019305</a>  私信处可以直接给写xss</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/28001940e7cd43a92347e1eccb596f69cd91898f.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/28001940e7cd43a92347e1eccb596f69cd91898f.jpg" alt="28001940e7cd43a92347e1eccb596f69cd91898f"></a></p>
@@ -2834,7 +2806,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/28/611/"/>
     <id>http://doubles.me/2013/03/28/611/</id>
     <published>2013-03-28T10:43:19.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>最近开始用evernote，发现还是不错的，就是广告和流量限制不怎么舒服。</p>
 <p>流量没办法，想办法去掉广告吧。</p>
 <p>广告似乎不是写xml的，然后就网上找找。 52pojie上看到了 分析的文章。</p>
@@ -2862,7 +2834,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/27/592/"/>
     <id>http://doubles.me/2013/03/27/592/</id>
     <published>2013-03-27T13:25:04.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>做一个应用，打算加上高校的一些美女作为数据。人人的api真心不好懂。来回跳的，还有限制。 索性就到这里来拉数据了。<a href="http://www.facejoking.com" target="_blank" rel="external">http://www.facejoking.com</a></p>
 <p>当初这个网站应该很出名的吧。 先用清华大学来看看。看看清华的美女吧。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316011950.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130316011950.png" alt="QQ20130316011950"></a></p>
 <p>选中后跳转到  <a href="http://www.facejoking.com/1001/0这个地址，前面翻看一下源码，没有任何数据，好吧，打开burp" target="_blank" rel="external">http://www.facejoking.com/1001/0这个地址，前面翻看一下源码，没有任何数据，好吧，打开burp</a> 抓个包看看。</p>
@@ -2904,7 +2876,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/27/608/"/>
     <id>http://doubles.me/2013/03/27/608/</id>
     <published>2013-03-27T12:21:36.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>cd /etc/apt/<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.lucid" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.lucid</a>             #Ubuntu 10.04<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.maverick" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.maverick</a>      #Ubuntu 10.10<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.natty" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.natty</a>             #Ubuntu 11.04<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.oneiric" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.oneiric</a>          #Ubuntu 11.10<br>sudo wget <a href="http://mirrors.163.com/.help/sources.list.precise" target="_blank" rel="external">http://mirrors.163.com/.help/sources.list.precise</a>         #Ubuntu 12.04<br>sudo rm -rf sources.list<br>sudo mv sources.list.xxxxx sources.list</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -2925,7 +2897,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/26/605/"/>
     <id>http://doubles.me/2013/03/26/605/</id>
     <published>2013-03-26T14:00:57.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>32位的镜像是2g多，一张光盘4.7g，所以我就打算把2个和一起来刻一张盘。</p>
 <p>网上的下的不放心。过程如下</p>
 <p>1.下载光盘镜像<br>下载官方原版msdn简体中文版光盘镜像：<br>cn_windows_7_ultimate_with_sp1_x86_dvd_618763.iso（32位）<br>cn_windows_7_ultimate_with_sp1_x64_dvd_618537.iso（64位）<br>2.提取install.wim<br>把镜像操作软件imagex解压到windows/system32；<br>用UltraISO软件分别打开32位和64位镜像，定位到sources目录下。<br>提取install.wim到x:\sources目录下：<br>32位 install.wim 重命名为 installx86.wim<br>64位 install.wim 重命名为 installx64.wim<br>3.合并install.wim<br>制作合并多版本的install.wim文件，打开命令提示符，运行以下命令：<br>imagex /export x:\sources\installx86.wim 1 x:\install.wim “Windows 7 X86 STARTER”<br>imagex /export x:\sources\installx86.wim 2 x:\install.wim “Windows 7 X86 HOMEBASIC”<br>imagex /export x:\sources\installx64.wim 1 x:\install.wim “Windows 7 X64 HOMEBASIC”<br>imagex /export x:\sources\installx86.wim 3 x:\install.wim “Windows 7 X86 HOMEPREMIUM”<br>imagex /export x:\sources\installx64.wim 2 x:\install.wim “Windows 7 X64 HOMEPREMIUM”<br>imagex /export x:\sources\installx86.wim 4 x:\install.wim “Windows 7 X86 PROFESSIONAL”<br>imagex /export x:\sources\installx64.wim 3 x:\install.wim “Windows 7 X64 PROFESSIONAL”<br>imagex /export x:\sources\installx86.wim 5 x:\install.wim “Windows 7 X86 ULTIMATE”<br>imagex /export x:\sources\installx64.wim 4 x:\install.wim “Windows 7 X64 ULTIMATE”<br>现在已将32位和64位的所有版本合并在一个install.wim镜像里了,共9个版本。<br>4.修改版本描述<br>修改各个不同版本的描述，运行以下命令:<br>imagex /info x:\install.wim 1 “Windows 7 X86 STARTER” “Windows 7 简易版”<br>imagex /info x:\install.wim 2 “Windows 7 X86 HOMEBASIC” “Windows 7 家庭基础版 32位”<br>imagex /info x:\install.wim 3 “Windows 7 X64 HOMEBASIC” “Windows 7 家庭基础版 64位”<br>imagex /info x:\install.wim 4 “Windows 7 X86 HOMEPREMIUM” “Windows 7 家庭高级版 32位”<br>imagex /info x:\install.wim 5 “Windows 7 X64 HOMEPREMIUM” “Windows 7 家庭高级版 64位”<br>imagex /info x:\install.wim 6 “Windows 7 X86 PROFESSIONAL” “Windows 7 专业版 32位”<br>imagex /info x:\install.wim 7 “Windows 7 X64 PROFESSIONAL” “Windows 7 专业版 64位”<br>imagex /info x:\install.wim 8 “Windows 7 X86 ULTIMATE” “Windows 7 旗舰版 32位”<br>imagex /info x:\install.wim 9 “Windows 7 X64 ULTIMATE” “Windows 7 旗舰版 64位”<br>5.重命名clg文件<br>提取clg文件，用UltraISO软件分别打开32位和64位镜像，定位到sources目录下，<br>复制clg文件到x:\sources目录下：<br>32位光盘镜像中的clg文件<br>install_Windows 7 Starter.clg 重命名为 install_Windows 7 Starter X86.clg<br>install_Windows 7 Homebasic.clg 重命名为 install_Windows 7 Homebasic X86.clg<br>install_Windows 7 Homepremium.clg 重命名为 install_Windows 7 Homepremium X86.clg<br>install_Windows 7 Professional.clg 重命名为 install_Windows 7 Professional x86.clg<br>install_Windows 7 Ultimate.clg 重命名为 install_Windows 7 Ultimate X86.clg<br>64位光盘镜像中的clg文件<br>install_Windows 7 Homebasic.clg 重命名为 install_Windows 7 Homebasic X64.clg<br>install_Windows 7 Homepremium.clg 重命名为 install_Windows 7 Homepremium X64.clg<br>install_Windows 7 Professional.clg 重命名为 install_Windows 7 Professional x64.clg<br>install_Windows 7 Ultimate.clg 重命名为 install_Windows 7 Ultimate X64.clg<br>6.替换install.wim和clg文件<br>用UltraISO软件打开32位光盘镜像，定位到sources目录下，<br>删除：<br>install.wim<br>添加（合并后的）：<br>install.wim<br>删除：<br>install_Windows 7 Homebasic.clg<br>install_Windows 7 Homepremium.clg<br>install_Windows 7 Professional.clg<br>install_Windows 7 Ultimate.clg<br>添加：<br>install_Windows 7 Starter X86.clg<br>install_Windows 7 Homebasic X86.clg<br>install_Windows 7 Homepremium X86.clg<br>install_Windows 7 Professional x86.clg<br>install_Windows 7 Ultimate X86.clg<br>install_Windows 7 Homebasic X64.clg<br>install_Windows 7 Homepremium X64.clg<br>install_Windows 7 Professional x64.clg<br>install_Windows 7 Ultimate X64.clg<br>删除:<br>ei.cfg<br>然后另存为新的镜像，即成为包含32位和64位共9个不同版本的光盘镜像，安装时可选择9种不同的版本。</p>
@@ -2947,7 +2919,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/19/600/"/>
     <id>http://doubles.me/2013/03/19/600/</id>
     <published>2013-03-19T13:44:44.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>给微信公众平台添加的一个小功能。实现查询天气。 百度得到3个地址接口，当然也可以用google，yahoo的，但是发现只有这一个是json的。所以我就用这个了。</p>
 <p><span style="font-family: Arial;"><a href="http://www.weather.com.cn/data/sk/101281601.html" target="_blank" rel="external">http://www.weather.com.cn/data/sk/101281601.html</a> </span></p>
 <p><span style="font-family: Arial;"><a href="http://www.weather.com.cn/data/cityinfo/101281601.html" target="_blank" rel="external">http://www.weather.com.cn/data/cityinfo/101281601.html</a> </span></p>
@@ -2989,7 +2961,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/12/577/"/>
     <id>http://doubles.me/2013/03/12/577/</id>
     <published>2013-03-12T13:44:42.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>&nbsp;</p>
 <h1 id="首先申明一下，此次纯属测试，没有任何不良用途。"><a href="#首先申明一下，此次纯属测试，没有任何不良用途。" class="headerlink" title="首先申明一下，此次纯属测试，没有任何不良用途。"></a><strong><span style="color: #ff0000;">首先申明一下，此次纯属测试，没有任何不良用途。</span></strong></h1><p>不知道为什么对采集很敢兴趣，先用火车头采集一点东西吧。</p>
 <p>主要是要写采集模块，但是前面写过phpcms和dedecms的采集规则，现在就比较简单了。</p>
@@ -3051,7 +3023,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/12/560/"/>
     <id>http://doubles.me/2013/03/12/560/</id>
     <published>2013-03-12T03:09:44.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<div><span style="color: #ff0000;">bae上搭建easyxss</span>【如果不是bae，sae上就不需要】</div><br><div>@<a href="http://zone.wooyun.org/user/%E6%98%B5%E7%A7%B0" target="_blank" rel="external">昵称</a> 目测bae和sae都是要使用重写功能<br>bae  修改 app.conf<br>格式：<br>- url : /member/(.+)$<br>script : member.php?mid=$1</div><br><div></div><br><div>sae修改 config.yaml<br>格式：<br>- rewrite: if( path ~ “^feed$” ) goto “feed.php”</div><br><div></div><br><div>测试发现，bae上搭建不了。应该要修改thinkphp，所以使用phpcloud来搭建。</div><br><div></div><br><div></div><br><div><span style="color: #ff0000;"> App/Conf/config.php 配置文件</span></div><br><div></div><br><div>&lt;?php<br>return array(<br>‘DEFAULT_MODULE’     =&gt; ‘User’,<br>‘URL_MODEL’          =&gt; ‘0’, //这里改成0，原来是2，具体设置请参考THINKPHP配置说说明<br>‘SESSION_AUTO_START’ =&gt; true,<br>‘DB_DSN’ =&gt; ‘mysql://root:toor@127.0.0.1:3306/xss’, //数据库链接信息，用户名@密码，最后的是数据库名<br>‘DB<em>PREFIX’ =&gt; ‘xss</em>‘,<br>‘MAIL_ADDRESS’=&gt;’info@xss.tw’,<br>‘MAIL_SMTP’=&gt;’smtp.gmail.com’,<br>‘MAIL_LOGINNAME’=&gt;’info@xss.tw’,<br>‘MAIL_PASSWORD’=&gt;’’,<br>‘MAIL_SENDER’=&gt;’info’,<br>‘MAIL_PORT’=&gt;’465’,<br>‘TMPL_PARSE_STRING’ =&gt;array(<br>‘<strong>SITENAME</strong>‘ =&gt;’EasyXSS 1.0’,<br>‘<strong>SITETITLE</strong>‘=&gt;’EasyXSS’,<br>),<br>);<br>?&gt;</div><br><div></div><br><div><span style="color: #ff0000;">wwwroot目录是web根目录，wwwroot/index.php定义了framework与application的路径，你改了就要跟着改。</span></div><br><div></div><br><div>&lt;?php<br>define(‘APP_NAME’, ‘./XSS’);<br>define(‘APP_PATH’, ‘./../App/‘); //App那个文件夹的路径，改掉了就跟着改<br>define(‘APP_DEBUG’, true); //debug开关require ‘./../ThinkPHP/ThinkPHP.php’; //thinkphp framework 的路径?&gt;</div><br><div></div><br><div>data.sql导入数据库，这里不说了。</div><br><div></div><br><div></div><br><div>有一个邀请码：1234567890<br>请注册名字为：root的用户，才能生成邀请码</div><br><div></div><br><div>注册一个用户名为root的用户，</div><br><div>邀请码生成URL：/Key/createKey/count/1/type/1<br>count为数量，type为类型:0为自助申请，1为手动发放的邀请码，不被自助申请获得到</div><br><div><img src="file:///C:/Users/Daddy/AppData/Local/Temp/enhtmlclip/Image.png" alt=""></div><br><div>界面模仿xsser.me,PHP代码没参考任何其他平台，所以写得很烂。现在的新版本基本上重写，主要方面是用户权限控制，使用类的继承，方便多了。keepsession： 定期访问 /Xssresult/Keepsession 即可，或者定期执行Keepsession文件夹下的php脚本。</div><br><div></div><br><div><br><br>phpcloud申请账号，然后创建一个app。<br><br>然后会得到一个key，.ppt的这时候用winscp连上去。<br><br>，地址如下，很多都是你设置的容器的名字。<br><br>如下图<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" alt="3"></a><br><br>&nbsp;<br><br>然后将这个我修改好的easyxss平台代码丢上去，修改所有目录属性为777。不然会提示run error，因为没有写入权限。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" alt="4"></a><br><br>&nbsp;<br><br>然后修改conf文件，最好用notepad++修改好了再覆盖上去。不然会有其他的错误<br><br>Assuming your container name is <code>**_mycontainer_**</code>, you should use the following credentials to connect to your database:<br><br><em>   <strong>Database host:</strong><em>mycontainer</em>-db.my.phpcloud.com
 </em>   <strong>Database port:</strong> 3306<br><em>   <strong>Database schema name:</strong><em>mycontainer</em>
 </em>   <strong>Database user:</strong><em>mycontainer</em><br><em>   <em>*Database password:</em></em> your container password导入mysql数据库，可以使用phpadmin或者ssh的方式<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" alt="5"></a><br>我导入的是去掉iptables的，因为他这个ip表有20多m，不好上传。等我回寝室再导入把。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>然后进入dnspod，把域名绑定以下。<br><br>&nbsp;<br><br>将域名cname到 <em>mycontainer</em>.my.phpcloud.com，就是你可以直接访问的地址。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" alt="6"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>现在就可以通过绑定的域名进行访问了。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" alt="2(1)"></a><br><br>&nbsp;<br><br>然后要注意的是phpcloud必须要每天登入一次来激活，这个可以使用我们的监控宝来完成<br><br></div><br><div><br><br>到此我们就完成平台搭建的所有工作，然后可以使用url缩短服务，尽情的xss去吧。<br><br></div><br><div></div>]]></content>
@@ -3076,7 +3048,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/10/542/"/>
     <id>http://doubles.me/2013/03/10/542/</id>
     <published>2013-03-10T00:36:01.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>今天总算把4级的查询移到微信平台上去了。以前感觉很神器，原来也就是分词，然后返回一个数据。</p>
 <p>系统内置了一些功能，不过我们是要查询cet4，6级 还是要自定义返回数据格式才好。</p>
 <p>先去注册一个公众帐号，这个公众平台和开放平台是不一样的</p>
@@ -3117,7 +3089,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/02/536/"/>
     <id>http://doubles.me/2013/03/02/536/</id>
     <published>2013-03-02T11:43:09.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>想采集1024的，他地址是用脚本生成的，不会改。</p>
 <p>后面就随便找了一个站，来试试。</p>
 <p>火车头一直采不到内容，但是同样的规则我用phpcms就可以采集到</p>
@@ -3145,7 +3117,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/02/529/"/>
     <id>http://doubles.me/2013/03/02/529/</id>
     <published>2013-03-02T11:36:18.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>后面他写了一个通过学号查询成绩的，然后我们打算完善一下这个，最好可以显示班级，之后被路人甲告知有一个地方能查到学生的学号和班级，于是乎。。</p>
 <p>这个真心佩服，首先进入学生通道旁边的教师通道。然后查询课程。这里可以查询所有的开放课程，没验证，然后查询 品行修养这每个班都有的课程就可以得到所有的班级列表，然后遍历所有连接，就可以得到所有班级的学生信息。</p>
 <p>一共321个班级 大概有1w5的学生。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302203519.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302203519-430x193.png" alt="QQ20130302203519"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302203554.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/QQ20130302203554.png" alt="QQ20130302203554"></a></p>
@@ -3169,7 +3141,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/01/525/"/>
     <id>http://doubles.me/2013/03/01/525/</id>
     <published>2013-03-01T14:58:29.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>今天4级成绩出来了，考了3趟啊，总算过了。</p>
 <p>话说第一次考424然后426过的没几个人吧。暗爽</p>
 <p>一个同学问我js好不，一问才知道他想批量拉取cet4，6级成绩。</p>
@@ -3243,7 +3215,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/03/01/517/"/>
     <id>http://doubles.me/2013/03/01/517/</id>
     <published>2013-03-01T11:35:31.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>使用的是it客栈基于8090st制作的模仿ipc.me主题模板。</p>
 <p>是不是感觉很绕，现在很清新的感觉，不过我还是不喜欢这种色调，看ipc的就感觉不错。</p>
 <p>这个的色调不杂对头。</p>
@@ -3271,7 +3243,7 @@ $("textarea[name='coursememo']").val("不是很想在这个时候上，应该早
     <link href="http://doubles.me/2013/02/24/390/"/>
     <id>http://doubles.me/2013/02/24/390/</id>
     <published>2013-02-24T07:16:56.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>通过本文你将了解黑客常用的入手思路和技术手法，适合热爱网络信息安全的新手朋友了解学习。本文将从最开始的信息收集开始讲述黑客是如何一步步的攻破你的网站和服务器的.阅读本文你会学到以下内容：</p>
 <p>1.渗透测试前的简单信息收集。</p>
 <p>2.sqlmap的使用</p>
@@ -3529,7 +3501,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/02/16/386/"/>
     <id>http://doubles.me/2013/02/16/386/</id>
     <published>2013-02-15T22:37:24.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p><a href="http://xsst.sinaapp.com/example/1-1.php" target="_blank" rel="external">http://xsst.sinaapp.com/example/1-1.php</a></p>
 <p>简单，自己也搞定</p>
 <p><a href="http://xsst.sinaapp.com/example/1-1.php?page=%3Cimg%20src=%22http://www.baidu.com/img/baidu_sylogo1.gif%22%3E" target="_blank" rel="external">http://xsst.sinapp.com/example/1-1.php?page=&lt;img src=”http://www.baidu.com/img/baidu_sylogo1.gif”&gt;</a></p>
@@ -3584,7 +3556,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/02/09/378/"/>
     <id>http://doubles.me/2013/02/09/378/</id>
     <published>2013-02-09T19:55:58.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h3 id="无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。"><a href="#无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。" class="headerlink" title="无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。"></a>无缘无故白屏了，也不知道怎么解决，然后就只能重新安装一下。数据库和附件也给整理了一下，比较麻烦的说。这里是网上找到的一篇文章，mark吧。</h3><h3 id="步骤1：备份数据库"><a href="#步骤1：备份数据库" class="headerlink" title="步骤1：备份数据库"></a><strong>步骤1：备份数据库</strong></h3><div><br><br>登陆到phpMyAdmin，到mysql后台，选择wordpress数据所在的数据库，点击“导出”或是英文的”Export”把数据库数据备份到你本地。建议选择导出格式为SQL。如果数据量较大，建议在导出页面下方选择.zip或.gzip压缩格式，这样文件会小一些。<br><br><strong>步骤2：备份wordpress网站所有文件</strong><br>用FTP或你的空间商提供的方式吧所有wordpress的文件备份到你本地。建议压缩后再FTP到本地，这样速度快，也不会出现文件传输过程中发生的某些传输错误造成文件不完整。<br><br><strong>步骤3：恢复数据库到你的新空间</strong><br>登陆到你的新空间的phpMyAdmin，到mysql后台，点击“导入”或是英文的“Import”把数据库恢复到你的新空间，即导入步骤1备份的文件。<br><br><strong>步骤4：恢复网站文件到你的新空间</strong><br>用FTP或你的空间商提供的方式把所有的网站文件上传的你的新空间。即导入步骤2备份的文件。<br><br><strong>步骤5：更改配置文件wp-config.php</strong><br>wp-config.php位于根目录，你至少需要修改如下项目：（这些项目买空间是，空间商会给你）<br><br><em>   <a href="http://totem.co/tag/wordpress-2" title="查看 WordPress 中的全部文章" target="_blank" rel="external">WordPress</a> 数据库的名称
 </em>   MySQL 数据库用户名<br><em>   MySQL 数据库密码
 </em>   MySQL 主机 — 这项通常是 ‘localhost’<br><span style="color: #ff0000;">如果白屏的话，删除config这个文件，然后再来安装一遍，让它自动生成。主题插件也移除掉。</span><br><strong>步骤6：注意检查文件.htaccess</strong><br>（如果你的网站路径与迁移前的一模一样，这一步可以省略）这一步一定要注意，RewriteBase及RewriteRule这两项一定要设置正确。我的网站根路径于原先的不同，这里又没设置正确才发生500错误。<br><br><strong>步骤7：后台数据库修改siteurl及home项</strong><br>（如果你的网站路径及URL与迁移前的一模一样，这一步可以省略），登陆到你的新空间的phpMyAdmin，在后台数据库里修改你的siteurl，找到表wp_options，作如下修改：<br><br><em>   找到option_id字段值为1，option_name字段值为siteurl的记录，修改option_value字段值，比如原先你的值为<a href="http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。" target="_blank" rel="external">http://www.wnshare.com/blog，当前已经变为http://www.wnshare.com，把这个值改为http://www.wnshare.com。</a>
@@ -3602,7 +3574,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/02/08/376/"/>
     <id>http://doubles.me/2013/02/08/376/</id>
     <published>2013-02-08T20:21:33.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>常见的一些编辑器:ewebeditor ewebeditornet fckeditoreditor southidceditor SouthidcEditor bigcneditor</p>
 <p>其实如果大家多关注编辑器的话,会有惊人的发现,尤其是jsp,php版的,一个webshell基本上就是一台服务器啊~~~</p>
 <p>一:首先说说最近不断爆洞的ewebeditor</p>
@@ -3782,7 +3754,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/02/07/370/"/>
     <id>http://doubles.me/2013/02/07/370/</id>
     <published>2013-02-07T11:07:38.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>各大Web服务器解析漏洞总结<br>From:90sec</p>
 <p>[+]IIS 6.0</p>
 <p>&nbsp;</p>
@@ -3821,7 +3793,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/02/05/364/"/>
     <id>http://doubles.me/2013/02/05/364/</id>
     <published>2013-02-05T13:49:41.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>现在wp站点满地都是, 虽然都是个人博客, 但可利用的地方就很多了, 而且最主要的是, 进了wp后台就相当于得到了webshell!!<br>1) 很多大站的站长都会有个个人博客, 在通过数据库查到其密码后而目标站的密码已更改, 各种组合失败, 这时尝试一下个人博客, 有很大的几率是没有更改密码的.</p>
 <p>2) 国内外极大部分的大牛们的博客都是wordpress架设的, 而且搞下大牛们的wp站也是装B的好方法. xD</p>
 <p>3) wp站是旁注的入手点!!</p>
@@ -3892,7 +3864,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/02/01/352/"/>
     <id>http://doubles.me/2013/02/01/352/</id>
     <published>2013-02-01T16:23:23.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>由于在做一个html5的游戏，需要用到node.js,可能自己会写完，但是更大的可能是懒的写了。</p>
 <p>先搞一个如何绑定域名的。</p>
 <p>openshift要使用自己的rhc client来管理，安装方式可以参考这里：</p>
@@ -3936,7 +3908,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/01/15/342/"/>
     <id>http://doubles.me/2013/01/15/342/</id>
     <published>2013-01-15T16:07:27.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>学校的安全还是完全靠请的公司啊。</p>
 <p>每台电脑划分一个vlan，cain挂了。</p>
 <p>但是俄们是用友的娃，每台电脑上都装u8.这sql的安装。。</p>
@@ -3967,7 +3939,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/01/15/331/"/>
     <id>http://doubles.me/2013/01/15/331/</id>
     <published>2013-01-15T11:30:12.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>学校一片的这个，一般是扫mysql弱口令，然后进后台，可是后台不知道怎么拿shell。</p>
 <p>通用的方法就是利用JBOSS漏洞进入。</p>
 <p><a href="http://dlinux.sinaapp.com/2013/01/15/hackjboss%e8%82%b2%e8%bd%af%e7%94%b5%e5%ad%90%e6%94%bf%e5%8a%a1%e5%b9%b3%e5%8f%b0/%e5%9b%be%e7%89%871/" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/01/1.png" alt="图片1"></a></p>
@@ -4012,7 +3984,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/01/15/328/"/>
     <id>http://doubles.me/2013/01/15/328/</id>
     <published>2013-01-15T10:56:21.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>今天抓了个hash，就去网上找了找彩虹表。以前都是看120g，60g，1.5t不敢下。现在发现怎么也要准备一个了，把片片删掉，来放裤裤和这个吧。</p>
 <p># </p>
 <h1 id="免费彩虹表破解工具汇总-收费彩虹表下载（种子）-LM和NTLM小科普"><a href="#免费彩虹表破解工具汇总-收费彩虹表下载（种子）-LM和NTLM小科普" class="headerlink" title="免费彩虹表破解工具汇总+收费彩虹表下载（种子）+LM和NTLM小科普"></a>免费彩虹表破解工具汇总+收费彩虹表下载（种子）+LM和NTLM小科普</h1><div><br><div id="blog_text"><br><br>&nbsp;<br><br>常见的三种<a href="http://hi.baidu.com/hcocoa/blog/item/c03eefda3f11176fd1164e88.html" target="_blank" rel="external">彩虹表</a>工具：<br><br><strong>1.ophcrack（</strong><a href="http://ophcrack.sourceforge.net/" target="_blank" rel="external"><strong>http://ophcrack.sourceforge.net/</strong></a><strong>）</strong><br><br>&nbsp;<br><div><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2013/01/125624KyI.jpg" alt="免费彩虹表破解工具汇总+收费彩虹表下载（种子）+LM和NTLM小科普 - Wei - 海上升明月 天涯共此时"></div><br>我最常用的 界面友好 与众不同 压缩储存 有自己独特的<a href="http://hi.baidu.com/hcocoa/blog/item/c03eefda3f11176fd1164e88.html" target="_blank" rel="external">彩虹表</a>结构 还有Live CD……支持的HASH类型：LM，NTLM<br><br>扩展名：乱七八糟的……<br><br>高级的表要花钱买，<a href="http://hi.baidu.com/hcocoa/blog/item/c03eefda3f11176fd1164e88.html" target="_blank" rel="external">免费的表</a>有（推荐只下2和5，要求高的可以下载3和5）：<br><br><span style="color: #008000;">我下了<a href="http://downloads.sourceforge.net/ophcrack/tables_xp_free_fast.zip" target="_blank" rel="external"><span style="color: #008000;">XP free fast (703MB)</span></a>，<a href="http://downloads.sourceforge.net/ophcrack/tables_vista_free.zip" target="_blank" rel="external"><span style="color: #008000;">Vista free (461MB)</span></a>。空间不怎么够啊。</span><br><br>1.XP free（LM表：包含大小写+数字）380MB（<a href="http://downloads.sourceforge.net/ophcrack/tables_xp_free_small.zip" target="_blank" rel="external">官网</a><a href="http://downloads.sourceforge.net/ophcrack/tables_xp_free_small.zip" target="_blank" rel="external">免费下载</a>）<br>2.XP free fast（和前一个一样，但是速度更快）703MB（<a href="http://downloads.sourceforge.net/ophcrack/tables_xp_free_fast.zip" target="_blank" rel="external">官网</a><a href="http://downloads.sourceforge.net/ophcrack/tables_xp_free_fast.zip" target="_blank" rel="external">免费下载</a>）<br>3.XP special（LM表：大小写+数字+所有符号包括空格）7.5G（<a href="http://www.hexsafe.com/download/Ophcrack%20XP%20Special%20Tables.torrent" target="_blank" rel="external">种子下载</a>）<br>4.Vista free （NTLM表：包含常用密码）461MB（<a href="http://downloads.sourceforge.net/ophcrack/tables_vista_free.zip" target="_blank" rel="external">官网</a><a href="http://downloads.sourceforge.net/ophcrack/tables_vista_free.zip" target="_blank" rel="external">免费下载</a>）<br>5.Vista special（NTLM表：包含6位的全部可打印字符，7位的大小写字母数字，8位的小写和数字）8G（<a href="http://www.hexsafe.com/download/Ophcrack%20Vista%20Special%20NTHASH%20Table.torrent" target="_blank" rel="external">种子下载</a>）<br><br><strong>2.RainbowCrack（</strong><a href="http://project-rainbowcrack.com/" target="_blank" rel="external"><strong>http://project-rainbowcrack.com/</strong></a><strong>）</strong><br><br>通用的 一般的<a href="http://hi.baidu.com/hcocoa/blog/item/c03eefda3f11176fd1164e88.html" target="_blank" rel="external">破解软件</a>如saminside都支持 命令行界面 黑客的最爱 居家旅行杀人放火之必备 支持CUDA<br><br>可以自己生成表 不要钱 传说中的120G就来自于此……<br><br>支持HASH类型：LM, NTLM, MD5, SHA1, MYSQLSHA1, HALFLMCHALL, NTLMCHALL.<br><br>扩展名：rt<br><br>120G的种子：<a href="http://simeon.blog.51cto.com/attachment/200811/18680_1225698125.rar" target="_blank" rel="external">点我下载</a><br><br><strong>3.Free Rainbow Tables（</strong><a href="http://www.freerainbowtables.com/" target="_blank" rel="external"><strong>http://www.freerainbowtables.com/</strong></a><strong>）</strong><br><br>比较新的 用的索引和压缩 所以速度更快 体积更小 而且支持分布式破解<br><br>支持HASH类型：LM，MD5，NTLM，SHA1，HALFLMCHALL<br><br>网上有已经生成好的表可供下载 真是造福于民<br><br>扩展名：rti<br><br>======================================================================<br><br><strong>继续科普：什么是LM和NTLM呢</strong><br><br>1.话说在远古时期 DES当道 我们的微软公司在考虑9X系统口令加密的时候就自然地采用了国家标准 DES一次加密8字节 微软公司留一位校检 还剩7字节（这句话有错，先说声抱歉，<a href="http://hi.baidu.com/hcocoa/blog/item/320554036ad617064afb511d.html" target="_blank" rel="external">这篇文章</a>有解释） 也就是LM（Lan Manage）的核心<br><br>2.那有的小朋友要问了 万一我的口令是8位怎么办呢 不用怕 微软公司的程序员很“聪明” ：先把前7位加密 后一位补6个0 再当7位一起加密不就可以了吗 结果就真的这么做了……<br><br>3.这就导致破解LM密码只需7位一分割 然后再逐块破解 这大大减少了破解的难度 因为最后一块往往不够七位 一般瞬间即可出结果 也就是 7位和13位的密码 在黑客眼里 几乎是一样的 因为13位的后6位很快就能破解出来 而且可以根据后6位猜测出前7位的密码 这就是为什么我们破XP和2003密码很快的原因 因为他们都使用了LM加密方式<br><br>4.由于LM的种种不安全性 微软在设计NT系列操作系统是时采用的新的口令存储手段 即NTLM技术（New Technology Lan Manage） 采用MD4+RSA存储 立马安全性要高很多 但是为了保证兼容性 直到2003 微软仍然保持着LM的加密方式 也就是在2K 2K3 和XP中 我们的口令同时保存了两份 一份LM 一份NTLM 我们仍然可以通过LM破解2003的口令<br><br>5.在Vista和2008中 微软终于下定决心对LM斩草除根 只留下NTLM 破解难度陡增<br><br>6.话题回到彩虹表 由于LM最多只有7位 所以它的彩虹表很小 而NTLM用了散列函数 所以理论上口令可以是无限长的 所以NTLM的<a href="http://hi.baidu.com/hcocoa/blog/item/c03eefda3f11176fd1164e88.html" target="_blank" rel="external">彩虹表</a>往往很大 120G肯定是不够完成所有可打印字符的 具体多大偶现在不明……<br><br>7.今天的科普到此结束，感谢你有耐心看到这里～<br><br>明天有机会继续科普<a href="http://hi.baidu.com/hcocoa/blog/item/c03eefda3f11176fd1164e88.html" target="_blank" rel="external">彩虹表</a>～<br><br></div><br></div>]]></content>
@@ -4033,7 +4005,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/01/13/320/"/>
     <id>http://doubles.me/2013/01/13/320/</id>
     <published>2013-01-13T14:33:38.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://dlinux.sinaapp.com/2013/01/13/hack%e7%bd%91%e6%98%93%e9%82%ae%e7%ae%b1%e6%9c%aa%e8%af%bb%e9%82%ae%e4%bb%b6%e7%bd%ae%e9%a1%b6/qq%e6%88%aa%e5%9b%be20130114003048/" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/01/QQ20130114003048.png" alt="QQ20130114003048"></a>将发送时间修改到一个很远的时间，然后这封邮件无论如何都会显示在今天收信列表中。垃圾邮件可以好好干哦。</p>
 ]]></content>
     <summary type="html">
@@ -4051,7 +4023,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/01/09/315/"/>
     <id>http://doubles.me/2013/01/09/315/</id>
     <published>2013-01-09T11:47:50.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>有个妹子居然给我个老师的邮箱，要我破解密码。</p>
 <p>不就是要偷卷子嘛。好吧，其实我自己都没搞定。</p>
 <p>羞辱啊。耻辱啊。寒假一定要苦练技术。</p>
@@ -4072,7 +4044,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2013/01/06/311/"/>
     <id>http://doubles.me/2013/01/06/311/</id>
     <published>2013-01-06T07:32:30.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>总结出来的编译过程就是这样：</p>
 <p>1 下载解压内核源码，之后解压到自己的目录。</p>
 <p>2 折腾一下系统，让它将合适的 module 都加载上。</p>
@@ -4109,7 +4081,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/31/296/"/>
     <id>http://doubles.me/2012/12/31/296/</id>
     <published>2012-12-31T15:03:58.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>建站的朋友都知道，<strong>PhpMyAdmin</strong>是最常用的 MySQL 数据库恢复工具，这是一个开源、免费的工具，大多数主机商都会免费提供 。相信很多WordPress站长也用过PhpMyAdmin 来进行网站数据库的备份和恢复，确实很方便，并且有多国语言界面。不过，有一种情况可能你还没碰到，就是当你的数据库体积比较大时，例如 SQL 备份文件大于 2MB，甚至大于 10MB，这个时候如果你通过 PhpMyAdmin 来导入mysql数据库，就会出错，显示如下的提示：</p>
 <p><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/170359NvK.png" alt="使用BigDump导入2M以上超大MySQL数据库文件" title="使用BigDump导入2M以上超大MySQL数据库文件 | 倡萌的自留地 cmhello.com"></p>
 <p>这是因为你的 SQL 文件体积太大，超过了 PhpMyAdmin 的处理能力，这种情况在网络速度比较慢的情况下尤为突出，例如站长在周末晚上8点这个网络拥挤的时段尝试使用 PhpMyAdmin 来恢复大型 MySQL 数据库备份，就容易遇到这种问题。</p>
@@ -4183,7 +4155,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/15/267/"/>
     <id>http://doubles.me/2012/12/15/267/</id>
     <published>2012-12-15T04:05:27.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>看到struts2出来了，爆了好多大站，手痒，也来搞了一搞。</p>
 <p>一个10086的站点就下来了。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/20121214131828.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/12/20121214131828.png" alt="" title="20121214131828"></a></p>
@@ -4206,7 +4178,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/11/246/"/>
     <id>http://doubles.me/2012/12/11/246/</id>
     <published>2012-12-11T13:41:54.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><a id="the_cap_and_hccap" name="the_cap_and_hccap"></a></h2><p>这个网站里面有4个文件：这里下载<a href="http://hashcat.net" target="_blank" rel="external">http://hashcat.net</a></p>
 <p>hashcat-0.41.7z<br>hashcat-gui-0.5.1.7z<br>oclHashcat-lite-0.10.7z<br>oclHashcat-plus-0.09.7z</p>
 <p>注意一下，里面hashcat是主项目，hashcat-gui是增加了一个界面，oclhashcat-plus可以破解wpa2，lite自然是精简版啦。</p>
@@ -4264,7 +4236,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/11/242/"/>
     <id>http://doubles.me/2012/12/11/242/</id>
     <published>2012-12-11T11:29:07.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>蹭网的朋友经常会有抓到比较大的握手包吧。比如我就抓到一个136m。这里面大量都是无效数据，我们可以将其中认证部分提取出来。使用wireshark就可以了。下面是来自gpuhash上的说明。</p>
 <p>&nbsp;</p>
 <p><strong>Q: What do I do if my capture file is greater than 1MB?</strong></p>
@@ -4307,7 +4279,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/11/234/"/>
     <id>http://doubles.me/2012/12/11/234/</id>
     <published>2012-12-11T03:08:56.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>bae虽然提供了phpmyadmin，可是5m的限制能干什么？</p>
 <p>还好后台能够提交一个任务，导入数据库。</p>
 <p>首先把数据库上传到一个空间里，http能下载的形式才行。没有的话别急，可以直接使用百度网盘的。</p>
@@ -4341,7 +4313,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/10/227/"/>
     <id>http://doubles.me/2012/12/10/227/</id>
     <published>2012-12-10T05:46:47.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>脱裤门就不说什么了，但是好的数据库可不能就这么放着，我们完全可以构建一个社工库，或者用来制作一个比较牛逼的字典了。这里就使用mysql来制作一个字典好了。</p>
 <p>首先要有mysql环境，我使用的是apmserv，百度一下就好嘞。一键搭建win下的，进入mysql5.1，bin然后新建一个shell.bat 里面输入cmd，保存后运行就开始了。</p>
 <p>连接mysql</p>
@@ -4426,7 +4398,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/10/215/"/>
     <id>http://doubles.me/2012/12/10/215/</id>
     <published>2012-12-10T05:07:01.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>&nbsp;</p>
 <p>昨天的迷你云xss可以说是没什么用处，今天发现迷你云确实很不错，至少不用担心数据会别人窃取。</p>
 <p>今天就做了一个搭建迷你云的教程。</p>
@@ -4465,7 +4437,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/09/209/"/>
     <id>http://doubles.me/2012/12/09/209/</id>
     <published>2012-12-09T14:03:02.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>迷你云是一套软件，不是在线存储服务，迷你云助您快速搭建私有Dropbox(宇宙最受欢迎的同步网盘)。</p>
 <p><a href="http://www.miniyun.cn/" target="_blank" rel="external">http://www.miniyun.cn/</a></p>
 <p>当然看到这个是因为他那个说南昌话介绍产品的妹纸，坑爹啊，好好的妹纸就这样切了货啊。</p>
@@ -4489,7 +4461,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/09/202/"/>
     <id>http://doubles.me/2012/12/09/202/</id>
     <published>2012-12-09T13:58:19.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>很多东西可以通过邀请好友来获得额外的奖励。</p>
 <p>比如我使用的这个快盘，可以通过邀请好友获取额外的空间。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/235821Zy7.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/2012/12/235821Zy7.png" alt="" title="QQ20121206214543"></a></p>
@@ -4519,7 +4491,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/09/197/"/>
     <id>http://doubles.me/2012/12/09/197/</id>
     <published>2012-12-09T13:55:39.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>今天上软件测试实在无聊，就顺手想把保护卡和监控给弄下来。</p>
 <p>这里先说保护卡吧。 保护卡是噢易的，比较繁琐，测试了一会都没什么用。</p>
 <p>开机f3找到一个用户密码：sys 697 856 767 669 738 739 767 848 不知道是加密的，打了好几遍都不行。</p>
@@ -4730,7 +4702,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/12/09/195/"/>
     <id>http://doubles.me/2012/12/09/195/</id>
     <published>2012-12-09T13:54:40.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>机房里看到这个，一般都是分teacher和student端的，teacher端控制student，不过很少设置密码的。</p>
 <p>无非就是把本机的student卸载掉，然后安装teacher端就可以实现反监控。</p>
 <p>查看一下是凌波6.6.0.0的，下载同版本的破解版，先卸载掉再安装上teacher端，ko。</p>
@@ -4755,7 +4727,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/11/26/190/"/>
     <id>http://doubles.me/2012/11/26/190/</id>
     <published>2012-11-26T08:31:47.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>熬夜弄的有信漏洞，注册来啦。哄哄，大家别笑啊。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121126183029.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121126183029.png" alt="" title="QQ20121126183029"></a></p>
 <p>&nbsp;</p>
 ]]></content>
@@ -4772,7 +4744,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/11/25/185/"/>
     <id>http://doubles.me/2012/11/25/185/</id>
     <published>2012-11-25T08:40:52.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>最早的14号，最晚的25号。如果算上那个换的话，今天才发过去。还一张。</p>
 <p>发北京真贵啊，21块。你妹的，发过来才8块。<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173804.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173804-225x300.jpg" alt="" title="IMG_20121125_173804"></a></p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173743.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173743-225x300.jpg" alt="" title="IMG_20121125_173743"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173752.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/IMG_20121125_173752-225x300.jpg" alt="" title="IMG_20121125_173752"></a></p>
@@ -4791,7 +4763,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/11/25/173/"/>
     <id>http://doubles.me/2012/11/25/173/</id>
     <published>2012-11-25T08:27:22.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>确切的说，这是我这辈子第一次网上中到一个实物的奖品。</p>
 <p>泪牛满面啊。 10月30号买了个域名，还是info的，4块钱，godaddy解析不上，转dnspod了。然后11月说可以每天抽奖。</p>
 <p>乖乖，抽了个笔记本，还不要钱给送过来。虽然想要那个抱枕，但是很开心。支持dnspod啊。听说dnspod送老婆，是不是真得的。</p>
@@ -4813,7 +4785,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/11/24/162/"/>
     <id>http://doubles.me/2012/11/24/162/</id>
     <published>2012-11-24T16:25:20.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>12点起来找漏洞伤不起啊。</p>
 <p>【1.暴力破解帐号】</p>
 <p>刚刚乌云看到那个微微网络电话的漏洞，就想到我用的有信，就爬起来看看。<br>有信<a href="http://www.uxin001.com" target="_blank" rel="external">http://www.uxin001.com</a><br>有信Android端默认依据手机号自动登入，默认生成一个6位数字密码，验证码不会刷新，so。<br>用户可自定义密码，或修改密码，但漏洞依然存在。</p>
@@ -4842,7 +4814,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/11/23/160/"/>
     <id>http://doubles.me/2012/11/23/160/</id>
     <published>2012-11-23T13:26:52.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p><strong>Ad Network Detector</strong> (1.2): <a href="http://market.android.com/details?id=com.lookout.addetector" target="_blank" rel="external">http://market.android.com/details?id=com.lookout.addetector</a></p>
 <p><strong>App Backup &amp; Restore</strong> (1.0.5): <a href="http://market.android.com/details?id=mobi.infolife.appbackup" target="_blank" rel="external">http://market.android.com/details?id=mobi.infolife.appbackup</a></p>
 <p><strong>App Cache Cleaner</strong> (1.1.3): <a href="http://market.android.com/details?id=mobi.infolife.cache" target="_blank" rel="external">http://market.android.com/details?id=mobi.infolife.cache</a></p>
@@ -5002,7 +4974,7 @@ Page Views per Visit: ![](http://7xnueu.com1.z0.glb.clouddn.com/auto_save_image/
     <link href="http://doubles.me/2012/11/20/147/"/>
     <id>http://doubles.me/2012/11/20/147/</id>
     <published>2012-11-20T08:19:39.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>以前在哪里看到过一个统计全学校男女比例的表格，我就想把他做成统计图，然后再统计下星座什么的。</p>
 <p>3月和9月的女生和我不合呐。</p>
 <p>这次使用了Highcharts这一开源图表库。他额好处就是纯脚本，哪里都能放。</p>
@@ -5148,7 +5120,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/19/130/"/>
     <id>http://doubles.me/2012/11/19/130/</id>
     <published>2012-11-19T07:12:22.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>游戏是来自这里的，</p>
 <p><a href="http://monyer.com/game/game1/" target="_blank" rel="external">http://monyer.com/game/game1/</a></p>
 <p>以前玩过几次其他的，都没通关过，这次玩这个第5关，然后发现有攻略，嘿嘿。</p>
@@ -5171,7 +5143,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/18/126/"/>
     <id>http://doubles.me/2012/11/18/126/</id>
     <published>2012-11-18T12:06:52.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>今天看了杨幂的Hold住爱，我勒个去哦。58女神响铛铛啊。整个电影全是58，微信，然后看到了这一幕。</p>
 <p>&nbsp;</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/hold.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/hold.jpg" alt="" title="hold"></a></p>
@@ -5195,7 +5167,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/16/123/"/>
     <id>http://doubles.me/2012/11/16/123/</id>
     <published>2012-11-16T02:53:17.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>&nbsp;</p>
 <p>一不小心看到csdn上的这个帖子，神人啊。</p>
 <p><a href="http://bbs.csdn.net/topics/330149187" target="_blank" rel="external">http://bbs.csdn.net/topics/330149187</a></p>
@@ -5237,7 +5209,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/14/117/"/>
     <id>http://doubles.me/2012/11/14/117/</id>
     <published>2012-11-14T12:52:52.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>找对象就像电脑装系统，男人是电脑，女人是系统，如果电脑配置低，不给力，装个win7带来华丽的同时，除了卡还是卡。所以配置低的男人还是找个XP将就吧！女人同样，如果你明明是个XP，却非要装到配置牛X的电脑上，那么，时间长了主人慢慢就会把你换掉！当然还有另外一种配置超强的男人，装双系统，在家用XP，在外用windows7。有时候没事还想去试试MAC！</p>
 ]]></content>
     <summary type="html">
@@ -5255,7 +5227,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/14/113/"/>
     <id>http://doubles.me/2012/11/14/113/</id>
     <published>2012-11-14T03:25:47.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>内涵图我就不解释了</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121114125621.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121114125621.png" alt="" title="QQ20121114125621"></a></p>
 ]]></content>
@@ -5275,7 +5247,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/14/103/"/>
     <id>http://doubles.me/2012/11/14/103/</id>
     <published>2012-11-14T03:19:50.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>昨天淘宝上买了件衣服，挺便宜的。 还说是正品jeep，大家都知道是仿的，我看是afs jeep，这个价格也就行了。</p>
 <p>今天上去一看，妹妹的，居然还有一个afsjeep的链接，那我买的是什么。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/12.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/12.png" alt="" title="1"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/22.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/22.png" alt="" title="2"></a>这里没看出问题么？难道没发现衣服是完全一样的。看看这一张，afs太明显的p上去的额。不信？</p>
@@ -5311,7 +5283,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/13/97/"/>
     <id>http://doubles.me/2012/11/13/97/</id>
     <published>2012-11-13T12:41:35.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>KnProxy 是一个轻量级的基于PHP开发的Web代理。</p>
 <p>该版本改进内容包括：</p>
 <p>1. 支持云代理技术（仍在进一步测试中）</p>
@@ -5342,7 +5314,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/13/84/"/>
     <id>http://doubles.me/2012/11/13/84/</id>
     <published>2012-11-13T10:03:59.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>goagent的翻墙很多人都用了，可是都是利用gae的方法吧。</p>
 <p>goagent不仅仅可以利用gae，php空间也是可以的。我们下载过来会发现Server文件夹中有2个文件夹，一个python，一个php，只要把php中的文件上传到任何一个php空间 中就可以使用。不过不能是限制太多的，也不要有广告。<a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/11.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/11.png" alt="" title="1"></a><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/31.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/31.png" alt="" title="3"></a>只有这一个文件哦，上传完成后记住地址，等会要用的。</p>
 <p>打开local中的proxy.ini文件，找到[paas]这里，如下修改。地址按你的改，记住加上index.php，如果你改了就按你改的。</p>
@@ -5375,7 +5347,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/12/69/"/>
     <id>http://doubles.me/2012/11/12/69/</id>
     <published>2012-11-12T13:20:07.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>ssh其实也可以用putty来做一个代理，速度快很多，这里给贴出来一下。</p>
 <p>填入主机，然后连接–ssh–认证，导入私钥。连接–ssh–通道添加一个动态端口，然后浏览器设置和前面一篇一样。</p>
 <p>&nbsp;</p>
@@ -5403,7 +5375,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/12/57/"/>
     <id>http://doubles.me/2012/11/12/57/</id>
     <published>2012-11-12T12:49:17.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>由于十八大的缘故，很多翻墙的那啥被河蟹了，当然我不是提供什么最新翻墙的方法，只是在这里列一下一般是怎么翻墙的。</p>
 <p>首先弄到一个ssh的帐号，至于怎么弄到就不说了。</p>
 <p>我在openshift注册的，<a href="https://openshift.redhat.com" target="_blank" rel="external">https://openshift.redhat.com</a></p>
@@ -5440,7 +5412,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/07/52/"/>
     <id>http://doubles.me/2012/11/07/52/</id>
     <published>2012-11-07T12:57:19.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>如果运气好这将是最后一个光棍节了，如果运气不好，这会是最后一个光棍节了。呵。。。</p>
 <p>然后，就花了点时间改一下这个。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121107225548.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/QQ20121107225548.png" alt="" title="QQ20121107225548"></a></p>
@@ -5466,7 +5438,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/05/48/"/>
     <id>http://doubles.me/2012/11/05/48/</id>
     <published>2012-11-05T06:58:57.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>应用租金很贵啊，现在想想怎么通过sina开发者认证才是正途啊。听说sae会逐步开放，也不知道豆豆能不能撑到他开放给高校学生的那一天。完全不会php，那怎么弄开发者认证哦。虽然有个半成品的android应用，但是1000人的限制。后面就在网上找到一个简单的方法。</p>
 <p>sae应用仓库里面有3个网址压缩的应用，那我们就弄一个还原网址的额。</p>
 <p>我们可以用程序请求一个短网址，然后获取响应头信息就可以了。通常短网址是进行了301跳转，并且响应有Location 信息。</p>
@@ -5532,7 +5504,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/03/41/"/>
     <id>http://doubles.me/2012/11/03/41/</id>
     <published>2012-11-03T13:01:36.000Z</published>
-    <updated>2016-07-05T19:55:00.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>　　BackTrack是基于Ubuntu的自启动运行光盘，它包含了一套安全及计算机取证工具。它其实是依靠融合Auditor Security Linu和WHAX（先前的Whoppix）而创建成的。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/ea85a945e6a9c646cffca3c61-e1351954609127.jpg" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/ea85a945e6a9c646cffca3c61-e1351954609127.jpg" alt="" title="ea85a945e6a9c646cffca3c6(1)"></a></p>
 <div>        BackTrack是目前为止知名度最高,评价最好的关于信息安全的Linux发行版.它是基于Linux平台并集成安全工具而开发成的Linux Live发行版,旨在帮助网络安全人员对网络骇客行为进行评估.不论您是否把它做为常用系统,或是从光盘或移动硬盘启动,它都可以定制各种安全包, 包括内核配置,脚本和补丁, 以用于入侵检测.<sup>[1]</sup></div><br><a name="ref_[1]_1627379"></a>     BackTrack是一套信息安全审计专用的Linux发行版, 不论您是信息安全专家还是新手. 它创造了一条可以方便您从世界上最大的安全工具库寻找和更新安全工具的捷径.<br><div>         用户包括信息安全领域的专业渗透测试人员, 政府雇员, IT人员, 信息安全爱好者以及安全领域的初学者. 来自不同行业, 不同技术水平用户的反馈促使我们开发了这样一个面对多元需求,包括商业和非商业需求的系统.</div><br><div>        无论是在渗透无线网络, 服务器, 还是在进行网站安全评估, 或是在学习安全技术, 或是在利用社会工程学获取信息, BackTrack都可以满足您在信息安全方面的需要。</div>
@@ -5580,7 +5552,7 @@ $(function () {
     <link href="http://doubles.me/2012/11/03/34/"/>
     <id>http://doubles.me/2012/11/03/34/</id>
     <published>2012-11-03T12:24:16.000Z</published>
-    <updated>2016-08-01T21:25:31.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>外婆家待了1个多礼拜来，只破了2个wep加密的，一个每天就凌晨2点可以连上。</p>
 <p>另一个临走前才抓到密码。</p>
 <p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Screenshot.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2012/11/Screenshot-268x300.png" alt="" title="Screenshot"></a></p>
@@ -5606,7 +5578,7 @@ $(function () {
     <link href="http://doubles.me/2012/10/31/22/"/>
     <id>http://doubles.me/2012/10/31/22/</id>
     <published>2012-10-31T13:42:56.000Z</published>
-    <updated>2016-08-01T21:24:16.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p>相信很多朋友都安装了BackTrack，但是，我们也因此有许多重复性的工作要做了。比如每次开机要打开网络，给我们的Metasploit升</p>
 <p>级等等。。现在不用劳心了，使用这个脚本可以实现很多快捷功能。</p>
 <a id="more"></a>
@@ -5739,7 +5711,7 @@ $(function () {
     <link href="http://doubles.me/2012/10/29/16/"/>
     <id>http://doubles.me/2012/10/29/16/</id>
     <published>2012-10-29T13:30:53.000Z</published>
-    <updated>2016-08-01T21:22:43.000Z</updated>
+    <updated>2016-09-26T20:59:02.000Z</updated>
     <content type="html"><![CDATA[<p><strong>最新BackTrack 5 R3 was released on 13th of August, 2012.</strong></p>
 <p>可以前去<a href="http://www.backtrack-linux.org/" target="_blank" rel="external">http://www.backtrack-linux.org</a>获取最新Backtrack版本</p>
 <p>这里是BackTrack5 R3所有版本的种子打包，大家根据自己的需求进行下载。</p>

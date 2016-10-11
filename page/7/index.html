@@ -161,83 +161,6 @@ function dispatch() {
 
       <div class="body-wrap">
   
-    <article id="post-623" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2013/04/25/623/" class="article-date">
-  	<time datetime="2013-04-25T13:55:34.000Z" itemprop="datePublished">2013-04-25</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2013/04/25/623/">csdn免积分下载器</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最早是wooyun上讨论的</p>
-<p><a href="http://zone.wooyun.org/content/3354" target="_blank" rel="external">http://zone.wooyun.org/content/3354</a></p>
-<p>&nbsp;</p>
-<p>在线版，利用帐号登入的</p>
-<p><a href="http://124.146.62.26:18250/" target="_blank" rel="external">http://124.146.62.26:18250/</a></p>
-<p>&nbsp;</p>
-<p>就是csdn上下载的api</p>
-<p><a href="http://download.csdn.net/index.php/rest/source/getsourceinfo/5275116" target="_blank" rel="external">http://download.csdn.net/index.php/rest/source/getsourceinfo/5275116</a></p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130426004612.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130426004612.png" alt="QQ20130426004612"></a></p>
-<p>&nbsp;</p>
-<p>另外一个在线版，解析这个api的</p>
-<p><a href="http://sharingcode.sinaapp.com/index.php/c/csdn/index" target="_blank" rel="external">http://sharingcode.sinaapp.com/index.php/c/csdn/index</a></p>
-<p>&nbsp;</p>
-<p>有基友写好了一个油猴脚本，GreaseMonkey，我用的chrome，tampermonkey也一样使用</p>
-<p>&nbsp;</p>
-<p>// ==UserScript==<br>// @name        CSDN免积分下载<br>// @description 免积分 懂的<br>// @include     <a href="http://download.csdn.net/detail/*" target="_blank" rel="external">http://download.csdn.net/detail/*</a><br>// @include     <a href="http://download.csdn.net/download/*" target="_blank" rel="external">http://download.csdn.net/download/*</a><br>// @version     0.0.1<br>// @require     <a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" target="_blank" rel="external">http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js</a><br>// @grant       GM_xmlhttpRequest<br>// @author      那个用就是那个的<br>// @license  MIT License<br>// ==/UserScript==<br>(function() {<br>var id = location.pathname.match(/\d+/)[0];<br>var isGetAddress = false;<br>var $download = $(‘.res_down_area .left’).after(‘&lt;a href=”javascript:void(0)”&gt;免积分下载&lt;/a&gt;’).next();<br>$download.click(function() {<br>if (isGetAddress) {<br>return;<br>}<br>GM_xmlhttpRequest({<br>method: ‘GET’,<br>url: ‘<a href="http://download.csdn.net/index.php/rest/source/getsourceinfo/" target="_blank" rel="external">http://download.csdn.net/index.php/rest/source/getsourceinfo/</a>‘ + id,<br>onload: function (response) {<br>$download.attr(‘href’, localStorage[id] = JSON.parse(response.responseText).url);<br>isGetAddress = true;<br>$download.html(‘开始下载’);<br>}<br>});<br>});<br>})();</p>
-<p><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130426005156.png" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/04/QQ20130426005156.png" alt="QQ20130426005156"></a>测试可用，我也省的写了，嘿嘿</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/杂碎/">杂碎</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Others/">Others</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-
-  
     <article id="post-621" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -860,6 +783,68 @@ function dispatch() {
       
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/Others/">Others</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+
+  
+    <article id="post-560" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2013/03/12/560/" class="article-date">
+  	<time datetime="2013-03-12T03:09:44.000Z" itemprop="datePublished">2013-03-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2013/03/12/560/">easyxss平台搭建</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <div><span style="color: #ff0000;">bae上搭建easyxss</span>【如果不是bae，sae上就不需要】</div><br><div>@<a href="http://zone.wooyun.org/user/%E6%98%B5%E7%A7%B0" target="_blank" rel="external">昵称</a> 目测bae和sae都是要使用重写功能<br>bae  修改 app.conf<br>格式：<br>- url : /member/(.+)$<br>script : member.php?mid=$1</div><br><div></div><br><div>sae修改 config.yaml<br>格式：<br>- rewrite: if( path ~ “^feed$” ) goto “feed.php”</div><br><div></div><br><div>测试发现，bae上搭建不了。应该要修改thinkphp，所以使用phpcloud来搭建。</div><br><div></div><br><div></div><br><div><span style="color: #ff0000;"> App/Conf/config.php 配置文件</span></div><br><div></div><br><div>&lt;?php<br>return array(<br>‘DEFAULT_MODULE’     =&gt; ‘User’,<br>‘URL_MODEL’          =&gt; ‘0’, //这里改成0，原来是2，具体设置请参考THINKPHP配置说说明<br>‘SESSION_AUTO_START’ =&gt; true,<br>‘DB_DSN’ =&gt; ‘mysql://root:toor@127.0.0.1:3306/xss’, //数据库链接信息，用户名@密码，最后的是数据库名<br>‘DB<em>PREFIX’ =&gt; ‘xss</em>‘,<br>‘MAIL_ADDRESS’=&gt;’info@xss.tw’,<br>‘MAIL_SMTP’=&gt;’smtp.gmail.com’,<br>‘MAIL_LOGINNAME’=&gt;’info@xss.tw’,<br>‘MAIL_PASSWORD’=&gt;’’,<br>‘MAIL_SENDER’=&gt;’info’,<br>‘MAIL_PORT’=&gt;’465’,<br>‘TMPL_PARSE_STRING’ =&gt;array(<br>‘<strong>SITENAME</strong>‘ =&gt;’EasyXSS 1.0’,<br>‘<strong>SITETITLE</strong>‘=&gt;’EasyXSS’,<br>),<br>);<br>?&gt;</div><br><div></div><br><div><span style="color: #ff0000;">wwwroot目录是web根目录，wwwroot/index.php定义了framework与application的路径，你改了就要跟着改。</span></div><br><div></div><br><div>&lt;?php<br>define(‘APP_NAME’, ‘./XSS’);<br>define(‘APP_PATH’, ‘./../App/‘); //App那个文件夹的路径，改掉了就跟着改<br>define(‘APP_DEBUG’, true); //debug开关require ‘./../ThinkPHP/ThinkPHP.php’; //thinkphp framework 的路径?&gt;</div><br><div></div><br><div>data.sql导入数据库，这里不说了。</div><br><div></div><br><div></div><br><div>有一个邀请码：1234567890<br>请注册名字为：root的用户，才能生成邀请码</div><br><div></div><br><div>注册一个用户名为root的用户，</div><br><div>邀请码生成URL：/Key/createKey/count/1/type/1<br>count为数量，type为类型:0为自助申请，1为手动发放的邀请码，不被自助申请获得到</div><br><div><img src="file:///C:/Users/Daddy/AppData/Local/Temp/enhtmlclip/Image.png" alt=""></div><br><div>界面模仿xsser.me,PHP代码没参考任何其他平台，所以写得很烂。现在的新版本基本上重写，主要方面是用户权限控制，使用类的继承，方便多了。keepsession： 定期访问 /Xssresult/Keepsession 即可，或者定期执行Keepsession文件夹下的php脚本。</div><br><div></div><br><div><br><br>phpcloud申请账号，然后创建一个app。<br><br>然后会得到一个key，.ppt的这时候用winscp连上去。<br><br>，地址如下，很多都是你设置的容器的名字。<br><br>如下图<br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/3.bmp" alt="3"></a><br><br>&nbsp;<br><br>然后将这个我修改好的easyxss平台代码丢上去，修改所有目录属性为777。不然会提示run error，因为没有写入权限。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/4.bmp" alt="4"></a><br><br>&nbsp;<br><br>然后修改conf文件，最好用notepad++修改好了再覆盖上去。不然会有其他的错误<br><br>Assuming your container name is <code>**_mycontainer_**</code>, you should use the following credentials to connect to your database:<br><br><em>   <strong>Database host:</strong><em>mycontainer</em>-db.my.phpcloud.com
+</em>   <strong>Database port:</strong> 3306<br><em>   <strong>Database schema name:</strong><em>mycontainer</em>
+</em>   <strong>Database user:</strong><em>mycontainer</em><br><em>   <em>*Database password:</em></em> your container password导入mysql数据库，可以使用phpadmin或者ssh的方式<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/5.bmp" alt="5"></a><br>我导入的是去掉iptables的，因为他这个ip表有20多m，不好上传。等我回寝室再导入把。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>然后进入dnspod，把域名绑定以下。<br><br>&nbsp;<br><br>将域名cname到 <em>mycontainer</em>.my.phpcloud.com，就是你可以直接访问的地址。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/6.bmp" alt="6"></a> <a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/11.bmp" alt="1(1)"></a><br><br>现在就可以通过绑定的域名进行访问了。<br><br><a href="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" target="_blank" rel="external"><img src="http://7xnueu.com1.z0.glb.clouddn.com/2013/03/21.bmp" alt="2(1)"></a><br><br>&nbsp;<br><br>然后要注意的是phpcloud必须要每天登入一次来激活，这个可以使用我们的监控宝来完成<br><br></div><br><div><br><br>到此我们就完成平台搭建的所有工作，然后可以使用url缩短服务，尽情的xss去吧。<br><br></div><br><div></div>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hack/">hack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xss/">xss</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/云/">云</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Hack/">Hack</a>
 	</div>
 
 
