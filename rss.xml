@@ -16,21 +16,6 @@
   
   <entry>
     <title><![CDATA[博客居然被抄袭了]]></title>
-    <link href="http://doubles.me/2016/07/12/new/"/>
-    <id>http://doubles.me/2016/07/12/new/</id>
-    <published>2016-07-12T13:38:27.000Z</published>
-    <updated>2016-09-26T20:59:02.000Z</updated>
-    <content type="html"><![CDATA[<p>看图，我3年前的一篇关于Cocos2d-Html5的文章居然被这个博客转载了。<br>这本来没什么，可是他的Github里只有一个经常提交的Spider，然后博客里有300篇文章。<br>却全部是转载的，这这行为很讨厌啊。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607126.png" alt="2016/07/201607126.png"><br><a id="more"></a><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607124.png" alt="2016/07/201607124.png"><br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607125.png" alt="2016/07/201607125.png"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>看图，我3年前的一篇关于Cocos2d-Html5的文章居然被这个博客转载了。<br>这本来没什么，可是他的Github里只有一个经常提交的Spider，然后博客里有300篇文章。<br>却全部是转载的，这这行为很讨厌啊。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/07/201607126.png" alt="2016/07/201607126.png"><br>]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[博客居然被抄袭了]]></title>
     <link href="http://doubles.me/2016/07/12/160712/"/>
     <id>http://doubles.me/2016/07/12/160712/</id>
     <published>2016-07-12T13:38:27.000Z</published>
@@ -486,28 +471,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Diary 2015/11/18]]></title>
-    <link href="http://doubles.me/2015/11/18/151118/"/>
-    <id>http://doubles.me/2015/11/18/151118/</id>
-    <published>2015-11-17T22:00:00.000Z</published>
-    <updated>2016-09-26T20:59:02.000Z</updated>
-    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
-<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
-    
-    </summary>
-    
-      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
-    
-      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Diary 2016/01/18]]></title>
     <link href="http://doubles.me/2015/11/18/160118/"/>
     <id>http://doubles.me/2015/11/18/160118/</id>
@@ -521,6 +484,28 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>准备开始做AR.Drone 的项目了，今天来试飞一下。<br>AR.Drone 的翻转好cool。可惜高度不够，会撞地。<br><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/22964-829261f187ee80aa.jpg-body" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="diary" scheme="http://doubles.me/tags/diary/"/>
+    
+      <category term="Life" scheme="http://doubles.me/categories/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Diary 2015/11/18]]></title>
+    <link href="http://doubles.me/2015/11/18/151118/"/>
+    <id>http://doubles.me/2015/11/18/151118/</id>
+    <published>2015-11-17T22:00:00.000Z</published>
+    <updated>2016-09-26T20:59:02.000Z</updated>
+    <content type="html"><![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br><a id="more"></a></p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0378.JPG-body" alt="raspi berry"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天在学校免费拿到一个HP的交换机<br>简单清洁了一下，这个可以用来干什么呢？</p>
+<p><img src="http://7xnueu.com1.z0.glb.clouddn.com/2016/00/IMG_0376.JPG-body" alt="switch"><br>]]>
     
     </summary>
     
